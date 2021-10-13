@@ -1,0 +1,121 @@
+measure,location,sex,age,cause,metric,year,val,upper,lower
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",1990,1760713.9,1908321,1610857
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",1991,1761274.1,1917962.8,1604873.8
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",1992,1771648.1,1927853.9,1615267.2
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",1993,1726667.5,1871487.4,1583257.7
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",1994,1691945.8,1834356.5,1554154
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",1995,1663246.7,1796400,1519009.1
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",1996,1633668.6,1769189.5,1484767.6
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",1997,1629547.7,1770499.9,1476474.8
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",1998,1618456.9,1751546.5,1473620.4
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",1999,1602890.6,1729674,1452992.4
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2000,1590060.5,1717889.6,1437364.4
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2001,1552505.7,1677723.5,1405671.5
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2002,1515611.1,1638549.6,1376445.9
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2003,1476363.1,1595214.2,1338704
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2004,1424273.9,1542812.1,1297676
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2005,1397121.7,1511867.8,1276692.7
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2006,1366368,1482002,1245592.4
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2007,1339315.7,1443944.4,1224184.9
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2008,1318249.7,1430210.9,1199469.4
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2009,1279988.1,1388646.7,1162744.1
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2010,1242036.3,1345448.1,1128175.9
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2011,1210512.2,1316550.3,1094083
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2012,1196613.6,1301881,1075111.4
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2013,1185490.1,1293337.4,1052930.6
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2014,1174230.5,1277423.6,1041992.8
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2015,1147968.6,1264261.5,1018119.5
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2016,1129678.5,1246858.2,995748.8
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2017,1111736.7,1235904.5,979721.39
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2018,1085608.3,1216287.6,952237.78
+"Deaths","Global","Both","All Ages","Drug-susceptible tuberculosis","Number",2019,1061285.1,1186121.9,924214.84
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",1990,0,0,0
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",1991,0,0,0
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",1992,0,0,0
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",1993,258.28879,507.6406,110.01232
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",1994,641.90483,1210.5357,288.5393
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",1995,1117.9258,2090.5161,523.72619
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",1996,1626.5647,2966.8424,754.53566
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",1997,2129.4287,3961.9487,977.63528
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",1998,2657.323,4941.7104,1233.2662
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",1999,3316.6009,6150.2742,1544.3203
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2000,4010.9116,7338.534,1910.9862
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2001,4638.8771,8445.6081,2233.1894
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2002,5285.273,9458.2294,2619.6653
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2003,5897.3128,10516.747,2970.3076
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2004,6332.6779,11148.767,3236.3157
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2005,6918.983,11976.217,3548.0255
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2006,7019.4906,12026.939,3657.3767
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2007,7211.648,12345.382,3743.6883
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2008,7423.8708,12870.268,3776.3987
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2009,7335.0965,12721.139,3705.6845
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2010,7453.3461,12893.837,3720.4694
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2011,7507.061,13043,3717.7219
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2012,7679.8325,13205.443,3773.2535
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2013,7751.3412,13656.875,3747.5847
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2014,7740.8009,13700.135,3776.4842
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2015,7892.0897,13988.197,3847.1681
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2016,8035.5883,14439.419,3894.4939
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2017,8150.9964,14584.27,3892.284
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2018,8342.5499,15174.934,3947.0601
+"Deaths","Global","Both","All Ages","Extensively drug-resistant tuberculosis","Number",2019,8497.0473,15239.98,3999.8443
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",1990,16755.344,39450.686,5767.1183
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",1991,25853.816,56331.237,9970.244
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",1992,36830.143,75538.221,15619.451
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",1993,48528.318,93793.319,21830.954
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",1994,61958.083,119598.27,28579.091
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",1995,75132.253,144957.51,34947.298
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",1996,86342.279,171042.19,39732.146
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",1997,95084.153,185641.27,43004.219
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",1998,103916.85,201350.54,47074.242
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",1999,113645.32,210965.84,51085.448
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2000,121067.09,213048.03,54750.975
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2001,125913.25,218460.36,58224.285
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2002,129285.74,224848.21,60783.287
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2003,130680.19,224284.11,63138.2
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2004,128590.14,220175.13,64352.891
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2005,129106.14,219743.92,65356.315
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2006,126643.45,217608.42,64179.811
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2007,124244.98,214239.41,62818.819
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2008,122487.19,207586.7,60853.928
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2009,118799.36,203796.54,58085.502
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2010,116072.08,204341.22,55027.311
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2011,114287,205768.79,51696.772
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2012,114487.47,210217.01,49954.485
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2013,114825.91,217130.17,49000.163
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2014,113421.48,209601.35,47204.906
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2015,112271.67,206360.54,46805.483
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2016,112373.94,212682.76,46008.225
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2017,112343.99,213965.15,45990.444
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2018,111509.79,212852.84,43347.529
+"Deaths","Global","Both","All Ages","Multidrug-resistant tuberculosis without extensive drug resistance","Number",2019,109984.04,210401.38,43575.04
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",1990,1777469.3,1921928.2,1625544.4
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",1991,1787127.9,1940744.8,1645161.1
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",1992,1808478.2,1960213.8,1652925.6
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",1993,1775454.1,1915787.5,1632248
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",1994,1754545.7,1888149.9,1614214.1
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",1995,1739496.9,1868530.5,1611032
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",1996,1721637.4,1844707,1601241.8
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",1997,1726761.2,1843249.8,1605947
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",1998,1725031.1,1838906.7,1603037.5
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",1999,1719852.5,1830588.5,1597162.3
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2000,1715138.5,1830550.6,1599902.4
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2001,1683057.9,1787214.7,1574133.3
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2002,1650182.1,1750875.9,1545638.3
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2003,1612940.6,1712853.3,1512044.6
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2004,1559196.8,1655070.9,1463742.5
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2005,1533146.9,1626668.1,1443072.7
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2006,1500030.9,1591354.1,1415551.1
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2007,1470772.4,1565122.4,1387888.4
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2008,1448160.8,1541368.5,1361313.6
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2009,1406122.5,1492362.4,1324898.5
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2010,1365561.7,1451741.2,1287445.1
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2011,1332306.2,1417936.9,1254507.9
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2012,1318780.9,1400571,1242047
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2013,1308067.3,1396397.2,1232107.2
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2014,1295392.8,1378012,1219434.2
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2015,1268132.3,1357992,1186948.9
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2016,1250088,1341903,1160291.3
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2017,1232231.6,1334246.4,1132363.7
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2018,1205460.7,1316272.7,1106238.1
+"Deaths","Global","Both","All Ages","Tuberculosis","Number",2019,1179766.2,1292664.8,1078546.1

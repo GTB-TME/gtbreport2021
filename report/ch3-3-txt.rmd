@@ -1,0 +1,170 @@
+---
+title: "Section 3.3 TB treatment and treatment coverage (text)"
+author: "Hazim Timimi"
+date: "`r Sys.Date()`"
+output: 
+  html_fragment:
+    # Don’t include a table of contents
+    toc: no
+    # Set standard figure width to 12 inches
+    fig_width: 12
+    # Don’t write figure captions
+    fig_caption: FALSE
+
+---
+
+
+```{r setup, include=FALSE}
+# Set chunk options.
+# Results "asis" is useful to output markdown from a function
+# Suppress messages, warnings and also the ## at the beginning of printed text
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      results = "asis",
+                      message = FALSE,
+                      warning = FALSE)
+
+# Kill any attempt at using factors, unless we explicitly want them!
+options(stringsAsFactors=FALSE)
+
+# Load output packages ----
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(RColorBrewer)
+library(whomap)
+library(gtbreport)
+library(here)
+
+# load section data
+source(here('report/ch3-3-dataprep.r'))
+
+# Function to override int_spacer() in the gtbreport package
+# replace space with a non-breaking space so that numbers aren't spread over
+# two lines 
+int_spacer <- function(x){
+  gsub(" ", "&nbsp;", gtbreport::int_spacer(x))
+}
+
+
+# Quick functions for callouts in the text to the figures/tables:
+
+# 1. lnk() Creates a link from text to a named anchor)
+lnk <- function(display_name){
+  return(paste0('<span class="red">[', 
+                display_name, 
+                '](#', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                ')</span>'))
+}
+
+# 2. anch() creates the named anchor to go above the figure or table
+anch <- function(display_name){
+  return(paste0('<a name="', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                '"></a>'))
+}
+
+# 3. ref_lnk() creates a link from text to the references in the WHO style (black, italic)
+ref_lnk <- function(display_name){
+  return(paste0('<span class="refs">[', 
+                display_name, 
+                '](#refs)</span>'))
+}
+
+# rmarkdown::render(here::here("report/ch3-3-txt.rmd"), output_file = "ch3-3-txt.html", output_dir = here::here("report/html/"))
+
+```
+
+```{css, echo=FALSE}
+
+/* Styles to make it easier to see in the html_fragment; this CSS can be included in the CSS widget of Sitefinity */
+  
+.section.level3 {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #BCBCBC;
+  margin-bottom: 2em;
+}
+
+
+.subhead, .footnote {
+  font-size: 80%;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.red, .red a {
+  color: #F21905; /* red text to show figure number */
+  font-weight: bold;
+}
+
+.refs, .refs a {
+  color: #3c4245;  /* match SF normal text colour */
+  font-style: italic;
+}
+
+/* justify paragraphs to both left and right margins in the text under heading 2 */
+.level2 p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+```
+
+
+# 3.3 TB treatment and treatment coverage    
+
+_Draft! Prepared `r Sys.Date()` using country-reported data CSV files dated `r csv_datestamp` and estimates files dated  `r csv_estimate_datestamp`._
+
+Without treatment, the death rate from tuberculosis (TB) is high. Studies of the natural history of TB disease in the absence of treatment with anti-TB drugs (conducted before drug treatments became available) found that about 70% of people with sputum smear-positive pulmonary TB died within 10 years of being diagnosed, as did about 20% of people with culture-positive (but smear-negative) pulmonary TB (`r ref_lnk("1")`). With TB treatment, most people who develop TB can be cured. 
+
+Effective drug treatments for TB were first developed in the 1940s. The composition of TB treatment regimens has changed over time and the currently recommended standard of care for people with drug-susceptible TB disease is a 6-month regimen of four first-line drugs: isoniazid, rifampicin, ethambutol and pyrazinamide (`r ref_lnk("2")`). New evidence reviewed in meetings of WHO guideline development groups held in 2021 supports the use of two new 4-month treatment regimens for drug-susceptible TB that can be used as possible alternatives to the current standard 6-month regimen. Treatment for people diagnosed with drug-resistant TB (<span class="red">Section 3.4</span>) requires regimens that include second-line drugs. These are longer,  more expensive (≥US$ 1000 per person) and may cause more adverse events (`r ref_lnk("3")`).
+
+To minimize the ill health and mortality caused by TB, everyone who develops TB disease needs to be able to promptly access diagnosis and treatment. Providing TB diagnosis and treatment within the broader context of progress towards universal health coverage (UHC) is a key component of the WHO End TB Strategy, and is necessary to reach strategy milestones and targets for reductions in TB incidence and mortality (<span class="red">Section 2</span>, <span class="red">Section 6</span>). For example, reaching the 2025 milestone of a 75% reduction in the number of TB deaths compared with 2015 requires reducing the case fatality ratio (CFR; the percentage of people who develop TB that die from the disease) to 6.5%, which is only feasible if everyone who develops TB can access treatment. TB treatment coverage is one of the priority indicators for monitoring progress in implementing the End TB Strategy, with a recommended target of at least 90% by 2025 at the latest (`r ref_lnk("4")`). TB treatment coverage is also one of 16 indicators used to assess progress towards the UHC target that has been set as part of the United Nations (UN) Sustainable Development Goals (SDGs) (`r ref_lnk("5")`). 
+
+TB treatment coverage can be estimated as the number of new and relapse cases detected and treated in a given year, divided by the estimated number of incident TB cases in the same year, expressed as a percentage. Numbers of notified new and relapse cases (<span class="red">Section 3.1</span>) are currently used as the numerator for the indicator, because these are the data available. However, limitations with this numerator are that there are people with TB who are treated but not notified to national authorities (and in turn are not notified to WHO) and people who are notified but who may not be started on treatment. Anyone with TB who is living with HIV should be provided with antiretroviral treatment (ART) as well as TB treatment; thus, for this group it is also relevant to assess the coverage of ART. 
+
+Globally in `r report_year-1`, TB treatment coverage was `r ftb(f3.3.1_txt$c_cdr_2020)`% (95% uncertainty interval [UI]: `r ftb(f3.3.1_txt$c_cdr_lo_2020)`–`r ftb(f3.3.1_txt$c_cdr_hi_2020)`%) (`r lnk("Fig. 3.3.1")`), down from `r ftb(f3.3.1_txt$c_cdr_2019)`% (UI: `r ftb(f3.3.1_txt$c_cdr_lo_2019)`–`r ftb(f3.3.1_txt$c_cdr_hi_2019)`%) in `r report_year-2`. Among the six WHO regions, treatment coverage was highest in Europe (with a best estimate of `r ftb(f3.3.1_txt$c_cdr_EUR)`%) and lowest in the Eastern Mediterranean (with a best estimate of `r ftb(f3.3.1_txt$c_cdr_EMR)`%). Of the 30 high TB burden countries, those with the highest levels of treatment coverage in `r report_year-1` included Brazil, China and Thailand (`r lnk("Fig. 3.3.1")`). The high value for Mozambique may reflect some overdiagnosis of cases that is inflating the numerator used in the estimation of treatment coverage; in `r report_year-1`, only `r ftb(f3.3.1_txt$bacconf_pct_MOZ)`% of pulmonary cases were bacteriologically confirmed (<span class="red">Section 3.2</span>). `r tools::toTitleCase(int2word(nrow(f3.3.1_txt_list)))` high TB burden countries had worryingly low levels of treatment coverage in `r report_year-1`, with best estimates of below 50%: `r sub("Philip", "the Philip", knitr::combine_words(f3.3.1_txt_list$entity, oxford_comma=FALSE))`.
+
+In `r report_year-1`, there was a big increase in the global gap between the number of people newly diagnosed and reported with TB and the number of people estimated to have developed TB. This reflects the sharp fall (of `r ftb(f3.3.1_txt$pct_change_c_newinc)`%) in the number of people newly diagnosed and reported with TB between `r report_year-2` and `r report_year-1` (from `r ftb(f3.3.1_txt$c_newinc_2019/1e6)` million to `r ftb(f3.3.1_txt$c_newinc_2020/1e6)` million) that has been associated with major disruptions to provision of and access to essential TB diagnostic and treatment services during the COVID-19 pandemic (<span class="red">Section 1</span>). Ten countries accounted for `r ftb(f3.3.2_txt$pct_gap_top_ten)`% of the total estimated global gap between incidence and notifications in `r report_year-1` (`r lnk("Fig. 3.3.2")`), with India (`r ftb(f3.3.2_txt$pct_gap_IND)`%), Indonesia (`r ftb(f3.3.2_txt$pct_gap_IDN)`%), the Philippines (`r ftb(f3.3.2_txt$pct_gap_PHL)`%), Nigeria (`r ftb(f3.3.2_txt$pct_gap_NGA)`%) and Pakistan (`r ftb(f3.3.2_txt$pct_gap_PAK)`%) accounting for more than half the global total. 
+
+The main reasons for a gap between notifications of people reported as newly diagnosed with TB and estimated TB incidence are:
+
+* underreporting of detected TB cases – in many countries, levels of underreporting may be high; this is especially the case for those countries that lack policies on mandatory notification and other measures to ensure reporting of detected cases by all care providers; and
+* underdiagnosis of people with TB – this can occur for reasons such as poor geographical and financial access to health care; delays in seeking health care because of lack of symptoms or symptoms not being perceived as serious enough to warrant a visit to a health facility; failure to test for TB when people do present to health facilities; and use of diagnostic tests that are not sufficiently sensitive or specific to ensure accurate identification of all people with TB.
+
+It is also possible that the gap could be underestimated due to overdiagnosis, especially in settings where a relatively low proportion of TB cases are bacteriologically confirmed (<span class="red">Section 3.2</span>). 
+
+Some of the countries with the largest estimated gaps between notifications and TB incidence already possess good evidence about the reasons for such gaps, and before the COVID-19 pandemic had achieved success in closing these gaps. For example, following studies that showed high levels of underreporting, India and Indonesia introduced policies on mandatory notification of TB cases, intensified engagement with care providers not yet reporting to national authorities, and established digital data systems to facilitate and simplify the reporting of cases. From 2013 to 2019 in India and from 2015 to 2019 in Indonesia, these actions resulted in marked increases in TB notifications (<span class="red">Section 3.1</span>, <span class="red">Fig. 3.1.2</span>). 
+
+An example of a country where underdiagnosis is a major challenge is Nigeria. The 2012 national TB prevalence survey found that 75% of the people with smear-positive pulmonary TB who were detected had symptoms that met national screening criteria but had not been previously diagnosed. This demonstrated a need to strengthen access to high-quality screening, diagnostic and treatment services. National TB prevalence surveys in many countries in Africa and Asia have also shown that detection and reporting gaps are systematically higher for men than for women (<span class="red">Section 2.3</span>), suggesting that specific efforts are needed to improve access to TB diagnosis and treatment for men. 
+
+The global coverage of ART among people living with HIV who were also diagnosed and reported with TB was `r ftb(f3.3.3_txt$c_art_notified_2020)`% in `r report_year-1`, the same as the level in `r report_year-2` (`r lnk("Fig. 3.3.3")`). However, when compared with the estimated number of people living with HIV who developed TB in `r report_year-1`, coverage was much lower (`r lnk("Fig. 3.3.4")`): the global average was `r ftb(f3.3.3_txt$c_art_estimated_2020)`%, down from `r ftb(f3.3.3_txt$c_art_estimated_2019)`% in `r report_year-2`. Both figures were considerably worse than the overall coverage of ART for people living with HIV, which was 73% at the end of `r report_year-1` (`r ref_lnk("6")`). The main reason for relatively low ART coverage among HIV-positive people with TB in 2020 was the big gap between the estimated number of people living with HIV who developed TB in 2020 and the number who were detected in 2020. Among the 30 high TB/HIV burden countries, best estimates of coverage varied widely, from `r ftb(f3.3.4_txt$Gabon)`% in Gabon to `r ftb(f3.3.4_txt$Mozambique)`% in Mozambique, and only `r ftb(f3.3.4_txt$over_50)` of these 30 countries achieved coverage of at least 50% (`r lnk("Fig. 3.3.4")`). 
+
+Globally in `r report_year-2` (the latest annual patient cohort for which data are available), the treatment success rate for people treated for TB with first-line regimens was `r ftb(f3.3.5_txt$tsr_Global)`%, and ranged among WHO regions from `r ftb(f3.3.5_txt$tsr_AMR)`% in the Americas to `r ftb(f3.3.5_txt$tsr_EMR)`% in the Eastern Mediterranean (`r lnk("Fig. 3.3.5")`). This high level of overall treatment success has been sustained over a period of several years (`r lnk("Fig. 3.3.6")`). Treatment success rates remain lower among people living with HIV (`r ftb(f3.3.7_txt$tsr_tbhiv_Global)`% globally in `r report_year-2`), although there have been steady improvements over time (`r lnk("Fig. 3.3.6")`, `r lnk("Fig. 3.3.7")`). The treatment success rate for children (aged 0–14 years) was `r ftb(f3.3.8_txt$tsr_014_Global)`% in `r report_year-2` (`r lnk("Fig. 3.3.8")`). Treatment success rates have been maintained as the absolute number of people enrolled on treatment has grown (`r lnk("Fig. 3.3.9")`). 
+
+TB treatment and provision of ART to HIV-positive people diagnosed with TB are estimated to have averted `r ftb(t3.3.1_txt$saved)` million deaths between 2000 and `r report_year-1` (`r lnk("Table 3.3.1")`).
+
+Country-specific details about TB treatment and treatment coverage are available in the [Global tuberculosis report app](https://www.who.int/teams/global-tuberculosis-programme/data/) and [country profiles](https://worldhealthorg.shinyapps.io/tb_profiles/).
+
+
+
+`r anch("refs")`
+
+**References**
+
+<div class="footnote">
+
+1. Tiemersma EW, van der Werf MJ, Borgdorff MW, Williams BG, Nagelkerke NJ. Natural history of tuberculosis: duration and fatality of untreated pulmonary tuberculosis in HIV negative patients: a systematic review. PLOS One. 2011;6(4):e17601 (https://www.ncbi.nlm.nih.gov/pubmed/21483732).
+2. Guidelines on treatment of drug-susceptible tuberculosis and patient care (2017 update). Geneva: World Health Organization; 2017 (https://apps.who.int/iris/bitstream/handle/10665/255052/9789241550000-eng.pdf).
+3. WHO consolidated guidelines on tuberculosis, Module 4: Treatment – drug-resistant tuberculosis treatment. Geneva: World Health Organization; 2020 (https://www.who.int/publications/i/item/9789240007048).
+4. Implementing the End TB Strategy: the essentials (WHO/HTM/TB/2015.31). Geneva: World Health Organization; 2015 (https://www.who.int/tb/publications/2015/end_tb_essential.pdf). 
+5. Sustainable development goals [website]. New York: United Nations (https://sustainabledevelopment.un.org/topics/sustainabledevelopmentgoals).
+6. Global HIV & AIDS statistics – fact sheet [website]. Geneva: UNAIDS; 2021 (https://www.unaids.org/en/resources/fact-sheet).
+
+</div>
+
+
+

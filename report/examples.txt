@@ -1,0 +1,96 @@
+# Chapter 5
+
+## TB diagnosis and treatment
+
+### Figure 5.1: Notifications of TB cases (new and relapse cases, all forms) (black) compared with estimated TB incident cases (<span class="green_text">green</span>), 2000–`r report_year - 1`, globally and for WHO regions. <span class="subhead">Shaded areas represent uncertainty intervals.</span>
+
+
+`r accordian_start()`
+
+
+
+```{r fig_5.1, fig.alt="Panel plot of TB notifications by WHO region and globally"}
+
+# Plot data is already prepared in dataframe called f5.1_data
+# I put summary statistics from the commentary below the figure in
+# variables f5.1_global_inc, f5.1_global_inc_lohi, f5.1_global_newinc
+
+f5.1_data %>%
+  ggplot(aes(x=year, y=c_newinc_millions, ymin=0)) +
+  geom_line(size=1) +
+  geom_ribbon(aes(x=year,
+                  ymin=e_inc_num_lo_millions,
+                  ymax=e_inc_num_hi_millions),
+              fill=palette_standard("incidence"),
+              alpha=0.4) +
+  geom_line(aes(year, e_inc_num_millions),
+            size=1,
+            colour=palette_standard("incidence")) +
+
+
+  facet_wrap( ~ entity, ncol = 4, scales="free_y") +
+  scale_x_continuous(name="Year",
+                     breaks = c(2000, 2009, report_year-1)) +
+  scale_y_continuous(name = "Millions per year") +
+  theme_gtbr_2021() +
+  # Add a gray line over the x-axis so that all graphs have a line at the bottom
+  annotate("segment", x=-Inf,
+           xend=Inf,
+           y=-Inf,
+           yend=-Inf,
+           colour = "#BCBCBC")
+
+```
+
+
+There is still a large global gap between the estimated number of incident cases (`r f5.1_global_inc` million, range `r f5.1_global_inc_lohi` million, in `r report_year - 1`) and the number of people newly diagnosed (`r f5.1_global_newinc` million in `r report_year - 1`), due to underreporting of detected cases and underdiagnosis (if people with TB cannot access health care or are not diagnosed when they do).
+
+
+`r accordian_end()`
+
+### Table 5.1: Notifications of TB, HIV-positive TB, MDR/RR-TB and XDR-TB cases, globally and for WHO regions, `r report_year - 1`
+
+
+`r accordian_start()`
+
+
+```{r tab_5.1}
+
+# Create a table from data is already prepared in dataframe called t5.1_data
+# format the numrical data
+t5.1_data <- t5.1_data %>%
+  mutate_at(vars(-entity),
+            rounder)
+
+# Add % symbol to pct fields
+t5.1_data <- t5.1_data %>%
+  mutate(newrel_pulm_conf_pct = paste0(newrel_pulm_conf_pct, "%"),
+         newrel_ep_pct = paste0(newrel_ep_pct, "%"))
+
+# Create a table object using kable
+table_header <- c('WHO region',
+                  'Total notified',
+                  'New and relapse^a^',
+                  'Pulmonary new and relapse number',
+                  'Pulmonary new and relapse bactariologically confirmed (%)',
+                  'Extrapulmonary new and relapse (%)',
+                  'HIV-positive new and relapse',
+                  'MDR/RR-TB',
+                  'XDR-TB^b^')
+
+
+knitr::kable(t5.1_data,
+             format = "html",
+             col.names = table_header,
+             align = 'lrrrccrrr',
+             # Add a table ID so that it can be styled using extra CSS in Sitefinity
+             table.attr = "id='notifs_table'")
+
+```
+
+<div class="footnote">^a^ *New and relapse* includes cases for which the treatment history is unknown. It excludes cases that have been re-registered as *treatment after failure*, as *treatment after lost to follow up* or as *other previously treated* (whose outcome after the most recent course of treatment is unknown or undocumented).
+
+^b^ XDR-TB is MDR-TB plus resistance to a fluoroquinolone and an injectable agent.</div>
+
+`r accordian_end()`
+

@@ -1,0 +1,367 @@
+---
+title: "Section 3.2 Diagnostic testing for TB, HIV and drug-resistant TB (figures)"
+author: "Hazim Timimi"
+date: "`r Sys.Date()`"
+output: 
+  html_fragment:
+    # Don’t include a table of contents
+    toc: no
+    # Set standard figure width to 12 inches
+    fig_width: 12
+    # Don’t write figure captions
+    fig_caption: FALSE
+
+---
+
+
+```{r setup, include=FALSE}
+# Set chunk options.
+# Results "asis" is useful to output markdown from a function
+# Suppress messages, warnings and also the ## at the beginning of printed text
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      results = "asis",
+                      message = FALSE,
+                      warning = FALSE)
+
+# Kill any attempt at using factors, unless we explicitly want them!
+options(stringsAsFactors=FALSE)
+
+# Load output packages ----
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(RColorBrewer)
+library(whomap)
+library(gtbreport)
+library(here)
+
+# load section data
+source(here('report/ch3-2-dataprep.r'))
+
+# Quick functions for callouts in the text to the figures/tables:
+
+# 1. lnk() Creates a link from text to a named anchor)
+lnk <- function(display_name){
+  return(paste0('<span class="red">[', 
+                display_name, 
+                '](#', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                ')</span>'))
+}
+
+# 2. anch() creates the named anchor to go above the figure or table
+anch <- function(display_name){
+  return(paste0('<a name="', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                '"></a>'))
+}
+
+
+# rmarkdown::render(here::here("report/ch3-2-figs.rmd"), output_file = "ch3-2-figs.html", output_dir = here::here("report/html/"))
+
+```
+
+
+```{css, echo=FALSE}
+
+/* Styles to make it easier to see in the html_fragment; this CSS can be included in the CSS widget of Sitefinity */
+  
+.section.level3 {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #BCBCBC;
+  margin-bottom: 2em;
+}
+
+
+.subhead, .footnote {
+  font-size: 80%;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.red, .red a {
+  color: #F21905; /* red text to show figure number */
+}
+
+```
+
+
+_Draft! Prepared `r Sys.Date()` using country-reported data CSV files dated `r csv_datestamp` and estimates files dated  `r csv_estimate_datestamp`._
+
+
+`r anch("Fig. 3.2.1")`
+
+### <span class="red">Fig. 3.2.1</span> Percentage of new and relapse pulmonary TB cases with bacteriological confirmation, globally and for WHO regions,^a^ 2000−`r report_year-1`
+
+
+```{r fig_3.2.1, fig.alt="Panel plot of TB cases with bacteriological confirmation by WHO region and globally since 2000"}
+
+f3.2.1_plot <- f3.2.1_data %>% 
+  
+  ggplot(aes(x=year, y=bacconf_pct)) +
+    geom_line(size = 1.5, colour = "seagreen4") +
+    scale_x_continuous(name="Year",
+                       breaks = c(2000, 2005, 2010, 2015, report_year-1)) +
+    scale_y_continuous(name = "Percentage bacteriologically confirmed") +
+    expand_limits(y=c(0,100)) +
+    facet_wrap( ~ entity, ncol = 4) +
+
+    theme_gtb() +
+  
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+
+
+print(f3.2.1_plot)
+
+```
+<div class="footnote">^a^ The calculation for new and relapse pulmonary cases in years prior to 2013 is based on smear results, except for the European Region where data on confirmation by culture was also available for the period 2002-2012.</div>
+
+
+`r anch("Fig. 3.2.2")`
+
+### <span class="red">Fig. 3.2.2</span> Percentage of new and relapse pulmonary TB cases with bacteriological confirmation, 2000−`r report_year-1`, 30 high TB burden countries
+
+
+```{r fig_3.2.2, fig.alt="Panel plot of TB cases with bacteriological confirmation for 30 countries since 2000", fig.height=12}
+
+f3.2.2_plot <- f3.2.2_data %>% 
+  
+  ggplot(aes(x=year, y=bacconf_pct)) +
+  geom_line(size = 1.5, colour = "seagreen4") +
+  scale_x_continuous(name="Year",
+                     breaks = c(2000, 2010, report_year-1)) +
+  scale_y_continuous(name = "Percentage bacteriologically confirmed") +
+  expand_limits(y=c(0,100)) +
+  facet_wrap( ~ country, 
+              scales="free_y",
+              ncol = 5,
+              # Use the labeller function to make sure long country names are wrapped in panel headers
+              labeller = label_wrap_gen(width = 20)) +
+
+  theme_gtb() +
+  
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+
+print(f3.2.2_plot)
+
+```
+
+`r anch("Fig. 3.2.3")`
+
+### <span class="red">Fig. 3.2.3</span> Percentage of new and relapse pulmonary TB cases with bacteriological confirmation, `r report_year-1`
+
+
+```{r fig_3.2.3, fig.alt="World map showing percent of TB cases with bacteriological confirmation"}
+
+f3.2.3_plot <- f3.2.3_data %>% 
+
+  whomap(colours = brewer.pal(4, "Greens"),
+         legend.title = "Percentage (%)",
+         na.col = "white")
+
+
+print(f3.2.3_plot)
+
+```
+
+`r anch("Fig. 3.2.4")`
+
+### <span class="red">Fig. 3.2.4</span> Distribution of the proportion of notified pulmonary cases that were bacteriologically confirmed in `r report_year-1`, by country income group  
+<span class="subhead">Boxes indicate the first, second (median) and third quartiles weighted by a country’s number of pulmonary cases; vertical lines extend to the minimum and maximum values. Countries with less than 100 cases are excluded</span> 
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig.height = 8, fig_3.2.4, fig.alt="Boxplot showing proportion of pulmonary TB cases that were bacteriologically confirmed by World Bank country income group. "} 
+
+ggplot(filter(conf, year == report_year-1 & !is.na(income))) +
+  geom_boxplot(
+    aes(
+      x = income,
+      ymin = conf.min * 100,
+      lower = conf.q1 * 100,
+      middle = conf.med * 100,
+      upper = conf.q3 * 100,
+      ymax = conf.max * 100,
+      group = g.income,
+      fill=income
+    ),
+    stat = 'identity',
+  ) +
+    scale_fill_brewer()+
+    xlab('Income group') + ylab('Percent confirmed') +
+    theme_gtb()
+
+```
+
+`r anch("Fig. 3.2.5")`
+
+### <span class="red">Fig. 3.2.5</span> Percentage of new and relapse TB cases initially tested with a WHO-recommended rapid diagnostic test, `r report_year-1`
+
+
+```{r fig_3.2.5, fig.alt="World map showing percent of TB cases tested with rapid diagnostics"}
+
+f3.2.5_plot <- f3.2.5_data %>% 
+  
+  whomap(colours = brewer.pal(5, "Purples"),
+         legend.title = "Percentage (%)",
+         na.col = "white")
+
+print(f3.2.5_plot)
+
+```
+
+`r anch("Fig. 3.2.6")`
+
+### <span class="red">Fig. 3.2.6</span> Percentage of new and relapse TB cases^a^ with documented HIV status, 2004−`r report_year-1`, globally and for WHO regions^b^
+
+
+```{r fig_3.2.6, fig.alt="Panel plot of TB cases with known HIV status by WHO region and globally since 2004"}
+
+f3.2.6_plot <- f3.2.6_data %>% 
+  
+  ggplot(aes(x=year, y=hivstatus_pct)) +
+  
+  geom_line(size = 1.5, colour = "#FA4871") +
+  
+  scale_x_continuous(name= "Year", breaks = c(2004, 2008, 2012, 2016, report_year-1)) +
+  scale_y_continuous(name = "Percentage with documented HIV status") +
+  expand_limits(y=c(0,100)) +
+  facet_wrap( ~ entity, ncol = 4) +
+  
+  theme_gtb() +
+  
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+
+  
+
+print(f3.2.6_plot)
+
+```
+<div class="footnote">^a^ The calculation is for all cases in years prior to 2015.  
+^b^ Countries were excluded if the number with documented HIV status was not reported to WHO.</div>
+
+
+`r anch("Fig. 3.2.7")`
+
+### <span class="red">Fig. 3.2.7</span> Percentage of new and relapse TB cases with documented HIV status, `r report_year-1`
+
+
+```{r fig_3.2.7, fig.alt="World map showing percent of TB cases with known HIV status"}
+
+f3.2.7_plot <- f3.2.7_data %>% 
+  
+  whomap(colours = brewer.pal(4, "RdPu"),
+         legend.title = "Percentage (%)",
+         na.col = "white")
+
+print(f3.2.7_plot)
+
+```
+
+`r anch("Fig. 3.2.8")`
+
+### <span class="red">Fig. 3.2.8</span> Percentage of bacteriologically confirmed TB cases tested for RR-TB^a^, globally and for WHO regions, 2009−`r report_year-1`
+
+
+```{r fig_3.2.8, fig.alt="Panel plot of TB cases tested for susceptibility to rifampicin by WHO region and globally since 2009"}
+
+f3.2.8_plot <- f3.2.8_data %>% 
+  
+  ggplot(aes(x=year, y=dst_pcnt, ymin=0)) +
+  geom_line(size = 1.5, colour = "#e52000") +
+
+  facet_wrap( ~ entity, ncol = 4, scales="fixed") +
+  scale_x_continuous(breaks = c(2009, 2015, report_year-1)) +
+  scale_y_continuous(name = "Percentage of tested") +
+  expand_limits(y=c(0,100)) +
+  xlab("Year") +
+
+  theme_gtb() +
+  
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+
+print(f3.2.8_plot)
+
+```
+<div class="footnote">^a^ Includes both new and previously treated cases; data for 2017 onwards are for pulmonary cases only.</div>
+
+
+
+`r anch("Fig. 3.2.9")`
+
+### <span class="red">Fig. 3.2.9</span> Percentage of bacteriologically confirmed TB cases tested for RR-TB,^a^ `r report_year-1`
+
+
+```{r fig_3.2.9, fig.alt="World map showing percent of TB cases tested for susceptibility to rifampicin"}
+
+f3.2.9_plot <- f3.2.9_data %>% 
+  
+  whomap(colours = brewer.pal(4, "Reds"),
+         legend.title = "Percentage (%)",
+         na.col = "White")
+
+print(f3.2.9_plot)
+
+```
+<div class="footnote">^a^ Includes both new and previously treated cases; data are for pulmonary cases only.</div>
+
+
+`r anch("Fig. 3.2.10")`
+
+### <span class="red">Fig. 3.2.10</span> Percentage of MDR/RR-TB cases tested for susceptibility to fluoroquinolones, `r report_year-1`
+
+
+```{r fig_3.2.10, fig.alt="World map showing percent of MDR/RR-TB cases tested for susceptibility to fluoroquinolones"}
+
+f3.2.10_plot <- f3.2.10_data %>% 
+  
+  whomap(colours = brewer.pal(4, "Blues"),
+         legend.title = "Percentage (%)",
+         na.col = "White")
+
+print(f3.2.10_plot)
+
+```
+
+
+`r anch("Fig. 3.2.11")`
+
+
+### <span class="red">Fig. 3.2.11</span> Percentage of MDR/RR-TB cases tested for susceptibility to fluoroquinolones^a^, globally and for WHO regions, 2015−`r report_year-1`
+
+
+```{r fig_3.2.11, fig.alt="Panel plot of RR-TB cases tested for susceptibility to fluoroquinolones by WHO region and globally since 2015"}
+
+f3.2.11_plot <- f3.2.11_data %>% 
+  
+  ggplot(aes(x=year, y=fqdst_pct, ymin=0)) +
+  geom_line(size = 1.5, colour = "#277abe") +
+  
+  scale_x_continuous(name="Year",
+                     breaks = seq(2015, report_year-1)) +
+  scale_y_continuous(name = "Percentage tested") +
+  expand_limits(y=c(0,100)) +
+  facet_wrap( ~ entity, ncol = 4) +
+
+  theme_gtb() +
+  
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+
+
+print(f3.2.11_plot)
+
+```
+<div class="footnote">^a^ Testing in years prior to 2019 also included susceptibility to second-line injectables.</div>
+

@@ -1,0 +1,41 @@
+country,iso2,iso3,year,patient.group,area.type,catast.pct,catast.pct.lo,catast.pct.hi
+Benin,BJ,BEN,2018,all,a,37,33,41
+Democratic Republic of the Congo,CD,COD,2019,all,a,57,49,64
+Democratic Republic of the Congo,CD,COD,2019,dr,a,80,59,92
+Democratic Republic of the Congo,CD,COD,2019,ds,a,51,44,59
+Fiji,FJ,FJI,2017,all,a,40,33,47
+Ghana,GH,GHA,2016,all,a,64,61,68
+Ghana,GH,GHA,2016,dr,a,73,61,82
+Ghana,GH,GHA,2016,ds,a,63,59,67
+Kenya,KE,KEN,2017,all,a,27,21,32
+Kenya,KE,KEN,2017,dr,a,86,79,94
+Kenya,KE,KEN,2017,ds,a,26,20,32
+Lao People's Democratic Republic,LA,LAO,2019,all,a,63,59,66
+Lao People's Democratic Republic,LA,LAO,2019,dr,a,87,74,100
+Lao People's Democratic Republic,LA,LAO,2019,ds,a,62,59,66
+Lao People's Democratic Republic,LA,LAO,2019,hiv,a,81,74,88
+Lesotho,LS,LSO,2019,all,a,19,15,25
+Republic of Moldova,MD,MDA,2017,dr,a,23,19,27
+Myanmar,MM,MMR,2015,all,a,60,56,63
+Mongolia,MN,MNG,2017,all,a,70,64,76
+Mongolia,MN,MNG,2017,dr,a,85,79,90
+Mongolia,MN,MNG,2017,ds,a,65,58,71
+Nigeria,NG,NGA,2017,all,a,71,68,73
+Nigeria,NG,NGA,2017,dr,a,90,83,96
+Nigeria,NG,NGA,2017,ds,a,69,66,72
+Philippines,PH,PHL,2017,all,a,35,33,37
+Philippines,PH,PHL,2017,dr,a,67,62,72
+Philippines,PH,PHL,2017,ds,r,37,34,40
+Philippines,PH,PHL,2017,ds,u,24,21,27
+Papua New Guinea,PG,PNG,2019,all,a,34,31,37
+Timor-Leste,TL,TLS,2017,all,a,83,80,86
+United Republic of Tanzania,TZ,TZA,2019,all,a,45,37,53
+Uganda,UG,UGA,2017,all,a,53,50,56
+Uganda,UG,UGA,2017,dr,a,100,92,100
+Uganda,UG,UGA,2017,ds,a,51,48,55
+Viet Nam,VN,VNM,2016,all,a,63,58,67
+Viet Nam,VN,VNM,2016,dr,a,98,73,99
+Viet Nam,VN,VNM,2016,ds,a,60,55,64
+Zimbabwe,ZW,ZWE,2018,all,a,80,74,85
+Zimbabwe,ZW,ZWE,2018,dr,a,90,73,96
+Zimbabwe,ZW,ZWE,2018,ds,a,79,73,84

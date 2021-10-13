@@ -1,0 +1,168 @@
+---
+title: "Section 3.2 Diagnostic testing for TB, HIV-associated TB and drug-resistant TB (text)"
+author: "Hazim Timimi"
+date: "`r Sys.Date()`"
+output: 
+  html_fragment:
+    # Don’t include a table of contents
+    toc: no
+    # Set standard figure width to 12 inches
+    fig_width: 12
+    # Don’t write figure captions
+    fig_caption: FALSE
+
+---
+
+
+```{r setup, include=FALSE}
+# Set chunk options.
+# Results "asis" is useful to output markdown from a function
+# Suppress messages, warnings and also the ## at the beginning of printed text
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      results = "asis",
+                      message = FALSE,
+                      warning = FALSE)
+
+# Kill any attempt at using factors, unless we explicitly want them!
+options(stringsAsFactors=FALSE)
+
+# Load output packages ----
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(RColorBrewer)
+library(whomap)
+library(gtbreport)
+library(here)
+
+# load section data
+source(here('report/ch3-2-dataprep.r'))
+
+# Function to override int_spacer() in the gtbreport package
+# replace space with a non-breaking space so that numbers aren't spread over
+# two lines 
+int_spacer <- function(x){
+  gsub(" ", "&nbsp;", gtbreport::int_spacer(x))
+}
+
+
+# Quick functions for callouts in the text to the figures/tables:
+
+# 1. lnk() Creates a link from text to a named anchor)
+lnk <- function(display_name){
+  return(paste0('<span class="red">[', 
+                display_name, 
+                '](#', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                ')</span>'))
+}
+
+# 2. anch() creates the named anchor to go above the figure or table
+anch <- function(display_name){
+  return(paste0('<a name="', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                '"></a>'))
+}
+
+# 3. ref_lnk() creates a link from text to the references in the WHO style (black, italic)
+ref_lnk <- function(display_name){
+  return(paste0('<span class="refs">[', 
+                display_name, 
+                '](#refs)</span>'))
+}
+
+# rmarkdown::render(here::here("report/ch3-2-txt.rmd"), output_file = "ch3-2-txt.html", output_dir = here::here("report/html/"))
+
+```
+
+```{css, echo=FALSE}
+
+/* Styles to make it easier to see in the html_fragment; this CSS can be included in the CSS widget of Sitefinity */
+  
+.section.level3 {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #BCBCBC;
+  margin-bottom: 2em;
+}
+
+
+.subhead, .footnote {
+  font-size: 80%;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.red, .red a {
+  color: #F21905; /* red text to show figure number */
+  font-weight: bold;
+}
+
+.refs, .refs a {
+  color: #3c4245;  /* match SF normal text colour */
+  font-style: italic;
+}
+
+/* justify paragraphs to both left and right margins in the text under heading 2 */
+.level2 p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+```
+
+
+# 3.2 Diagnostic testing for TB, HIV-associated TB and drug-resistant TB   
+
+_Draft! Prepared `r Sys.Date()` using country-reported data CSV files dated `r csv_datestamp` and estimates files dated  `r csv_estimate_datestamp`._
+
+
+An essential step in the pathway of tuberculosis (TB) care is rapid and accurate testing to diagnose TB. In recent years, nucleic-acid amplification tests (NAATs), which are highly specific and sensitive, have helped to revolutionize the TB diagnostic landscape. Line-probe assays were the first molecular tests recommended by the World Health Organization (WHO). They significantly reduce the time needed to diagnose multidrug-resistant and rifampicin-resistant TB (MDR/RR-TB), compared with culture testing. The next major step forward was the WHO endorsement of  the Xpert MTB/RIF assay in 2010. Along with the next-generation Xpert Ultra assay, this has substantially improved the diagnosis of TB and RR-TB compared with sputum smear microscopy, including at peripheral levels of the health system. 
+
+The number of new NAATs recommended by WHO has steadily grown. In the latest guideline update (`r ref_lnk("1")`), three additional classes of tests were added as initial tests for the diagnosis of TB and simultaneous detection of resistance to both rifampicin and isoniazid. Follow-on tests for the rapid diagnosis of second-line resistance were also recommended. Among the latter, the low-complexity automated NAATs are recommended, since they enable rapid and decentralized testing for resistance to fluoroquinolones (a class of second-line anti-TB drug), isoniazid, ethionamide and amikacin. For the first time, a molecular test for pyrazinamide resistance has also been recommended. To date, more than ten NAATs have been recommended. 
+
+People diagnosed with TB using culture, rapid molecular tests recommended by WHO or sputum smear microscopy are defined as “bacteriologically confirmed” cases of TB (`r ref_lnk("2")`).
+
+The microbiological detection of TB is critical because it allows people to be correctly diagnosed and started on the most effective treatment regimen as early as possible. People diagnosed with TB in the absence of bacteriological confirmation are classified as “clinically diagnosed” cases of TB. Most clinical features of TB and abnormalities on chest radiography or histology results generally associated with TB have low specificity; thus, a proportion of clinically diagnosed cases may be incorrect diagnoses of TB. In many countries, there is a need to increase the percentage of cases confirmed bacteriologically by scaling up the use of WHO-recommended rapid diagnostics, which are much more sensitive than sputum smear microscopy, in line with WHO guidelines (`r ref_lnk("1")`). Given the links between HIV infection and TB disease, HIV testing of people diagnosed with TB has been part of WHO guidance on collaborative TB/HIV activities since 2004 (`r ref_lnk("3")`).
+
+Bacteriological confirmation of TB is necessary to test for resistance to first-line and second-line anti-TB drugs; such testing can be done using rapid molecular tests, phenotypic susceptibility testing or reference-level genetic sequencing (`r ref_lnk("2")`). Five categories are used to classify cases of drug-resistant TB: isoniazid-resistant TB, RR-TB, MDR-TB, pre-extensively drug-resistant TB (pre-XDR-TB) and XDR-TB. MDR-TB is TB that is resistant to both rifampicin and isoniazid, the two most powerful first-line anti-TB drugs. Pre-XDR-TB is TB that is resistant to rifampicin and to any fluoroquinolone. XDR-TB is TB that is resistant to rifampicin as well as any fluoroquinolone and to at least one of the drugs bedaquiline and linezolid.
+
+All forms of drug-resistant TB (DR-TB) require treatment with a second-line regimen (`r ref_lnk("4")`). The WHO End TB Strategy calls for universal access to drug susceptibility testing (DST).  
+
+Of the global total of `r ftb(f3.2.1_txt$c_newinc/1e6)` million people newly diagnosed with TB and officially notified as a TB case in `r report_year-1`, `r ftb(f3.2.1_txt$pulm/1e6)` million (`r ftb(f3.2.1_txt$pulm_pct)`%) had pulmonary TB. Among these `r ftb(f3.2.1_txt$pulm/1e6)` million, `r ftb(f3.2.1_txt$bc_pct_2020)`% were bacteriologically confirmed (<span class="red">Table 3.1.1</span>); this was a slight increase from `r ftb(f3.2.1_txt$bc_pct_2019)`% in `r report_year-2`, but the percentage has remained virtually unchanged since 2005 (`r lnk("Fig. 3.2.1")`). There is some variation among the six WHO regions, with the highest percentage of people diagnosed with pulmonary TB who were bacteriologically confirmed in `r report_year-1` achieved in the Region of the Americas (`r ftb(f3.2.1_txt$bc_pct_AMR)`%) and the lowest in the Western Pacific Region (`r ftb(f3.2.1_txt$bc_pct_WPR)`%). There is considerable variation among countries (`r lnk("Fig. 3.2.2")`, `r lnk("Fig. 3.2.3")`, `r lnk("Fig. 3.2.4")`). In general, levels of confirmation are lower in low-income countries and highest in high-income countries (median, `r ftb(f3.2.4_txt$median_HIC)`%), where there is wide access to the most sensitive diagnostic tests. Reliance on direct smear microscopy alone is inherently associated with a relatively high proportion of unconfirmed pulmonary TB cases.
+
+In the 30 high TB burden countries, differences in diagnostic and reporting practices are the likely cause of variation in the proportion of pulmonary cases that are bacteriologically confirmed. In `r report_year-1`, the percentage ranged from `r ftb(f3.2.2_txt_MOZ$bacconf_pct)`% in Mozambique to at least 75% in `r sub("Democratic", "the Democratic", knitr::combine_words(f3.2.2_txt_list$country, oxford_comma=FALSE))` (`r lnk("Fig. 3.2.2")`). The low value following a large fall over a period of several years in Mozambique is of particular concern, as are the downward trends observed since about 2016–2017 in India, Indonesia, Uganda and the United Republic of Tanzania. When the proportion of people diagnosed with pulmonary TB based on bacteriological confirmation falls below 50%, a review of the diagnostic tests in use and the validity of clinical diagnoses is warranted (e.g. via a clinical audit).
+
+Globally in `r report_year-1`, a WHO-recommended rapid molecular test was used as the initial diagnostic test for `r ftb(f3.2.5_txt$newinc_rdx_2020/1e6)` million (`r ftb(f3.2.5_txt$wrd_pct_2020)`%) of the `r ftb(f3.2.1_txt$c_newinc/1e6)` million people newly diagnosed with TB in `r report_year-1`, up from `r ftb(f3.2.5_txt$wrd_pct_2019)`% in `r report_year-2`.  There was substantial variation among countries (`r lnk("Fig. 3.2.5")`). Among the 49 countries in one of the three global lists of high burden countries (for TB, HIV-associated TB and MDR/RR-TB) being used by WHO in the period 2021–2025 (<span class="red">Annex 3</span>), `r f3.2.5_txt$hbcs_2020` reported that a WHO-recommended rapid diagnostic test had been used as the initial test for more than half of their notified TB cases, up from `r f3.2.5_txt$hbcs_2019` in `r report_year-2`. 
+
+Of the `r ftb(f3.2.1_txt$c_newinc/1e6)` million people newly diagnosed with TB globally in `r report_year-1`, `r ftb(f3.2.6_txt$Global_2020)`% had a documented HIV test result, up from `r ftb(f3.2.6_txt$Global_2019)`% in `r report_year-2` (`r lnk("Fig. 3.2.6")`). At regional level, the highest percentages were achieved in the WHO African and European regions (`r lnk("Fig. 3.2.6")`), at `r ftb(f3.2.6_txt$AFR_2020)`% and `r ftb(f3.2.6_txt$EUR_2020)`%, respectively. There was considerable variation at national level (`r lnk("Fig. 3.2.7")`). In `r f3.2.7_txt$over_90` countries and territories, at least 90% of people diagnosed with TB knew their HIV status. In most countries, the percentage was above 50%, but in a small number of countries it is still the case that fewer than half of the people diagnosed with TB know their HIV status. Worldwide, a total of `r int_spacer(f3.2.6_txt$hivtest_pos_pct_numerator)` cases of TB among people living with HIV were notified in `r report_year-1` (`r lnk("Table 3.1.1")`), equivalent to `r ftb(f3.2.6_txt$hivtest_pos_pct)`% of the `r ftb(f3.2.6_txt$hivtest_pos_pct_denominator/1e6)` million people diagnosed with TB who had an HIV test result. Overall, the percentage of people diagnosed with TB who had an HIV-positive test result has fallen globally over the past 10 years. 
+
+Globally in `r report_year-1`, `r ftb(f3.2.8_txt$dst_pct_Global_2020)`% of people diagnosed with bacteriologically confirmed pulmonary TB were tested for rifampicin resistance, up from `r ftb(f3.2.8_txt$dst_pct_Global_2019)`% in `r report_year-2` and `r ftb(f3.2.8_txt$dst_pct_Global_2018)`% in `r report_year-3`, with considerable variation among countries (`r lnk("Fig. 3.2.8")`). Among these,  `r int_spacer(f3.2.8_txt$conf_rr_nfqr_2020)` cases of MDR/RR-TB and `r int_spacer(f3.2.8_txt$conf_rr_fqr_2020)`   cases of pre-XDR-TB or XDR-TB were detected (`r lnk("Table 3.1.1")`), for a combined total of `r int_spacer(f3.2.8_txt$dr_tb_2020)`. This was a large fall (`r ftb(f3.2.8_txt$dr_tb_change_pct)`%) from the total of `r int_spacer(f3.2.8_txt$dr_tb_2019)` in `r report_year-2` and is consistent with the similarly large reduction (`r ftb(f3.2.8_txt$c_newinc_change_pct)`%) in the total number of people who were newly diagnosed with TB between `r report_year-2` and `r report_year-1` (<span class="red">Section 3.1</span>). 
+
+Improvements in the coverage of testing for rifampicin resistance were made in all six WHO regions between `r report_year-2` and `r report_year-1`, with the highest level in `r report_year-1` (`r ftb(f3.2.8_txt$dst_pct_EUR_2020)`%) being achieved in the European Region (`r lnk("Fig. 3.2.8")`). The WHO regions where there is the greatest need for increases in coverage of testing for rifampicin resistance are the African Region and the Region of the Americas (both were around 50% in `r report_year-1`). 
+
+Of the 30 high MDR/RR-TB burden countries, `r nrow(f3.2.9_txt)` reached coverage of testing for rifampicin resistance of more than 80% in `r report_year-1`:  `r gsub("(Philip)|(Republic)|(Russian)", "the \\1\\2\\3", knitr::combine_words(f3.2.9_txt$country, oxford_comma=FALSE))`). 
+
+The global, regional and national coverage of testing for resistance to fluoroquinolones was much lower (`r lnk("Fig. 3.2.10")`, `r lnk("Fig. 3.2.11")`) at just over 50% worldwide, and was lower still (not much above 25%) in the WHO regions of the Americas, South-East Asia and the Western Pacific. The highest levels of regional and national coverage were achieved in the WHO European Region. 
+
+Further country-specific details about diagnostic testing for TB, HIV-associated TB and anti-TB drug resistance are available in the [Global tuberculosis report app](https://www.who.int/teams/global-tuberculosis-programme/data/) and [country profiles](https://worldhealthorg.shinyapps.io/tb_profiles/).
+
+
+`r anch("refs")`
+
+**References**
+
+<div class="footnote">
+
+1. WHO consolidated guidelines on tuberculosis. Module 3: Diagnosis – rapid diagnostics for tuberculosis detection 2021 update. Geneva: World Health Organization; 2021 (https://www.who.int/publications/i/item/9789240029415).
+2. Definitions and reporting framework for tuberculosis – 2013 revision (updated December 2014) (WHO/HTM/TB/2013.2). Geneva: World Health Organization; 2013 (https://apps.who.int/iris/bitstream/handle/10665/79199/9789241505345_eng.pdf).
+3. WHO policy on collaborative TB/HIV activities – guidelines for national programmes and other stakeholders. Geneva: World Health Organization; 2012 (http://apps.who.int/iris/bitstream/handle/10665/44789/9789241503006_eng.pdf).
+4. WHO consolidated guidelines on tuberculosis. Module 4: Treatment – drug-resistant tuberculosis treatment. Geneva: World Health Organization; 2021 (https://www.who.int/publications/i/item/9789240007048). 
+
+
+</div>
+
+
+

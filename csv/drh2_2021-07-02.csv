@@ -1,0 +1,1076 @@
+country,year,iso2,iso3,iso.numeric,g.whoregion,source.new,source.drs.year.new,source.drs.coverage.new,e.rr.pct.new,e.rr.pct.new.lo,e.rr.pct.new.hi,e.rr.pct.new.se,e.mdr.pct.rr.new,source.ret,source.drs.year.ret,source.drs.coverage.ret,e.rr.pct.ret,e.rr.pct.ret.lo,e.rr.pct.ret.hi,e.rr.pct.ret.se,e.mdr.pct.rr.ret,e.inc.rr.num,e.inc.rr.num.lo,e.inc.rr.num.hi,e.inc.rr.100k,e.inc.rr.100k.lo,e.inc.rr.100k.hi,e.mdr.pct.rr,e.inc.mdr.num,e.inc.mdr.num.lo,e.inc.mdr.num.hi,e.rr.in.notified.pulm,e.rr.in.notified.pulm.lo,e.rr.in.notified.pulm.hi,e.rr.in.notified.labconf.pulm,e.rr.in.notified.labconf.pulm.lo,e.rr.in.notified.labconf.pulm.hi
+Aruba,2015,AW,ABW,533,AMR,Model,2015,,2.3,1.4,3.2,0.4,79,Model,2015,,15,13,18,1.2,84,0,0,0,0.29,0.18,0.39,,,,,,,,,,
+Aruba,2016,AW,ABW,533,AMR,Model,2016,,2.4,1.6,3.2,0.4,82,Model,2016,,11,9.1,14,1.2,95,0,0,1,0.37,0.24,0.5,,,,,0,0,0,0,0,0
+Aruba,2017,AW,ABW,533,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,0,0,1,0.29,0.12,0.53,84,0,0,0,0,0,0,0,0,0
+Aruba,2018,AW,ABW,533,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Model,2018,,14,9.3,19,2.4,87,0,0,0,0.17,0.07,0.32,76,0,0,0,0,0,0,0,0,0
+Aruba,2019,AW,ABW,533,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Model,2019,,12,7.4,17,2.5,88,0,0,0,0.07,0.03,0.12,85,0,0,0,0,0,0,0,0,0
+Afghanistan,2015,AF,AFG,4,EMR,Model,2015,,3.9,2.9,5,0.5,85,Model,2015,,16,12,19,1.8,79,3000,1800,4100,8.7,5.2,12,,,,,1400,1100,1600,640,480,830
+Afghanistan,2016,AF,AFG,4,EMR,Model,2016,,4.1,1.4,6.9,1.4,85,Model,2016,,16,13,18,1.2,95,3300,1200,5400,9.3,3.5,15,,,,,1600,790,2400,780,270,1300
+Afghanistan,2017,AF,AFG,4,EMR,Model,2017,,3.7,2,5.9,1,79,Model,2017,,21,15,27,3.2,84,3200,1500,5500,8.8,4.2,15,79,2500,1200,4300,1700,1000,2300,1200,770,1600
+Afghanistan,2018,AF,AFG,4,EMR,Model,2018,,3,1.4,5.3,1,83,Surveillance,2018,National,12,11,14,0.81,100,2500,1000,4700,6.8,2.8,13,87,2200,890,4000,1200,590,1900,830,420,1200
+Afghanistan,2019,AF,AFG,4,EMR,Model,2019,,2.6,1.1,4.7,0.92,84,Surveillance,2019,National,24,21,27,1.4,100,2400,970,4500,6.4,2.6,12,86,2100,840,3900,1300,610,2000,860,420,1300
+Angola,2015,AO,AGO,24,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,4100,360,7800,15,1.3,28,,,,,2700,430,5000,660,24,1600
+Angola,2016,AO,AGO,24,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,4300,1400,7300,15,4.8,25,,,,,2600,790,4400,1900,520,3300
+Angola,2017,AO,AGO,24,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,3900,1600,7200,13,5.5,24,68,2700,1100,4900,2000,1200,2900,1100,670,1500
+Angola,2018,AO,AGO,24,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Model,2018,,15,11,19,2,100,3900,1700,7100,13,5.4,23,84,3300,1400,6000,2400,1500,3400,1700,1200,2300
+Angola,2019,AO,AGO,24,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Model,2019,,14,10,19,2.1,100,4100,1800,7200,13,5.8,23,95,3900,1800,6800,2600,1600,3600,1800,1200,2300
+Anguilla,2015,AI,AIA,660,AMR,Model,2015,,3,1.5,4.6,0.8,88,Model,2015,,12,6.9,17,2.5,89,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Anguilla,2016,AI,AIA,660,AMR,Model,2016,,2.9,1.4,4.5,0.8,90,Model,2016,,13,6.7,20,3.4,90,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Anguilla,2017,AI,AIA,660,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,0,0,1,2.3,0.47,5.5,87,0,0,1,,,,,,
+Anguilla,2018,AI,AIA,660,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Model,2018,,14,9.3,19,2.4,87,0,0,1,2.4,0.46,5.8,86,0,0,1,0,0,0,0,0,0
+Anguilla,2019,AI,AIA,660,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Model,2019,,12,7.4,17,2.5,88,0,0,1,2.6,1.3,4.2,88,0,0,1,,,,,,
+Albania,2015,AL,ALB,8,EUR,Surveillance,2012,National,2.3,0.64,5.8,1.1,25,Surveillance,2012,National,6.7,0.17,32,6.4,0,15,3,27,0.52,0.1,0.93,,,,,8,1,15,4,1,11
+Albania,2016,AL,ALB,8,EUR,Surveillance,2012,National,2.3,0.64,5.8,1.1,25,Surveillance,2012,National,6.7,0.17,32,6.4,0,12,2,23,0.42,0.05,0.8,,,,,7,1,14,5,0,9
+Albania,2017,AL,ALB,8,EUR,Surveillance,2012,National,2.3,0.64,5.8,1.1,100,Surveillance,2012,National,6.7,0.17,32,6.4,94,15,5,32,0.54,0.16,1.1,99,15,5,32,9,1,17,6,1,10
+Albania,2018,AL,ALB,8,EUR,Surveillance,2012,National,2.3,0.64,5.8,1.1,87,Surveillance,2012,National,6.7,0.17,32,6.4,89,14,4,28,0.47,0.14,0.98,87,12,4,25,8,1,16,5,1,10
+Albania,2019,AL,ALB,8,EUR,Surveillance,2012,National,2.3,0.64,5.8,1.1,97,Surveillance,2012,National,6.7,0.17,32,6.4,95,13,4,27,0.44,0.14,0.93,96,12,4,26,8,1,16,6,1,11
+Andorra,2015,AD,AND,20,EUR,Surveillance,2015,National,0,0,84,0,,Surveillance,2015,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Andorra,2016,AD,AND,20,EUR,Surveillance,2016,National,0,0,84,0,,Surveillance,2016,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,3,0,0,2
+Andorra,2017,AD,AND,20,EUR,Surveillance,2017,National,0,0,98,25,100,Surveillance,2017,National,12,7.9,17,2.3,94,0,0,0,0.01,0,0.01,94,0,0,0,0,0,1,0,0,1
+Andorra,2018,AD,AND,20,EUR,Surveillance,2017,National,0,0,98,25,87,Surveillance,2017,National,11,7.4,16,2.3,89,0,0,0,0.01,0.01,0.02,89,0,0,0,0,0,2,0,0,2
+Andorra,2019,AD,AND,20,EUR,Surveillance,2017,National,0,0,98,25,97,Surveillance,2017,National,11,7.1,16,2.3,95,0,0,0,0.03,0.02,0.05,95,0,0,0,0,0,4,0,0,4
+United Arab Emirates,2015,AE,ARE,784,EMR,Model,2015,,2.3,1.4,3.2,0.4,79,Surveillance,2013,National,0,0,52,0,,4,2,5,0.04,0.02,0.06,,,,,1,1,1,1,1,1
+United Arab Emirates,2016,AE,ARE,784,EMR,Model,2016,,2.4,1.6,3.2,0.4,82,Surveillance,2013,National,0,0,52,0,,2,1,3,0.02,0.01,0.03,,,,,1,1,1,1,1,1
+United Arab Emirates,2017,AE,ARE,784,EMR,Model,2017,,3.7,2,5.9,1,79,Surveillance,2017,National,25,0.63,81,22,0,4,2,7,0.04,0.02,0.07,64,2,1,4,3,1,5,3,1,5
+United Arab Emirates,2018,AE,ARE,784,EMR,Model,2018,,3,1.4,5.3,1,83,Surveillance,2018,National,100,2,100,25,100,6,2,13,0.06,0.02,0.13,91,6,2,12,3,1,4,2,1,3
+United Arab Emirates,2019,AE,ARE,784,EMR,Model,2019,,2.6,1.1,4.7,0.92,84,Surveillance,2018,National,100,2,100,25,100,5,1,13,0.05,0.01,0.13,91,5,1,12,3,2,4,3,2,4
+Argentina,2015,AR,ARG,32,AMR,Survey,2005,National,2.3,1.1,3.6,0.63,94,Survey,2005,National,18,11,25,3.6,84,530,370,690,1.2,0.86,1.6,,,,,450,310,590,130,60,190
+Argentina,2016,AR,ARG,32,AMR,Survey,2005,National,2.3,1.1,3.6,0.63,94,Survey,2005,National,18,9.5,27,4.5,84,440,290,580,1,0.67,1.3,,,,,500,320,680,260,170,360
+Argentina,2017,AR,ARG,32,AMR,Survey,2005,National,2.3,1.3,3.8,0.64,94,Survey,2005,National,18,12,26,3.7,84,540,350,780,1.2,0.79,1.8,90,480,310,700,520,360,690,300,200,400
+Argentina,2018,AR,ARG,32,AMR,Survey,2005,National,2.3,1.3,3.8,0.64,94,Survey,2005,National,18,12,26,3.7,84,560,360,800,1.3,0.81,1.8,89,500,320,710,510,350,670,370,250,490
+Argentina,2019,AR,ARG,32,AMR,Survey,2005,National,2.3,1.3,3.8,0.64,94,Survey,2005,National,18,12,26,3.7,84,590,350,890,1.3,0.77,2,90,530,310,800,350,220,480,260,160,350
+Armenia,2015,AM,ARM,51,EUR,Survey,2007,National,11,8,14,1.4,87,Survey,2007,National,47,41,53,2.9,92,270,200,340,9.2,6.8,12,,,,,160,140,190,43,32,54
+Armenia,2016,AM,ARM,51,EUR,Survey,2007,National,11,8,14,1.4,87,Survey,2007,National,47,40,55,3.8,92,280,210,350,9.5,7.2,12,,,,,180,160,210,93,79,110
+Armenia,2017,AM,ARM,51,EUR,Surveillance,2017,National,16,12,20,2,78,Surveillance,2017,National,44,35,54,4.8,85,240,160,340,8.2,5.5,11,79,190,130,270,180,150,210,110,91,130
+Armenia,2018,AM,ARM,51,EUR,Surveillance,2018,National,20,16,26,2.5,84,Surveillance,2017,National,44,35,54,4.8,85,240,160,330,8.2,5.5,11,85,200,140,280,170,140,190,98,82,110
+Armenia,2019,AM,ARM,51,EUR,Surveillance,2019,National,16,12,22,2.4,88,Surveillance,2019,National,41,29,54,6.1,86,170,110,240,5.8,3.8,8.2,87,150,99,210,110,89,140,66,52,80
+American Samoa,2015,AS,ASM,16,WPR,Model,2015,,5.2,3.1,7.3,1.1,83,Model,2015,,28,25,30,1.3,70,0,0,0,0.43,0.25,0.63,,,,,0,0,0,0,0,0
+American Samoa,2016,AS,ASM,16,WPR,Model,2016,,5.5,3,8,1.3,76,Model,2016,,26,23,30,1.2,75,0,0,0,0.46,0.24,0.69,,,,,,,,,,
+American Samoa,2017,AS,ASM,16,WPR,Model,2017,,2.3,0.86,4.4,0.91,78,Model,2017,,12,7.2,19,2.9,88,0,0,0,0.31,0.13,0.56,79,0,0,0,0,0,0,0,0,0
+American Samoa,2018,AS,ASM,16,WPR,Model,2018,,2.3,0.92,4.3,0.87,78,Surveillance,2018,National,100,2,100,25,0,0,0,0,0,0,0,,,,,1,0,1,1,0,1
+American Samoa,2019,AS,ASM,16,WPR,Surveillance,2019,National,0,0,98,25,76,Surveillance,2018,National,100,2,100,25,0,1,0,1,1,0.59,1.6,0,0,0,0,1,0,2,1,0,2
+Antigua and Barbuda,2015,AG,ATG,28,AMR,Model,2015,,2.3,1.4,3.2,0.4,79,Model,2015,,15,13,18,1.2,84,0,0,0,0.17,0.11,0.24,,,,,,,,,,
+Antigua and Barbuda,2016,AG,ATG,28,AMR,Model,2016,,2.4,1.6,3.2,0.4,82,Model,2016,,11,9.1,14,1.2,95,0,0,0,0.09,0.06,0.12,,,,,0,0,0,0,0,0
+Antigua and Barbuda,2017,AG,ATG,28,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,0,0,0,0.03,0.01,0.07,84,0,0,0,0,0,0,0,0,0
+Antigua and Barbuda,2018,AG,ATG,28,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Model,2018,,14,9.3,19,2.4,87,0,0,0,0.19,0.03,0.5,76,0,0,0,0,0,0,0,0,0
+Antigua and Barbuda,2019,AG,ATG,28,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Model,2019,,12,7.4,17,2.5,88,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Australia,2015,AU,AUS,36,WPR,Surveillance,2015,National,3.6,2.2,5.4,0.77,71,Surveillance,2015,National,24,9.4,45,8.5,100,62,39,85,0.26,0.16,0.36,,,,,35,23,48,24,15,36
+Australia,2016,AU,AUS,36,WPR,Surveillance,2015,National,3.6,2.2,5.4,0.77,71,Surveillance,2015,National,24,9.4,45,8.5,100,63,40,86,0.26,0.16,0.36,,,,,40,26,55,36,23,50
+Australia,2017,AU,AUS,36,WPR,Surveillance,2017,National,1.9,1,3.2,0.52,95,Surveillance,2017,National,23,9,44,8.3,100,38,20,62,0.16,0.08,0.25,95,36,19,59,25,14,36,22,13,31
+Australia,2018,AU,AUS,36,WPR,Surveillance,2018,National,3.4,2.2,5,0.68,88,Surveillance,2018,National,9.8,2.7,23,4.6,100,61,38,89,0.24,0.15,0.36,89,54,34,79,34,22,47,30,19,41
+Australia,2019,AU,AUS,36,WPR,Surveillance,2019,National,2.4,1.4,3.8,0.58,89,Surveillance,2019,National,9.4,2,25,5.2,100,49,29,75,0.2,0.12,0.3,90,45,26,68,25,14,36,22,13,32
+Austria,2015,AT,AUT,40,EUR,Surveillance,2015,National,2.3,0.84,4.9,0.91,98,Surveillance,2015,National,17,2.1,48,11,100,20,8,32,0.23,0.09,0.37,,,,,14,5,24,8,3,18
+Austria,2016,AT,AUT,40,EUR,Surveillance,2015,National,2.3,0.84,4.9,0.92,83,Surveillance,2016,National,18,3.8,43,9.2,100,22,9,36,0.26,0.11,0.41,,,,,16,6,26,12,4,20
+Austria,2017,AT,AUT,40,EUR,Surveillance,2015,National,2.3,0.84,4.9,0.92,100,Surveillance,2016,National,18,3.8,43,9.2,94,19,8,35,0.22,0.09,0.4,99,19,8,35,13,5,21,11,4,18
+Austria,2018,AT,AUT,40,EUR,Surveillance,2015,National,2.3,0.84,4.9,0.92,87,Surveillance,2016,National,18,3.8,43,9.2,89,19,8,34,0.21,0.09,0.38,87,16,7,30,12,4,20,11,4,18
+Austria,2019,AT,AUT,40,EUR,Surveillance,2015,National,2.3,0.84,4.9,0.92,97,Surveillance,2016,National,18,3.8,43,9.2,95,16,7,30,0.18,0.08,0.34,96,16,7,29,13,5,21,10,4,17
+Azerbaijan,2015,AZ,AZE,31,EUR,Survey,2013,National,13,10,16,1.5,98,Survey,2013,National,29,23,35,3.2,95,2500,2000,3000,26,21,31,,,,,1400,1100,1600,220,170,270
+Azerbaijan,2016,AZ,AZE,31,EUR,Survey,2013,National,13,10,16,1.5,98,Surveillance,2016,National,39,37,42,1.2,70,2400,2000,2900,25,20,30,,,,,1500,1400,1600,1000,980,1100
+Azerbaijan,2017,AZ,AZE,31,EUR,Surveillance,2017,National,12,11,14,0.74,100,Surveillance,2017,National,28,27,30,0.87,100,1500,1100,1900,15,11,19,100,1500,1100,1900,1300,1200,1300,1100,1000,1100
+Azerbaijan,2018,AZ,AZE,31,EUR,Surveillance,2018,National,12,11,13,0.73,70,Surveillance,2018,National,26,24,27,0.83,74,1300,940,1600,13,9.5,16,73,930,690,1200,1100,1000,1200,960,910,1000
+Azerbaijan,2019,AZ,AZE,31,EUR,Surveillance,2019,National,11,10,13,0.73,54,Surveillance,2019,National,24,23,26,0.92,64,1200,870,1500,12,8.7,15,58,680,510,880,1000,940,1100,760,710,810
+Burundi,2015,BI,BDI,108,AFR,Model,2015,,3.2,1.4,5,0.9,67,Model,2015,,14,6.9,21,3.6,65,500,210,800,4.9,2.1,7.9,,,,,190,100,270,130,57,200
+Burundi,2016,BI,BDI,108,AFR,Model,2016,,2.8,2.1,3.4,0.3,69,Model,2016,,13,8.9,17,2.1,66,420,270,580,4,2.5,5.5,,,,,200,160,230,170,140,190
+Burundi,2017,BI,BDI,108,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Surveillance,2017,National,16,12,20,2.1,100,370,150,690,3.4,1.4,6.4,69,260,100,480,200,110,290,160,88,230
+Burundi,2018,BI,BDI,108,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Surveillance,2018,National,21,16,26,2.6,100,370,150,690,3.3,1.4,6.1,83,310,130,570,180,100,260,150,85,210
+Burundi,2019,BI,BDI,108,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Surveillance,2018,National,21,16,26,2.6,100,380,170,680,3.3,1.5,5.9,94,360,160,640,180,110,250,150,90,210
+Belgium,2015,BE,BEL,56,EUR,Surveillance,2015,National,1.6,0.66,3.3,0.61,94,Surveillance,2015,National,8.8,1.9,24,4.9,67,23,9,38,0.2,0.08,0.34,,,,,16,6,26,9,4,19
+Belgium,2016,BE,BEL,56,EUR,Surveillance,2015,National,1.6,0.66,3.3,0.61,86,Surveillance,2015,National,8.8,1.9,24,4.9,67,24,9,40,0.22,0.08,0.35,,,,,16,6,26,13,5,21
+Belgium,2017,BE,BEL,56,EUR,Surveillance,2015,National,1.6,0.66,3.3,0.61,100,Surveillance,2015,National,8.8,1.9,24,4.9,94,27,12,46,0.23,0.11,0.4,98,26,12,46,16,6,25,13,5,21
+Belgium,2018,BE,BEL,56,EUR,Surveillance,2015,National,1.6,0.66,3.3,0.61,87,Surveillance,2015,National,8.8,1.9,24,4.9,89,26,12,45,0.23,0.11,0.39,88,23,11,39,17,6,27,13,5,21
+Belgium,2019,BE,BEL,56,EUR,Surveillance,2019,National,2.1,0.95,3.9,0.68,100,Surveillance,2015,National,8.8,1.9,24,4.9,95,30,15,50,0.26,0.13,0.43,98,30,15,49,19,9,30,16,7,25
+Benin,2015,BJ,BEN,204,AFR,Survey,2010,National,1.2,0,2.6,0.73,42,Surveillance,2014,National,8.1,4.6,13,2,95,100,7,200,0.95,0.07,1.9,,,,,61,11,110,38,0,83
+Benin,2016,BJ,BEN,204,AFR,Survey,2010,National,1.2,0,2.6,0.73,42,Surveillance,2016,National,6.6,3.8,11,1.7,100,97,2,190,0.89,0.02,1.8,,,,,55,7,100,51,8,95
+Benin,2017,BJ,BEN,204,AFR,Survey,2010,National,1.2,0.21,3,0.74,42,Surveillance,2017,National,5.4,3,8.9,1.4,100,94,17,240,0.84,0.15,2.1,48,45,8,110,51,6,97,47,6,88
+Benin,2018,BJ,BEN,204,AFR,Survey,2010,National,1.2,0.21,3,0.74,42,Surveillance,2018,National,8.1,4.9,12,1.8,100,100,20,250,0.89,0.18,2.2,49,50,10,120,62,9,110,57,10,100
+Benin,2019,BJ,BEN,204,AFR,Survey,2010,National,1.2,0.21,3,0.74,42,Surveillance,2019,National,9.2,5.9,14,1.9,100,100,21,250,0.88,0.18,2.1,50,52,11,130,69,13,120,63,14,110
+Burkina Faso,2015,BF,BFA,854,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,400,18,770,2.2,0.1,4.3,,,,,240,35,440,100,4,250
+Burkina Faso,2016,BF,BFA,854,AFR,Survey,2017,National,2.1,1.2,3,0.45,69,Survey,2017,National,14,8.5,20,2.9,66,300,180,410,1.6,0.97,2.2,,,,,170,120,220,140,97,180
+Burkina Faso,2017,BF,BFA,854,AFR,Survey,2017,National,2.1,1.2,3,0.46,67,Survey,2017,National,14,8.5,20,3,79,290,160,470,1.5,0.82,2.5,69,200,110,330,170,120,220,140,96,180
+Burkina Faso,2018,BF,BFA,854,AFR,Survey,2017,National,2.1,1.2,3,0.46,81,Survey,2017,National,14,8.5,20,3,100,290,160,470,1.5,0.8,2.4,85,250,130,400,160,110,210,130,91,170
+Burkina Faso,2019,BF,BFA,854,AFR,Survey,2017,National,2.1,1.2,3,0.46,94,Survey,2017,National,14,8.5,20,3,100,290,160,470,1.4,0.76,2.3,95,280,150,450,140,96,180,110,80,150
+Bangladesh,2015,BD,BGD,50,SEA,Survey,2011,National,1.6,0.59,2.6,0.51,88,Survey,2011,National,29,24,34,2.7,99,9700,5400,14000,6.2,3.5,9,,,,,5100,3500,6800,1800,670,3000
+Bangladesh,2016,BD,BGD,50,SEA,Survey,2011,National,1.6,0.59,2.6,0.51,88,Survey,2011,National,29,22,36,3.7,99,8800,4800,13000,5.6,3,8.1,,,,,5300,3500,7200,3400,2100,4700
+Bangladesh,2017,BD,BGD,50,SEA,Survey,2011,National,1.6,0.74,2.8,0.53,88,Survey,2011,National,29,24,35,2.8,99,8400,3800,15000,5.3,2.4,9.3,90,7600,3400,13000,5800,3800,7800,3700,2300,5200
+Bangladesh,2018,BD,BGD,50,SEA,Survey,2019,National,1.5,0.9,2.3,0.36,100,Survey,2019,National,4.9,3,7.9,1.3,94,5900,3200,9600,3.7,2,5.9,99,5900,3100,9500,3600,2200,5100,2500,1500,3600
+Bangladesh,2019,BD,BGD,50,SEA,Survey,2019,National,0.7,0.4,1.2,0.2,100,Surveillance,2019,National,11,10,12,0.38,94,3300,1600,5500,2,0.98,3.4,99,3300,1600,5500,3000,2100,3900,1900,1300,2600
+Bulgaria,2015,BG,BGR,100,EUR,Surveillance,2012,National,3.3,2.1,5,0.69,70,Surveillance,2012,National,25,18,33,3.6,94,100,75,130,1.4,1,1.8,,,,,80,60,99,23,15,35
+Bulgaria,2016,BG,BGR,100,EUR,Surveillance,2016,National,1.2,0.49,2.5,0.46,71,Surveillance,2016,National,19,11,29,4.3,93,61,41,81,0.85,0.57,1.1,,,,,44,27,61,28,17,39
+Bulgaria,2017,BG,BGR,100,EUR,Surveillance,2016,National,1.2,0.49,2.5,0.46,90,Surveillance,2016,National,19,11,29,4.3,94,40,17,72,0.56,0.24,1,91,36,15,66,44,27,61,26,16,37
+Bulgaria,2018,BG,BGR,100,EUR,Surveillance,2016,National,1.2,0.49,2.5,0.46,85,Surveillance,2016,National,19,11,29,4.3,89,36,17,63,0.52,0.24,0.89,86,31,15,54,44,27,61,24,15,33
+Bulgaria,2019,BG,BGR,100,EUR,Surveillance,2018,National,2.5,1.3,4.4,0.72,85,Surveillance,2018,National,21,13,32,4.7,91,62,33,100,0.89,0.48,1.4,87,54,29,87,54,36,73,30,20,41
+Bahrain,2015,BH,BHR,48,EMR,Surveillance,2012,National,1.9,0.39,5.4,1.1,100,Surveillance,2012,National,100,2.5,100,0,100,5,0,10,0.34,0,0.71,,,,,,,,,,
+Bahrain,2016,BH,BHR,48,EMR,Surveillance,2016,National,2.3,0.28,8.1,1.6,100,Surveillance,2016,National,50,1.3,99,35,100,4,0,10,0.3,0,0.69,,,,,3,0,6,2,0,7
+Bahrain,2017,BH,BHR,48,EMR,Surveillance,2017,National,1.3,0.03,6.8,1.2,100,Surveillance,2016,National,21,15,27,3.2,84,3,0,10,0.22,0.02,0.64,96,3,0,9,1,0,6,1,0,5
+Bahrain,2018,BH,BHR,48,EMR,Surveillance,2018,National,5.1,1.4,12,2.5,75,Surveillance,2018,National,0,0,98,25,100,9,2,19,0.56,0.15,1.2,75,7,2,14,5,0,9,4,0,8
+Bahrain,2019,BH,BHR,48,EMR,Surveillance,2019,National,2.2,0.26,7.6,1.5,100,Surveillance,2018,National,0,0,98,25,100,4,0,12,0.26,0.03,0.76,100,4,0,12,2,0,8,2,0,8
+Bahamas,2015,BS,BHS,44,AMR,Surveillance,2012,National,11,2.4,29,6,33,Surveillance,2015,National,50,1.3,99,35,100,9,1,18,2.5,0.29,4.8,,,,,7,1,14,3,1,8
+Bahamas,2016,BS,BHS,44,AMR,Surveillance,2012,National,11,2.4,29,6,33,Surveillance,2015,National,50,1.3,99,35,100,13,1,25,3.4,0.26,6.6,,,,,11,1,21,6,0,11
+Bahamas,2017,BS,BHS,44,AMR,Surveillance,2017,National,0,0,21,5.3,83,Surveillance,2017,National,13,8.4,18,2.5,88,0,0,0,0.08,0.04,0.12,88,0,0,0,0,0,5,0,0,3
+Bahamas,2018,BS,BHS,44,AMR,Surveillance,2018,National,5.6,0.14,27,5.4,0,Surveillance,2017,National,14,9.3,19,2.4,87,3,0,11,0.88,0.04,2.9,7.9,0,0,1,3,0,7,1,0,5
+Bahamas,2019,BS,BHS,44,AMR,Surveillance,2019,National,5.3,0.13,26,5.1,0,Surveillance,2019,National,0,0,60,15,88,3,0,10,0.72,0.02,2.6,0,0,0,0,2,0,7,1,0,3
+Bosnia and Herzegovina,2015,BA,BIH,70,EUR,Surveillance,2015,National,0.51,0.11,1.5,0.3,67,Surveillance,2013,National,1.6,0.04,8.5,1.6,100,10,2,19,0.29,0.05,0.55,,,,,6,0,12,3,1,9
+Bosnia and Herzegovina,2016,BA,BIH,70,EUR,Surveillance,2016,National,0,0,0.67,0,,Surveillance,2016,National,0,0,6.8,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Bosnia and Herzegovina,2017,BA,BIH,70,EUR,Surveillance,2017,National,0,0,0.97,0.25,100,Surveillance,2017,National,0,0,8.2,2.1,94,0,0,0,0,0,0,,,,,0,0,4,0,0,3
+Bosnia and Herzegovina,2018,BA,BIH,70,EUR,Surveillance,2018,National,0.5,0.06,1.8,0.35,0,Surveillance,2017,National,0,0,8.2,2.1,89,4,0,11,0.11,0.01,0.32,0,0,0,0,3,0,7,2,0,5
+Bosnia and Herzegovina,2019,BA,BIH,70,EUR,Surveillance,2018,National,0.5,0.06,1.8,0.35,0,Surveillance,2017,National,0,0,8.2,2.1,95,4,0,12,0.12,0.01,0.35,0,0,0,0,2,0,6,2,0,4
+Belarus,2015,BY,BLR,112,EUR,Surveillance,2015,National,37,35,39,1.1,96,Surveillance,2015,National,69,66,72,1.5,97,3500,2800,4200,37,30,44,,,,,1800,1700,1800,760,720,810
+Belarus,2016,BY,BLR,112,EUR,Surveillance,2016,National,38,36,40,1.1,98,Surveillance,2016,National,72,68,75,1.6,100,3400,2600,4100,36,28,43,,,,,1600,1500,1600,1300,1200,1300
+Belarus,2017,BY,BLR,112,EUR,Surveillance,2017,National,38,36,41,1.2,97,Surveillance,2017,National,67,63,70,1.8,98,1600,1200,2100,17,13,22,97,1600,1200,2000,1300,1300,1400,1100,1100,1200
+Belarus,2018,BY,BLR,112,EUR,Surveillance,2018,National,37,34,39,1.2,100,Surveillance,2018,National,69,66,73,1.9,100,1400,1000,1700,14,11,18,100,1400,1000,1700,1100,1000,1100,980,940,1000
+Belarus,2019,BY,BLR,112,EUR,Surveillance,2019,National,38,35,40,1.3,90,Surveillance,2019,National,60,56,64,2.1,97,1200,920,1600,13,9.8,17,91,1100,840,1400,1100,1100,1200,870,830,920
+Belize,2015,BZ,BLZ,84,AMR,Model,2015,,3,1.5,4.6,0.8,88,Surveillance,2013,National,100,29,100,0,100,10,9,12,2.8,2.4,3.3,,,,,15,14,16,1,1,2
+Belize,2016,BZ,BLZ,84,AMR,Model,2016,,2.9,1.4,4.5,0.8,90,Surveillance,2013,National,100,29,100,0,100,11,8,13,2.9,2.3,3.4,,,,,11,9,13,2,1,3
+Belize,2017,BZ,BLZ,84,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Surveillance,2013,National,100,29,100,18,88,15,2,45,4.1,0.42,12,87,13,1,39,18,12,24,10,6,13
+Belize,2018,BZ,BLZ,84,AMR,Surveillance,2018,National,0,0,6.5,1.7,73,Surveillance,2013,National,100,29,100,18,87,11,1,36,2.8,0.14,9.3,87,9,0,31,13,8,18,7,4,10
+Belize,2019,BZ,BLZ,84,AMR,Surveillance,2019,National,0,0,6.6,1.7,85,Surveillance,2019,National,0,0,46,12,88,0,0,0,0,0,0,,,,,0,0,3,0,0,3
+Bermuda,2015,BM,BMU,60,AMR,Surveillance,2012,National,0,0,84,0,,Surveillance,2012,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Bermuda,2016,BM,BMU,60,AMR,Surveillance,2016,National,0,0,84,0,,Surveillance,2016,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Bermuda,2017,BM,BMU,60,AMR,Surveillance,2017,National,0,0,98,25,83,Surveillance,2017,National,13,8.4,18,2.5,88,0,0,0,0.28,0.16,0.44,88,0,0,0,0,0,1,0,0,1
+Bermuda,2018,BM,BMU,60,AMR,Surveillance,2018,National,0,0,85,22,73,Surveillance,2017,National,14,9.3,19,2.4,87,0,0,0,0.2,0.12,0.31,87,0,0,0,0,0,2,0,0,2
+Bermuda,2019,BM,BMU,60,AMR,Surveillance,2019,National,0,0,98,25,85,Surveillance,2017,National,12,7.4,17,2.5,88,0,0,0,0.09,0.05,0.14,88,0,0,0,0,0,1,0,0,1
+Bolivia (Plurinational State of),2015,BO,BOL,68,AMR,Model,2015,,3,1.5,4.6,0.8,88,Surveillance,2015,National,12,9.5,16,1.5,86,500,250,740,4.6,2.3,6.8,,,,,240,150,330,160,78,240
+Bolivia (Plurinational State of),2016,BO,BOL,68,AMR,Model,2016,,2.9,1.4,4.5,0.8,90,Surveillance,2016,National,9.6,7.2,12,1.3,84,470,230,700,4.2,2.1,6.4,,,,,220,130,310,200,120,280
+Bolivia (Plurinational State of),2017,BO,BOL,68,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Surveillance,2016,National,9.6,7.2,12,1.3,88,350,110,730,3.2,1,6.6,83,300,93,610,180,73,280,160,68,260
+Bolivia (Plurinational State of),2018,BO,BOL,68,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Surveillance,2018,National,14,10,18,1.9,52,350,110,740,3.1,0.95,6.5,70,240,75,510,190,82,290,160,59,250
+Bolivia (Plurinational State of),2019,BO,BOL,68,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Surveillance,2018,National,14,10,18,1.9,52,350,120,710,3.1,1,6.2,77,270,93,550,200,100,300,170,82,260
+Brazil,2015,BR,BRA,76,AMR,Survey,2008,Sub-national,1.5,1.1,1.9,0.21,93,Survey,2008,Sub-national,8,5.9,10,1.1,94,2300,1900,2800,1.1,0.93,1.4,,,,,1900,1600,2300,670,480,850
+Brazil,2016,BR,BRA,76,AMR,Survey,2008,Sub-national,1.5,1.1,1.9,0.21,93,Survey,2008,Sub-national,8,5.1,11,1.5,94,2400,1900,2800,1.1,0.9,1.4,,,,,2000,1500,2400,1400,1000,1700
+Brazil,2017,BR,BRA,76,AMR,Survey,2008,Sub-national,1.5,1.1,2,0.22,93,Survey,2008,Sub-national,8,6,10,1.1,94,2400,1800,3100,1.2,0.86,1.5,93,2200,1700,2900,2100,1700,2500,1400,1200,1700
+Brazil,2018,BR,BRA,76,AMR,Survey,2008,Sub-national,1.5,1.1,2,0.22,93,Survey,2008,Sub-national,8,6,10,1.1,94,2500,1900,3200,1.2,0.89,1.5,94,2300,1800,3000,2100,1700,2600,1500,1200,1900
+Brazil,2019,BR,BRA,76,AMR,Survey,2008,Sub-national,1.5,1.1,2,0.22,93,Survey,2008,Sub-national,8,6,10,1.1,94,2600,1900,3300,1.2,0.91,1.6,93,2400,1800,3100,2200,1800,2600,1600,1300,1900
+Barbados,2015,BB,BRB,52,AMR,Surveillance,2014,National,0,0,71,0,,Surveillance,2014,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Barbados,2016,BB,BRB,52,AMR,Surveillance,2014,National,0,0,71,0,,Surveillance,2014,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Barbados,2017,BB,BRB,52,AMR,Surveillance,2014,National,0,0,71,18,83,Surveillance,2014,National,13,8.4,18,2.5,88,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Barbados,2018,BB,BRB,52,AMR,Surveillance,2014,National,0,0,71,18,73,Surveillance,2014,National,14,9.3,19,2.4,87,0,0,0,0.03,0.02,0.04,87,0,0,0,0,0,1,0,0,1
+Barbados,2019,BB,BRB,52,AMR,Surveillance,2014,National,0,0,71,18,85,Surveillance,2014,National,12,7.4,17,2.5,88,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Brunei Darussalam,2015,BN,BRN,96,WPR,Surveillance,2015,National,0,0,2.3,0,,Surveillance,2015,National,0,0,37,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,4
+Brunei Darussalam,2016,BN,BRN,96,WPR,Surveillance,2016,National,0,0,2.3,0,,Surveillance,2016,National,0,0,52,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Brunei Darussalam,2017,BN,BRN,96,WPR,Surveillance,2017,National,0,0,2.1,0.55,78,Surveillance,2017,National,0,0,34,8.6,88,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Brunei Darussalam,2018,BN,BRN,96,WPR,Surveillance,2018,National,0,0,1.9,0.47,78,Surveillance,2018,National,0,0,60,15,59,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Brunei Darussalam,2019,BN,BRN,96,WPR,Surveillance,2019,National,0.52,0.01,2.8,0.51,0,Surveillance,2019,National,0,0,23,5.9,69,1,1,2,0.31,0.18,0.48,0,0,0,0,1,0,4,1,0,4
+Bhutan,2015,BT,BTN,64,SEA,Model,2015,,2.6,2.3,3,0.2,90,Surveillance,2015,National,38,19,59,9.9,100,52,43,62,7.1,5.9,8.5,,,,,37,24,51,10,9,12
+Bhutan,2016,BT,BTN,64,SEA,Surveillance,2016,National,11,8.5,15,1.6,100,Surveillance,2016,National,18,7.7,34,6.3,66,190,130,240,25,17,33,,,,,70,52,87,54,41,67
+Bhutan,2017,BT,BTN,64,SEA,Surveillance,2017,National,13,10,17,1.8,94,Surveillance,2017,National,33,7.5,70,16,100,160,110,220,21,14,30,94,150,100,210,81,57,110,69,49,89
+Bhutan,2018,BT,BTN,64,SEA,Surveillance,2018,National,12,8.8,16,1.7,100,Surveillance,2017,National,33,7.5,70,16,100,150,100,210,20,13,28,100,150,100,210,77,54,100,64,44,84
+Bhutan,2019,BT,BTN,64,SEA,Surveillance,2019,National,15,12,19,1.7,92,Surveillance,2019,National,9.6,3.2,21,4.1,100,190,130,250,25,17,33,92,170,120,230,90,72,110,78,62,94
+Botswana,2015,BW,BWA,72,AFR,Survey,2008,National,3.6,2.4,4.8,0.61,69,Survey,2008,National,13,7.4,19,2.9,50,470,300,630,22,14,30,,,,,220,160,280,63,42,84
+Botswana,2016,BW,BWA,72,AFR,Survey,2008,National,3.6,2.4,4.8,0.61,69,Survey,2008,National,13,7.4,19,2.9,50,410,290,540,19,13,25,,,,,230,170,290,86,61,110
+Botswana,2017,BW,BWA,72,AFR,Survey,2008,National,3.6,2.5,4.9,0.62,69,Survey,2008,National,13,7.9,20,3,50,340,210,510,16,9.4,23,68,230,140,350,210,150,260,88,62,110
+Botswana,2018,BW,BWA,72,AFR,Survey,2008,National,3.6,2.5,4.9,0.62,69,Survey,2008,National,13,7.9,20,3,50,300,180,450,13,8.1,20,63,190,110,280,190,140,240,46,33,58
+Botswana,2019,BW,BWA,72,AFR,Survey,2008,National,3.6,2.5,4.9,0.62,69,Survey,2008,National,13,7.9,20,3,50,270,170,410,12,7.2,18,63,170,110,260,110,82,150,28,20,35
+Central African Republic,2015,CF,CAF,140,AFR,Survey,2009,Sub-national,0.4,0,1.6,0.63,100,Model,2015,,14,6.9,21,3.6,65,210,0,450,4.7,0,10,,,,,140,23,250,19,0,78
+Central African Republic,2016,CF,CAF,140,AFR,Survey,2009,Sub-national,0.4,0,1.6,0.63,100,Model,2016,,13,8.9,17,2.1,66,180,0,410,4,0,9,,,,,110,9,210,100,32,170
+Central African Republic,2017,CF,CAF,140,AFR,Survey,2009,Sub-national,0.4,0,2.2,0.64,100,Model,2017,,14,10,18,2.1,79,150,84,230,3.2,1.8,5,92,130,77,210,91,0,190,78,15,140
+Central African Republic,2018,CF,CAF,140,AFR,Survey,2009,Sub-national,0.4,0,2.2,0.64,100,Model,2018,,15,11,19,2,100,180,100,270,3.8,2.2,5.9,100,180,100,270,78,0,180,66,0,130
+Central African Republic,2019,CF,CAF,140,AFR,Survey,2009,Sub-national,0.4,0,2.2,0.64,100,Model,2019,,14,10,19,2.1,100,190,110,290,4,2.3,6.1,100,190,110,290,94,0,210,82,0,160
+Canada,2015,CA,CAN,124,AMR,Surveillance,2014,National,1.4,0.72,2.4,0.4,83,Surveillance,2014,National,1.8,0.04,9.6,1.8,100,31,16,45,0.09,0.04,0.12,,,,,16,7,25,12,6,21
+Canada,2016,CA,CAN,124,AMR,Surveillance,2015,National,0.82,0.33,1.7,0.31,100,Surveillance,2015,National,6.3,1.7,15,3,100,19,8,31,0.05,0.02,0.08,,,,,15,6,23,13,6,21
+Canada,2017,CA,CAN,124,AMR,Surveillance,2015,National,0.82,0.33,1.7,0.31,83,Surveillance,2015,National,6.3,1.7,15,3,88,24,11,42,0.07,0.03,0.12,84,20,9,36,15,6,23,9,4,18
+Canada,2018,CA,CAN,124,AMR,Surveillance,2015,National,0.82,0.33,1.7,0.31,73,Surveillance,2015,National,6.3,1.7,15,3,87,25,12,44,0.07,0.03,0.12,76,19,9,34,14,6,22,8,3,17
+Canada,2019,CA,CAN,124,AMR,Surveillance,2015,National,0.82,0.33,1.7,0.31,85,Surveillance,2015,National,6.3,1.7,15,3,88,26,12,46,0.07,0.03,0.12,85,22,10,39,14,6,23,8,3,17
+Switzerland,2015,CH,CHE,756,EUR,Surveillance,2015,National,3.2,1.3,6.4,1.2,100,Surveillance,2015,National,26,9.1,51,10,80,29,13,45,0.35,0.16,0.54,,,,,21,10,32,10,4,21
+Switzerland,2016,CH,CHE,756,EUR,Surveillance,2015,National,3.2,1.3,6.4,1.2,100,Surveillance,2015,National,26,9.1,51,10,80,31,14,49,0.37,0.17,0.58,,,,,22,11,34,16,7,25
+Switzerland,2017,CH,CHE,756,EUR,Surveillance,2015,National,3.2,1.3,6.4,1.2,100,Surveillance,2015,National,26,9.1,51,10,94,36,17,62,0.42,0.2,0.73,98,35,16,60,19,9,29,15,7,24
+Switzerland,2018,CH,CHE,756,EUR,Surveillance,2018,National,1.1,0.24,3.3,0.66,100,Surveillance,2015,National,26,9.1,51,10,89,18,7,35,0.21,0.08,0.41,93,17,6,33,15,6,25,10,4,17
+Switzerland,2019,CH,CHE,756,EUR,Surveillance,2018,National,1.1,0.24,3.3,0.66,100,Surveillance,2015,National,26,9.1,51,10,95,15,6,27,0.17,0.07,0.32,97,14,6,26,12,4,19,12,4,19
+Chile,2015,CL,CHL,152,AMR,Surveillance,2015,National,1.5,0.88,2.3,0.33,47,Surveillance,2015,National,5.6,2.6,10,1.8,56,61,40,82,0.34,0.22,0.46,,,,,42,26,57,24,14,37
+Chile,2016,CL,CHL,152,AMR,Surveillance,2015,National,1.5,0.88,2.3,0.33,48,Surveillance,2015,National,5.6,2.6,10,1.8,56,58,37,78,0.32,0.21,0.43,,,,,39,25,54,35,22,48
+Chile,2017,CL,CHL,152,AMR,Surveillance,2017,National,2,1.3,2.8,0.35,58,Surveillance,2017,National,5.9,2.2,12,2.4,17,74,49,100,0.4,0.27,0.56,55,41,27,57,53,36,70,45,30,59
+Chile,2018,CL,CHL,152,AMR,Surveillance,2018,National,2.5,1.8,3.3,0.38,64,Surveillance,2017,National,5.9,2.2,12,2.4,17,95,66,130,0.51,0.35,0.68,54,52,36,70,68,49,87,63,45,80
+Chile,2019,CL,CHL,152,AMR,Surveillance,2019,National,2.1,1.5,2.8,0.33,56,Surveillance,2019,National,8.1,4.9,13,1.8,42,88,61,120,0.46,0.32,0.62,52,46,32,62,67,50,85,63,47,79
+China,2015,CN,CHN,156,WPR,Survey,2007,National,6.6,5.3,7.9,0.65,86,Survey,2007,National,30,25,34,2.2,86,70000,55000,84000,5,3.9,6,,,,,57000,48000,67000,14000,11000,17000
+China,2016,CN,CHN,156,WPR,Survey,2013,National,7.1,5.6,8.7,0.78,75,Survey,2013,National,24,20,28,1.9,73,73000,56000,89000,5.1,4,6.3,,,,,58000,47000,69000,21000,18000,24000
+China,2017,CN,CHN,156,WPR,Survey,2013,National,7.1,5.6,8.7,0.8,75,Survey,2013,National,24,20,28,1.9,73,69000,52000,88000,4.9,3.7,6.2,75,52000,39000,66000,58000,46000,69000,22000,18000,25000
+China,2018,CN,CHN,156,WPR,Survey,2013,National,7.1,5.6,8.7,0.8,75,Surveillance,2018,National,21,21,21,0.22,59,66000,50000,85000,4.6,3.5,6,74,49000,37000,62000,59000,48000,70000,25000,21000,29000
+China,2019,CN,CHN,156,WPR,Survey,2013,National,7.1,5.6,8.7,0.8,75,Surveillance,2019,National,23,23,24,0.23,69,65000,49000,83000,4.5,3.4,5.8,74,48000,37000,62000,56000,46000,67000,30000,26000,35000
+Côte d'Ivoire,2015,CI,CIV,384,AFR,Survey,2006,National,3.1,1,5.3,1.1,80,Model,2015,,14,6.9,21,3.6,65,1400,570,2300,6,2.5,9.9,,,,,720,360,1100,440,140,730
+Côte d'Ivoire,2016,CI,CIV,384,AFR,Survey,2017,National,4.6,2.4,6.8,1.1,54,Survey,2017,National,22,14,30,4.1,66,2100,1100,3100,8.8,4.5,13,,,,,1000,660,1400,620,320,910
+Côte d'Ivoire,2017,CI,CIV,384,AFR,Survey,2017,National,4.6,2.4,6.8,1.1,67,Surveillance,2017,National,24,22,27,1.2,100,2100,1000,3600,8.7,4.3,15,70,1500,730,2500,1100,720,1400,930,630,1200
+Côte d'Ivoire,2018,CI,CIV,384,AFR,Survey,2017,National,4.6,2.4,6.8,1.1,81,Surveillance,2018,National,30,27,33,1.4,100,2200,1100,3600,8.6,4.2,15,83,1800,880,3000,1100,760,1500,960,660,1300
+Côte d'Ivoire,2019,CI,CIV,384,AFR,Survey,2017,National,4.6,2.4,6.8,1.1,94,Surveillance,2019,National,31,28,34,1.4,100,1900,910,3100,7.2,3.6,12,95,1700,860,2900,1100,740,1500,980,670,1300
+Cameroon,2015,CM,CMR,120,AFR,Model,2015,,3.2,1.4,5,0.9,67,Model,2015,,14,6.9,21,3.6,65,1900,870,3000,8.2,3.7,13,,,,,890,510,1300,480,210,750
+Cameroon,2016,CM,CMR,120,AFR,Model,2016,,2.8,2.1,3.4,0.3,69,Model,2016,,13,8.9,17,2.1,66,1600,1000,2200,6.7,4.2,9.2,,,,,760,620,890,600,500,710
+Cameroon,2017,CM,CMR,120,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,1500,600,2700,6,2.5,11,68,990,410,1800,680,360,990,380,170,600
+Cameroon,2018,CM,CMR,120,AFR,Survey,2017,National,1.6,0.9,2.5,0.41,81,Surveillance,2018,National,6.6,5.2,8.3,0.76,100,890,430,1500,3.5,1.7,6,85,760,360,1300,380,230,530,300,190,410
+Cameroon,2019,CM,CMR,120,AFR,Survey,2017,National,1.6,0.9,2.5,0.41,94,Surveillance,2019,National,9.2,7.6,11,0.82,100,930,450,1600,3.6,1.7,6.1,94,880,430,1500,450,290,610,360,250,480
+Democratic Republic of the Congo,2015,CD,COD,180,AFR,Model,2015,,3.2,1.4,5,0.9,67,Model,2015,,14,6.9,21,3.6,65,10000,4600,15000,13,6,20,,,,,4000,2300,5700,2500,1100,3800
+Democratic Republic of the Congo,2016,CD,COD,180,AFR,Survey,2017,National,2.2,1,3.5,0.63,69,Survey,2017,National,17,9.6,24,3.5,66,7600,3900,11000,9.7,4.9,14,,,,,3600,2300,5000,1900,890,2900
+Democratic Republic of the Congo,2017,CD,COD,180,AFR,Survey,2017,National,2.2,1,3.5,0.64,67,Surveillance,2017,National,9.5,8.8,10,0.38,100,7100,3100,13000,8.8,3.8,16,72,5100,2200,9100,3400,2000,4900,2600,1400,3800
+Democratic Republic of the Congo,2018,CD,COD,180,AFR,Survey,2017,National,1.7,1.1,2.6,0.38,53,Surveillance,2017,National,9.5,8.8,10,0.38,100,6000,3000,10000,7.2,3.6,12,55,3300,1700,5500,3200,2200,4200,2300,1500,3100
+Democratic Republic of the Congo,2019,CD,COD,180,AFR,Survey,2017,National,1.8,1,3.2,0.56,50,Surveillance,2019,National,11,9.8,12,0.45,100,6500,2700,12000,7.5,3.2,14,53,3400,1400,6300,3500,2000,5100,2600,1400,3800
+Congo,2015,CG,COG,178,AFR,Model,2015,,3.2,1.4,5,0.9,67,Model,2015,,14,6.9,21,3.6,65,670,290,1000,14,6,21,,,,,300,160,430,120,51,180
+Congo,2016,CG,COG,178,AFR,Model,2016,,2.8,2.1,3.4,0.3,69,Model,2016,,13,8.9,17,2.1,66,640,390,900,13,7.8,18,,,,,270,220,310,130,110,150
+Congo,2017,CG,COG,178,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Surveillance,2017,National,21,16,27,2.5,79,610,250,1100,12,5,22,68,410,170,760,290,170,420,150,87,210
+Congo,2018,CG,COG,178,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Surveillance,2018,National,12,8.7,16,1.8,100,560,230,1000,11,4.5,20,84,470,200,870,260,130,380,130,72,190
+Congo,2019,CG,COG,178,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Surveillance,2018,National,12,8.7,16,1.8,100,590,260,1000,11,4.8,19,95,550,250,990,280,150,400,130,70,190
+Cook Islands,2015,CK,COK,184,WPR,Surveillance,2015,National,0,0,98,0,,Surveillance,2015,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Cook Islands,2016,CK,COK,184,WPR,Surveillance,2016,National,0,0,84,0,,Surveillance,2016,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Cook Islands,2017,CK,COK,184,WPR,Surveillance,2016,National,0,0,85,22,78,Surveillance,2016,National,12,7.2,19,2.9,88,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Cook Islands,2018,CK,COK,184,WPR,Surveillance,2016,National,0,0,85,22,78,Surveillance,2016,National,11,6.1,17,2.8,59,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Cook Islands,2019,CK,COK,184,WPR,Surveillance,2016,National,0,0,85,22,76,Surveillance,2016,National,12,7.2,19,3,69,0,0,0,1.1,0.65,1.7,69,0,0,0,0,0,1,0,0,1
+Colombia,2015,CO,COL,170,AMR,Survey,2005,National,2.4,1.4,3.4,0.51,100,Surveillance,2012,National,14,11,18,1.8,91,560,380,730,1.2,0.8,1.5,,,,,400,300,500,180,110,260
+Colombia,2016,CO,COL,170,AMR,Survey,2005,National,2.4,1.4,3.4,0.51,100,Surveillance,2012,National,14,11,18,1.8,91,580,400,770,1.2,0.83,1.6,,,,,430,320,540,320,240,410
+Colombia,2017,CO,COL,170,AMR,Survey,2005,National,2.4,1.5,3.5,0.52,100,Surveillance,2012,National,14,11,18,1.8,88,570,360,840,1.2,0.73,1.7,98,560,350,820,420,310,540,330,240,420
+Colombia,2018,CO,COL,170,AMR,Survey,2005,National,2.4,1.5,3.5,0.52,100,Surveillance,2012,National,14,11,18,1.8,87,580,370,850,1.2,0.74,1.7,95,560,350,810,390,280,500,300,210,390
+Colombia,2019,CO,COL,170,AMR,Survey,2005,National,2.4,1.5,3.5,0.52,100,Surveillance,2012,National,14,11,18,1.8,88,610,380,900,1.2,0.76,1.8,96,590,370,870,400,280,520,310,220,410
+Comoros,2015,KM,COM,174,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,9,0,20,1.2,0,2.6,,,,,,,,,,
+Comoros,2016,KM,COM,174,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,45,9,81,5.7,1.1,10,,,,,32,3,62,4,1,7
+Comoros,2017,KM,COM,174,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,25,1,81,3,0.16,9.9,73,18,1,59,3,2,4,2,1,3
+Comoros,2018,KM,COM,174,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Model,2018,,15,11,19,2,100,26,2,83,3.1,0.18,10,91,23,1,76,2,1,3,1,1,2
+Comoros,2019,KM,COM,174,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Model,2019,,14,10,19,2.1,100,26,1,85,3.1,0.17,10,97,25,1,83,,,,,,
+Cabo Verde,2015,CV,CPV,132,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,27,0,55,5.1,0,10,,,,,11,1,21,5,0,12
+Cabo Verde,2016,CV,CPV,132,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,29,9,48,5.4,1.7,9.1,,,,,12,4,20,6,1,10
+Cabo Verde,2017,CV,CPV,132,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,27,11,49,5,2.1,9.2,68,18,8,34,8,5,11,7,4,10
+Cabo Verde,2018,CV,CPV,132,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Model,2018,,15,11,19,2,100,9,4,16,1.7,0.78,2.9,84,8,4,13,7,5,10,6,4,9
+Cabo Verde,2019,CV,CPV,132,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Model,2019,,14,10,19,2.1,100,9,5,16,1.7,0.87,2.9,95,9,5,15,8,5,10,6,4,8
+Costa Rica,2015,CR,CRI,188,AMR,Survey,2006,National,1.9,0,3.9,1,80,Surveillance,2012,National,9.1,1.1,29,6.1,50,12,1,22,0.25,0.03,0.45,,,,,8,1,15,5,0,10
+Costa Rica,2016,CR,CRI,188,AMR,Survey,2006,National,1.9,0,3.9,1,80,Surveillance,2012,National,9.1,1.1,29,6.1,50,10,1,19,0.2,0.02,0.39,,,,,7,1,13,6,0,12
+Costa Rica,2017,CR,CRI,188,AMR,Surveillance,2017,National,1.4,0.38,3.5,0.69,100,Surveillance,2017,National,0,0,52,13,88,6,2,14,0.13,0.03,0.29,100,6,2,14,4,0,12,4,0,11
+Costa Rica,2018,CR,CRI,188,AMR,Surveillance,2018,National,2.2,0.91,4.6,0.84,43,Surveillance,2017,National,0,0,52,13,87,11,4,21,0.21,0.08,0.41,43,5,2,9,7,0,15,7,0,15
+Costa Rica,2019,CR,CRI,188,AMR,Surveillance,2019,National,0.32,0.01,1.8,0.32,100,Surveillance,2019,National,0,0,16,4.1,88,2,1,2,0.03,0.02,0.05,100,2,1,2,1,0,4,1,0,4
+Cuba,2015,CU,CUB,192,AMR,Surveillance,2012,National,2.2,0.82,4.8,0.9,33,Surveillance,2014,National,4.2,0.51,14,2.9,100,25,11,40,0.22,0.1,0.35,,,,,17,5,29,11,4,23
+Cuba,2016,CU,CUB,192,AMR,Surveillance,2012,National,2.2,0.82,4.8,0.9,33,Surveillance,2014,National,4.2,0.51,14,2.9,100,25,10,39,0.22,0.09,0.35,,,,,17,5,28,12,4,21
+Cuba,2017,CU,CUB,192,AMR,Surveillance,2012,National,2.2,0.82,4.8,0.9,83,Surveillance,2014,National,4.2,0.51,14,2.9,88,20,8,38,0.18,0.07,0.34,84,17,7,32,18,6,30,14,4,23
+Cuba,2018,CU,CUB,192,AMR,Surveillance,2012,National,2.2,0.82,4.8,0.9,73,Surveillance,2018,National,31,21,44,5.7,64,39,19,67,0.35,0.17,0.59,70,27,13,46,42,27,56,36,24,48
+Cuba,2019,CU,CUB,192,AMR,Surveillance,2012,National,2.2,0.82,4.8,0.9,85,Surveillance,2018,National,31,21,44,5.7,64,36,19,59,0.32,0.17,0.52,76,28,15,44,36,23,48,33,21,44
+Curaçao,2015,CW,CUW,531,AMR,Surveillance,2014,National,0,0,60,0,,Surveillance,2014,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,3
+Curaçao,2016,CW,CUW,531,AMR,Surveillance,2016,National,0,0,60,0,,Surveillance,2016,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Curaçao,2017,CW,CUW,531,AMR,Surveillance,2017,National,0,0,37,9.4,83,Surveillance,2017,National,13,8.4,18,2.5,88,0,0,0,0.03,0.02,0.05,88,0,0,0,0,0,3,0,0,3
+Curaçao,2018,CW,CUW,531,AMR,Surveillance,2017,National,0,0,37,9.4,73,Surveillance,2017,National,14,9.3,19,2.4,87,0,0,0,0.04,0.02,0.06,87,0,0,0,,,,,,
+Curaçao,2019,CW,CUW,531,AMR,Surveillance,2017,National,0,0,37,9.4,85,Surveillance,2017,National,12,7.4,17,2.5,88,0,0,0,0.04,0.02,0.06,88,0,0,0,,,,,,
+Cayman Islands,2015,KY,CYM,136,AMR,Surveillance,2013,National,0,0,71,0,,Surveillance,2013,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,5,0,0,5
+Cayman Islands,2016,KY,CYM,136,AMR,Surveillance,2016,National,0,0,71,0,,Surveillance,2016,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Cayman Islands,2017,KY,CYM,136,AMR,Surveillance,2017,National,0,0,71,18,83,Surveillance,2017,National,13,8.4,18,2.5,88,0,0,0,0.19,0.11,0.29,88,0,0,0,0,0,3,0,0,2
+Cayman Islands,2018,KY,CYM,136,AMR,Surveillance,2018,National,0,0,71,18,73,Surveillance,2017,National,14,9.3,19,2.4,87,0,0,0,0.15,0.08,0.23,87,0,0,0,0,0,2,0,0,2
+Cayman Islands,2019,KY,CYM,136,AMR,Surveillance,2018,National,0,0,71,18,85,Surveillance,2017,National,12,7.4,17,2.5,88,0,0,0,0.03,0.02,0.05,88,0,0,0,0,0,2,0,0,2
+Cyprus,2015,CY,CYP,196,EUR,Surveillance,2015,National,0,0,10,0,,Surveillance,2015,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,6,0,0,4
+Cyprus,2016,CY,CYP,196,EUR,Surveillance,2015,National,0,0,10,0,,Surveillance,2015,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Cyprus,2017,CY,CYP,196,EUR,Surveillance,2015,National,0,0,10,2.6,100,Surveillance,2015,National,12,7.9,17,2.3,94,0,0,0,0.01,0.01,0.02,94,0,0,0,0,0,2,0,0,4
+Cyprus,2018,CY,CYP,196,EUR,Surveillance,2015,National,0,0,10,2.6,87,Surveillance,2015,National,11,7.4,16,2.3,89,0,0,0,0.02,0.01,0.03,89,0,0,0,0,0,2,0,0,2
+Cyprus,2019,CY,CYP,196,EUR,Surveillance,2018,National,0,0,11,2.7,97,Surveillance,2018,National,0,0,98,25,95,0,0,0,0,0,0,,,,,0,0,3,0,0,3
+Czechia,2015,CZ,CZE,203,EUR,Surveillance,2014,National,1.7,0.56,4,0.76,60,Surveillance,2014,National,13,1.7,40,8.8,100,15,4,26,0.14,0.04,0.25,,,,,13,3,22,6,2,14
+Czechia,2016,CZ,CZE,203,EUR,Surveillance,2015,National,2.2,0.9,4.6,0.84,100,Surveillance,2015,National,12,2.4,30,6.3,100,17,8,26,0.16,0.07,0.24,,,,,12,5,19,10,4,16
+Czechia,2017,CZ,CZE,203,EUR,Surveillance,2015,National,2.2,0.9,4.6,0.84,100,Surveillance,2015,National,12,2.4,30,6.3,94,17,7,31,0.16,0.06,0.29,99,16,7,31,13,5,21,10,4,17
+Czechia,2018,CZ,CZE,203,EUR,Surveillance,2015,National,2.2,0.9,4.6,0.84,87,Surveillance,2015,National,12,2.4,30,6.3,89,17,7,31,0.16,0.06,0.3,87,15,6,28,12,5,19,10,4,17
+Czechia,2019,CZ,CZE,203,EUR,Surveillance,2019,National,2.6,1.1,5.1,0.91,100,Surveillance,2015,National,12,2.4,30,6.3,95,17,7,30,0.16,0.07,0.28,99,16,7,29,13,5,20,11,5,18
+Germany,2015,DE,DEU,276,EUR,Surveillance,2015,National,2.2,0.82,4.8,0.89,100,Surveillance,2015,National,23,16,30,3.4,91,230,110,340,0.28,0.13,0.42,,,,,170,89,240,76,28,160
+Germany,2016,DE,DEU,276,EUR,Surveillance,2015,National,2.2,0.82,4.8,0.89,100,Surveillance,2015,National,23,16,30,3.4,91,220,110,340,0.27,0.13,0.41,,,,,160,85,240,120,61,180
+Germany,2017,DE,DEU,276,EUR,Surveillance,2015,National,2.2,0.82,4.8,0.89,100,Surveillance,2015,National,23,16,30,3.4,94,190,90,330,0.23,0.11,0.4,99,190,89,330,140,65,210,110,49,160
+Germany,2018,DE,DEU,276,EUR,Surveillance,2015,National,2.2,0.82,4.8,0.89,87,Surveillance,2015,National,23,16,30,3.4,89,190,89,330,0.23,0.11,0.39,87,170,77,290,150,78,210,120,60,180
+Germany,2019,DE,DEU,276,EUR,Surveillance,2015,National,2.2,0.82,4.8,0.89,97,Surveillance,2015,National,23,16,30,3.4,95,150,73,260,0.18,0.09,0.31,96,150,70,250,130,68,190,100,52,160
+Djibouti,2015,DJ,DJI,262,EMR,Survey,2015,National,4.3,1.8,6.8,1.3,100,Survey,2015,National,34,21,46,6.4,91,180,89,270,20,9.7,30,,,,,100,65,140,46,19,72
+Djibouti,2016,DJ,DJI,262,EMR,Survey,2015,National,4.3,2.5,7.3,1.2,100,Survey,2015,National,35,25,47,5.6,88,170,93,250,19,10,27,,,,,110,76,150,99,69,130
+Djibouti,2017,DJ,DJI,262,EMR,Survey,2015,National,4.3,2.5,7.3,1.2,100,Survey,2015,National,35,25,47,5.7,88,140,69,240,15,7.3,26,100,140,69,240,99,66,130,87,60,110
+Djibouti,2018,DJ,DJI,262,EMR,Survey,2015,National,4.7,2.8,7.7,1.3,100,Surveillance,2018,National,9.7,4.5,18,3.1,100,120,63,210,13,6.6,22,100,120,63,210,66,36,95,54,30,78
+Djibouti,2019,DJ,DJI,262,EMR,Survey,2015,National,4.7,2.8,7.7,1.3,100,Surveillance,2018,National,9.7,4.5,18,3.1,100,110,57,190,12,5.9,19,100,110,57,190,59,31,86,49,27,72
+Dominica,2015,DM,DMA,212,AMR,Surveillance,2013,National,0,0,98,0,,Surveillance,2013,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,7,0,0,5
+Dominica,2016,DM,DMA,212,AMR,Surveillance,2013,National,0,0,98,0,,Surveillance,2013,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Dominica,2017,DM,DMA,212,AMR,Surveillance,2013,National,0,0,98,25,83,Surveillance,2013,National,13,8.4,18,2.5,88,0,0,0,0.01,0,0.01,88,0,0,0,0,0,1,0,0,1
+Dominica,2018,DM,DMA,212,AMR,Surveillance,2013,National,0,0,98,25,73,Surveillance,2013,National,14,9.3,19,2.4,87,0,0,0,0.04,0.02,0.06,87,0,0,0,0,0,1,0,0,1
+Dominica,2019,DM,DMA,212,AMR,Surveillance,2013,National,0,0,98,25,85,Surveillance,2019,National,0,0,98,25,88,0,0,0,0,0,0,,,,,0,0,4,0,0,3
+Denmark,2015,DK,DNK,208,EUR,Surveillance,2014,National,0.51,0.01,2.8,0.51,100,Surveillance,2014,National,0,0,19,0,,2,0,5,0.03,0,0.09,,,,,1,0,4,1,0,6
+Denmark,2016,DK,DNK,208,EUR,Surveillance,2015,National,1.9,0.53,4.9,0.95,100,Surveillance,2015,National,4.5,0.12,23,4.4,100,9,1,16,0.15,0.02,0.28,,,,,6,1,12,5,1,9
+Denmark,2017,DK,DNK,208,EUR,Surveillance,2017,National,0.65,0.02,3.5,0.64,100,Surveillance,2017,National,0,0,21,5.3,94,2,1,2,0.03,0.02,0.04,100,2,1,2,1,0,5,1,0,4
+Denmark,2018,DK,DNK,208,EUR,Surveillance,2018,National,2.5,0.7,6.4,1.3,100,Surveillance,2018,National,0,0,25,6.3,89,7,1,16,0.12,0.02,0.28,100,7,1,16,5,0,11,4,0,9
+Denmark,2019,DK,DNK,208,EUR,Surveillance,2018,National,2.5,0.69,6.3,1.2,100,Surveillance,2018,National,0,0,25,6.3,95,6,1,15,0.11,0.02,0.26,100,6,1,15,5,0,11,4,0,9
+Dominican Republic,2015,DO,DOM,214,AMR,Model,2015,,3,1.5,4.6,0.8,88,Model,2015,,12,6.9,17,2.5,89,280,160,390,2.7,1.6,3.8,,,,,170,110,240,75,38,120
+Dominican Republic,2016,DO,DOM,214,AMR,Model,2016,,2.9,1.4,4.5,0.8,90,Surveillance,2016,National,34,28,41,3.2,91,420,300,550,4.1,2.9,5.3,,,,,290,230,360,140,100,170
+Dominican Republic,2017,DO,DOM,214,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Surveillance,2016,National,34,28,41,3.2,88,230,110,390,2.2,1.1,3.7,85,190,95,330,270,200,340,150,110,190
+Dominican Republic,2018,DO,DOM,214,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Surveillance,2016,National,34,28,41,3.2,87,230,110,380,2.1,1,3.6,79,180,87,300,280,210,340,140,100,180
+Dominican Republic,2019,DO,DOM,214,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Surveillance,2016,National,34,28,41,3.2,88,220,120,370,2.1,1.1,3.4,86,190,100,320,280,220,340,170,130,210
+Algeria,2015,DZ,DZA,12,AFR,Survey,2002,National,1.4,0.33,2.5,0.54,100,Survey,2002,National,9.1,0,23,7,100,470,140,800,1.2,0.35,2,,,,,160,49,270,97,23,170
+Algeria,2016,DZ,DZA,12,AFR,Survey,2002,National,1.4,0.33,2.5,0.54,100,Survey,2002,National,9.1,0,29,9.9,100,460,140,780,1.1,0.34,1.9,,,,,160,24,300,130,27,230
+Algeria,2017,DZ,DZA,12,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,780,350,1400,1.9,0.84,3.4,67,530,230,940,240,120,360,210,110,310
+Algeria,2018,DZ,DZA,12,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Model,2018,,15,11,19,2,100,780,350,1400,1.8,0.83,3.3,82,640,290,1100,230,120,340,200,110,300
+Algeria,2019,DZ,DZA,12,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Model,2019,,14,10,19,2.1,100,700,340,1200,1.6,0.79,2.8,94,660,320,1100,200,110,300,180,100,260
+Ecuador,2015,EC,ECU,218,AMR,Survey,2002,National,7.3,5.4,9.2,0.97,68,Surveillance,2012,National,28,25,31,1.5,91,750,450,1000,4.6,2.8,6.2,,,,,370,300,450,270,200,340
+Ecuador,2016,EC,ECU,218,AMR,Survey,2002,National,7.3,5.4,9.2,0.97,68,Surveillance,2012,National,28,25,31,1.5,93,710,430,1000,4.3,2.6,6.1,,,,,370,290,450,280,200,350
+Ecuador,2017,EC,ECU,218,AMR,Survey,2002,National,7.3,5.4,9.3,0.99,68,Surveillance,2012,National,28,25,31,1.5,88,620,410,860,3.7,2.5,5.1,70,430,290,600,390,300,480,300,230,390
+Ecuador,2018,EC,ECU,218,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Surveillance,2012,National,28,25,31,1.5,87,220,89,420,1.3,0.52,2.4,76,170,68,320,180,90,260,170,89,250
+Ecuador,2019,EC,ECU,218,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Surveillance,2019,National,22,18,26,2,84,230,94,420,1.3,0.54,2.4,85,190,79,360,220,130,310,210,130,280
+Egypt,2015,EG,EGY,818,EMR,Survey,2011,National,14,12,16,1.2,24,Surveillance,2015,National,23,20,27,1.9,57,2200,1800,2600,2.4,1.9,2.8,,,,,790,670,900,520,430,610
+Egypt,2016,EG,EGY,818,EMR,Survey,2011,National,14,12,16,1.2,24,Surveillance,2016,National,20,17,24,1.7,38,2100,1800,2500,2.3,1.9,2.7,,,,,720,620,830,590,500,670
+Egypt,2017,EG,EGY,818,EMR,Survey,2011,National,14,12,17,1.2,24,Surveillance,2017,National,30,25,35,2.3,79,1900,1600,2300,2,1.6,2.4,31,610,490,730,700,600,800,590,510,680
+Egypt,2018,EG,EGY,818,EMR,Surveillance,2018,National,1.4,1,1.8,0.2,100,Surveillance,2018,National,23,19,28,2.1,88,280,200,380,0.29,0.21,0.38,96,270,200,370,170,140,190,160,140,180
+Egypt,2019,EG,EGY,818,EMR,Surveillance,2019,National,1.4,1,1.9,0.2,43,Surveillance,2018,National,23,19,28,2.1,88,270,190,360,0.27,0.19,0.35,56,150,110,200,170,150,200,170,140,190
+Eritrea,2015,ER,ERI,232,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,140,0,290,4.2,0,8.7,,,,,63,9,120,20,1,48
+Eritrea,2016,ER,ERI,232,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,140,28,260,4.2,0.84,7.7,,,,,63,19,110,19,1,37
+Eritrea,2017,ER,ERI,232,AFR,Survey,2018,National,2.2,1.1,3.9,0.71,67,Survey,2018,National,7.4,2.1,18,4,79,88,27,180,2.6,0.79,5.4,67,59,18,120,37,17,57,23,10,36
+Eritrea,2018,ER,ERI,232,AFR,Survey,2018,National,2,1,3.6,0.66,50,Surveillance,2018,National,4.1,0.84,11,2.3,100,66,20,140,1.9,0.57,4.1,57,38,11,80,26,11,41,17,7,26
+Eritrea,2019,ER,ERI,232,AFR,Surveillance,2019,National,2.3,1.3,3.8,0.58,100,Surveillance,2018,National,4.1,0.84,11,2.3,100,74,25,150,2.1,0.71,4.3,100,74,25,150,30,16,43,20,11,29
+Spain,2015,ES,ESP,724,EUR,Multiple surveys,"2001, 2005",,0.44,0.12,1.1,0.22,79,Multiple surveys,"2001, 2005",,7.1,3.3,13,2.3,84,42,16,69,0.09,0.03,0.15,,,,,25,10,40,11,3,28
+Spain,2016,ES,ESP,724,EUR,Surveillance,2015,National,4.2,2.9,5.8,0.72,94,Surveillance,2015,National,18,9.4,30,4.9,91,230,160,300,0.49,0.33,0.65,,,,,170,120,220,130,87,170
+Spain,2017,ES,ESP,724,EUR,Surveillance,2015,National,4.2,2.9,5.8,0.72,100,Surveillance,2015,National,18,9.4,30,4.9,94,280,190,380,0.6,0.41,0.82,99,280,190,380,170,120,210,140,97,180
+Spain,2018,ES,ESP,724,EUR,Surveillance,2015,National,4.2,2.9,5.8,0.72,87,Surveillance,2015,National,18,9.4,30,4.9,89,240,170,330,0.52,0.36,0.71,87,210,150,290,160,110,210,130,92,170
+Spain,2019,ES,ESP,724,EUR,Surveillance,2015,National,4.2,2.9,5.8,0.72,97,Surveillance,2015,National,18,9.4,30,4.9,95,240,160,330,0.51,0.35,0.7,96,230,160,320,140,94,180,110,78,150
+Estonia,2015,EE,EST,233,EUR,Surveillance,2015,National,16,10,23,3.2,86,Surveillance,2015,National,54,37,71,8.4,95,71,50,92,5.4,3.8,7,,,,,47,36,59,21,14,31
+Estonia,2016,EE,EST,233,EUR,Surveillance,2016,National,14,8.3,21,3,94,Surveillance,2016,National,54,25,81,14,86,46,31,60,3.5,2.3,4.6,,,,,34,23,45,28,19,37
+Estonia,2017,EE,EST,233,EUR,Surveillance,2017,National,21,14,29,3.7,100,Surveillance,2017,National,52,30,74,11,95,53,36,74,4,2.7,5.6,100,53,35,74,45,33,56,37,27,47
+Estonia,2018,EE,EST,233,EUR,Surveillance,2018,National,22,15,31,4.1,99,Surveillance,2018,National,50,27,73,11,89,45,29,64,3.4,2.2,4.8,96,43,28,61,37,27,48,33,24,43
+Estonia,2019,EE,EST,233,EUR,Surveillance,2019,National,17,10,26,3.6,98,Surveillance,2019,National,52,30,74,11,95,39,24,58,3,1.8,4.4,97,38,23,57,32,22,42,29,20,38
+Ethiopia,2015,ET,ETH,231,AFR,Survey,2005,National,2.7,1.5,4,0.62,59,Survey,2005,National,14,5.6,23,4.5,82,6200,3500,8900,6.1,3.5,8.8,,,,,3300,2100,4600,1300,730,1900
+Ethiopia,2016,ET,ETH,231,AFR,Survey,2005,National,2.7,1.5,4,0.62,59,Survey,2005,National,14,3.6,25,5.6,82,5800,3100,8500,5.6,3,8.2,,,,,2900,1800,4000,1600,1000,2200
+Ethiopia,2017,ET,ETH,231,AFR,Survey,2005,National,2.7,1.6,4.1,0.64,59,Survey,2005,National,14,6.7,25,4.6,82,5500,2900,8800,5.1,2.7,8.3,61,3300,1800,5300,2700,1700,3700,1600,1000,2200
+Ethiopia,2018,ET,ETH,231,AFR,Surveillance,2018,National,0.71,0.62,0.8,0.04,100,Surveillance,2018,National,16,14,17,0.65,100,1600,1000,2200,1.4,0.96,2,100,1600,1000,2200,1100,1000,1200,800,750,860
+Ethiopia,2019,ET,ETH,231,AFR,Surveillance,2018,National,0.71,0.62,0.8,0.04,100,Surveillance,2019,National,12,11,13,0.57,100,1400,970,2000,1.3,0.87,1.8,100,1400,970,2000,1200,1100,1200,770,710,830
+Finland,2015,FI,FIN,246,EUR,Surveillance,2015,National,5.1,2.2,9.8,1.8,88,Surveillance,2015,National,0,0,60,0,,17,6,28,0.31,0.11,0.51,,,,,10,3,17,8,4,16
+Finland,2016,FI,FIN,246,EUR,Surveillance,2016,National,1.6,0.19,5.7,1.1,100,Surveillance,2016,National,0,0,46,0,,4,0,10,0.08,0,0.18,,,,,3,0,6,2,0,5
+Finland,2017,FI,FIN,246,EUR,Surveillance,2017,National,3,0.82,7.5,1.5,100,Surveillance,2017,National,67,9.4,99,27,50,13,5,26,0.23,0.08,0.46,83,11,4,21,9,3,15,7,2,12
+Finland,2018,FI,FIN,246,EUR,Surveillance,2018,National,3.2,0.88,8,1.6,100,Surveillance,2017,National,67,9.4,99,27,50,13,4,26,0.23,0.07,0.47,85,11,3,22,7,2,12,6,1,10
+Finland,2019,FI,FIN,246,EUR,Surveillance,2019,National,1.7,0.2,5.8,1.2,100,Surveillance,2017,National,67,9.4,99,27,50,7,1,19,0.13,0.02,0.35,80,6,1,16,7,2,12,6,2,10
+Fiji,2015,FJ,FJI,242,WPR,Surveillance,2006,National,0,0,8.2,0,,Surveillance,2006,National,0,0,98,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,13
+Fiji,2016,FJ,FJI,242,WPR,Surveillance,2006,National,0,0,8.2,0,,Surveillance,2006,National,0,0,98,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Fiji,2017,FJ,FJI,242,WPR,Surveillance,2017,National,0,0,2.6,0.67,78,Surveillance,2017,National,33,0.84,91,27,100,5,3,7,0.51,0.29,0.79,100,5,3,7,6,0,15,1,0,3
+Fiji,2018,FJ,FJI,242,WPR,Surveillance,2018,National,0.68,0.02,3.7,0.67,0,Surveillance,2018,National,0,0,34,8.6,59,3,2,5,0.35,0.2,0.54,0,0,0,0,2,0,6,1,0,3
+Fiji,2019,FJ,FJI,242,WPR,Surveillance,2019,National,0.76,0.02,4.2,0.76,76,Surveillance,2019,National,25,0.63,81,22,69,9,1,27,1,0.09,3.1,73,7,1,20,13,0,33,2,0,5
+France,2015,FR,FRA,250,EUR,Surveillance,2014,National,1,0.65,1.5,0.2,100,Surveillance,2014,National,10,7.1,15,1.8,100,88,63,110,0.14,0.1,0.17,,,,,63,47,79,25,16,36
+France,2016,FR,FRA,250,EUR,Surveillance,2014,National,1,0.65,1.5,0.2,100,Surveillance,2014,National,10,7.1,15,1.8,100,82,59,100,0.13,0.09,0.16,,,,,63,46,79,51,38,64
+France,2017,FR,FRA,250,EUR,Surveillance,2014,National,1,0.65,1.5,0.2,100,Surveillance,2014,National,10,7.1,15,1.8,94,110,75,140,0.16,0.12,0.22,98,100,73,140,65,48,82,43,32,55
+France,2018,FR,FRA,250,EUR,Surveillance,2014,National,1,0.65,1.5,0.2,87,Surveillance,2014,National,10,7.1,15,1.8,89,110,76,140,0.16,0.12,0.22,88,93,67,120,66,49,83,43,31,54
+France,2019,FR,FRA,250,EUR,Surveillance,2014,National,1,0.65,1.5,0.2,97,Surveillance,2014,National,10,7.1,15,1.8,95,110,75,140,0.16,0.12,0.22,96,100,72,130,59,43,74,37,27,47
+Micronesia (Federated States of),2015,FM,FSM,583,WPR,Model,2015,,5.2,3.1,7.3,1.1,83,Model,2015,,28,25,30,1.3,70,8,5,11,7.4,4.4,10,,,,,6,4,8,2,1,2
+Micronesia (Federated States of),2016,FM,FSM,583,WPR,Model,2016,,5.5,3,8,1.3,76,Model,2016,,26,23,30,1.2,75,11,5,16,9.7,4.8,15,,,,,7,4,11,2,1,3
+Micronesia (Federated States of),2017,FM,FSM,583,WPR,Model,2017,,2.3,0.86,4.4,0.91,78,Model,2017,,12,7.2,19,2.9,88,4,2,8,3.8,1.4,7.4,78,3,1,6,3,1,5,1,0,1
+Micronesia (Federated States of),2018,FM,FSM,583,WPR,Surveillance,2018,National,0,0,14,3.6,78,Model,2018,,11,6.1,17,2.8,59,1,1,1,0.8,0.45,1.2,59,1,0,1,3,0,9,0,0,4
+Micronesia (Federated States of),2019,FM,FSM,583,WPR,Surveillance,2019,National,0,0,13,3.3,76,Model,2019,,12,7.2,19,3,69,1,1,1,0.82,0.47,1.3,69,1,0,1,0,0,10,0,0,3
+Gabon,2015,GA,GAB,266,AFR,Model,2015,,3.2,1.4,5,0.9,67,Model,2015,,14,6.9,21,3.6,65,400,230,560,21,12,29,,,,,280,170,380,84,37,130
+Gabon,2016,GA,GAB,266,AFR,Model,2016,,2.8,2.1,3.4,0.3,69,Model,2016,,13,8.9,17,2.1,66,400,290,500,20,14,25,,,,,230,190,270,60,48,73
+Gabon,2017,GA,GAB,266,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,440,200,770,21,9.5,37,70,310,140,540,200,120,270,110,74,150
+Gabon,2018,GA,GAB,266,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Surveillance,2018,National,16,12,21,2.2,100,450,210,770,21,10,36,88,390,190,670,210,130,280,99,63,140
+Gabon,2019,GA,GAB,266,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Surveillance,2019,National,23,17,29,2.9,100,490,240,830,22,11,38,96,470,230,790,200,130,270,110,72,150
+United Kingdom of Great Britain and Northern Ireland,2015,GB,GBR,826,EUR,Surveillance,2015,National,1.4,0.98,2,0.26,87,Surveillance,2015,National,3.4,1.1,7.9,1.5,100,110,72,150,0.17,0.11,0.23,,,,,58,39,77,34,23,48
+United Kingdom of Great Britain and Northern Ireland,2016,GB,GBR,826,EUR,Surveillance,2015,National,1.4,0.98,2,0.26,87,Surveillance,2015,National,3.4,1.1,7.9,1.5,100,110,72,140,0.16,0.11,0.22,,,,,58,39,78,41,28,55
+United Kingdom of Great Britain and Northern Ireland,2017,GB,GBR,826,EUR,Surveillance,2017,National,1.4,0.93,2,0.26,86,Surveillance,2017,National,4.7,1.7,9.9,1.9,67,110,72,150,0.16,0.11,0.22,83,87,59,120,55,36,74,38,25,50
+United Kingdom of Great Britain and Northern Ireland,2018,GB,GBR,826,EUR,Surveillance,2018,National,1.2,0.8,1.8,0.25,71,Surveillance,2018,National,5.3,2.3,10,1.8,88,93,62,130,0.14,0.09,0.19,77,72,48,100,50,33,68,35,23,48
+United Kingdom of Great Britain and Northern Ireland,2019,GB,GBR,826,EUR,Surveillance,2019,National,1.4,0.94,2.1,0.27,82,Surveillance,2019,National,3.3,0.89,8.1,1.6,76,89,59,120,0.13,0.09,0.18,80,71,48,99,49,32,67,35,23,47
+Georgia,2015,GE,GEO,268,EUR,Surveillance,2015,National,12,11,14,0.82,85,Surveillance,2015,National,33,29,37,1.9,91,980,810,1100,24,20,27,,,,,550,510,600,210,180,240
+Georgia,2016,GE,GEO,268,EUR,Surveillance,2016,National,11,9.3,12,0.78,95,Surveillance,2016,National,31,27,35,1.8,100,780,650,920,19,16,23,,,,,460,420,500,390,350,420
+Georgia,2017,GE,GEO,268,EUR,Surveillance,2017,National,11,9.7,13,0.83,93,Surveillance,2017,National,30,26,34,2,100,570,440,720,14,11,18,95,550,420,690,400,360,440,340,310,380
+Georgia,2018,GE,GEO,268,EUR,Surveillance,2018,National,12,10,14,0.9,94,Surveillance,2018,National,31,27,35,2.2,100,570,450,700,14,11,18,97,550,430,680,370,340,410,320,290,360
+Georgia,2019,GE,GEO,268,EUR,Surveillance,2019,National,12,10,14,0.89,89,Surveillance,2019,National,32,28,37,2.2,100,530,420,650,13,10,16,92,480,380,600,350,320,390,320,280,350
+Ghana,2015,GH,GHA,288,AFR,Model,2015,,2.8,0.1,6.7,2,67,Surveillance,2015,National,7.2,5.7,9,0.82,,1500,0,3400,5.4,0,12,,,,,430,0,930,220,8,520
+Ghana,2016,GH,GHA,288,AFR,Survey,2017,National,1.5,0.7,2.3,0.4,69,Survey,2017,National,7,0.6,13,3.2,66,840,270,1400,3,0.94,5,,,,,250,140,370,180,95,260
+Ghana,2017,GH,GHA,288,AFR,Survey,2017,National,1.5,0.7,2.3,0.41,67,Surveillance,2017,National,17,14,20,1.3,100,990,400,1800,3.4,1.4,6.3,76,750,300,1400,330,230,440,260,200,330
+Ghana,2018,GH,GHA,288,AFR,Surveillance,2018,National,1.3,1,1.6,0.13,100,Surveillance,2018,National,16,14,19,1.3,100,870,410,1500,2.9,1.4,5,100,870,410,1500,290,260,330,240,210,270
+Ghana,2019,GH,GHA,288,AFR,Surveillance,2019,National,2.6,2.3,2.9,0.17,100,Surveillance,2019,National,5.9,4.2,8.1,0.95,100,1200,580,2100,4,1.9,6.9,100,1200,580,2100,390,340,430,270,230,300
+Guinea,2015,GN,GIN,324,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,780,0,1700,6.8,0,15,,,,,370,0,740,210,8,500
+Guinea,2016,GN,GIN,324,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,730,140,1300,6.2,1.2,11,,,,,360,96,630,270,64,480
+Guinea,2017,GN,GIN,324,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,670,260,1300,5.5,2.2,10,67,450,180,840,340,170,500,260,140,380
+Guinea,2018,GN,GIN,324,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Surveillance,2018,National,34,30,38,2,100,680,290,1200,5.5,2.3,10,84,570,240,1000,470,300,630,370,250,500
+Guinea,2019,GN,GIN,324,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Surveillance,2019,National,50,45,55,2.5,82,790,380,1300,6.2,3,11,92,720,350,1200,630,450,800,420,300,550
+Gambia,2015,GM,GMB,270,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,120,0,250,5.8,0,12,,,,,82,0,170,40,1,95
+Gambia,2016,GM,GMB,270,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,110,18,200,5.1,0.85,9.4,,,,,78,19,140,51,13,89
+Gambia,2017,GM,GMB,270,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,110,47,200,5,2.1,9,67,74,32,130,76,41,110,49,27,70
+Gambia,2018,GM,GMB,270,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Model,2018,,15,11,19,2,100,120,50,210,5.1,2.2,9.1,82,94,41,170,65,32,99,35,16,60
+Gambia,2019,GM,GMB,270,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Model,2019,,14,10,19,2.1,100,110,50,190,4.6,2.1,8.1,94,100,47,180,71,37,110,51,29,74
+Guinea-Bissau,2015,GW,GNB,624,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,210,0,490,12,0,28,,,,,65,0,140,41,1,97
+Guinea-Bissau,2016,GW,GNB,624,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,200,17,390,11,0.95,22,,,,,67,12,120,54,8,99
+Guinea-Bissau,2017,GW,GNB,624,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,190,75,360,10,4.1,20,67,130,50,240,58,24,91,48,20,76
+Guinea-Bissau,2018,GW,GNB,624,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Model,2018,,15,11,19,2,100,180,73,340,9.6,3.9,18,82,150,60,280,53,23,83,44,20,69
+Guinea-Bissau,2019,GW,GNB,624,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Model,2019,,14,10,19,2.1,100,190,82,340,9.8,4.3,18,94,180,77,320,62,29,95,51,23,79
+Equatorial Guinea,2015,GQ,GNQ,226,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,66,9,120,5.6,0.74,10,,,,,58,9,110,22,1,52
+Equatorial Guinea,2016,GQ,GNQ,226,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Surveillance,2016,National,29,21,39,4.5,66,110,55,170,9.2,4.5,14,,,,,78,45,110,51,29,73
+Equatorial Guinea,2017,GQ,GNQ,226,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Surveillance,2016,National,29,21,39,4.5,79,100,57,160,8,4.5,13,70,71,40,110,67,45,89,47,31,62
+Equatorial Guinea,2018,GQ,GNQ,226,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Surveillance,2018,National,20,12,29,4.3,100,97,52,160,7.4,3.9,12,85,83,44,130,50,31,70,35,21,48
+Equatorial Guinea,2019,GQ,GNQ,226,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Surveillance,2019,National,37,27,48,5,100,110,67,170,8.2,5,12,96,110,65,160,110,85,140,58,43,74
+Greece,2015,GR,GRC,300,EUR,Surveillance,2010,National,1.5,0.04,8,1.5,100,Surveillance,2010,National,9.1,0.23,41,8.7,100,11,0,28,0.1,0,0.26,,,,,10,0,23,5,0,27
+Greece,2016,GR,GRC,300,EUR,Surveillance,2010,National,1.5,0.04,8,1.5,100,Surveillance,2010,National,9.1,0.23,41,8.7,100,12,0,28,0.11,0,0.26,,,,,9,0,21,7,0,16
+Greece,2017,GR,GRC,300,EUR,Surveillance,2010,National,1.5,0.04,8,1.5,100,Surveillance,2010,National,9.1,0.23,41,8.7,94,11,1,32,0.1,0.01,0.3,98,11,1,31,10,0,24,8,0,19
+Greece,2018,GR,GRC,300,EUR,Surveillance,2010,National,1.5,0.04,8,1.5,87,Surveillance,2010,National,9.1,0.23,41,8.7,89,10,1,30,0.1,0.01,0.29,88,9,1,26,8,0,20,6,0,14
+Greece,2019,GR,GRC,300,EUR,Surveillance,2010,National,1.5,0.04,8,1.5,97,Surveillance,2010,National,9.1,0.23,41,8.7,95,10,1,29,0.1,0.01,0.28,96,10,1,28,9,0,21,7,0,16
+Grenada,2015,GD,GRD,308,AMR,Model,2015,,3,1.5,4.6,0.8,88,Model,2015,,12,6.9,17,2.5,89,0,0,0,0.16,0.07,0.25,,,,,0,0,0,0,0,0
+Grenada,2016,GD,GRD,308,AMR,Model,2016,,2.9,1.4,4.5,0.8,90,Model,2016,,13,6.7,20,3.4,90,0,0,1,0.43,0.23,0.63,,,,,0,0,1,0,0,0
+Grenada,2017,GD,GRD,308,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,0,0,1,0.19,0.01,0.63,85,0,0,1,0,0,0,0,0,0
+Grenada,2018,GD,GRD,308,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Model,2018,,14,9.3,19,2.4,87,0,0,0,0.13,0.01,0.41,79,0,0,0,0,0,0,0,0,0
+Grenada,2019,GD,GRD,308,AMR,Surveillance,2019,National,0,0,85,22,85,Model,2019,,12,7.4,17,2.5,88,0,0,0,0.02,0.01,0.02,88,0,0,0,0,0,2,0,0,2
+Greenland,2015,GL,GRL,304,EUR,Model,2015,,2.3,1.4,3.2,0.4,79,Model,2015,,15,13,18,1.2,84,3,2,4,5.5,4.1,6.9,,,,,3,2,3,1,1,2
+Greenland,2016,GL,GRL,304,EUR,Model,2016,,2.4,1.6,3.2,0.4,82,Model,2016,,11,9.1,14,1.2,95,3,2,3,4.9,3.7,6.1,,,,,2,2,3,1,1,1
+Greenland,2017,GL,GRL,304,EUR,Model,2017,,2.7,1.5,4.4,0.74,100,Model,2017,,12,7.9,17,2.3,94,3,2,5,5.7,3.1,8.9,99,3,2,5,3,2,4,3,2,4
+Greenland,2018,GL,GRL,304,EUR,Surveillance,2018,National,0,0,12,3.1,87,Surveillance,2018,National,0,0,52,13,89,0,0,0,0,0,0,,,,,0,0,3,0,0,2
+Greenland,2019,GL,GRL,304,EUR,Surveillance,2018,National,0,0,12,3.1,97,Surveillance,2018,National,0,0,52,13,95,0,0,0,0,0,0,,,,,0,0,5,0,0,5
+Guatemala,2015,GT,GTM,320,AMR,Survey,2002,National,4.2,2.6,5.8,0.84,71,Survey,2002,National,29,21,37,3.9,91,230,150,310,1.4,0.92,1.9,,,,,180,130,230,100,63,140
+Guatemala,2016,GT,GTM,320,AMR,Survey,2002,National,4.2,2.6,5.8,0.84,71,Survey,2002,National,29,19,39,5.1,91,230,150,310,1.4,0.92,1.9,,,,,170,120,220,150,110,200
+Guatemala,2017,GT,GTM,320,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,130,46,250,0.75,0.27,1.5,84,110,38,210,98,39,160,79,29,130
+Guatemala,2018,GT,GTM,320,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Model,2018,,14,9.3,19,2.4,87,120,42,240,0.71,0.25,1.4,75,91,32,180,96,38,150,81,35,130
+Guatemala,2019,GT,GTM,320,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Surveillance,2019,National,12,7.7,17,2.2,100,130,47,250,0.73,0.27,1.4,86,110,41,210,100,45,160,85,39,130
+Guam,2015,GU,GUM,316,WPR,Surveillance,2012,National,0,0,11,0,,Surveillance,2012,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,8,0,0,5
+Guam,2016,GU,GUM,316,WPR,Surveillance,2016,National,4.9,0.6,17,3.4,100,Surveillance,2016,National,0,0,0,0,,4,0,10,2.6,0,6.1,,,,,4,0,12,2,0,7
+Guam,2017,GU,GUM,316,WPR,Surveillance,2017,National,3.6,0.44,12,2.5,100,Surveillance,2017,National,100,2,100,25,100,6,2,12,3.5,1.2,7.2,100,6,2,12,3,0,10,3,0,6
+Guam,2018,GU,GUM,316,WPR,Surveillance,2018,National,0,0,8,2.1,78,Surveillance,2018,National,0,0,60,15,59,0,0,0,0,0,0,,,,,0,0,3,0,0,2
+Guam,2019,GU,GUM,316,WPR,Surveillance,2019,National,3.9,0.48,13,2.7,100,Surveillance,2018,National,0,0,60,15,69,3,0,10,2.1,0.25,5.7,100,3,0,10,3,0,10,2,0,7
+Guyana,2015,GY,GUY,328,AMR,Model,2015,,3,1.5,4.6,0.8,88,Model,2015,,12,6.9,17,2.5,89,43,29,58,5.6,3.8,7.6,,,,,33,22,43,8,4,13
+Guyana,2016,GY,GUY,328,AMR,Model,2016,,2.9,1.4,4.5,0.8,90,Surveillance,2016,National,17,8.2,30,5.2,90,46,30,62,5.9,3.9,8,,,,,38,22,54,19,11,26
+Guyana,2017,GY,GUY,328,AMR,Surveillance,2017,National,2.5,0.92,5.3,1,83,Surveillance,2017,National,12,5.8,22,3.8,88,34,16,58,4.3,2.1,7.4,85,28,14,49,26,13,38,17,9,25
+Guyana,2018,GY,GUY,328,AMR,Surveillance,2017,National,2.5,0.92,5.3,1,73,Surveillance,2017,National,12,5.8,22,3.8,87,32,15,55,4.1,1.9,7.1,80,26,12,44,25,13,38,19,10,28
+Guyana,2019,GY,GUY,328,AMR,Surveillance,2019,National,3.1,1.4,5.9,1,85,Surveillance,2019,National,4.8,1.3,12,2.3,88,22,11,37,2.8,1.3,4.8,85,19,9,32,18,8,27,15,7,22
+"China, Hong Kong SAR",2015,HK,HKG,344,WPR,Surveillance,2011,National,1.2,0.73,1.7,0.24,74,Surveillance,2011,National,3.4,1.4,6.8,1.3,86,77,51,100,1.1,0.71,1.4,,,,,46,30,63,23,14,34
+"China, Hong Kong SAR",2016,HK,HKG,344,WPR,Surveillance,2011,National,1.2,0.73,1.7,0.24,74,Surveillance,2011,National,3.4,1.4,6.8,1.3,86,79,53,110,1.1,0.73,1.5,,,,,46,30,62,31,20,41
+"China, Hong Kong SAR",2017,HK,HKG,344,WPR,Surveillance,2017,National,0.88,0.54,1.3,0.19,70,Surveillance,2017,National,4.6,2.1,8.6,1.5,89,59,35,90,0.81,0.48,1.2,71,42,25,64,39,25,53,29,19,40
+"China, Hong Kong SAR",2018,HK,HKG,344,WPR,Surveillance,2018,National,1.5,1,2,0.24,68,Surveillance,2017,National,4.6,2.1,8.6,1.5,89,85,58,120,1.2,0.78,1.6,73,62,42,86,60,43,77,52,37,67
+"China, Hong Kong SAR",2019,HK,HKG,344,WPR,Surveillance,2019,National,0.81,0.49,1.3,0.19,84,Surveillance,2019,National,2.8,0.93,6.5,1.3,100,47,28,71,0.64,0.38,0.96,85,40,24,61,32,19,45,25,15,35
+Honduras,2015,HN,HND,340,AMR,Survey,2004,National,2.2,0.69,3.7,0.77,80,Survey,2004,National,21,10,31,5.4,60,110,58,170,1.2,0.64,1.9,,,,,94,52,140,44,14,73
+Honduras,2016,HN,HND,340,AMR,Survey,2004,National,2.2,0.69,3.7,0.77,80,Survey,2004,National,21,9.2,32,5.8,60,120,59,170,1.3,0.64,1.9,,,,,93,51,140,80,44,120
+Honduras,2017,HN,HND,340,AMR,Survey,2004,National,2.2,0.93,4,0.78,80,Surveillance,2017,National,4,1.7,7.7,1.4,100,81,33,150,0.86,0.35,1.6,80,65,26,120,59,23,94,52,21,83
+Honduras,2018,HN,HND,340,AMR,Survey,2004,National,2.2,0.93,4,0.78,80,Surveillance,2018,National,3.2,1.3,6.4,1.2,91,81,32,150,0.84,0.34,1.6,81,65,26,120,58,23,94,54,21,86
+Honduras,2019,HN,HND,340,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Surveillance,2018,National,3.2,1.3,6.4,1.2,91,67,20,140,0.69,0.21,1.5,85,57,17,120,50,15,85,46,13,78
+Croatia,2015,HR,HRV,191,EUR,Surveillance,2015,National,0,0,1.4,0,,Surveillance,2015,National,0,0,16,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,5
+Croatia,2016,HR,HRV,191,EUR,Surveillance,2015,National,0,0,1.4,0,,Surveillance,2016,National,0,0,37,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Croatia,2017,HR,HRV,191,EUR,Surveillance,2015,National,0,0,1.4,0.36,100,Surveillance,2015,National,0,0,16,4.1,94,0,0,0,0,0,0,,,,,0,0,3,0,0,2
+Croatia,2018,HR,HRV,191,EUR,Surveillance,2015,National,0,0,1.4,0.36,87,Surveillance,2015,National,0,0,16,4.1,89,0,0,0,0,0,0,,,,,0,0,3,0,0,3
+Croatia,2019,HR,HRV,191,EUR,Surveillance,2018,National,0.44,0.01,2.5,0.44,100,Surveillance,2018,National,6.3,0.16,30,6.1,100,2,0,7,0.05,0,0.16,100,2,0,7,2,0,5,2,0,5
+Haiti,2015,HT,HTI,332,AMR,Model,2015,,3,1.5,4.6,0.8,88,Model,2015,,12,6.9,17,2.5,89,790,450,1100,7.4,4.2,10,,,,,540,320,770,320,160,490
+Haiti,2016,HT,HTI,332,AMR,Model,2016,,2.9,1.4,4.5,0.8,90,Model,2016,,13,6.7,20,3.4,90,770,440,1100,7.1,4.1,10,,,,,530,310,740,300,140,460
+Haiti,2017,HT,HTI,332,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,600,210,1200,5.4,1.9,11,84,500,170,990,460,220,700,350,160,540
+Haiti,2018,HT,HTI,332,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Model,2018,,14,9.3,19,2.4,87,570,200,1100,5.1,1.8,10,75,420,150,840,380,170,600,330,160,500
+Haiti,2019,HT,HTI,332,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Model,2019,,12,7.4,17,2.5,88,560,210,1100,5,1.9,9.6,85,480,180,910,360,170,560,300,140,450
+Hungary,2015,HU,HUN,348,EUR,Surveillance,2010,National,2.9,1.6,4.8,0.76,86,Surveillance,2010,National,8.1,3.3,16,2.9,100,37,23,52,0.38,0.24,0.53,,,,,30,17,43,11,6,18
+Hungary,2016,HU,HUN,348,EUR,Surveillance,2010,National,2.9,1.6,4.8,0.76,86,Surveillance,2010,National,8.1,3.3,16,2.9,100,35,21,48,0.36,0.22,0.5,,,,,27,16,39,15,9,21
+Hungary,2017,HU,HUN,348,EUR,Surveillance,2010,National,2.9,1.6,4.8,0.76,100,Surveillance,2010,National,8.1,3.3,16,2.9,94,26,15,40,0.27,0.15,0.42,99,26,15,40,23,13,32,12,7,17
+Hungary,2018,HU,HUN,348,EUR,Surveillance,2010,National,2.9,1.6,4.8,0.76,87,Surveillance,2010,National,8.1,3.3,16,2.9,89,22,13,34,0.23,0.13,0.35,87,19,11,29,21,12,31,13,8,19
+Hungary,2019,HU,HUN,348,EUR,Surveillance,2019,National,3.3,1.4,6.4,1.1,90,Surveillance,2010,National,8.1,3.3,16,2.9,95,23,11,40,0.24,0.11,0.42,91,21,10,37,20,9,32,12,5,18
+Indonesia,2015,ID,IDN,360,SEA,Multiple surveys,"2004, 2006, 2010",,2.8,2.2,3.5,0.32,68,Multiple surveys,"2006, 2010",,16,10,20,2.4,75,32000,19000,45000,12,7.4,17,,,,,10000,8100,12000,5300,4200,6700
+Indonesia,2016,ID,IDN,360,SEA,Multiple surveys,"2004, 2006, 2010",,2.8,2.2,3.5,0.32,68,Multiple surveys,"2006, 2010",,16,10,20,2.4,75,32000,19000,45000,12,7.3,17,,,,,11000,8900,13000,6900,5600,8200
+Indonesia,2017,ID,IDN,360,SEA,Survey,2018,National,2.4,1.8,3.3,0.38,91,Survey,2018,National,13,9,18,2.3,99,23000,16000,31000,8.8,6.2,12,91,21000,15000,28000,12000,8700,15000,7000,5300,8700
+Indonesia,2018,ID,IDN,360,SEA,Survey,2018,National,2.4,1.8,3.3,0.38,100,Survey,2018,National,13,9,18,2.3,94,24000,17000,32000,8.8,6.2,12,99,23000,16000,31000,14000,11000,18000,7600,5700,9400
+Indonesia,2019,ID,IDN,360,SEA,Survey,2018,National,2.4,1.8,3.3,0.38,100,Survey,2018,National,13,9,18,2.3,94,24000,17000,32000,8.8,6.2,12,99,24000,17000,32000,15000,11000,19000,8600,6500,11000
+India,2015,IN,IND,356,SEA,Multiple surveys,"2001, 2004, 2006, 2009",,2.5,2.1,3.1,0.25,90,Multiple surveys,"2006, 2009",,16,14,18,0.83,94,130000,88000,180000,9.9,6.7,14,,,,,79000,72000,87000,19000,16000,23000
+India,2016,IN,IND,356,SEA,Survey,2016,National,2.8,2,3.5,0.38,81,Survey,2016,National,12,10,13,0.8,90,147000,95000,199000,11,7.2,15,,,,,84000,72000,95000,44000,37000,51000
+India,2017,IN,IND,356,SEA,Survey,2016,National,2.8,2,3.5,0.38,91,Survey,2016,National,12,10,13,0.82,99,123000,73000,187000,9.2,5.4,14,92,114000,67000,173000,59000,49000,69000,45000,38000,52000
+India,2018,IN,IND,356,SEA,Survey,2016,National,2.8,2.3,3.5,0.31,100,Surveillance,2018,National,14,14,14,0.08,41,130000,77000,198000,9.6,5.7,15,69,90000,53000,137000,84000,75000,92000,54000,49000,58000
+India,2019,IN,IND,356,SEA,Survey,2016,National,2.8,2.3,3.5,0.31,100,Surveillance,2019,National,14,14,14,0.1,35,124000,73000,189000,9.1,5.3,14,67,83000,49000,127000,88000,79000,98000,47000,42000,53000
+Ireland,2015,IE,IRL,372,EUR,Surveillance,2015,National,1.1,0.03,5.8,1.1,100,Surveillance,2015,National,0,0,31,0,,4,0,11,0.08,0,0.24,,,,,2,0,6,2,0,8
+Ireland,2016,IE,IRL,372,EUR,Surveillance,2015,National,1.1,0.03,5.8,1.1,100,Surveillance,2015,National,0,0,31,0,,4,0,11,0.08,0,0.23,,,,,2,0,6,2,0,5
+Ireland,2017,IE,IRL,372,EUR,Surveillance,2015,National,1.1,0.03,5.8,1.1,100,Surveillance,2015,National,0,0,31,7.9,94,3,2,5,0.07,0.04,0.11,100,3,2,5,2,0,7,2,0,5
+Ireland,2018,IE,IRL,372,EUR,Surveillance,2015,National,1.1,0.03,5.8,1.1,87,Surveillance,2015,National,0,0,31,7.9,89,3,2,5,0.07,0.04,0.1,87,3,2,4,2,0,8,2,0,6
+Ireland,2019,IE,IRL,372,EUR,Surveillance,2015,National,1.1,0.03,5.8,1.1,97,Surveillance,2019,National,11,0.28,48,10,100,6,1,17,0.12,0.01,0.34,98,6,1,16,4,0,10,3,0,7
+Iran (Islamic Republic of),2015,IR,IRN,364,EMR,Survey,2014,National,1.3,0.6,2,0.36,62,Survey,2014,National,12,6.1,19,3.2,100,250,150,350,0.32,0.19,0.45,,,,,170,110,230,72,34,110
+Iran (Islamic Republic of),2016,IR,IRN,364,EMR,Survey,2014,National,1.3,0.6,2,0.36,62,Surveillance,2016,National,8.3,5.9,11,1.3,61,200,120,290,0.26,0.15,0.37,,,,,130,82,170,99,65,130
+Iran (Islamic Republic of),2017,IR,IRN,364,EMR,Survey,2014,National,1.3,0.69,2.1,0.36,62,Surveillance,2016,National,8.3,5.9,11,1.3,84,200,100,320,0.24,0.13,0.4,64,130,66,200,130,84,180,100,66,140
+Iran (Islamic Republic of),2018,IR,IRN,364,EMR,Survey,2014,National,1.3,0.69,2.1,0.36,62,Surveillance,2016,National,8.3,5.9,11,1.3,100,190,100,310,0.23,0.12,0.38,65,130,66,200,130,82,180,100,65,130
+Iran (Islamic Republic of),2019,IR,IRN,364,EMR,Survey,2014,National,1.3,0.69,2.1,0.36,62,Surveillance,2016,National,8.3,5.9,11,1.3,100,180,96,300,0.22,0.12,0.36,65,120,63,200,130,80,170,100,66,140
+Iraq,2015,IQ,IRQ,368,EMR,Survey,2013,National,6.1,4.4,7.8,0.88,18,Survey,2013,National,24,16,32,4,82,1200,880,1500,3.4,2.5,4.2,,,,,400,310,490,160,120,210
+Iraq,2016,IQ,IRQ,368,EMR,Survey,2013,National,6.1,4.4,7.8,0.88,18,Survey,2013,National,24,14,34,5.1,82,1200,880,1500,3.3,2.4,4.1,,,,,360,270,440,230,180,290
+Iraq,2017,IQ,IRQ,368,EMR,Survey,2013,National,6.1,4.5,8,0.9,18,Surveillance,2017,National,30,25,35,2.6,100,1300,910,1800,3.5,2.4,4.7,24,320,220,430,380,300,450,240,190,280
+Iraq,2018,IQ,IRQ,368,EMR,Survey,2013,National,6.1,4.5,8,0.9,18,Surveillance,2018,National,18,13,23,2.5,100,1100,800,1500,2.9,2.1,3.9,23,260,180,340,280,220,350,170,130,210
+Iraq,2019,IQ,IRQ,368,EMR,Survey,2013,National,6.1,4.5,8,0.9,18,Surveillance,2018,National,18,13,23,2.5,100,1100,810,1500,2.9,2.1,3.9,20,220,160,300,260,200,310,160,130,200
+Iceland,2015,IS,ISL,352,EUR,Surveillance,2015,National,0,0,71,0,,Surveillance,2015,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,4,0,0,2
+Iceland,2016,IS,ISL,352,EUR,Surveillance,2016,National,0,0,60,0,,Surveillance,2016,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,4,0,0,3
+Iceland,2017,IS,ISL,352,EUR,Surveillance,2017,National,0,0,41,10,100,Surveillance,2017,National,0,0,98,25,94,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Iceland,2018,IS,ISL,352,EUR,Surveillance,2017,National,0,0,41,10,87,Surveillance,2017,National,0,0,98,25,89,0,0,0,0,0,0,,,,,0,0,2,0,0,1
+Iceland,2019,IS,ISL,352,EUR,Surveillance,2019,National,0,0,60,15,97,Surveillance,2017,National,0,0,98,25,95,0,0,0,0,0,0,,,,,0,0,4,0,0,2
+Israel,2015,IL,ISR,376,EUR,Surveillance,2015,National,8.8,4.8,15,2.3,77,Surveillance,2015,National,33,4.3,78,19,50,32,17,48,0.4,0.21,0.6,,,,,20,10,29,14,7,22
+Israel,2016,IL,ISR,376,EUR,Surveillance,2016,National,7.4,3.5,14,2.4,100,Surveillance,2016,National,0,0,84,0,,24,11,38,0.3,0.13,0.47,,,,,13,5,22,10,4,16
+Israel,2017,IL,ISR,376,EUR,Surveillance,2017,National,5.4,2.2,11,2,100,Surveillance,2017,National,50,1.3,99,35,100,21,9,37,0.25,0.11,0.45,100,21,9,37,12,4,20,8,3,13
+Israel,2018,IL,ISR,376,EUR,Surveillance,2018,National,9.7,5.6,16,2.4,87,Surveillance,2018,National,0,0,46,12,89,31,17,48,0.36,0.2,0.58,87,26,15,42,21,11,31,15,8,22
+Israel,2019,IL,ISR,376,EUR,Surveillance,2019,National,8.6,4,16,2.7,100,Surveillance,2018,National,0,0,46,12,95,20,9,35,0.23,0.11,0.41,100,20,9,35,13,5,21,10,4,17
+Italy,2015,IT,ITA,380,EUR,Surveillance,2015,National,2.8,1.8,4.3,0.59,82,Surveillance,2015,National,13,7.7,21,3.2,93,120,74,160,0.2,0.12,0.26,,,,,110,76,150,58,36,87
+Italy,2016,IT,ITA,380,EUR,Surveillance,2015,National,2.8,1.8,4.3,0.59,82,Surveillance,2015,National,13,7.7,21,3.2,93,140,95,190,0.24,0.16,0.32,,,,,110,73,140,80,52,110
+Italy,2017,IT,ITA,380,EUR,Surveillance,2015,National,2.8,1.8,4.3,0.59,100,Surveillance,2015,National,13,7.7,21,3.2,94,180,110,250,0.29,0.19,0.42,99,170,110,250,91,59,120,71,45,96
+Italy,2018,IT,ITA,380,EUR,Surveillance,2015,National,2.8,1.8,4.3,0.59,87,Surveillance,2015,National,13,7.7,21,3.2,89,170,110,250,0.28,0.18,0.41,88,150,95,220,93,61,130,72,46,97
+Italy,2019,IT,ITA,380,EUR,Surveillance,2015,National,2.8,1.8,4.3,0.59,97,Surveillance,2015,National,13,7.7,21,3.2,95,170,110,250,0.29,0.18,0.42,96,170,110,240,92,61,120,72,47,96
+Jamaica,2015,JM,JAM,388,AMR,Surveillance,2013,National,1.7,0.04,9.1,1.7,100,Surveillance,2013,National,0,0,0,0,,2,0,7,0.09,0,0.23,,,,,2,0,5,1,0,6
+Jamaica,2016,JM,JAM,388,AMR,Surveillance,2013,National,1.7,0.04,9.1,1.7,100,Surveillance,2013,National,0,0,0,0,,2,0,7,0.08,0,0.23,,,,,2,0,5,1,0,4
+Jamaica,2017,JM,JAM,388,AMR,Surveillance,2013,National,1.7,0.04,9.1,1.7,83,Surveillance,2013,National,13,8.4,18,2.5,88,3,2,4,0.09,0.05,0.14,83,2,1,3,2,0,6,1,0,4
+Jamaica,2018,JM,JAM,388,AMR,Surveillance,2018,National,0,0,7.9,2,73,Surveillance,2013,National,14,9.3,19,2.4,87,0,0,0,0,0,0,87,0,0,0,0,0,3,0,0,2
+Jamaica,2019,JM,JAM,388,AMR,Surveillance,2019,National,0,0,7.3,1.9,85,Surveillance,2013,National,12,7.4,17,2.5,88,0,0,0,0,0,0,88,0,0,0,0,0,5,0,0,4
+Jordan,2015,JO,JOR,400,EMR,Surveillance,2009,National,6.3,2.4,13,2.5,100,Surveillance,2009,National,29,3.7,71,17,100,39,12,67,0.42,0.13,0.72,,,,,21,7,36,6,2,12
+Jordan,2016,JO,JOR,400,EMR,Surveillance,2009,National,6.3,2.4,13,2.5,100,Surveillance,2009,National,29,3.7,71,17,100,39,12,67,0.41,0.12,0.7,,,,,24,8,39,10,3,17
+Jordan,2017,JO,JOR,400,EMR,Surveillance,2009,National,6.3,2.4,13,2.5,79,Surveillance,2009,National,29,3.7,71,17,84,48,19,90,0.49,0.19,0.92,79,38,15,71,30,10,50,13,4,22
+Jordan,2018,JO,JOR,400,EMR,Surveillance,2009,National,6.3,2.4,13,2.5,83,Surveillance,2009,National,29,3.7,71,17,100,36,14,68,0.36,0.14,0.68,86,31,12,59,21,6,35,11,4,18
+Jordan,2019,JO,JOR,400,EMR,Surveillance,2019,National,2.6,0.32,9.2,1.8,100,Surveillance,2009,National,29,3.7,71,17,100,19,4,47,0.19,0.04,0.46,100,19,4,47,12,0,25,5,1,10
+Japan,2015,JP,JPN,392,WPR,Surveillance,2002,National,1,0.69,1.5,0.19,68,Surveillance,2002,National,11,8.2,14,1.5,89,270,180,360,0.21,0.14,0.28,,,,,230,170,290,120,79,170
+Japan,2016,JP,JPN,392,WPR,Surveillance,2002,National,1,0.69,1.5,0.19,68,Surveillance,2002,National,11,8.2,14,1.5,89,260,170,340,0.2,0.13,0.27,,,,,210,160,270,180,140,230
+Japan,2017,JP,JPN,392,WPR,Model,2017,,2.3,0.86,4.4,0.91,78,Model,2017,,12,7.2,19,2.9,88,570,230,1100,0.45,0.18,0.83,79,450,190,830,360,140,590,310,120,500
+Japan,2018,JP,JPN,392,WPR,Model,2018,,2.3,0.92,4.3,0.87,78,Model,2018,,11,6.1,17,2.8,59,510,220,930,0.4,0.17,0.73,73,380,160,680,330,130,520,280,110,450
+Japan,2019,JP,JPN,392,WPR,Model,2019,,2.2,0.89,4.1,0.82,76,Model,2019,,12,7.2,19,3,69,480,210,870,0.38,0.17,0.68,74,360,160,650,300,130,470,260,110,410
+Kazakhstan,2015,KZ,KAZ,398,EUR,Surveillance,2015,National,25,24,26,0.53,92,Surveillance,2015,National,43,42,45,0.77,92,8800,7100,10000,50,40,57,,,,,4000,3900,4100,1700,1600,1700
+Kazakhstan,2016,KZ,KAZ,398,EUR,Surveillance,2015,National,26,25,28,0.6,91,Surveillance,2015,National,44,42,46,0.84,91,7000,5400,8600,39,30,48,,,,,3500,3400,3600,3200,3100,3300
+Kazakhstan,2017,KZ,KAZ,398,EUR,Surveillance,2015,National,26,25,28,0.6,90,Surveillance,2015,National,44,42,46,0.84,94,3800,2400,5500,21,13,31,91,3500,2200,5000,3600,3500,3700,3200,3100,3300
+Kazakhstan,2018,KZ,KAZ,398,EUR,Surveillance,2018,National,27,26,28,0.56,59,Surveillance,2018,National,64,63,66,0.79,59,4800,3000,6900,26,16,38,59,2800,1800,4100,4900,4800,5000,4400,4300,4500
+Kazakhstan,2019,KZ,KAZ,398,EUR,Surveillance,2019,National,27,26,28,0.59,76,Surveillance,2019,National,44,43,46,0.87,65,4100,2600,5900,22,14,32,71,2900,1900,4200,3900,3800,4000,3100,3000,3200
+Kenya,2015,KE,KEN,404,AFR,Survey,2014,National,1.3,0.68,1.9,0.32,54,Surveillance,2014,National,9.4,8.7,10,0.37,21,2000,1300,2800,4.2,2.7,5.8,,,,,1400,980,1700,480,250,710
+Kenya,2016,KE,KEN,404,AFR,Survey,2014,National,1.3,0.68,1.9,0.32,54,Surveillance,2014,National,9.4,8.7,10,0.37,71,3000,1600,4400,6.1,3.2,9,,,,,1300,910,1600,820,570,1100
+Kenya,2017,KE,KEN,404,AFR,Survey,2014,National,1.3,0.74,2,0.32,54,Surveillance,2017,National,4.4,3.7,5.2,0.38,100,2500,1100,4300,4.9,2.2,8.6,62,1500,700,2700,1100,670,1500,730,450,1000
+Kenya,2018,KE,KEN,404,AFR,Survey,2014,National,1.3,0.74,2,0.32,54,Surveillance,2017,National,4.4,3.7,5.2,0.38,100,2300,1100,4100,4.5,2.1,7.9,62,1400,660,2500,1300,800,1800,750,470,1000
+Kenya,2019,KE,KEN,404,AFR,Survey,2014,National,1.3,0.74,2,0.32,54,Surveillance,2019,National,4.6,4,5.4,0.35,100,2200,950,3900,4.1,1.8,7.4,56,1200,530,2200,1200,750,1600,760,480,1000
+Kyrgyzstan,2015,KG,KGZ,417,EUR,Survey,2011,National,32,28,36,2.2,83,Surveillance,2013,National,56,53,59,1.6,99,5000,4100,5900,84,69,99,,,,,2400,2200,2600,790,680,900
+Kyrgyzstan,2016,KG,KGZ,417,EUR,Surveillance,2016,National,27,25,29,0.95,97,Surveillance,2016,National,60,57,63,1.5,91,4800,4000,5500,79,67,90,,,,,2500,2400,2600,1400,1400,1500
+Kyrgyzstan,2017,KG,KGZ,417,EUR,Surveillance,2017,National,26,24,27,0.91,88,Surveillance,2017,National,61,58,64,1.5,82,3000,2400,3800,49,39,61,87,2600,2100,3300,2300,2200,2400,1400,1400,1500
+Kyrgyzstan,2018,KG,KGZ,417,EUR,Surveillance,2018,National,29,27,31,0.95,100,Surveillance,2018,National,68,66,71,1.3,100,3000,2400,3600,47,39,57,100,3000,2400,3600,2700,2600,2800,1600,1600,1700
+Kyrgyzstan,2019,KG,KGZ,417,EUR,Surveillance,2019,National,29,28,31,0.94,86,Surveillance,2019,National,60,57,63,1.5,86,2800,2300,3300,43,36,51,86,2400,2000,2800,2200,2200,2300,1400,1300,1400
+Cambodia,2015,KH,KHM,116,WPR,Survey,2007,National,1.8,0.77,2.8,0.53,78,Survey,2007,National,11,1.4,20,4.8,100,1300,590,2100,8.4,3.8,14,,,,,570,290,840,190,79,290
+Cambodia,2016,KH,KHM,116,WPR,Survey,2007,National,1.8,0.77,2.8,0.53,78,Survey,2007,National,11,0,23,6.3,100,1200,530,1900,7.7,3.4,12,,,,,550,260,840,200,83,310
+Cambodia,2017,KH,KHM,116,WPR,Survey,2007,National,1.8,0.9,3,0.54,78,Survey,2007,National,11,3.2,22,4.8,100,1200,520,2100,7.2,3.2,13,79,920,410,1600,560,290,840,270,140,410
+Cambodia,2018,KH,KHM,116,WPR,Survey,2018,National,1.8,1.2,2.8,0.41,78,Survey,2018,National,8.2,4,16,3.1,59,1000,460,1900,6.4,2.8,11,74,780,340,1400,420,260,580,210,130,290
+Cambodia,2019,KH,KHM,116,WPR,Survey,2018,National,1.8,1.2,2.8,0.41,76,Survey,2018,National,8.2,4,16,3.1,69,1000,500,1700,6.1,3,10,75,750,370,1300,420,260,580,210,130,300
+Kiribati,2015,KI,KIR,296,WPR,Model,2015,,5.2,3.1,7.3,1.1,83,Model,2015,,28,25,30,1.3,70,41,25,56,37,23,50,,,,,29,20,38,15,9,21
+Kiribati,2016,KI,KIR,296,WPR,Model,2016,,5.5,3,8,1.3,76,Model,2016,,26,23,30,1.2,75,40,21,58,36,19,52,,,,,25,15,35,13,9,17
+Kiribati,2017,KI,KIR,296,WPR,Model,2017,,2.3,0.86,4.4,0.91,78,Model,2017,,12,7.2,19,2.9,88,14,5,27,12,4.6,24,79,11,4,21,9,3,15,5,2,9
+Kiribati,2018,KI,KIR,296,WPR,Surveillance,2018,National,1.9,0.39,5.4,1.1,78,Surveillance,2018,National,25,0.63,81,22,59,10,2,25,8.9,1.9,21,74,8,2,18,6,0,11,4,0,8
+Kiribati,2019,KI,KIR,296,WPR,Surveillance,2019,National,0.53,0.01,2.9,0.53,76,Surveillance,2019,National,22,2.8,60,14,69,5,0,15,4.1,0.3,13,73,4,0,11,6,0,11,3,0,6
+Saint Kitts and Nevis,2015,KN,KNA,659,AMR,Model,2015,,2.3,1.4,3.2,0.4,79,Model,2015,,15,13,18,1.2,84,0,0,0,0.33,0.17,0.49,,,,,,,,,,
+Saint Kitts and Nevis,2016,KN,KNA,659,AMR,Model,2016,,2.4,1.6,3.2,0.4,82,Model,2016,,11,9.1,14,1.2,95,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Saint Kitts and Nevis,2017,KN,KNA,659,AMR,Surveillance,2017,National,0,0,98,25,83,Model,2017,,13,8.4,18,2.5,88,0,0,0,0.14,0.08,0.22,88,0,0,0,0,0,1,0,0,1
+Saint Kitts and Nevis,2018,KN,KNA,659,AMR,Surveillance,2017,National,0,0,98,25,73,Model,2018,,14,9.3,19,2.4,87,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Saint Kitts and Nevis,2019,KN,KNA,659,AMR,Surveillance,2017,National,0,0,98,25,85,Model,2019,,12,7.4,17,2.5,88,0,0,0,0.12,0.07,0.18,88,0,0,0,0,0,2,0,0,2
+Republic of Korea,2015,KR,KOR,410,WPR,Survey,2004,National,3.7,3,4.5,0.38,73,Survey,2004,National,17,12,22,2.4,83,2900,2400,3400,5.7,4.7,6.7,,,,,2200,1800,2600,640,510,780
+Republic of Korea,2016,KR,KOR,410,WPR,Surveillance,2016,National,3.4,3.1,3.7,0.15,79,Surveillance,2016,National,11,9.4,12,0.57,100,2400,2100,2700,4.7,4.1,5.4,,,,,1600,1500,1700,970,910,1000
+Republic of Korea,2017,KR,KOR,410,WPR,Surveillance,2017,National,3.2,3,3.6,0.15,77,Surveillance,2017,National,10,9,11,0.53,87,1700,1500,1900,3.3,2.9,3.7,79,1300,1200,1500,1400,1300,1500,1100,980,1100
+Republic of Korea,2018,KR,KOR,410,WPR,Surveillance,2018,National,3.2,2.9,3.5,0.15,78,Surveillance,2018,National,9.2,8.2,10,0.52,83,1500,1300,1700,2.9,2.6,3.3,80,1200,1100,1400,1200,1100,1300,880,820,940
+Republic of Korea,2019,KR,KOR,410,WPR,Surveillance,2019,National,3.3,3,3.6,0.16,76,Surveillance,2019,National,9.3,8.3,10,0.54,83,1400,1200,1600,2.7,2.4,3,77,1100,940,1200,1100,1100,1200,820,760,880
+Kuwait,2015,KW,KWT,414,EMR,Surveillance,2015,National,1.7,0.76,3.1,0.55,89,Surveillance,2015,National,0,0,0,0,,14,5,24,0.37,0.13,0.63,,,,,9,4,18,9,4,17
+Kuwait,2016,KW,KWT,414,EMR,Surveillance,2016,National,2.7,1.3,4.8,0.83,94,Surveillance,2016,National,0,0,0,0,,26,10,42,0.66,0.25,1.1,,,,,17,7,28,10,5,18
+Kuwait,2017,KW,KWT,414,EMR,Surveillance,2017,National,1.6,0.59,3.5,0.65,67,Surveillance,2017,National,21,15,27,3.2,84,23,11,41,0.58,0.27,1,71,17,8,29,13,5,27,6,2,13
+Kuwait,2018,KW,KWT,414,EMR,Surveillance,2018,National,1.5,0.49,3.5,0.67,40,Surveillance,2017,National,16,11,22,3,100,17,7,32,0.41,0.17,0.77,51,9,4,16,9,3,21,5,2,12
+Kuwait,2019,KW,KWT,414,EMR,Surveillance,2019,National,1.2,0.33,3,0.6,75,Surveillance,2017,National,21,15,27,3.2,100,14,6,27,0.34,0.13,0.65,81,12,5,22,8,2,19,4,1,10
+Lao People's Democratic Republic,2015,LA,LAO,418,WPR,Model,2015,,5.2,3.1,7.3,1.1,83,Model,2015,,28,25,30,1.3,70,760,390,1100,11,5.8,16,,,,,280,190,360,170,100,250
+Lao People's Democratic Republic,2016,LA,LAO,418,WPR,Model,2016,,5.5,3,8,1.3,76,Surveillance,2016,National,12,7.2,19,2.9,75,720,330,1100,11,4.8,16,,,,,280,170,400,210,120,310
+Lao People's Democratic Republic,2017,LA,LAO,418,WPR,Survey,2018,National,1.2,0.5,2,0.38,42,Survey,2018,National,4.1,0,9.6,2.4,56,160,66,290,2.3,0.95,4.2,43,68,28,120,76,34,120,51,22,80
+Lao People's Democratic Republic,2018,LA,LAO,418,WPR,Survey,2018,National,1.2,0.5,2,0.38,42,Survey,2018,National,4.1,0,9.6,2.4,56,160,65,280,2.2,0.92,4,44,68,29,130,81,35,130,52,22,82
+Lao People's Democratic Republic,2019,LA,LAO,418,WPR,Surveillance,2019,National,1,0.7,1.4,0.18,76,Surveillance,2019,National,13,7.9,20,2.9,69,150,86,240,2.2,1.2,3.4,74,110,64,180,100,77,130,59,43,75
+Lebanon,2015,LB,LBN,422,EMR,Survey,2003,National,2.6,0,5.4,1.4,40,Surveillance,2013,National,43,9.9,82,19,67,28,7,49,0.43,0.11,0.75,,,,,18,5,30,6,0,13
+Lebanon,2016,LB,LBN,422,EMR,Survey,2003,National,2.6,0,5.4,1.4,40,Surveillance,2013,National,43,9.9,82,19,67,29,8,50,0.43,0.12,0.74,,,,,18,5,30,11,2,19
+Lebanon,2017,LB,LBN,422,EMR,Surveillance,2017,National,1.7,0.57,4,0.77,100,Surveillance,2017,National,20,0.5,72,18,100,15,5,30,0.22,0.08,0.43,100,15,5,30,10,2,19,7,1,12
+Lebanon,2018,LB,LBN,422,EMR,Surveillance,2018,National,0.99,0.2,2.9,0.57,100,Surveillance,2018,National,8.3,0.21,38,8,100,9,2,20,0.13,0.03,0.29,100,9,2,20,5,0,10,4,0,8
+Lebanon,2019,LB,LBN,422,EMR,Surveillance,2019,National,2.2,1,4.2,0.73,100,Surveillance,2018,National,8.3,0.21,38,8,100,21,10,36,0.3,0.14,0.52,100,21,10,36,12,4,19,10,4,16
+Liberia,2015,LR,LBR,430,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,430,0,990,9.6,0,22,,,,,140,0,320,76,3,180
+Liberia,2016,LR,LBR,430,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,430,46,820,9.4,1,18,,,,,160,36,290,120,32,200
+Liberia,2017,LR,LBR,430,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,390,150,740,8.3,3.3,16,67,260,100,490,150,65,230,100,49,150
+Liberia,2018,LR,LBR,430,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Model,2018,,15,11,19,2,100,390,150,720,8,3.2,15,82,320,130,590,130,50,210,80,32,130
+Liberia,2019,LR,LBR,430,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Surveillance,2019,National,0,0,15,3.8,100,370,160,670,7.5,3.2,14,94,350,150,630,130,55,200,87,37,140
+Libya,2015,LY,LBY,434,EMR,Model,2015,,3.9,2.9,5,0.5,85,Model,2015,,16,12,19,1.8,79,120,69,160,1.9,1.1,2.5,,,,,33,26,39,18,13,23
+Libya,2016,LY,LBY,434,EMR,Model,2016,,4.1,1.4,6.9,1.4,85,Model,2016,,16,13,18,1.2,95,120,40,200,1.9,0.61,3.1,,,,,38,19,57,20,7,34
+Libya,2017,LY,LBY,434,EMR,Model,2017,,3.7,2,5.9,1,79,Model,2017,,21,15,27,3.2,84,120,57,200,1.8,0.86,3,80,93,45,160,31,15,47,19,10,30
+Libya,2018,LY,LBY,434,EMR,Model,2018,,3,1.4,5.3,1,83,Model,2018,,16,11,22,3,100,99,42,180,1.5,0.63,2.7,86,85,36,150,40,19,62,20,9,34
+Libya,2019,LY,LBY,434,EMR,Model,2019,,2.6,1.1,4.7,0.92,84,Model,2019,,21,15,27,3.2,100,130,56,250,2,0.83,3.7,88,120,49,220,43,20,66,31,16,45
+Saint Lucia,2015,LC,LCA,662,AMR,Surveillance,2013,National,0,0,52,0,,Surveillance,2013,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,7
+Saint Lucia,2016,LC,LCA,662,AMR,Surveillance,2013,National,0,0,52,0,,Surveillance,2013,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Saint Lucia,2017,LC,LCA,662,AMR,Surveillance,2013,National,0,0,52,13,83,Surveillance,2013,National,13,8.4,18,2.5,88,0,0,0,0.04,0.02,0.06,88,0,0,0,0,0,6,0,0,6
+Saint Lucia,2018,LC,LCA,662,AMR,Surveillance,2018,National,0,0,52,13,73,Surveillance,2013,National,14,9.3,19,2.4,87,0,0,0,0.02,0.01,0.03,87,0,0,0,0,0,3,0,0,3
+Saint Lucia,2019,LC,LCA,662,AMR,Surveillance,2018,National,0,0,52,13,85,Surveillance,2013,National,12,7.4,17,2.5,88,0,0,0,0.02,0.01,0.03,88,0,0,0,0,0,3,0,0,3
+Sri Lanka,2015,LK,LKA,144,SEA,Survey,2006,National,0.54,0,1.3,0.4,33,Surveillance,2013,National,1.7,0.64,3.7,0.7,33,89,0,190,0.43,0,0.91,,,,,43,0,93,23,0,57
+Sri Lanka,2016,LK,LKA,144,SEA,Survey,2006,National,0.54,0,1.3,0.4,33,Surveillance,2016,National,3.1,1.6,5.4,0.89,19,93,0,200,0.44,0,0.94,,,,,47,1,93,35,3,68
+Sri Lanka,2017,LK,LKA,144,SEA,Survey,2018,National,0.5,0.2,1,0.2,20,Survey,2018,National,4.1,1.1,10,2.3,37,88,34,170,0.42,0.16,0.79,22,20,8,37,47,17,78,35,12,58
+Sri Lanka,2018,LK,LKA,144,SEA,Survey,2018,National,0.1,0,0.5,0.13,100,Surveillance,2018,National,3.3,1.8,5.5,0.87,39,26,2,79,0.12,0.01,0.37,74,20,2,59,24,6,41,20,6,33
+Sri Lanka,2019,LK,LKA,144,SEA,Survey,2018,National,0.1,0,0.5,0.13,100,Surveillance,2018,National,3.3,1.8,5.5,0.87,39,27,3,80,0.13,0.01,0.38,73,20,2,59,24,7,41,20,6,33
+Lesotho,2015,LS,LSO,426,AFR,Survey,2014,National,4.8,3.7,5.9,0.58,67,Survey,2014,National,14,9.3,18,2.1,54,1100,760,1500,53,37,73,,,,,430,350,510,130,100,160
+Lesotho,2016,LS,LSO,426,AFR,Survey,2014,National,4.8,3.7,5.9,0.58,67,Survey,2014,National,14,9.2,18,2.2,54,1100,710,1400,52,34,70,,,,,420,340,490,230,190,270
+Lesotho,2017,LS,LSO,426,AFR,Survey,2014,National,4.8,3.7,6,0.59,67,Survey,2014,National,14,9.5,18,2.2,54,920,530,1400,44,26,68,65,600,350,920,410,330,490,230,190,280
+Lesotho,2018,LS,LSO,426,AFR,Survey,2014,National,4.8,3.7,6,0.59,67,Survey,2014,National,14,9.5,18,2.2,54,800,470,1200,38,22,58,62,500,290,760,410,330,490,270,220,330
+Lesotho,2019,LS,LSO,426,AFR,Surveillance,2019,National,5.2,4.5,6,0.38,94,Surveillance,2019,National,6.6,4.8,8.9,1,100,760,460,1100,36,21,53,94,710,430,1100,350,310,400,260,220,290
+Lithuania,2015,LT,LTU,440,EUR,Surveillance,2015,National,12,10,15,1.1,95,Surveillance,2015,National,47,41,53,2.9,99,360,300,410,12,10,14,,,,,270,240,300,110,91,130
+Lithuania,2016,LT,LTU,440,EUR,Surveillance,2015,National,12,10,15,1.1,100,Surveillance,2015,National,47,41,53,2.9,91,350,290,410,12,10,14,,,,,260,240,290,240,220,270
+Lithuania,2017,LT,LTU,440,EUR,Surveillance,2017,National,14,12,16,1.2,93,Surveillance,2017,National,54,48,60,3,95,320,260,400,11,9,14,94,300,240,370,290,260,310,260,240,290
+Lithuania,2018,LT,LTU,440,EUR,Surveillance,2018,National,13,10,15,1.2,92,Surveillance,2018,National,42,36,49,3.3,89,230,180,290,8.3,6.5,10,90,210,160,260,200,180,230,190,170,210
+Lithuania,2019,LT,LTU,440,EUR,Surveillance,2019,National,14,11,17,1.3,90,Surveillance,2019,National,39,32,46,3.6,96,220,170,270,7.9,6.2,9.9,91,200,160,250,180,160,200,170,150,190
+Luxembourg,2015,LU,LUX,442,EUR,Surveillance,2014,National,0,0,0,0,,Surveillance,2014,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Luxembourg,2016,LU,LUX,442,EUR,Surveillance,2014,National,0,0,0,0,,Surveillance,2014,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Luxembourg,2017,LU,LUX,442,EUR,Surveillance,2014,National,2.7,1.5,4.4,0.74,100,Surveillance,2014,National,12,7.9,17,2.3,94,1,1,2,0.22,0.13,0.35,99,1,1,2,1,0,1,1,0,1
+Luxembourg,2018,LU,LUX,442,EUR,Surveillance,2014,National,2.6,1.4,4.2,0.72,87,Surveillance,2014,National,11,7.4,16,2.3,89,2,1,3,0.28,0.16,0.43,87,1,1,2,1,0,1,1,0,1
+Luxembourg,2019,LU,LUX,442,EUR,Surveillance,2014,National,2.5,1.3,4,0.67,97,Surveillance,2014,National,11,7.1,16,2.3,95,2,1,3,0.28,0.15,0.45,96,2,1,3,1,1,2,1,0,1
+Latvia,2015,LV,LVA,428,EUR,Surveillance,2015,National,7.9,5.6,11,1.3,100,Surveillance,2015,National,30,21,41,4.9,100,99,75,120,5,3.8,6,,,,,75,58,92,38,27,51
+Latvia,2016,LV,LVA,428,EUR,Surveillance,2016,National,7.6,5.2,11,1.3,100,Surveillance,2016,National,23,15,33,4.5,100,90,66,110,4.6,3.3,5.8,,,,,62,47,78,55,41,69
+Latvia,2017,LV,LVA,428,EUR,Surveillance,2017,National,8,5.4,11,1.4,97,Surveillance,2017,National,31,19,44,6,94,71,47,99,3.6,2.4,5.1,96,68,45,95,57,42,72,50,37,63
+Latvia,2018,LV,LVA,428,EUR,Surveillance,2017,National,8,5.4,11,1.4,97,Surveillance,2017,National,31,19,44,6,94,63,42,89,3.3,2.2,4.6,96,61,40,85,,,,,,
+Latvia,2019,LV,LVA,428,EUR,Surveillance,2017,National,8,5.4,11,1.4,97,Surveillance,2017,National,31,19,44,6,94,55,37,77,2.9,1.9,4.1,96,53,35,74,,,,,,
+"China, Macao SAR",2015,MO,MAC,446,WPR,Surveillance,2015,National,2.5,0.91,5.3,1,50,Surveillance,2015,National,16,4.5,36,7.3,75,16,7,25,2.7,1.2,4.2,,,,,13,5,20,6,2,13
+"China, Macao SAR",2016,MO,MAC,446,WPR,Surveillance,2015,National,2.5,0.91,5.3,1,50,Surveillance,2015,National,16,4.5,36,7.3,75,13,5,21,2.1,0.76,3.4,,,,,10,4,16,8,3,13
+"China, Macao SAR",2017,MO,MAC,446,WPR,Surveillance,2015,National,2.5,0.91,5.3,1,78,Surveillance,2017,National,0,0,14,3.5,88,10,4,19,1.6,0.58,3.1,78,8,3,15,7,1,13,6,1,12
+"China, Macao SAR",2018,MO,MAC,446,WPR,Surveillance,2018,National,2,0.54,5,0.98,100,Surveillance,2018,National,12,2.5,31,6.5,100,10,3,22,1.6,0.44,3.5,100,10,3,22,9,2,15,7,2,13
+"China, Macao SAR",2019,MO,MAC,446,WPR,Surveillance,2019,National,2.2,0.73,5.1,0.99,41,Surveillance,2019,National,5.9,0.15,29,5.7,0,11,3,22,1.6,0.53,3.4,33,3,1,7,8,2,14,7,1,12
+Morocco,2015,MA,MAR,504,EMR,Survey,2014,National,1,0.3,1.7,0.36,100,Survey,2014,National,8.7,4.8,13,2,100,580,320,840,1.7,0.92,2.4,,,,,330,200,460,130,38,220
+Morocco,2016,MA,MAR,504,EMR,Survey,2014,National,1,0.3,1.7,0.36,100,Surveillance,2016,National,11,9.5,12,0.74,79,640,380,900,1.8,1.1,2.6,,,,,380,270,500,330,230,430
+Morocco,2017,MA,MAR,504,EMR,Survey,2014,National,1,0.42,1.8,0.37,100,Surveillance,2016,National,11,9.5,12,0.74,84,530,260,900,1.5,0.73,2.5,97,520,250,880,360,250,470,310,220,400
+Morocco,2018,MA,MAR,504,EMR,Survey,2014,National,1,0.42,1.8,0.37,100,Surveillance,2018,National,10,8.8,12,0.72,100,530,250,900,1.5,0.7,2.5,100,530,250,900,350,240,460,310,210,400
+Morocco,2019,MA,MAR,504,EMR,Survey,2014,National,1,0.42,1.8,0.37,100,Surveillance,2019,National,21,18,23,1.3,100,610,330,970,1.7,0.89,2.7,100,610,330,970,530,420,650,330,230,430
+Monaco,2015,MC,MCO,492,EUR,Model,2015,,2.3,1.4,3.2,0.4,79,Model,2015,,15,13,18,1.2,84,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Monaco,2016,MC,MCO,492,EUR,Model,2016,,2.4,1.6,3.2,0.4,82,Model,2016,,11,9.1,14,1.2,95,0,0,0,0,0,0,,,,,,,,,,
+Monaco,2017,MC,MCO,492,EUR,Model,2017,,2.7,1.5,4.4,0.74,100,Model,2017,,12,7.9,17,2.3,94,0,0,0,0,0,0,,,,,,,,,,
+Monaco,2018,MC,MCO,492,EUR,Model,2018,,2.6,1.4,4.2,0.72,87,Model,2018,,11,7.4,16,2.3,89,0,0,0,0,0,0,,,,,,,,,,
+Monaco,2019,MC,MCO,492,EUR,Model,2019,,2.5,1.3,4,0.67,97,Model,2019,,11,7.1,16,2.3,95,0,0,0,0,0,0,,,,,,,,,,
+Republic of Moldova,2015,MD,MDA,498,EUR,Surveillance,2015,National,32,29,34,1.2,82,Surveillance,2015,National,69,66,72,1.6,79,3900,2900,4800,96,71,118,,,,,1700,1600,1800,520,480,550
+Republic of Moldova,2016,MD,MDA,498,EUR,Surveillance,2016,National,26,24,28,1.1,92,Surveillance,2016,National,56,51,60,2.2,100,2300,1900,2600,56,47,65,,,,,1400,1300,1400,890,840,940
+Republic of Moldova,2017,MD,MDA,498,EUR,Surveillance,2017,National,28,25,30,1.2,96,Surveillance,2017,National,55,51,59,2.2,99,1400,1200,1700,35,29,42,97,1400,1200,1600,1300,1200,1400,840,790,890
+Republic of Moldova,2018,MD,MDA,498,EUR,Surveillance,2018,National,29,26,31,1.2,85,Surveillance,2018,National,60,56,64,2,100,1400,1100,1600,34,28,40,93,1300,1100,1500,1200,1200,1300,860,820,910
+Republic of Moldova,2019,MD,MDA,498,EUR,Surveillance,2019,National,33,30,35,1.3,76,Surveillance,2018,National,60,56,64,2,100,1400,1100,1600,34,28,40,81,1100,930,1300,1200,1200,1300,930,880,970
+Madagascar,2015,MG,MDG,450,AFR,Survey,2007,National,0.49,0,1.1,0.3,100,Survey,2007,National,5.9,0,14,4.2,67,460,120,810,1.9,0.5,3.3,,,,,230,17,440,94,0,210
+Madagascar,2016,MG,MDG,450,AFR,Survey,2007,National,0.49,0,1.1,0.3,100,Survey,2007,National,5.9,0,15,4.6,67,440,81,790,1.8,0.32,3.2,,,,,230,2,460,200,2,400
+Madagascar,2017,MG,MDG,450,AFR,Survey,2007,National,0.49,0.09,1.2,0.3,100,Survey,2007,National,5.9,0.59,17,4.2,67,440,87,1100,1.7,0.34,4.2,95,420,82,1000,250,13,490,210,13,410
+Madagascar,2018,MG,MDG,450,AFR,Survey,2007,National,0.49,0.09,1.2,0.3,100,Survey,2007,National,5.9,0.59,17,4.2,67,430,82,1100,1.6,0.31,4,96,410,78,1000,250,17,470,210,14,410
+Madagascar,2019,MG,MDG,450,AFR,Survey,2007,National,0.49,0.09,1.2,0.3,100,Survey,2007,National,5.9,0.59,17,4.2,67,430,81,1100,1.6,0.3,4,96,410,78,1000,250,19,480,210,17,410
+Maldives,2015,MV,MDV,462,SEA,Model,2015,,2.6,2.3,3,0.2,90,Surveillance,2015,National,0,0,52,0,,6,4,7,1.3,0.95,1.6,,,,,3,2,3,3,2,3
+Maldives,2016,MV,MDV,462,SEA,Surveillance,2016,National,1.7,0.04,9.1,1.7,81,Surveillance,2016,National,0,0,0,0,,4,0,11,0.85,0,2.3,,,,,1,0,4,1,0,4
+Maldives,2017,MV,MDV,462,SEA,Surveillance,2016,National,1.7,0.04,9.1,1.7,91,Surveillance,2016,National,18,11,26,4,99,4,0,12,0.8,0.07,2.4,93,4,0,11,2,0,5,2,0,5
+Maldives,2018,MV,MDV,462,SEA,Surveillance,2016,National,1.7,0.04,9.1,1.7,100,Surveillance,2016,National,15,7.8,23,3.9,94,4,0,12,0.73,0.05,2.3,99,4,0,12,2,0,10,2,0,10
+Maldives,2019,MV,MDV,462,SEA,Surveillance,2019,National,0.93,0.02,5.1,0.92,100,Surveillance,2016,National,11,5,20,3.8,94,2,0,8,0.47,0.04,1.4,99,2,0,7,1,0,6,1,0,6
+Mexico,2015,MX,MEX,484,AMR,Survey,2009,National,2.6,2.3,2.9,0.18,92,Survey,2009,National,11,9.2,13,0.87,60,910,750,1100,0.75,0.62,0.9,,,,,610,540,670,360,310,400
+Mexico,2016,MX,MEX,484,AMR,Survey,2009,National,2.6,2.3,2.9,0.18,92,Survey,2009,National,11,9,13,0.95,60,940,740,1100,0.76,0.6,0.93,,,,,610,550,680,380,330,430
+Mexico,2017,MX,MEX,484,AMR,Survey,2009,National,2.6,2.3,3,0.18,92,Survey,2009,National,11,9.2,13,0.89,60,930,680,1200,0.74,0.55,0.97,89,820,610,1100,630,570,700,510,460,560
+Mexico,2018,MX,MEX,484,AMR,Survey,2009,National,2.6,2.3,3,0.18,92,Survey,2009,National,11,9.2,13,0.89,60,950,700,1200,0.75,0.56,0.98,84,790,590,1000,660,590,730,560,500,620
+Mexico,2019,MX,MEX,484,AMR,Survey,2009,National,2.6,2.3,3,0.18,92,Survey,2009,National,11,9.2,13,0.89,60,970,710,1300,0.76,0.56,0.99,84,810,600,1100,670,590,740,540,490,600
+Marshall Islands,2015,MH,MHL,584,WPR,Surveillance,2014,National,0,0,4.4,0,,Surveillance,2015,National,0,0,41,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,2
+Marshall Islands,2016,MH,MHL,584,WPR,Surveillance,2014,National,0,0,4.4,0,,Surveillance,2015,National,0,0,41,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Marshall Islands,2017,MH,MHL,584,WPR,Surveillance,2017,National,0,0,5.4,1.4,78,Surveillance,2017,National,0,0,60,15,88,0,0,0,0,0,0,,,,,0,0,5,0,0,2
+Marshall Islands,2018,MH,MHL,584,WPR,Surveillance,2018,National,1.5,0.04,8.3,1.5,100,Surveillance,2018,National,33,0.84,91,27,0,6,4,10,11,6.3,17,56,4,2,6,9,0,22,2,0,5
+Marshall Islands,2019,MH,MHL,584,WPR,Surveillance,2019,National,0,0,12,3,76,Surveillance,2018,National,33,0.84,91,27,0,0,0,1,0.71,0.41,1.1,0,0,0,0,7,0,21,1,0,3
+North Macedonia,2015,MK,MKD,807,EUR,Surveillance,2015,National,2.4,0.65,6,1.2,75,Surveillance,2015,National,6.7,0.17,32,6.4,100,9,2,16,0.44,0.12,0.77,,,,,6,1,12,4,1,11
+North Macedonia,2016,MK,MKD,807,EUR,Surveillance,2016,National,1.3,0.16,4.8,0.94,100,Surveillance,2016,National,0,0,23,0,,6,0,12,0.28,0,0.57,,,,,3,0,6,2,0,5
+North Macedonia,2017,MK,MKD,807,EUR,Surveillance,2017,National,0,0,2.7,0.68,100,Surveillance,2017,National,0,0,18,4.5,94,0,0,0,0,0,0,,,,,0,0,3,0,0,2
+North Macedonia,2018,MK,MKD,807,EUR,Surveillance,2018,National,0,0,2.8,0.73,87,Surveillance,2018,National,0,0,29,7.3,89,0,0,0,0,0,0,,,,,0,0,3,0,0,2
+North Macedonia,2019,MK,MKD,807,EUR,Surveillance,2019,National,0.79,0.02,4.3,0.79,0,Surveillance,2019,National,0,0,23,5.9,95,2,1,3,0.09,0.05,0.13,0,0,0,0,1,0,4,1,0,4
+Mali,2015,ML,MLI,466,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,610,140,1100,3.5,0.8,6.3,,,,,250,26,480,130,5,300
+Mali,2016,ML,MLI,466,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,380,100,660,2.1,0.58,3.6,,,,,230,70,400,210,65,360
+Mali,2017,ML,MLI,466,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,340,150,600,1.8,0.8,3.2,69,230,100,410,180,100,270,160,95,230
+Mali,2018,ML,MLI,466,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Model,2018,,15,11,19,2,100,330,150,580,1.7,0.76,3,84,270,120,490,190,110,280,170,100,240
+Mali,2019,ML,MLI,466,AFR,Survey,2019,National,0.9,0.5,1.6,0.28,94,Survey,2019,National,7.9,4.5,13,2,100,130,63,230,0.68,0.32,1.2,95,130,60,220,90,54,130,76,45,110
+Malta,2015,MT,MLT,470,EUR,Surveillance,2015,National,0,0,25,0,,Surveillance,2015,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,5,0,0,4
+Malta,2016,MT,MLT,470,EUR,Surveillance,2016,National,0,0,11,0,,Surveillance,2016,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,4,0,0,3
+Malta,2017,MT,MLT,470,EUR,Surveillance,2017,National,0,0,15,3.8,100,Surveillance,2017,National,12,7.9,17,2.3,94,0,0,0,0.01,0,0.01,94,0,0,0,0,0,4,0,0,4
+Malta,2018,MT,MLT,470,EUR,Surveillance,2017,National,0,0,15,3.8,87,Surveillance,2017,National,11,7.4,16,2.3,89,0,0,0,0.01,0,0.01,89,0,0,0,0,0,6,0,0,4
+Malta,2019,MT,MLT,470,EUR,Surveillance,2018,National,0,0,13,3.3,97,Surveillance,2017,National,11,7.1,16,2.3,95,0,0,0,0.06,0.03,0.09,95,0,0,0,0,0,10,0,0,6
+Myanmar,2015,MM,MMR,104,SEA,Survey,2013,National,5.1,3.2,7,0.95,98,Survey,2013,National,27,15,39,6.2,100,14000,8900,18000,27,17,34,,,,,9000,6400,12000,2100,1400,2900
+Myanmar,2016,MM,MMR,104,SEA,Survey,2013,National,5.1,3.2,7,0.95,98,Survey,2013,National,27,10,44,8.6,100,13000,8800,18000,25,17,34,,,,,9000,6100,12000,2700,1800,3500
+Myanmar,2017,MM,MMR,104,SEA,Survey,2013,National,5.1,3.4,7.2,0.97,98,Survey,2013,National,27,16,40,6.4,100,14000,7900,21000,25,15,39,98,13000,7800,20000,8700,6200,11000,4100,2900,5300
+Myanmar,2018,MM,MMR,104,SEA,Surveillance,2018,National,4.9,4.7,5.1,0.1,100,Surveillance,2018,National,20,19,21,0.49,100,11000,7400,16000,21,14,30,100,11000,7400,16000,8100,7800,8300,3900,3800,4000
+Myanmar,2019,MM,MMR,104,SEA,Surveillance,2018,National,4.9,4.7,5.1,0.1,100,Surveillance,2019,National,18,17,19,0.5,53,10000,6000,15000,19,11,28,91,9300,5500,14000,7900,7600,8100,3800,3700,3900
+Montenegro,2015,ME,MNE,499,EUR,Surveillance,2015,National,1.9,0.05,10,1.9,0,Surveillance,2015,National,0,0,60,0,,3,0,8,0.49,0,1.2,,,,,1,0,4,1,0,5
+Montenegro,2016,ME,MNE,499,EUR,Surveillance,2016,National,0,0,7.1,0,,Surveillance,2016,National,0,0,41,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Montenegro,2017,ME,MNE,499,EUR,Surveillance,2017,National,0,0,7.3,1.9,100,Surveillance,2017,National,11,0.28,48,10,100,0,0,0,0.01,0.01,0.02,100,0,0,0,2,0,5,1,0,4
+Montenegro,2018,ME,MNE,499,EUR,Surveillance,2018,National,0,0,6,1.5,87,Surveillance,2018,National,33,0.84,91,27,100,0,0,0,0.03,0.02,0.04,100,0,0,0,1,0,4,1,0,3
+Montenegro,2019,ME,MNE,499,EUR,Surveillance,2019,National,0,0,5.8,1.5,97,Surveillance,2019,National,0,0,37,9.4,95,0,0,0,0,0,0,,,,,0,0,3,0,0,2
+Mongolia,2015,MN,MNG,496,WPR,Survey,2007,National,2.2,1.1,3.3,0.59,64,Surveillance,2013,National,33,29,38,2,73,630,370,890,21,12,30,,,,,240,210,280,40,19,61
+Mongolia,2016,MN,MNG,496,WPR,Survey,2016,National,5.6,4.2,6.9,0.68,25,Survey,2016,National,18,14,22,2.2,100,470,360,580,15,12,19,,,,,220,180,250,160,130,190
+Mongolia,2017,MN,MNG,496,WPR,Survey,2016,National,5.5,4.2,6.9,0.69,78,Surveillance,2017,National,11,8.2,14,1.5,35,830,400,1400,27,13,45,73,600,290,1000,170,140,210,130,110,160
+Mongolia,2018,MN,MNG,496,WPR,Surveillance,2018,National,4.3,3.3,5.6,0.58,90,Surveillance,2017,National,11,8.2,14,1.5,35,720,340,1200,23,11,39,74,530,260,910,150,120,170,110,88,130
+Mongolia,2019,MN,MNG,496,WPR,Surveillance,2019,National,7,5.7,8.4,0.66,86,Surveillance,2017,National,11,8.2,14,1.5,35,1000,510,1800,32,16,55,75,780,380,1300,240,200,270,180,150,210
+Northern Mariana Islands,2015,MP,MNP,580,WPR,Surveillance,2014,National,5.3,0.13,26,5.1,100,Surveillance,2014,National,0,0,98,0,,2,0,5,3.6,0,9.1,,,,,1,0,4,1,0,4
+Northern Mariana Islands,2016,MP,MNP,580,WPR,Surveillance,2016,National,0,0,21,0,,Surveillance,2016,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,6,0,0,3
+Northern Mariana Islands,2017,MP,MNP,580,WPR,Surveillance,2017,National,0,0,15,3.9,78,Surveillance,2017,National,12,7.2,19,2.9,88,0,0,0,0.24,0.14,0.37,88,0,0,0,0,0,6,0,0,4
+Northern Mariana Islands,2018,MP,MNP,580,WPR,Surveillance,2018,National,6.7,0.17,32,6.4,100,Surveillance,2017,National,11,6.1,17,2.8,59,4,0,13,6.5,0.24,23,98,4,0,13,3,0,14,1,0,5
+Northern Mariana Islands,2019,MP,MNP,580,WPR,Surveillance,2019,National,0,0,14,3.6,76,Surveillance,2017,National,12,7.2,19,3,69,0,0,0,0.3,0.17,0.46,69,0,0,0,0,0,6,0,0,3
+Mozambique,2015,MZ,MOZ,508,AFR,Survey,2007,National,3.7,2.4,5,0.67,95,Survey,2007,National,20,1.9,37,9,57,7300,4100,10000,27,15,37,,,,,2800,1700,3900,900,580,1200
+Mozambique,2016,MZ,MOZ,508,AFR,Survey,2007,National,3.7,2.4,5,0.67,95,Survey,2007,National,20,2.1,37,8.9,57,7600,4500,11000,27,16,39,,,,,3400,2100,4800,1500,940,2100
+Mozambique,2017,MZ,MOZ,508,AFR,Survey,2007,National,3.7,2.5,5.2,0.69,95,Survey,2007,National,20,5.2,40,9.2,57,8700,4600,14000,30,16,49,89,7800,4100,13000,4100,2500,5700,1600,990,2300
+Mozambique,2018,MZ,MOZ,508,AFR,Survey,2007,National,3.7,2.5,5.2,0.69,95,Survey,2007,National,20,5.2,40,9.2,57,8300,4400,14000,28,15,46,82,6800,3600,11000,4400,2700,6000,1600,1000,2200
+Mozambique,2019,MZ,MOZ,508,AFR,Survey,2007,National,3.7,2.5,5.2,0.69,95,Surveillance,2019,National,13,11,14,0.76,100,4900,2500,8000,16,8.3,26,95,4600,2400,7600,4000,2800,5100,1400,1000,1900
+Mauritania,2015,MR,MRT,478,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,150,0,320,3.7,0,7.9,,,,,69,5,130,34,1,82
+Mauritania,2016,MR,MRT,478,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,140,23,260,3.4,0.54,6.2,,,,,60,15,100,33,2,65
+Mauritania,2017,MR,MRT,478,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,130,51,240,3,1.2,5.7,67,87,34,160,57,29,86,46,25,67
+Mauritania,2018,MR,MRT,478,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Surveillance,2018,National,40,26,56,7.2,100,130,54,230,2.9,1.2,5.3,83,110,45,200,64,36,92,49,30,69
+Mauritania,2019,MR,MRT,478,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Surveillance,2019,National,37,25,51,6.3,100,130,56,220,2.8,1.2,4.9,95,120,53,210,68,42,94,52,33,71
+Montserrat,2015,MS,MSR,500,AMR,Model,2015,,3,1.5,4.6,0.8,88,Model,2015,,12,6.9,17,2.5,89,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Montserrat,2016,MS,MSR,500,AMR,Model,2016,,2.9,1.4,4.5,0.8,90,Model,2016,,13,6.7,20,3.4,90,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Montserrat,2017,MS,MSR,500,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Montserrat,2018,MS,MSR,500,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Model,2018,,14,9.3,19,2.4,87,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Montserrat,2019,MS,MSR,500,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Model,2019,,12,7.4,17,2.5,88,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Mauritius,2015,MU,MUS,480,AFR,Surveillance,2015,National,1.7,0.2,5.9,1.2,50,Surveillance,2015,National,0,0,71,0,,5,0,12,0.4,0,0.95,,,,,2,0,5,2,0,7
+Mauritius,2016,MU,MUS,480,AFR,Surveillance,2016,National,2.7,0.56,7.7,1.5,67,Surveillance,2016,National,0,0,71,0,,8,0,17,0.65,0,1.3,,,,,3,0,6,3,0,6
+Mauritius,2017,MU,MUS,480,AFR,Surveillance,2017,National,1.9,0.23,6.7,1.3,50,Surveillance,2017,National,0,0,52,13,79,3,0,8,0.22,0.02,0.61,50,1,0,4,2,0,5,2,0,5
+Mauritius,2018,MU,MUS,480,AFR,Surveillance,2018,National,0.85,0.02,4.6,0.84,100,Surveillance,2017,National,0,0,52,13,100,1,1,2,0.11,0.06,0.16,100,1,1,2,1,0,3,1,0,3
+Mauritius,2019,MU,MUS,480,AFR,Surveillance,2019,National,0.91,0.02,5,0.9,0,Surveillance,2019,National,0,0,29,7.3,100,1,1,2,0.1,0.06,0.16,0,0,0,0,1,0,4,1,0,4
+Malawi,2015,MW,MWI,454,AFR,Survey,2011,National,0.75,0,1.6,0.42,56,Survey,2011,National,6.4,3.8,8.9,1.3,76,440,120,750,2.6,0.72,4.5,,,,,200,100,310,47,0,99
+Malawi,2016,MW,MWI,454,AFR,Survey,2011,National,0.75,0,1.6,0.42,56,Survey,2011,National,6.4,3.8,8.9,1.3,76,400,130,670,2.3,0.76,3.9,,,,,210,110,310,99,42,160
+Malawi,2017,MW,MWI,454,AFR,Survey,2011,National,0.75,0.16,1.8,0.42,56,Survey,2011,National,6.4,4,9.2,1.3,76,330,90,710,1.8,0.51,4,63,210,57,450,180,83,270,98,41,150
+Malawi,2018,MW,MWI,454,AFR,Survey,2011,National,0.75,0.16,1.8,0.42,56,Survey,2011,National,6.4,4,9.2,1.3,76,420,110,930,2.3,0.63,5.1,62,260,71,580,160,72,240,94,42,150
+Malawi,2019,MW,MWI,454,AFR,Survey,2019,National,2.3,1.6,3.1,0.39,29,Survey,2019,National,6.1,4.1,8.1,1,44,750,350,1300,4,1.9,7,31,230,110,400,330,250,410,190,140,240
+Malaysia,2015,MY,MYS,458,WPR,Surveillance,2014,National,1.5,1.2,1.9,0.18,26,Surveillance,2014,National,3.1,1.3,5.9,1.1,38,530,410,640,1.8,1.4,2.1,,,,,350,270,430,220,180,280
+Malaysia,2016,MY,MYS,458,WPR,Surveillance,2014,National,1.5,1.2,1.9,0.18,26,Surveillance,2014,National,3.1,1.3,5.9,1.1,38,570,450,700,1.9,1.5,2.3,,,,,370,290,460,260,210,320
+Malaysia,2017,MY,MYS,458,WPR,Surveillance,2014,National,1.5,1.2,1.9,0.18,78,Surveillance,2014,National,3.1,1.3,5.9,1.1,88,490,370,630,1.6,1.2,2,78,380,290,490,370,290,460,280,210,340
+Malaysia,2018,MY,MYS,458,WPR,Surveillance,2014,National,1.5,1.2,1.9,0.18,78,Surveillance,2014,National,3.1,1.3,5.9,1.1,59,480,360,620,1.5,1.1,2,75,360,270,470,370,290,450,250,200,310
+Malaysia,2019,MY,MYS,458,WPR,Surveillance,2019,National,1.2,1,1.4,0.1,48,Surveillance,2014,National,3.1,1.3,5.9,1.1,69,390,310,480,1.2,0.97,1.5,49,190,150,240,310,250,370,210,170,240
+Namibia,2015,NA,NAM,516,AFR,Survey,2015,National,5,4.1,5.9,0.45,82,Survey,2015,National,12,9.3,14,1.2,79,1100,840,1300,48,36,56,,,,,540,470,610,240,200,290
+Namibia,2016,NA,NAM,516,AFR,Survey,2015,National,5,4.1,5.9,0.45,86,Survey,2015,National,12,8.7,15,1.5,79,960,740,1200,40,32,49,,,,,480,410,560,390,330,440
+Namibia,2017,NA,NAM,516,AFR,Survey,2015,National,5,4.1,5.9,0.46,86,Survey,2015,National,12,9.4,14,1.2,79,690,490,920,29,20,38,85,590,420,790,470,410,540,390,340,440
+Namibia,2018,NA,NAM,516,AFR,Surveillance,2018,National,5.8,5,6.5,0.38,100,Survey,2015,National,12,9.4,14,1.2,79,900,620,1200,37,25,50,93,830,570,1100,470,420,520,390,340,430
+Namibia,2019,NA,NAM,516,AFR,Surveillance,2018,National,5.8,5,6.5,0.38,100,Survey,2015,National,12,9.4,14,1.2,79,840,570,1200,33,23,46,94,780,530,1100,450,400,510,350,310,390
+New Caledonia,2015,NC,NCL,540,WPR,Surveillance,2014,National,0,0,28,0,,Surveillance,2014,National,0,0,84,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,10
+New Caledonia,2016,NC,NCL,540,WPR,Surveillance,2016,National,0,0,14,0,,Surveillance,2016,National,0,0,98,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+New Caledonia,2017,NC,NCL,540,WPR,Surveillance,2017,National,4,0.1,20,3.9,100,Surveillance,2016,National,0,0,98,25,88,2,0,6,0.54,0.01,2,100,2,0,6,1,0,5,1,0,5
+New Caledonia,2018,NC,NCL,540,WPR,Surveillance,2018,National,0,0,15,3.8,78,Surveillance,2018,National,0,0,98,25,59,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+New Caledonia,2019,NC,NCL,540,WPR,Surveillance,2019,National,0,0,21,5.3,76,Surveillance,2018,National,0,0,98,25,69,0,0,0,0,0,0,,,,,0,0,3,0,0,3
+Niger,2015,NE,NER,562,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,710,0,1500,3.5,0,7.5,,,,,370,18,720,200,7,480
+Niger,2016,NE,NER,562,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,660,140,1200,3.2,0.67,5.7,,,,,330,92,570,300,88,520
+Niger,2017,NE,NER,562,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Surveillance,2017,National,14,11,17,1.5,100,600,250,1100,2.8,1.2,5.1,70,420,170,770,290,150,430,270,140,400
+Niger,2018,NE,NER,562,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Surveillance,2018,National,16,13,20,1.8,100,600,260,1100,2.7,1.1,4.8,83,500,210,910,290,150,430,270,150,400
+Niger,2019,NE,NER,562,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Surveillance,2019,National,13,10,16,1.5,100,600,270,1100,2.6,1.2,4.5,95,560,250,1000,310,180,450,290,170,420
+Nigeria,2015,NG,NGA,566,AFR,Survey,2010,National,4.3,3.2,5.4,0.58,67,Survey,2010,National,25,19,31,3,57,29000,15000,43000,16,8.3,24,,,,,4700,3700,5700,2300,1700,2900
+Nigeria,2016,NG,NGA,566,AFR,Survey,2010,National,4.3,3.2,5.4,0.58,67,Survey,2010,National,25,19,31,3.2,57,20000,12000,29000,11,6.4,15,,,,,5200,4100,6200,3800,3000,4500
+Nigeria,2017,NG,NGA,566,AFR,Survey,2010,National,4.3,3.2,5.5,0.59,67,Survey,2010,National,25,19,31,3.1,57,24000,14000,36000,12,7.3,19,66,16000,9200,24000,5400,4200,6500,4100,3300,5000
+Nigeria,2018,NG,NGA,566,AFR,Survey,2010,National,4.3,3.2,5.5,0.59,67,Surveillance,2018,National,15,11,19,2,100,21000,13000,32000,11,6.4,16,73,15000,9200,23000,5000,3900,6100,3800,2900,4700
+Nigeria,2019,NG,NGA,566,AFR,Survey,2010,National,4.3,3.2,5.5,0.59,67,Surveillance,2019,National,14,10,19,2.1,100,21000,13000,32000,11,6.3,16,70,15000,8900,23000,5600,4300,6900,4200,3200,5200
+Nicaragua,2015,NI,NIC,558,AMR,Survey,2006,National,0.94,0,2.3,0.69,67,Surveillance,2010,National,12,7.3,18,2.7,89,78,34,120,1.3,0.55,1.9,,,,,45,15,74,15,0,36
+Nicaragua,2016,NI,NIC,558,AMR,Survey,2006,National,0.94,0,2.3,0.69,67,Surveillance,2010,National,12,7.3,18,2.7,89,53,13,93,0.84,0.21,1.5,,,,,42,14,70,37,15,59
+Nicaragua,2017,NI,NIC,558,AMR,Survey,2006,National,0.94,0.09,2.7,0.7,67,Surveillance,2010,National,12,7.3,18,2.7,88,42,8,100,0.65,0.13,1.6,72,30,6,73,38,10,65,34,10,57
+Nicaragua,2018,NI,NIC,558,AMR,Survey,2006,National,0.94,0.09,2.7,0.7,67,Surveillance,2010,National,12,7.3,18,2.7,87,40,8,96,0.61,0.12,1.5,72,29,6,69,38,12,65,34,12,56
+Nicaragua,2019,NI,NIC,558,AMR,Survey,2006,National,0.94,0.09,2.7,0.7,67,Surveillance,2010,National,12,7.3,18,2.7,88,43,9,100,0.65,0.13,1.6,72,31,6,75,40,12,68,36,12,59
+Niue,2015,NU,NIU,570,WPR,Model,2015,,5.2,3.1,7.3,1.1,83,Model,2015,,28,25,30,1.3,70,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Niue,2016,NU,NIU,570,WPR,Model,2016,,5.5,3,8,1.3,76,Model,2016,,26,23,30,1.2,75,0,0,0,0,0,0,,,,,,,,,,
+Niue,2017,NU,NIU,570,WPR,Model,2017,,2.3,0.86,4.4,0.91,78,Model,2017,,12,7.2,19,2.9,88,0,0,0,8.8,5.1,14,88,0,0,0,0,0,0,0,0,0
+Niue,2018,NU,NIU,570,WPR,Model,2018,,2.3,0.92,4.3,0.87,78,Model,2018,,11,6.1,17,2.8,59,0,0,0,6.3,1.4,15,60,0,0,0,0,0,0,0,0,0
+Niue,2019,NU,NIU,570,WPR,Model,2019,,2.2,0.89,4.1,0.82,76,Model,2019,,12,7.2,19,3,69,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Netherlands,2015,NL,NLD,528,EUR,Surveillance,2015,National,1.6,0.6,3.5,0.66,100,Surveillance,2015,National,18,5.2,40,8.2,75,23,10,36,0.14,0.06,0.21,,,,,13,5,20,6,2,14
+Netherlands,2016,NL,NLD,528,EUR,Surveillance,2016,National,2,0.82,4.2,0.76,86,Surveillance,2016,National,30,6.7,65,14,67,29,13,45,0.17,0.08,0.26,,,,,15,6,24,11,4,17
+Netherlands,2017,NL,NLD,528,EUR,Surveillance,2017,National,1.7,0.62,3.7,0.69,83,Surveillance,2017,National,6.3,0.16,30,6.1,100,17,6,32,0.1,0.04,0.19,84,14,5,27,9,2,15,7,2,12
+Netherlands,2018,NL,NLD,528,EUR,Surveillance,2018,National,0.92,0.19,2.7,0.53,100,Surveillance,2017,National,6.3,0.16,30,6.1,100,10,2,23,0.06,0.01,0.13,100,10,2,23,6,0,12,5,0,9
+Netherlands,2019,NL,NLD,528,EUR,Surveillance,2019,National,2.4,0.99,5,0.91,86,Surveillance,2019,National,0,0,25,6.3,95,20,8,38,0.12,0.05,0.22,86,17,7,33,10,2,18,9,2,15
+Norway,2015,NO,NOR,578,EUR,Surveillance,2015,National,2.6,0.86,6,1.2,100,Surveillance,2015,National,4.8,0.12,24,4.6,0,10,2,19,0.19,0.04,0.37,,,,,7,1,12,5,2,11
+Norway,2016,NO,NOR,578,EUR,Surveillance,2015,National,2.6,0.7,6.4,1.3,100,Surveillance,2015,National,5.9,0.15,29,5.7,0,10,1,18,0.18,0.02,0.34,,,,,6,1,11,5,1,9
+Norway,2017,NO,NOR,578,EUR,Surveillance,2017,National,4.5,1.7,9.5,1.8,100,Surveillance,2017,National,0,0,34,8.6,94,10,3,22,0.2,0.06,0.41,100,10,3,22,7,0,13,6,1,11
+Norway,2018,NO,NOR,578,EUR,Surveillance,2018,National,6.1,2.3,13,2.4,67,Surveillance,2018,National,0,0,29,7.3,89,11,4,22,0.21,0.07,0.42,67,7,3,15,7,1,13,6,1,11
+Norway,2019,NO,NOR,578,EUR,Surveillance,2019,National,1.4,0.03,7.3,1.3,100,Surveillance,2018,National,0,0,29,7.3,95,2,1,3,0.04,0.02,0.06,100,2,1,3,1,0,4,1,0,4
+Nepal,2015,NP,NPL,524,SEA,Survey,2011,National,2.2,0.98,3.4,0.63,100,Survey,2011,National,15,9.2,22,3.2,100,1500,950,2100,5.6,3.5,7.8,,,,,1000,670,1400,350,150,540
+Nepal,2016,NP,NPL,524,SEA,Survey,2011,National,2.2,0.98,3.4,0.63,100,Survey,2011,National,15,6.7,24,4.5,100,1500,910,2100,5.4,3.3,7.5,,,,,900,540,1300,710,430,990
+Nepal,2017,NP,NPL,524,SEA,Survey,2011,National,2.2,1.1,3.6,0.64,100,Survey,2011,National,15,9.6,22,3.2,100,1500,840,2400,5.5,3,8.6,100,1500,840,2400,900,590,1200,340,150,520
+Nepal,2018,NP,NPL,524,SEA,Survey,2011,National,2.2,1.1,3.6,0.64,100,Survey,2011,National,15,9.6,22,3.2,100,1400,770,2300,5,2.8,8,100,1400,770,2300,910,590,1200,760,500,1000
+Nepal,2019,NP,NPL,524,SEA,Survey,2011,National,2.2,1.1,3.6,0.64,100,Survey,2011,National,15,9.6,22,3.2,100,2200,890,4000,7.6,3.1,14,100,2200,890,4000,860,550,1200,720,470,970
+Nauru,2015,NR,NRU,520,WPR,Model,2015,,2.3,1.4,3.2,0.4,79,Model,2015,,15,13,18,1.2,84,2,1,2,15,13,17,,,,,0,0,0,0,0,0
+Nauru,2016,NR,NRU,520,WPR,Model,2016,,5.5,3,8,1.3,76,Model,2016,,26,23,30,1.2,75,2,1,2,15,12,19,,,,,0,0,1,0,0,1
+Nauru,2017,NR,NRU,520,WPR,Model,2017,,2.3,0.86,4.4,0.91,78,Model,2017,,12,7.2,19,2.9,88,0,0,1,2.9,1.2,5.3,79,0,0,0,0,0,0,0,0,0
+Nauru,2018,NR,NRU,520,WPR,Model,2018,,2.3,0.92,4.3,0.87,78,Model,2018,,11,6.1,17,2.8,59,0,0,0,1.5,0.66,2.8,73,0,0,0,0,0,0,0,0,0
+Nauru,2019,NR,NRU,520,WPR,Model,2019,,2.2,0.89,4.1,0.82,76,Model,2019,,12,7.2,19,3,69,1,0,1,5.3,2.3,9.5,74,0,0,1,0,0,1,0,0,1
+New Zealand,2015,NZ,NZL,554,WPR,Surveillance,2014,National,2.6,0.7,6.4,1.3,50,Surveillance,2014,National,20,0.51,72,18,100,10,2,19,0.22,0.04,0.41,,,,,6,1,10,4,1,9
+New Zealand,2016,NZ,NZL,554,WPR,Surveillance,2014,National,2.6,0.7,6.4,1.3,50,Surveillance,2014,National,20,0.51,72,18,100,10,1,18,0.21,0.03,0.39,,,,,5,1,9,4,1,9
+New Zealand,2017,NZ,NZL,554,WPR,Surveillance,2014,National,2.6,0.7,6.4,1.3,78,Surveillance,2014,National,20,0.5,72,18,88,11,3,22,0.23,0.07,0.48,79,8,3,18,6,1,10,5,1,9
+New Zealand,2018,NZ,NZL,554,WPR,Surveillance,2014,National,2.6,0.7,6.4,1.3,78,Surveillance,2014,National,20,0.5,72,18,59,10,3,22,0.22,0.07,0.47,76,8,2,17,6,1,11,6,1,10
+New Zealand,2019,NZ,NZL,554,WPR,Surveillance,2014,National,2.6,0.7,6.4,1.3,76,Surveillance,2014,National,20,0.5,72,18,69,11,3,23,0.23,0.07,0.47,75,8,2,17,6,1,12,5,1,10
+Oman,2015,OM,OMN,512,EMR,Surveillance,2014,National,3.5,1.5,6.7,1.2,75,Surveillance,2015,National,0,0,37,0,,15,6,24,0.35,0.13,0.56,,,,,7,2,12,7,3,14
+Oman,2016,OM,OMN,512,EMR,Surveillance,2016,National,1.9,0.51,4.7,0.93,100,Surveillance,2016,National,0,0,0,0,,8,1,15,0.18,0.02,0.34,,,,,4,0,8,4,1,10
+Oman,2017,OM,OMN,512,EMR,Surveillance,2017,National,0,0,1.9,0.49,79,Surveillance,2017,National,0,0,60,15,84,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Oman,2018,OM,OMN,512,EMR,Surveillance,2018,National,2.9,0.94,6.6,1.3,88,Surveillance,2018,National,0,0,85,22,100,8,2,17,0.16,0.05,0.35,88,7,2,15,5,1,10,5,1,9
+Oman,2019,OM,OMN,512,EMR,Surveillance,2019,National,1.7,0.54,3.9,0.74,80,Surveillance,2019,National,0,0,71,18,100,7,2,15,0.14,0.04,0.3,80,5,1,12,5,1,10,5,1,9
+Pakistan,2015,PK,PAK,586,EMR,Survey,2013,National,4.2,3.2,5.3,0.52,88,Surveillance,2015,National,16,15,17,0.31,17,26000,16000,36000,13,8,18,,,,,14000,11000,16000,5300,4000,6600
+Pakistan,2016,PK,PAK,586,EMR,Survey,2013,National,4.2,3.2,5.3,0.52,88,Surveillance,2015,National,16,15,17,0.31,100,27000,17000,37000,13,8.3,18,,,,,15000,12000,18000,7700,6400,9000
+Pakistan,2017,PK,PAK,586,EMR,Survey,2013,National,4.2,3.2,5.3,0.54,88,Surveillance,2015,National,16,15,17,0.31,84,26000,17000,37000,12,8,18,88,23000,15000,32000,15000,12000,18000,7900,6500,9200
+Pakistan,2018,PK,PAK,586,EMR,Survey,2013,National,4.2,3.2,5.3,0.54,88,Surveillance,2015,National,16,15,17,0.31,100,28000,18000,40000,13,8.4,19,90,25000,16000,36000,15000,12000,18000,7900,6600,9300
+Pakistan,2019,PK,PAK,586,EMR,Survey,2013,National,4.2,3.2,5.3,0.54,88,Surveillance,2019,National,7.3,6.8,7.8,0.24,100,25000,16000,36000,12,7.3,17,89,22000,14000,32000,12000,9400,15000,6100,4800,7400
+Panama,2015,PA,PAN,591,AMR,Model,2015,,3,1.5,4.6,0.8,88,Model,2015,,12,6.9,17,2.5,89,89,55,120,2.2,1.4,3,,,,,63,41,85,23,12,36
+Panama,2016,PA,PAN,591,AMR,Model,2016,,2.9,1.4,4.5,0.8,90,Surveillance,2016,National,17,8.9,29,4.7,90,96,57,140,2.4,1.4,3.4,,,,,68,42,95,38,23,53
+Panama,2017,PA,PAN,591,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Surveillance,2016,National,17,8.9,29,4.7,88,84,36,150,2,0.87,3.7,84,71,30,130,69,35,100,38,17,58
+Panama,2018,PA,PAN,591,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Surveillance,2016,National,17,8.9,29,4.7,87,75,31,140,1.8,0.75,3.3,77,58,24,110,59,29,89,40,19,61
+Panama,2019,PA,PAN,591,AMR,Surveillance,2019,National,4.2,2.6,6.3,0.87,23,Surveillance,2016,National,17,8.9,29,4.7,88,88,53,130,2.1,1.2,3.1,34,30,18,45,61,41,81,38,26,51
+Peru,2015,PE,PER,604,AMR,Surveillance,2015,National,5.9,5.6,6.3,0.19,87,Surveillance,2015,National,21,19,22,0.73,93,3200,2700,3800,11,8.9,12,,,,,2000,1900,2100,1100,990,1100
+Peru,2016,PE,PER,604,AMR,Surveillance,2016,National,6.3,5.9,6.7,0.2,87,Surveillance,2016,National,24,23,26,0.9,93,3500,2900,4200,11,9.3,13,,,,,2300,2200,2400,1800,1700,1900
+Peru,2017,PE,PER,604,AMR,Surveillance,2016,National,6.3,5.9,6.7,0.2,83,Surveillance,2017,National,20,19,22,0.79,93,3000,2300,3900,9.6,7.3,12,84,2600,1900,3300,2100,2000,2200,1700,1600,1800
+Peru,2018,PE,PER,604,AMR,Surveillance,2016,National,6.3,5.9,6.7,0.2,73,Surveillance,2017,National,20,19,22,0.79,93,3200,2400,4100,10,7.6,13,80,2600,1900,3300,2200,2100,2300,1700,1600,1800
+Peru,2019,PE,PER,604,AMR,Surveillance,2016,National,6.3,5.9,6.7,0.2,85,Surveillance,2017,National,20,19,22,0.79,93,3100,2400,4000,9.6,7.3,12,86,2700,2000,3400,2200,2100,2300,1800,1700,1900
+Philippines,2015,PH,PHL,608,WPR,Survey,2012,National,2.6,1.8,3.3,0.38,77,Survey,2012,National,29,21,38,4.3,73,17000,14000,20000,17,14,20,,,,,15000,12000,18000,2200,1600,2900
+Philippines,2016,PH,PHL,608,WPR,Survey,2012,National,2.6,1.8,3.3,0.38,77,Survey,2012,National,29,20,38,4.6,73,30000,21000,40000,29,20,39,,,,,20000,15000,24000,8400,6400,10000
+Philippines,2017,PH,PHL,608,WPR,Survey,2012,National,2.6,1.9,3.4,0.39,77,Surveillance,2017,National,28,27,28,0.33,25,27000,12000,47000,26,12,45,74,20000,9200,35000,20000,18000,22000,8500,7700,9300
+Philippines,2018,PH,PHL,608,WPR,Survey,2019,National,1.7,1.1,2.5,0.36,78,Survey,2019,National,16,13,20,1.8,59,18000,7700,32000,17,7.3,30,73,13000,5700,23000,14000,11000,17000,5300,4200,6400
+Philippines,2019,PH,PHL,608,WPR,Survey,2019,National,1.8,1.3,2.6,0.33,67,Surveillance,2019,National,28,27,29,0.34,100,21000,10000,34000,19,9.6,32,75,16000,7800,26000,21000,19000,24000,7600,6800,8400
+Palau,2015,PW,PLW,585,WPR,Surveillance,2013,National,0,0,41,0,,Surveillance,2013,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,5,0,0,3
+Palau,2016,PW,PLW,585,WPR,Surveillance,2016,National,0,0,20,0,,Surveillance,2016,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,4,0,0,3
+Palau,2017,PW,PLW,585,WPR,Surveillance,2017,National,0,0,18,4.5,78,Surveillance,2017,National,12,7.2,19,2.9,88,0,0,0,0.39,0.22,0.6,88,0,0,0,0,0,4,0,0,3
+Palau,2018,PW,PLW,585,WPR,Surveillance,2018,National,8.3,0.21,38,8,0,Surveillance,2017,National,11,6.1,17,2.8,59,2,0,6,9.3,0.35,32,1.7,0,0,0,1,0,6,1,0,5
+Palau,2019,PW,PLW,585,WPR,Surveillance,2019,National,0,0,46,12,76,Surveillance,2017,National,12,7.2,19,3,69,0,0,0,0.11,0.06,0.17,69,0,0,0,0,0,3,0,0,3
+Papua New Guinea,2015,PG,PNG,598,WPR,Survey,2014,Sub-national,3.4,1.7,5,0.82,40,Survey,2014,Sub-national,26,15,36,5.3,37,1900,1200,2500,23,15,31,,,,,1100,800,1500,140,70,200
+Papua New Guinea,2016,PG,PNG,598,WPR,Survey,2014,Sub-national,3.4,1.7,5,0.82,79,Survey,2014,Sub-national,26,15,36,5.3,75,1900,1200,2600,23,15,31,,,,,1200,790,1500,150,77,230
+Papua New Guinea,2017,PG,PNG,598,WPR,Survey,2014,Sub-national,3.4,1.7,5,0.84,79,Survey,2014,Sub-national,26,15,36,5.5,75,1900,1200,2800,23,14,33,77,1500,950,2200,960,650,1300,220,150,290
+Papua New Guinea,2018,PG,PNG,598,WPR,Survey,2014,Sub-national,3.4,1.7,5,0.84,79,Survey,2014,Sub-national,26,15,36,5.5,75,2000,1200,2900,23,14,33,78,1500,940,2200,1000,710,1400,290,200,380
+Papua New Guinea,2019,PG,PNG,598,WPR,Survey,2014,Sub-national,3.4,1.7,5,0.84,79,Survey,2014,Sub-national,26,15,36,5.5,75,2000,1200,2900,22,14,33,78,1500,940,2300,1200,810,1600,380,260,510
+Poland,2015,PL,POL,616,EUR,Surveillance,2015,National,0.66,0.42,0.98,0.13,75,Surveillance,2015,National,3.7,2.1,5.9,0.9,81,70,49,91,0.18,0.13,0.24,,,,,60,42,79,27,17,40
+Poland,2016,PL,POL,616,EUR,Surveillance,2016,National,0.83,0.56,1.2,0.15,90,Surveillance,2016,National,4.4,2.7,6.8,0.97,90,90,66,110,0.24,0.17,0.3,,,,,77,56,98,57,41,72
+Poland,2017,PL,POL,616,EUR,Surveillance,2017,National,1.1,0.79,1.5,0.18,81,Surveillance,2017,National,3.9,2.2,6.3,0.98,93,91,63,120,0.24,0.17,0.33,82,75,52,100,80,58,100,59,43,75
+Poland,2018,PL,POL,616,EUR,Surveillance,2018,National,1.2,0.83,1.6,0.19,84,Surveillance,2018,National,4.2,2.5,6.5,0.96,83,90,63,120,0.24,0.17,0.32,84,76,53,100,80,59,100,63,46,79
+Poland,2019,PL,POL,616,EUR,Surveillance,2019,National,1,0.68,1.4,0.18,90,Surveillance,2019,National,2.8,1.4,4.9,0.83,91,69,47,96,0.18,0.12,0.25,90,63,42,87,62,43,80,49,34,63
+Puerto Rico,2015,PR,PRI,630,AMR,Surveillance,2014,National,0,0,9.3,0,,Surveillance,2015,National,0,0,98,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,3
+Puerto Rico,2016,PR,PRI,630,AMR,Surveillance,2016,National,0,0,9,0,,Surveillance,2016,National,100,2.5,100,0,0,4,4,5,0.13,0.12,0.14,,,,,4,4,4,1,1,1
+Puerto Rico,2017,PR,PRI,630,AMR,Surveillance,2017,National,0,0,12,3.1,83,Surveillance,2017,National,0,0,98,25,88,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Puerto Rico,2018,PR,PRI,630,AMR,Surveillance,2018,National,0,0,20,5,73,Surveillance,2018,National,0,0,85,22,87,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Puerto Rico,2019,PR,PRI,630,AMR,Surveillance,2019,National,10,2.1,27,5.5,100,Surveillance,2018,National,0,0,85,22,88,4,1,10,0.13,0.03,0.32,100,4,1,10,3,1,9,3,1,8
+Democratic People's Republic of Korea,2015,KP,PRK,408,SEA,Survey,2014,Sub-national,2.2,0.51,3.9,0.86,86,Survey,2014,Sub-national,16,8.4,24,4,94,6000,3400,8600,24,14,34,,,,,4600,2600,6500,820,190,1500
+Democratic People's Republic of Korea,2016,KP,PRK,408,SEA,Survey,2014,Sub-national,2.2,0.51,3.9,0.86,86,Survey,2014,Sub-national,16,5.8,27,5.4,94,5700,3200,8100,22,13,32,,,,,4600,2300,6900,3500,1600,5300
+Democratic People's Republic of Korea,2017,KP,PRK,408,SEA,Survey,2014,Sub-national,2.2,0.82,4.2,0.88,86,Survey,2014,Sub-national,16,9.1,25,4.1,94,5200,2600,8800,20,10,34,88,4600,2300,7800,4100,2300,5800,700,260,1300
+Democratic People's Republic of Korea,2018,KP,PRK,408,SEA,Survey,2014,Sub-national,2.2,0.82,4.2,0.88,86,Survey,2014,Sub-national,16,9.1,25,4.1,94,5200,2500,8800,20,10,34,88,4600,2200,7800,3500,2000,5000,2700,1600,3900
+Democratic People's Republic of Korea,2019,KP,PRK,408,SEA,Survey,2014,Sub-national,2.2,0.82,4.2,0.88,86,Survey,2014,Sub-national,16,9.1,25,4.1,94,5200,2500,8800,20,9.9,34,88,4600,2200,7800,3800,2200,5500,3000,1700,4200
+Portugal,2015,PT,PRT,620,EUR,Surveillance,2012,National,0.98,0.51,1.7,0.28,100,Surveillance,2012,National,6.9,2.8,14,2.5,71,33,19,47,0.32,0.18,0.45,,,,,22,12,32,12,6,21
+Portugal,2016,PT,PRT,620,EUR,Surveillance,2012,National,0.98,0.51,1.7,0.28,100,Surveillance,2012,National,6.9,2.8,14,2.5,71,28,17,40,0.28,0.16,0.39,,,,,19,10,27,16,9,23
+Portugal,2017,PT,PRT,620,EUR,Surveillance,2012,National,0.98,0.51,1.7,0.28,100,Surveillance,2012,National,6.9,2.8,14,2.5,94,27,15,43,0.26,0.14,0.42,99,27,14,43,19,10,27,16,9,24
+Portugal,2018,PT,PRT,620,EUR,Surveillance,2012,National,0.98,0.51,1.7,0.28,87,Surveillance,2012,National,6.9,2.8,14,2.5,89,32,17,51,0.31,0.17,0.49,87,27,15,44,19,11,27,16,9,23
+Portugal,2019,PT,PRT,620,EUR,Surveillance,2012,National,0.98,0.51,1.7,0.28,97,Surveillance,2012,National,6.9,2.8,14,2.5,95,26,14,42,0.25,0.14,0.41,96,25,14,40,19,11,28,16,9,23
+Paraguay,2015,PY,PRY,600,AMR,Survey,2008,National,0.9,0,2.2,0.68,33,Survey,2008,National,15,4,25,5.4,100,87,44,130,1.3,0.66,1.9,,,,,76,26,130,13,0,33
+Paraguay,2016,PY,PRY,600,AMR,Survey,2008,National,0.9,0,2.2,0.68,33,Survey,2008,National,15,0,30,7.7,100,84,36,130,1.2,0.54,1.9,,,,,73,10,140,60,8,110
+Paraguay,2017,PY,PRY,600,AMR,Survey,2008,National,0.9,0.08,2.7,0.69,33,Survey,2008,National,15,5.6,27,5.5,100,67,22,140,0.98,0.31,2,65,44,14,90,79,26,130,64,21,110
+Paraguay,2018,PY,PRY,600,AMR,Survey,2008,National,0.9,0.08,2.7,0.69,33,Survey,2008,National,15,5.6,27,5.5,100,69,22,140,0.99,0.32,2,66,45,15,93,79,26,130,63,21,100
+Paraguay,2019,PY,PRY,600,AMR,Survey,2008,National,0.9,0.08,2.7,0.69,33,Survey,2008,National,15,5.6,27,5.5,100,76,25,150,1.1,0.36,2.2,67,51,17,100,87,29,140,65,21,110
+"occupied Palestinian territory, including east Jerusalem",2015,PS,PSE,275,EMR,Model,2015,,3.9,2.9,5,0.5,85,Model,2015,,16,12,19,1.8,79,3,2,3,0.06,0.04,0.07,,,,,1,1,2,0,0,0
+"occupied Palestinian territory, including east Jerusalem",2016,PS,PSE,275,EMR,Model,2016,,4.1,1.4,6.9,1.4,85,Model,2016,,16,13,18,1.2,95,3,1,4,0.06,0.03,0.09,,,,,1,1,2,1,1,2
+"occupied Palestinian territory, including east Jerusalem",2017,PS,PSE,275,EMR,Model,2017,,3.7,2,5.9,1,79,Model,2017,,21,15,27,3.2,84,2,1,4,0.05,0.03,0.09,79,2,1,3,1,1,2,1,1,2
+"occupied Palestinian territory, including east Jerusalem",2018,PS,PSE,275,EMR,Model,2018,,3,1.4,5.3,1,83,Model,2018,,16,11,22,3,100,1,1,3,0.03,0.01,0.05,85,1,0,2,1,0,1,1,0,1
+"occupied Palestinian territory, including east Jerusalem",2019,PS,PSE,275,EMR,Model,2019,,2.6,1.1,4.7,0.92,84,Model,2019,,21,15,27,3.2,100,1,0,2,0.02,0.01,0.04,86,1,0,2,1,1,1,1,1,1
+French Polynesia,2015,PF,PYF,258,WPR,Surveillance,2015,National,0,0,11,0,,Surveillance,2015,National,50,1.3,99,35,100,5,1,9,1.8,0.4,3.1,,,,,4,0,11,0,0,3
+French Polynesia,2016,PF,PYF,258,WPR,Surveillance,2015,National,0,0,11,0,,Surveillance,2015,National,50,1.3,99,35,100,5,1,9,1.8,0.41,3.2,,,,,1,0,2,0,0,4
+French Polynesia,2017,PF,PYF,258,WPR,Surveillance,2017,National,3.3,0.08,17,3.3,100,Surveillance,2017,National,14,0.36,58,13,100,3,0,10,1.1,0.06,3.7,100,3,0,10,2,0,6,2,0,5
+French Polynesia,2018,PF,PYF,258,WPR,Surveillance,2018,National,3.1,0.08,16,3.1,100,Surveillance,2018,National,0,0,41,10,59,2,1,3,0.61,0.35,0.95,100,2,1,3,1,0,4,1,0,3
+French Polynesia,2019,PF,PYF,258,WPR,Surveillance,2018,National,3.1,0.08,16,3.1,100,Surveillance,2018,National,0,0,41,10,69,2,1,2,0.54,0.31,0.83,100,2,1,2,,,,,,
+Qatar,2015,QA,QAT,634,EMR,Surveillance,2014,National,1.3,0.16,4.7,0.94,100,Model,2015,National,15,13,18,1.2,84,10,0,24,0.39,0,0.94,,,,,4,0,13,2,0,8
+Qatar,2016,QA,QAT,634,EMR,Surveillance,2014,National,1.3,0.16,4.7,0.94,100,Model,2016,National,0,0,0,0,95,8,0,18,0.29,0,0.7,,,,,4,0,12,4,0,12
+Qatar,2017,QA,QAT,634,EMR,Surveillance,2017,National,1.5,0.49,3.4,0.66,100,Surveillance,2017,National,21,15,27,3.2,84,15,6,27,0.55,0.23,1,96,14,6,26,5,2,12,5,2,12
+Qatar,2018,QA,QAT,634,EMR,Surveillance,2018,National,0.9,0.19,2.6,0.51,100,Surveillance,2018,National,0,0,98,25,100,8,0,25,0.27,0.02,0.89,100,8,0,25,3,0,7,3,0,6
+Qatar,2019,QA,QAT,634,EMR,Surveillance,2018,National,0.9,0.19,2.6,0.51,100,Surveillance,2018,National,0,0,98,25,100,9,1,27,0.31,0.02,0.96,100,9,1,27,4,0,9,4,0,8
+Romania,2015,RO,ROU,642,EUR,Survey,2015,National,3,2.1,3.9,0.44,94,Survey,2015,National,12,9.3,15,1.5,89,940,730,1100,4.7,3.7,5.5,,,,,670,540,790,230,160,300
+Romania,2016,RO,ROU,642,EUR,Surveillance,2016,National,2.8,2.4,3.3,0.22,73,Surveillance,2016,National,17,16,19,0.83,92,890,750,1000,4.5,3.8,5.2,,,,,730,670,790,630,580,680
+Romania,2017,RO,ROU,642,EUR,Surveillance,2017,National,2.5,2.1,2.9,0.2,65,Surveillance,2017,National,15,14,17,0.81,90,720,570,890,3.7,2.9,4.5,70,510,400,620,590,540,650,520,470,560
+Romania,2018,RO,ROU,642,EUR,Surveillance,2018,National,2.7,2.3,3.2,0.21,72,Surveillance,2018,National,15,13,16,0.82,87,710,560,880,3.6,2.9,4.5,75,530,420,660,560,510,610,480,440,520
+Romania,2019,RO,ROU,642,EUR,Surveillance,2019,National,2.7,2.3,3.1,0.22,73,Surveillance,2019,National,13,11,15,0.83,88,630,490,770,3.2,2.6,4,75,470,370,580,500,450,550,430,390,480
+Russian Federation,2015,RU,RUS,643,EUR,Oblasts,2013,,22,14,25,3.1,86,Oblasts,2013,,53,40,59,5.2,93,60000,49000,71000,41,34,49,,,,,42000,35000,48000,8500,5300,9200
+Russian Federation,2016,RU,RUS,643,EUR,Surveillance,2016,National,27,27,28,0.25,100,Surveillance,2016,National,65,65,66,0.29,100,63000,52000,74000,44,36,51,,,,,47000,46000,47000,28000,28000,28000
+Russian Federation,2017,RU,RUS,643,EUR,Surveillance,2017,National,32,31,33,0.27,88,Surveillance,2017,National,67,66,67,0.3,88,42000,27000,60000,29,19,41,88,37000,24000,53000,49000,49000,50000,28000,28000,28000
+Russian Federation,2018,RU,RUS,643,EUR,Surveillance,2018,National,35,34,35,0.28,92,Surveillance,2018,National,71,70,71,0.29,89,41000,26000,59000,28,18,40,90,37000,24000,53000,50000,49000,50000,29000,29000,29000
+Russian Federation,2019,RU,RUS,643,EUR,Surveillance,2019,National,35,35,36,0.3,93,Surveillance,2019,National,71,70,71,0.29,92,39000,25000,56000,27,17,38,92,36000,23000,52000,50000,50000,50000,28000,28000,29000
+Rwanda,2015,RW,RWA,646,AFR,Survey,2015,National,1.5,0.77,2.2,0.37,93,Survey,2015,National,11,3.3,18,3.8,100,160,100,210,1.4,0.88,1.8,,,,,120,73,180,56,29,84
+Rwanda,2016,RW,RWA,646,AFR,Survey,2015,National,1.5,0.77,2.2,0.37,93,Surveillance,2016,National,5.1,3.4,7.4,0.97,100,140,89,190,1.2,0.76,1.6,,,,,110,70,140,90,59,120
+Rwanda,2017,RW,RWA,646,AFR,Survey,2015,National,1.5,0.85,2.3,0.38,93,Surveillance,2016,National,5.1,3.3,7.4,0.97,79,130,71,210,1.1,0.6,1.7,92,120,66,190,93,58,130,81,51,110
+Rwanda,2018,RW,RWA,646,AFR,Surveillance,2018,National,2.2,1.7,2.7,0.25,81,Surveillance,2018,National,5.2,3.3,7.7,1.1,100,180,130,240,1.5,1,2,86,150,110,210,130,100,150,110,86,130
+Rwanda,2019,RW,RWA,646,AFR,Surveillance,2019,National,2.2,1.7,2.7,0.25,94,Surveillance,2019,National,7.1,4.7,10,1.3,100,190,130,260,1.5,1.1,2.1,94,180,130,250,130,110,160,110,89,130
+Saudi Arabia,2015,SA,SAU,682,EMR,Survey,2010,National,2.6,2,3.2,0.31,69,Survey,2010,National,20,16,25,2.2,78,150,120,180,0.47,0.38,0.57,,,,,110,89,120,54,42,67
+Saudi Arabia,2016,SA,SAU,682,EMR,Survey,2010,National,2.6,2,3.2,0.31,69,Survey,2010,National,20,14,26,3.1,78,130,110,160,0.4,0.33,0.48,,,,,94,76,110,64,52,76
+Saudi Arabia,2017,SA,SAU,682,EMR,Survey,2010,National,2.6,2,3.2,0.31,69,Survey,2010,National,20,16,25,2.2,78,120,89,150,0.36,0.27,0.45,71,83,63,110,84,70,98,73,61,85
+Saudi Arabia,2018,SA,SAU,682,EMR,Survey,2010,National,2.6,2,3.2,0.31,69,Surveillance,2018,National,1.7,0.21,6.1,1.2,100,87,64,110,0.26,0.19,0.33,71,61,45,79,56,43,69,55,42,67
+Saudi Arabia,2019,SA,SAU,682,EMR,Survey,2010,National,2.6,2,3.2,0.31,69,Surveillance,2018,National,1.7,0.21,6.1,1.2,100,86,64,110,0.25,0.19,0.32,70,60,44,78,58,44,71,53,41,65
+Sudan,2015,SD,SDN,729,EMR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,1600,89,3000,4.1,0.23,7.7,,,,,730,110,1300,170,6,410
+Sudan,2016,SD,SDN,729,EMR,Survey,2017,National,2.9,1.7,4.1,0.6,79,Survey,2017,National,13,8.6,17,2.1,76,1200,580,1900,3.1,1.5,4.7,,,,,600,410,780,190,110,270
+Sudan,2017,SD,SDN,729,EMR,Survey,2017,National,2.9,1.7,4.1,0.61,79,Survey,2017,National,13,8.6,17,2.2,76,1100,650,1800,2.8,1.6,4.4,79,910,510,1400,600,420,780,350,260,450
+Sudan,2018,SD,SDN,729,EMR,Survey,2017,National,2.9,1.7,4.1,0.61,79,Survey,2017,National,13,8.6,17,2.2,76,1100,610,1700,2.6,1.5,4.1,78,860,480,1300,600,420,780,310,220,400
+Sudan,2019,SD,SDN,729,EMR,Survey,2017,National,2.9,1.7,4.1,0.61,79,Surveillance,2019,National,13,10,15,1.1,100,1000,570,1600,2.4,1.3,3.8,82,840,470,1300,540,380,710,340,240,440
+Senegal,2015,SN,SEN,686,AFR,Survey,2014,National,0.9,0.24,1.6,0.34,56,Survey,2014,National,19,12,25,3.3,95,410,250,570,2.8,1.7,3.9,,,,,280,180,370,82,22,140
+Senegal,2016,SN,SEN,686,AFR,Survey,2014,National,0.9,0.24,1.6,0.34,56,Survey,2014,National,19,9.6,27,4.5,95,440,280,610,3,1.8,4.1,,,,,290,180,410,250,150,350
+Senegal,2017,SN,SEN,686,AFR,Survey,2014,National,0.9,0.36,1.7,0.34,56,Surveillance,2017,National,6.2,4.8,7.9,0.76,100,240,97,450,1.6,0.63,2.9,61,150,59,280,170,92,240,150,82,210
+Senegal,2018,SN,SEN,686,AFR,Survey,2014,National,0.9,0.36,1.7,0.34,56,Surveillance,2017,National,6.2,4.8,7.9,0.76,100,240,95,440,1.5,0.6,2.8,61,140,58,270,160,87,240,140,76,210
+Senegal,2019,SN,SEN,686,AFR,Survey,2014,National,0.9,0.36,1.7,0.34,56,Surveillance,2019,National,3.9,2.7,5.3,0.64,100,220,84,410,1.3,0.52,2.5,60,130,50,240,140,62,210,120,57,190
+Singapore,2015,SG,SGP,702,WPR,Surveillance,2015,National,1,0.52,1.8,0.31,82,Surveillance,2015,National,0.99,0.03,5.4,0.99,100,34,18,50,0.61,0.32,0.89,,,,,19,8,30,11,6,20
+Singapore,2016,SG,SGP,702,WPR,Surveillance,2016,National,1.4,0.83,2.3,0.34,84,Surveillance,2016,National,2.3,0.28,8.1,1.6,100,51,31,71,0.91,0.55,1.3,,,,,30,17,44,19,11,28
+Singapore,2017,SG,SGP,702,WPR,Surveillance,2017,National,1.5,0.89,2.4,0.37,71,Surveillance,2017,National,3.6,0.74,10,2,67,45,25,69,0.78,0.44,1.2,71,31,18,49,33,19,47,21,12,30
+Singapore,2018,SG,SGP,702,WPR,Surveillance,2018,National,1.6,0.95,2.5,0.38,62,Surveillance,2018,National,3.5,0.73,9.9,2,39,46,27,71,0.81,0.47,1.2,59,27,16,42,34,20,49,21,12,30
+Singapore,2019,SG,SGP,702,WPR,Surveillance,2019,National,1.4,0.74,2.3,0.36,73,Surveillance,2019,National,1.9,0.05,10,1.9,0,33,18,54,0.58,0.31,0.93,67,22,12,36,24,12,37,16,8,23
+Solomon Islands,2015,SB,SLB,90,WPR,Model,2015,,5.2,3.1,7.3,1.1,83,Surveillance,2013,National,0,0,41,0,,32,19,45,5.3,3.2,7.5,,,,,12,7,18,8,5,12
+Solomon Islands,2016,SB,SLB,90,WPR,Model,2016,,5.5,3,8,1.3,76,Surveillance,2013,National,0,0,41,0,,29,15,44,4.7,2.4,7,,,,,14,7,20,7,4,10
+Solomon Islands,2017,SB,SLB,90,WPR,Model,2017,,2.3,0.86,4.4,0.91,78,Surveillance,2013,National,0,0,41,10,88,10,4,21,1.6,0.56,3.2,78,8,3,16,6,1,11,3,0,5
+Solomon Islands,2018,SB,SLB,90,WPR,Model,2018,,2.3,0.92,4.3,0.87,78,Surveillance,2013,National,0,0,41,10,59,11,4,21,1.6,0.61,3.2,78,8,3,16,6,0,12,4,1,7
+Solomon Islands,2019,SB,SLB,90,WPR,Model,2019,,2.2,0.89,4.1,0.82,76,Surveillance,2013,National,0,0,41,10,69,9,4,18,1.4,0.53,2.7,76,7,3,14,5,1,9,3,1,6
+Sierra Leone,2015,SL,SLE,694,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,700,0,1500,9.8,0,21,,,,,420,0,860,210,7,500
+Sierra Leone,2016,SL,SLE,694,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,720,120,1300,9.8,1.6,18,,,,,440,99,780,390,95,680
+Sierra Leone,2017,SL,SLE,694,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,660,270,1200,8.9,3.7,16,68,450,190,830,430,200,660,310,160,460
+Sierra Leone,2018,SL,SLE,694,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Model,2018,,15,11,19,2,100,640,260,1200,8.3,3.4,15,83,530,220,970,410,170,650,270,110,420
+Sierra Leone,2019,SL,SLE,694,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Model,2019,,14,10,19,2.1,100,640,280,1200,8.2,3.5,15,94,600,260,1100,440,210,670,280,140,430
+El Salvador,2015,SV,SLV,222,AMR,Survey,2001,National,1.1,0.17,2.1,0.5,29,Surveillance,2014,National,4.1,1.3,9.2,1.8,180,40,14,67,0.63,0.22,1.1,,,,,30,10,50,20,3,37
+El Salvador,2016,SV,SLV,222,AMR,Model,2016,,2.9,1.4,4.5,0.8,90,Surveillance,2014,National,4.1,1.3,9.2,1.8,100,140,76,210,2.2,1.2,3.2,,,,,79,40,120,71,37,110
+El Salvador,2017,SV,SLV,222,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Surveillance,2014,National,4.1,1.3,9.2,1.8,88,110,36,220,1.7,0.57,3.5,83,91,30,190,81,23,140,74,22,130
+El Salvador,2018,SV,SLV,222,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Surveillance,2014,National,4.1,1.3,9.2,1.8,87,100,32,210,1.6,0.49,3.3,75,77,24,160,74,21,130,68,20,120
+El Salvador,2019,SV,SLV,222,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Surveillance,2014,National,4.1,1.3,9.2,1.8,88,87,30,170,1.3,0.46,2.7,85,74,25,150,63,22,100,56,21,92
+San Marino,2015,SM,SMR,674,EUR,Model,2015,,2.3,1.4,3.2,0.4,79,Model,2015,,15,13,18,1.2,84,0,0,0,0,0,0,,,,,,,,,,
+San Marino,2016,SM,SMR,674,EUR,Model,2016,,2.4,1.6,3.2,0.4,82,Model,2016,,11,9.1,14,1.2,95,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+San Marino,2017,SM,SMR,674,EUR,Model,2017,,2.7,1.5,4.4,0.74,100,Model,2017,,12,7.9,17,2.3,94,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+San Marino,2018,SM,SMR,674,EUR,Model,2018,,2.6,1.4,4.2,0.72,87,Model,2018,,11,7.4,16,2.3,89,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+San Marino,2019,SM,SMR,674,EUR,Model,2019,,2.5,1.3,4,0.67,97,Model,2019,,11,7.1,16,2.3,95,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Somalia,2015,SO,SOM,706,EMR,Survey,2011,National,8.7,5.9,11,1.4,60,Survey,2011,National,47,29,65,9.1,87,3100,1800,4400,22,13,32,,,,,1200,920,1500,570,390,750
+Somalia,2016,SO,SOM,706,EMR,Survey,2011,National,8.7,5.9,11,1.4,60,Survey,2011,National,47,23,71,12,87,3900,2200,5600,28,16,40,,,,,1200,890,1600,530,360,700
+Somalia,2017,SO,SOM,706,EMR,Survey,2011,National,8.7,6.1,12,1.4,60,Survey,2011,National,47,29,65,9.3,87,4100,2300,6500,28,16,44,62,2600,1400,4000,1300,930,1600,830,610,1100
+Somalia,2018,SO,SOM,706,EMR,Survey,2011,National,8.7,6.1,12,1.4,60,Survey,2011,National,47,29,65,9.3,87,4000,2200,6300,27,15,42,61,2500,1400,3900,1100,770,1500,690,490,900
+Somalia,2019,SO,SOM,706,EMR,Survey,2011,National,8.7,6.1,12,1.4,60,Surveillance,2019,National,88,73,96,5.2,70,4100,2200,6500,26,14,42,61,2500,1400,3900,1200,830,1500,720,500,940
+Serbia,2015,RS,SRB,688,EUR,Surveillance,2013,National,1.1,0.49,2.2,0.4,75,Surveillance,2013,National,4.7,1.3,11,2.3,100,28,13,43,0.32,0.15,0.48,,,,,20,9,31,9,4,18
+Serbia,2016,RS,SRB,688,EUR,Surveillance,2013,National,1.1,0.49,2.2,0.4,75,Surveillance,2013,National,4.7,1.3,11,2.3,100,27,13,41,0.3,0.15,0.46,,,,,19,8,29,11,5,17
+Serbia,2017,RS,SRB,688,EUR,Surveillance,2013,National,1.1,0.49,2.2,0.4,100,Surveillance,2013,National,4.7,1.3,11,2.3,94,24,10,43,0.27,0.12,0.48,100,24,10,42,16,7,26,10,4,16
+Serbia,2018,RS,SRB,688,EUR,Surveillance,2013,National,1.1,0.49,2.2,0.4,87,Surveillance,2013,National,4.7,1.3,11,2.3,89,22,10,39,0.25,0.11,0.45,87,19,8,34,16,7,26,11,5,17
+Serbia,2019,RS,SRB,688,EUR,Surveillance,2013,National,1.1,0.49,2.2,0.4,97,Surveillance,2013,National,4.7,1.3,11,2.3,95,19,8,34,0.21,0.09,0.38,96,18,8,32,16,7,25,7,3,11
+South Sudan,2015,SS,SSD,728,AFR,Model,2015,,3.2,1.4,5,0.9,67,Model,2015,,14,6.9,21,3.6,65,760,370,1200,7.1,3.5,11,,,,,370,220,510,130,58,210
+South Sudan,2016,SS,SSD,728,AFR,Model,2016,,2.8,2.1,3.4,0.3,69,Model,2016,,13,8.9,17,2.1,66,660,430,900,6.1,4,8.3,,,,,350,290,410,260,210,310
+South Sudan,2017,SS,SSD,728,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,640,280,1100,5.8,2.6,10,69,440,200,780,270,150,390,160,92,220
+South Sudan,2018,SS,SSD,728,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Model,2018,,15,11,19,2,100,530,240,950,4.8,2.1,8.6,85,450,200,800,400,220,580,260,150,360
+South Sudan,2019,SS,SSD,728,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Model,2019,,14,10,19,2.1,100,830,380,1500,7.5,3.5,13,95,790,360,1400,370,190,550,230,130,330
+Sao Tome and Principe,2015,ST,STP,678,AFR,Model,2015,,2.8,0.1,6.7,2,67,Surveillance,2012,National,88,47,100,12,100,36,26,46,18,13,23,,,,,38,28,49,2,0,4
+Sao Tome and Principe,2016,ST,STP,678,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Surveillance,2012,National,88,47,100,12,100,10,5,15,5.1,2.6,7.6,,,,,16,10,21,5,3,7
+Sao Tome and Principe,2017,ST,STP,678,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Surveillance,2012,National,88,47,100,12,79,23,2,67,11,1.2,33,75,18,2,51,9,6,11,4,3,5
+Sao Tome and Principe,2018,ST,STP,678,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Surveillance,2012,National,88,47,100,12,100,21,1,70,9.8,0.48,33,94,19,1,65,9,7,11,3,2,4
+Sao Tome and Principe,2019,ST,STP,678,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Surveillance,2012,National,88,47,100,12,100,18,1,60,8.4,0.42,28,98,18,1,59,14,11,17,2,1,3
+Suriname,2015,SR,SUR,740,AMR,Surveillance,2015,National,9.9,4.1,19,3.5,,Surveillance,2015,National,25,0.63,81,22,,24,11,37,4.3,2,6.6,,,,,14,5,23,9,4,17
+Suriname,2016,SR,SUR,740,AMR,Surveillance,2016,National,6.1,1.7,15,2.9,90,Surveillance,2016,National,0,0,41,0,,11,2,19,1.9,0.44,3.4,,,,,6,0,11,4,0,9
+Suriname,2017,SR,SUR,740,AMR,Surveillance,2016,National,6.1,1.7,15,2.9,83,Surveillance,2016,National,0,0,41,10,88,9,2,20,1.6,0.4,3.5,83,7,2,17,7,0,13,5,0,11
+Suriname,2018,SR,SUR,740,AMR,Surveillance,2018,National,12,6.6,21,3.3,73,Surveillance,2018,National,13,0.31,53,12,87,27,14,45,4.7,2.4,7.7,75,20,10,33,19,9,28,14,7,21
+Suriname,2019,SR,SUR,740,AMR,Surveillance,2019,National,7.7,2.9,16,3,85,Surveillance,2019,National,55,23,83,15,88,19,8,34,3.2,1.4,5.9,85,16,7,29,15,8,22,13,7,20
+Slovakia,2015,SK,SVK,703,EUR,Surveillance,2012,National,0,0,2.6,0,,Surveillance,2012,National,3.7,0.09,19,3.6,100,1,1,2,0.02,0.01,0.04,,,,,1,0,3,0,0,4
+Slovakia,2016,SK,SVK,703,EUR,Surveillance,2012,National,0,0,2.6,0,,Surveillance,2012,National,3.7,0.09,19,3.6,100,2,0,3,0.03,0.01,0.05,,,,,1,0,4,1,0,3
+Slovakia,2017,SK,SVK,703,EUR,Surveillance,2017,National,4.1,1.1,10,2,100,Surveillance,2017,National,7.7,0.95,25,5.2,50,12,4,25,0.22,0.07,0.46,96,12,4,24,10,2,18,7,2,13
+Slovakia,2018,SK,SVK,703,EUR,Surveillance,2018,National,0.86,0.02,4.7,0.86,0,Surveillance,2018,National,13,1.7,40,8.8,100,6,1,16,0.1,0.01,0.29,37,2,0,6,5,0,11,4,0,7
+Slovakia,2019,SK,SVK,703,EUR,Surveillance,2019,National,1.3,0.03,6.9,1.3,100,Surveillance,2019,National,19,5.4,42,8.6,100,6,1,18,0.11,0.01,0.34,100,6,1,18,8,1,14,6,1,10
+Slovenia,2015,SI,SVN,705,EUR,Surveillance,2015,National,0,0,4.1,0,,Surveillance,2015,National,0,0,41,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,4
+Slovenia,2016,SI,SVN,705,EUR,Surveillance,2016,National,0,0,3.9,0,,Surveillance,2016,National,0,0,71,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Slovenia,2017,SI,SVN,705,EUR,Surveillance,2016,National,0,0,3.9,0.99,100,Surveillance,2016,National,0,0,71,18,94,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Slovenia,2018,SI,SVN,705,EUR,Surveillance,2016,National,0,0,3.9,0.99,87,Surveillance,2016,National,0,0,71,18,89,0,0,0,0,0,0,,,,,0,0,4,0,0,3
+Slovenia,2019,SI,SVN,705,EUR,Surveillance,2019,National,0,0,4.6,1.2,97,Surveillance,2019,National,0,0,60,15,95,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Sweden,2015,SE,SWE,752,EUR,Surveillance,2015,National,4,2.3,6.3,0.94,82,Surveillance,2015,National,18,3.8,43,9.2,67,45,26,64,0.46,0.27,0.66,,,,,27,15,39,17,10,27
+Sweden,2016,SE,SWE,752,EUR,Surveillance,2015,National,4,2.3,6.3,0.94,82,Surveillance,2016,National,16,3.4,40,8.4,100,37,21,53,0.38,0.21,0.54,,,,,23,13,32,19,11,28
+Sweden,2017,SE,SWE,752,EUR,Surveillance,2017,National,3.2,1.4,6.2,1.1,100,Surveillance,2017,National,9.5,1.2,30,6.4,50,20,9,35,0.2,0.09,0.35,93,19,9,32,13,5,20,11,4,17
+Sweden,2018,SE,SWE,752,EUR,Surveillance,2018,National,2.2,0.79,4.6,0.87,84,Surveillance,2018,National,18,2.3,52,12,100,17,7,30,0.17,0.07,0.3,88,15,6,27,10,3,17,8,3,14
+Sweden,2019,SE,SWE,752,EUR,Surveillance,2019,National,2.1,0.7,4.9,0.95,80,Surveillance,2018,National,18,2.3,52,12,100,16,6,31,0.16,0.06,0.3,85,13,5,26,7,1,13,6,1,12
+Eswatini,2015,SZ,SWZ,748,AFR,Survey,2009,National,8,3.1,13,2.5,96,Survey,2009,National,36,31,42,2.9,93,890,460,1300,81,42,118,,,,,490,330,660,180,68,290
+Eswatini,2016,SZ,SWZ,748,AFR,Survey,2009,National,8,3.1,13,2.5,96,Survey,2009,National,36,29,44,3.9,93,660,340,980,59,31,88,,,,,400,260,540,240,140,340
+Eswatini,2017,SZ,SWZ,748,AFR,Survey,2018,National,6.8,5.4,8.4,0.77,56,Survey,2018,National,16,11,21,2.6,69,340,240,460,30,21,41,57,190,130,260,240,200,290,160,130,190
+Eswatini,2018,SZ,SWZ,748,AFR,Survey,2018,National,8.6,6.7,11,1,76,Survey,2018,National,18,11,25,3.5,52,360,250,500,32,22,44,70,260,180,350,270,210,320,200,160,240
+Eswatini,2019,SZ,SWZ,748,AFR,Survey,2018,National,8.6,6.7,11,1,76,Survey,2018,National,18,11,25,3.5,52,390,230,600,34,20,53,72,280,160,440,240,190,290,180,140,220
+Sint Maarten (Dutch part),2015,SX,SXM,534,AMR,Model,2015,,2.3,1.4,3.2,0.4,79,Model,2015,,15,13,18,1.2,84,0,0,0,0.13,0.09,0.18,,,,,0,0,0,0,0,0
+Sint Maarten (Dutch part),2016,SX,SXM,534,AMR,Model,2016,,2.4,1.6,3.2,0.4,82,Model,2016,,11,9.1,14,1.2,95,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Sint Maarten (Dutch part),2017,SX,SXM,534,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,1,0,1,1.3,0.26,3.1,87,0,0,1,0,0,0,0,0,0
+Sint Maarten (Dutch part),2018,SX,SXM,534,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Model,2018,,14,9.3,19,2.4,87,1,0,2,1.8,0.32,4.6,85,1,0,2,1,0,1,0,0,1
+Sint Maarten (Dutch part),2019,SX,SXM,534,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Model,2019,,12,7.4,17,2.5,88,0,0,1,0.96,0.12,2.7,87,0,0,1,0,0,0,0,0,0
+Seychelles,2015,SC,SYC,690,AFR,Surveillance,2015,National,0,0,46,0,,Surveillance,2015,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,3,0,0,2
+Seychelles,2016,SC,SYC,690,AFR,Surveillance,2016,National,0,0,52,0,,Surveillance,2016,National,0,0,98,0,,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Seychelles,2017,SC,SYC,690,AFR,Surveillance,2017,National,0,0,23,5.9,67,Surveillance,2017,National,14,10,18,2.1,79,0,0,0,0.07,0.04,0.11,79,0,0,0,0,0,3,0,0,3
+Seychelles,2018,SC,SYC,690,AFR,Surveillance,2018,National,0,0,22,5.6,81,Surveillance,2017,National,15,11,19,2,100,0,0,0,0.06,0.04,0.1,100,0,0,0,0,0,3,0,0,3
+Seychelles,2019,SC,SYC,690,AFR,Surveillance,2019,National,0,0,34,8.6,94,Surveillance,2019,National,0,0,98,25,100,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Syrian Arab Republic,2015,SY,SYR,760,EMR,Survey,2003,National,8,4.9,11,1.6,78,Surveillance,2015,National,18,11,27,4,81,340,210,470,1.9,1.2,2.6,,,,,150,100,200,100,64,140
+Syrian Arab Republic,2016,SY,SYR,760,EMR,Survey,2003,National,8,4.9,11,1.6,78,Surveillance,2016,National,24,16,35,4.7,70,370,230,510,2.1,1.3,2.9,,,,,160,110,210,120,78,150
+Syrian Arab Republic,2017,SY,SYR,760,EMR,Survey,2003,National,8,5.1,11,1.6,78,Surveillance,2016,National,24,16,35,4.7,84,300,180,450,1.8,1.1,2.7,78,240,140,360,150,100,200,100,69,140
+Syrian Arab Republic,2018,SY,SYR,760,EMR,Model,2018,,3,1.4,5.3,1,83,Surveillance,2018,National,19,11,30,4.7,77,130,61,220,0.76,0.36,1.3,82,110,50,180,63,34,92,44,23,64
+Syrian Arab Republic,2019,SY,SYR,760,EMR,Surveillance,2019,National,1.2,0.61,2.2,0.36,100,Surveillance,2019,National,34,20,51,7.7,38,77,44,120,0.45,0.26,0.7,73,56,32,88,66,42,90,24,15,33
+Turks and Caicos Islands,2015,TC,TCA,796,AMR,Model,2015,,2.3,1.4,3.2,0.4,79,Model,2015,,15,13,18,1.2,84,0,0,0,0.15,0.09,0.2,,,,,0,0,0,0,0,0
+Turks and Caicos Islands,2016,TC,TCA,796,AMR,Model,2016,,2.4,1.6,3.2,0.4,82,Model,2016,,11,9.1,14,1.2,95,0,0,0,0.15,0.1,0.21,,,,,0,0,0,0,0,0
+Turks and Caicos Islands,2017,TC,TCA,796,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,0,0,0,0.31,0.01,1.1,86,0,0,0,0,0,0,0,0,0
+Turks and Caicos Islands,2018,TC,TCA,796,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Model,2018,,14,9.3,19,2.4,87,0,0,0,0.3,0.17,0.46,81,0,0,0,0,0,0,0,0,0
+Turks and Caicos Islands,2019,TC,TCA,796,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Model,2019,,12,7.4,17,2.5,88,0,0,0,0.38,0.16,0.68,85,0,0,0,0,0,0,0,0,0
+Chad,2015,TD,TCD,148,AFR,Model,2015,,2.8,0.1,6.7,2,67,Model,2015,,21,2.2,39,9.3,65,890,31,1700,6.3,0.22,12,,,,,480,67,890,130,5,320
+Chad,2016,TD,TCD,148,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Model,2016,,18,0.1,36,9.1,66,760,160,1400,5.2,1.1,9.4,,,,,360,100,620,220,67,370
+Chad,2017,TD,TCD,148,AFR,Model,2017,,2.5,1.1,4.3,0.81,67,Model,2017,,14,10,18,2.1,79,760,320,1400,5,2.2,9.1,68,520,220,940,350,190,500,200,120,280
+Chad,2018,TD,TCD,148,AFR,Model,2018,,2.4,1.1,4.2,0.78,81,Model,2018,,15,11,19,2,100,710,310,1300,4.6,2,8.2,84,590,260,1100,370,190,540,220,140,300
+Chad,2019,TD,TCD,148,AFR,Model,2019,,2.5,1.2,4.1,0.72,94,Model,2019,,14,10,19,2.1,100,730,330,1300,4.6,2.1,8,95,690,320,1200,400,230,560,240,150,340
+Togo,2015,TG,TGO,768,AFR,Model,2015,,2.8,0.1,6.7,2,67,Surveillance,2013,National,12,7,19,2.8,81,130,0,280,1.8,0,3.8,,,,,79,0,170,56,2,130
+Togo,2016,TG,TGO,768,AFR,Model,2016,,2.6,0.1,5.1,1.3,69,Surveillance,2016,National,5.4,2.6,9.7,1.7,100,110,23,200,1.5,0.3,2.7,,,,,70,12,130,65,12,120
+Togo,2017,TG,TGO,768,AFR,Survey,2018,National,1.5,0.8,2.6,0.46,93,Survey,2018,National,9.7,4.5,18,3.3,100,64,32,110,0.83,0.42,1.4,94,60,30,99,53,29,77,51,28,74
+Togo,2018,TG,TGO,768,AFR,Survey,2018,National,1.5,0.8,2.6,0.46,93,Surveillance,2018,National,4.2,1.9,7.8,1.4,100,48,24,81,0.61,0.3,1,95,46,23,77,39,20,58,37,19,55
+Togo,2019,TG,TGO,768,AFR,Survey,2018,National,1.5,0.8,2.6,0.46,93,Surveillance,2018,National,4.2,1.9,7.8,1.4,100,49,24,83,0.61,0.3,1,94,46,22,78,41,21,61,39,20,58
+Thailand,2015,TH,THA,764,SEA,Survey,2012,National,2.2,1.5,2.9,0.37,91,Survey,2012,National,24,18,30,3.3,79,4500,2900,6200,6.5,4.2,9,,,,,2500,2000,3000,700,470,930
+Thailand,2016,TH,THA,764,SEA,Survey,2012,National,2.2,1.5,2.9,0.37,91,Survey,2012,National,24,16,32,4,79,4700,3000,6300,6.8,4.4,9.2,,,,,2800,2100,3500,1500,1100,1800
+Thailand,2017,TH,THA,764,SEA,Survey,2012,National,2.2,1.5,3,0.38,91,Survey,2012,National,24,18,31,3.4,79,3900,2500,5700,5.7,3.6,8.2,87,3400,2200,4900,2700,2100,3300,1500,1200,1900
+Thailand,2018,TH,THA,764,SEA,Survey,2018,National,2.3,1.3,3.4,0.53,74,Survey,2012,National,24,18,31,3.4,79,4000,2300,6100,5.7,3.3,8.8,76,3000,1700,4600,3200,2300,4000,1900,1400,2400
+Thailand,2019,TH,THA,764,SEA,Survey,2018,National,1.7,1.1,2.7,0.41,71,Surveillance,2019,National,10,9.4,11,0.51,94,2500,1400,3900,3.6,2,5.6,74,1900,1000,2900,1900,1300,2400,1200,850,1600
+Tajikistan,2015,TJ,TJK,762,EUR,Surveillance,2014,National,14,12,15,0.7,47,Surveillance,2014,National,77,73,80,1.8,57,1900,1500,2200,22,18,26,,,,,1300,1200,1300,350,320,390
+Tajikistan,2016,TJ,TJK,762,EUR,Surveillance,2016,National,22,21,24,0.82,93,Surveillance,2016,National,45,40,50,2.5,100,2600,2100,3100,30,25,36,,,,,1200,1200,1300,770,720,820
+Tajikistan,2017,TJ,TJK,762,EUR,Surveillance,2017,National,20,19,22,0.81,100,Surveillance,2017,National,23,20,27,1.7,100,1600,1200,2000,18,13,22,100,1600,1200,2000,940,870,1000,640,600,690
+Tajikistan,2018,TJ,TJK,762,EUR,Survey,2017,National,21,19,24,1.1,93,Surveillance,2018,National,38,34,42,2.1,100,1900,1400,2400,20,15,26,95,1800,1300,2300,1100,980,1200,740,680,800
+Tajikistan,2019,TJ,TJK,762,EUR,Surveillance,2019,National,29,27,31,0.94,50,Surveillance,2019,National,40,36,45,2.2,55,2400,1800,3000,26,20,33,51,1200,920,1500,1300,1200,1400,880,830,930
+Tokelau,2015,TK,TKL,772,WPR,Model,2015,,5.2,3.1,7.3,1.1,83,Model,2015,,28,25,30,1.3,70,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Tokelau,2016,TK,TKL,772,WPR,Model,2016,,5.5,3,8,1.3,76,Model,2016,,26,23,30,1.2,75,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Tokelau,2017,TK,TKL,772,WPR,Model,2017,,2.3,0.86,4.4,0.91,78,Model,2017,,12,7.2,19,2.9,88,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Tokelau,2018,TK,TKL,772,WPR,Model,2018,,2.3,0.92,4.3,0.87,78,Model,2018,,11,6.1,17,2.8,59,0,0,0,2.7,0.58,6.4,60,0,0,0,,,,,,
+Tokelau,2019,TK,TKL,772,WPR,Model,2019,,2.2,0.89,4.1,0.82,76,Model,2019,,12,7.2,19,3,69,0,0,0,2.7,0.34,7.4,70,0,0,0,,,,,,
+Turkmenistan,2015,TM,TKM,795,EUR,Survey,2013,National,14,11,17,1.5,97,Survey,2013,National,38,31,46,3.9,98,850,670,1000,15,12,18,,,,,390,330,450,130,110,160
+Turkmenistan,2016,TM,TKM,795,EUR,Survey,2013,National,14,11,17,1.5,97,Survey,2013,National,38,28,49,5.3,98,830,650,1000,15,11,18,,,,,360,300,420,160,130,190
+Turkmenistan,2017,TM,TKM,795,EUR,Survey,2013,National,14,11,18,1.6,97,Survey,2013,National,38,31,46,3.9,98,480,340,640,8.3,5.9,11,97,460,330,620,340,290,390,210,180,240
+Turkmenistan,2018,TM,TKM,795,EUR,Survey,2018,National,23,21,26,1.4,100,Survey,2018,National,54,48,60,3,100,800,590,1000,14,10,18,100,800,590,1000,690,630,740,270,250,300
+Turkmenistan,2019,TM,TKM,795,EUR,Survey,2018,National,23,21,26,1.4,100,Survey,2018,National,54,48,60,3,100,830,580,1100,14,9.8,19,100,830,580,1100,850,780,920,300,280,330
+Timor-Leste,2015,TL,TLS,626,SEA,Model,2015,,2.6,2.3,3,0.2,90,Model,2015,,17,15,19,0.9,94,220,150,290,18,13,24,,,,,120,110,130,41,36,47
+Timor-Leste,2016,TL,TLS,626,SEA,Model,2016,,2.8,2.4,3.1,0.2,81,Model,2016,,13,10,15,1.2,90,210,130,280,17,11,23,,,,,100,88,110,51,44,58
+Timor-Leste,2017,TL,TLS,626,SEA,Model,2017,,3.3,1.2,6.4,1.3,91,Model,2017,,18,11,26,4,99,260,89,520,21,7.2,42,92,240,82,480,130,55,200,81,32,130
+Timor-Leste,2018,TL,TLS,626,SEA,Model,2018,,3.1,1.1,6.1,1.3,100,Model,2018,,15,7.8,23,3.9,94,240,82,480,19,6.4,38,99,240,80,480,130,51,210,71,27,110
+Timor-Leste,2019,TL,TLS,626,SEA,Survey,2019,National,0.6,0.2,1.3,0.28,100,Survey,2019,National,2.7,0.5,8.2,2,94,48,14,100,3.7,1.1,7.9,98,47,14,100,28,6,50,13,3,23
+Tonga,2015,TO,TON,776,WPR,Model,2015,,5.2,3.1,7.3,1.1,83,Model,2015,,28,25,30,1.3,70,1,0,1,0.83,0.47,1.2,,,,,0,0,0,0,0,0
+Tonga,2016,TO,TON,776,WPR,Model,2016,,5.5,3,8,1.3,76,Model,2016,,26,23,30,1.2,75,1,0,1,0.5,0.26,0.75,,,,,0,0,0,0,0,0
+Tonga,2017,TO,TON,776,WPR,Surveillance,2017,National,0,0,41,10,78,Surveillance,2017,National,12,7.2,19,2.9,88,0,0,0,0.04,0.02,0.06,88,0,0,0,0,0,4,0,0,3
+Tonga,2018,TO,TON,776,WPR,Surveillance,2018,National,0,0,41,10,78,Surveillance,2017,National,11,6.1,17,2.8,59,0,0,0,0.02,0.01,0.04,59,0,0,0,0,0,3,0,0,3
+Tonga,2019,TO,TON,776,WPR,Surveillance,2019,National,0,0,60,15,76,Surveillance,2017,National,12,7.2,19,3,69,0,0,0,0.03,0.02,0.05,69,0,0,0,0,0,4,0,0,2
+Trinidad and Tobago,2015,TT,TTO,780,AMR,Model,2015,,2.3,1.4,3.2,0.4,79,Model,2015,,15,13,18,1.2,84,10,8,12,0.73,0.58,0.88,,,,,9,7,10,3,2,4
+Trinidad and Tobago,2016,TT,TTO,780,AMR,Model,2016,,2.4,1.6,3.2,0.4,82,Model,2016,,11,9.1,14,1.2,95,9,7,11,0.65,0.49,0.81,,,,,8,6,9,5,4,6
+Trinidad and Tobago,2017,TT,TTO,780,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,9,4,15,0.64,0.32,1.1,85,8,4,13,7,4,11,5,2,7
+Trinidad and Tobago,2018,TT,TTO,780,AMR,Surveillance,2018,National,0,0,2.4,0.62,73,Surveillance,2018,National,4.8,0.12,24,4.6,87,1,1,2,0.11,0.06,0.16,87,1,1,2,1,0,5,1,0,4
+Trinidad and Tobago,2019,TT,TTO,780,AMR,Surveillance,2018,National,0,0,2.4,0.62,85,Surveillance,2018,National,4.8,0.12,24,4.6,88,1,1,2,0.08,0.05,0.13,88,1,1,2,2,0,6,1,0,5
+Tunisia,2015,TN,TUN,788,EMR,Surveillance,2015,National,0.54,0.2,1.2,0.22,100,Surveillance,2015,National,17,7.2,32,5.9,100,25,6,43,0.22,0.05,0.38,,,,,17,8,26,6,2,14
+Tunisia,2016,TN,TUN,788,EMR,Surveillance,2016,National,0.93,0.45,1.7,0.29,69,Surveillance,2016,National,4.2,0.88,12,2.4,100,45,19,71,0.4,0.17,0.63,,,,,15,7,24,13,6,20
+Tunisia,2017,TN,TUN,788,EMR,Surveillance,2017,National,1.1,0.53,2,0.35,100,Surveillance,2017,National,13,6.1,23,4,100,50,24,86,0.44,0.21,0.76,100,50,24,86,22,12,32,19,11,27
+Tunisia,2018,TN,TUN,788,EMR,Surveillance,2018,National,1,0.52,1.9,0.31,100,Surveillance,2018,National,27,12,46,8.1,100,53,27,89,0.46,0.23,0.77,100,53,27,89,28,16,40,20,12,29
+Tunisia,2019,TN,TUN,788,EMR,Surveillance,2018,National,1,0.52,1.9,0.31,100,Surveillance,2018,National,27,12,46,8.1,100,53,26,89,0.45,0.23,0.76,100,53,26,89,25,15,36,21,12,30
+Turkey,2015,TR,TUR,792,EUR,Surveillance,2015,National,3.6,3.1,4.2,0.27,72,Surveillance,2015,National,21,17,24,1.7,86,710,600,830,0.9,0.76,1.1,,,,,440,390,490,210,180,240
+Turkey,2016,TR,TUR,792,EUR,Surveillance,2016,National,2.9,2.5,3.4,0.24,74,Surveillance,2016,National,16,13,19,1.5,87,560,460,650,0.7,0.58,0.82,,,,,350,300,390,280,240,310
+Turkey,2017,TR,TUR,792,EUR,Surveillance,2017,National,3.3,2.8,3.8,0.25,75,Surveillance,2017,National,14,11,17,1.5,80,570,450,690,0.7,0.56,0.85,75,430,340,520,350,310,390,280,250,310
+Turkey,2018,TR,TUR,792,EUR,Surveillance,2018,National,3.5,3,4,0.27,76,Surveillance,2018,National,12,9,15,1.5,84,550,440,670,0.67,0.53,0.82,77,430,340,520,330,290,370,250,220,280
+Turkey,2019,TR,TUR,792,EUR,Surveillance,2019,National,2.4,1.9,2.8,0.22,79,Surveillance,2019,National,9.7,6.9,13,1.5,92,380,290,470,0.45,0.35,0.56,80,300,230,370,220,190,250,170,150,200
+Tuvalu,2015,TV,TUV,798,WPR,Model,2015,,5.2,3.1,7.3,1.1,83,Model,2015,,28,25,30,1.3,70,1,1,2,11,6.1,15,,,,,1,1,1,0,0,1
+Tuvalu,2016,TV,TUV,798,WPR,Model,2016,,5.5,3,8,1.3,76,Model,2016,,26,23,30,1.2,75,2,1,2,16,10,22,,,,,1,1,2,1,1,1
+Tuvalu,2017,TV,TUV,798,WPR,Model,2017,,2.3,0.86,4.4,0.91,78,Model,2017,,12,7.2,19,2.9,88,1,0,1,6.6,2.4,13,79,1,0,1,0,0,1,0,0,0
+Tuvalu,2018,TV,TUV,798,WPR,Surveillance,2018,National,0,0,25,6.3,78,Surveillance,2018,National,25,0.63,81,22,0,0,0,0,2.5,1.4,3.9,0,0,0,0,2,0,5,1,0,4
+Tuvalu,2019,TV,TUV,798,WPR,Surveillance,2019,National,0,0,23,5.9,76,Surveillance,2018,National,25,0.63,81,22,0,0,0,1,3.2,1.8,5,0,0,0,0,1,0,3,1,0,3
+United Republic of Tanzania,2015,TZ,TZA,834,AFR,Survey,2007,National,1.3,0.47,2.1,0.43,85,Survey,2007,National,4.7,0.37,9,2.2,66,2600,560,4700,5.1,1.1,9.1,,,,,730,320,1100,320,110,520
+United Republic of Tanzania,2016,TZ,TZA,834,AFR,Survey,2007,National,1.3,0.47,2.1,0.43,85,Surveillance,2016,National,6.2,5.1,7.4,0.56,50,2600,630,4600,5,1.2,8.7,,,,,830,420,1200,470,250,690
+United Republic of Tanzania,2017,TZ,TZA,834,AFR,Survey,2018,National,0.9,0.3,1.5,0.31,100,Survey,2018,National,4.7,0.7,8.6,2,40,1700,520,3400,3,0.95,6.3,94,1600,490,3200,640,290,980,360,170,550
+United Republic of Tanzania,2018,TZ,TZA,834,AFR,Survey,2018,National,0.97,0.4,1.6,0.31,100,Surveillance,2018,National,13,11,15,1,100,1900,670,3700,3.3,1.2,6.6,100,1900,670,3700,920,580,1300,450,280,610
+United Republic of Tanzania,2019,TZ,TZA,834,AFR,Survey,2018,National,0.97,0.4,1.6,0.31,100,Surveillance,2019,National,12,10,14,0.99,100,1700,590,3400,3,1,5.9,100,1700,590,3400,910,530,1300,410,250,580
+Uganda,2015,UG,UGA,800,AFR,Survey,2011,National,1.6,0.78,2.4,0.42,88,Survey,2011,National,12,5.9,18,3.2,100,1900,1000,2800,5,2.6,7.3,,,,,1000,660,1400,410,200,620
+Uganda,2016,UG,UGA,800,AFR,Survey,2011,National,1.6,0.78,2.4,0.42,88,Survey,2011,National,12,3.4,21,4.5,100,1900,980,2900,4.9,2.5,7.3,,,,,1100,610,1500,740,420,1100
+Uganda,2017,UG,UGA,800,AFR,Survey,2011,National,1.6,0.87,2.5,0.43,88,Survey,2011,National,12,6.5,19,3.2,100,2000,940,3600,5,2.3,8.6,90,1800,850,3200,1100,700,1500,720,450,990
+Uganda,2018,UG,UGA,800,AFR,Surveillance,2018,National,1,0.91,1.2,0.07,100,Survey,2011,National,12,6.5,19,3.2,100,1500,820,2300,3.5,1.9,5.4,100,1500,820,2300,1100,800,1500,680,470,890
+Uganda,2019,UG,UGA,800,AFR,Surveillance,2019,National,1,0.93,1.2,0.06,100,Survey,2011,National,12,6.5,19,3.2,100,1500,850,2400,3.4,1.9,5.4,100,1500,850,2400,1300,950,1700,780,530,1000
+Ukraine,2015,UA,UKR,804,EUR,Survey,2014,National,25,21,28,1.7,97,Survey,2014,National,58,53,64,3,99,22000,17000,27000,49,38,60,,,,,12000,11000,13000,3500,3000,4000
+Ukraine,2016,UA,UKR,804,EUR,Surveillance,2016,National,27,26,27,0.38,83,Surveillance,2016,National,47,46,48,0.57,87,21000,16000,26000,47,37,57,,,,,10000,10000,11000,7500,7300,7600
+Ukraine,2017,UA,UKR,804,EUR,Surveillance,2017,National,28,27,29,0.41,77,Surveillance,2017,National,48,47,49,0.62,78,13000,8500,19000,30,19,43,77,10000,6500,15000,10000,9800,10000,7000,6900,7200
+Ukraine,2018,UA,UKR,804,EUR,Surveillance,2018,National,29,28,30,0.41,77,Surveillance,2018,National,46,45,48,0.63,80,13000,8100,18000,29,18,41,78,9900,6400,14000,9700,9500,9900,6900,6800,7000
+Ukraine,2019,UA,UKR,804,EUR,Surveillance,2019,National,27,26,28,0.4,75,Surveillance,2019,National,43,42,44,0.65,76,11000,7100,16000,25,16,36,75,8400,5400,12000,8300,8100,8500,6200,6000,6300
+Uruguay,2015,UY,URY,858,AMR,Surveillance,2015,National,0.55,0.11,1.6,0.32,67,Surveillance,2015,National,0,0,17,0,,7,1,14,0.21,0.03,0.41,,,,,4,0,9,3,1,9
+Uruguay,2016,UY,URY,858,AMR,Surveillance,2016,National,0,0,0.69,0,,Surveillance,2016,National,6,1.3,17,3.4,33,0,0,0,0,0,0,,,,,4,0,8,3,0,6
+Uruguay,2017,UY,URY,858,AMR,Surveillance,2017,National,0.42,0.05,1.5,0.3,56,Surveillance,2017,National,4.9,0.6,17,3.4,0,6,1,17,0.19,0.03,0.51,52,3,0,9,7,0,13,5,0,9
+Uruguay,2018,UY,URY,858,AMR,Surveillance,2018,National,0.39,0.05,1.4,0.28,50,Surveillance,2018,National,0,0,4.5,1.1,87,4,0,11,0.12,0.01,0.33,50,2,0,6,3,0,8,2,0,6
+Uruguay,2019,UY,URY,858,AMR,Surveillance,2018,National,0.39,0.05,1.4,0.28,50,Surveillance,2018,National,0,0,4.5,1.1,88,4,0,12,0.12,0.01,0.35,50,2,0,6,3,0,10,3,0,7
+United States of America,2015,US,USA,840,AMR,Surveillance,2015,National,1.5,1.2,1.8,0.16,80,Surveillance,2015,National,5.5,3.2,8.8,1.3,88,180,140,230,0.06,0.04,0.07,,,,,130,110,160,88,71,110
+United States of America,2016,US,USA,840,AMR,Surveillance,2016,National,1.5,1.2,1.8,0.16,84,Surveillance,2016,National,5.6,3.2,9.1,1.4,93,180,130,220,0.05,0.04,0.07,,,,,130,100,150,100,82,120
+United States of America,2017,US,USA,840,AMR,Surveillance,2017,National,2,1.6,2.4,0.19,87,Surveillance,2017,National,10,6.6,15,2,88,290,220,360,0.09,0.07,0.11,87,250,190,310,180,150,210,150,120,170
+United States of America,2018,US,USA,840,AMR,Surveillance,2018,National,1.5,1.2,1.9,0.17,88,Surveillance,2018,National,7.4,4.5,12,1.7,89,210,160,270,0.07,0.05,0.08,89,190,140,240,130,110,160,110,89,130
+United States of America,2019,US,USA,840,AMR,Surveillance,2019,National,1.5,1.2,1.8,0.17,85,Surveillance,2019,National,6.6,3.8,11,1.6,94,200,150,250,0.06,0.05,0.08,86,170,130,220,130,100,150,100,84,130
+Uzbekistan,2015,UZ,UZB,860,EUR,Survey,2011,National,24,18,30,2.9,96,Survey,2011,National,63,54,71,4.6,99,10000,7600,12000,32,25,39,,,,,5100,4400,5700,990,760,1200
+Uzbekistan,2016,UZ,UZB,860,EUR,Survey,2011,National,24,18,30,2.9,96,Survey,2011,National,63,50,75,6.4,99,10000,7600,13000,32,24,40,,,,,4700,4000,5400,1900,1600,2300
+Uzbekistan,2017,UZ,UZB,860,EUR,Surveillance,2017,National,15,14,16,0.53,67,Surveillance,2017,National,57,55,60,1.1,22,6700,4400,9600,21,14,30,51,3400,2200,4800,3900,3800,4100,2700,2700,2800
+Uzbekistan,2018,UZ,UZB,860,EUR,Surveillance,2018,National,15,14,16,0.52,53,Surveillance,2018,National,34,32,36,1.1,62,4700,3200,6600,15,9.9,20,57,2700,1900,3800,2700,2600,2900,1400,1400,1500
+Uzbekistan,2019,UZ,UZB,860,EUR,Surveillance,2019,National,12,11,13,0.44,91,Surveillance,2019,National,22,20,24,0.89,90,3200,2200,4400,9.7,6.7,13,90,2900,2000,4000,1900,1800,2000,1100,1000,1100
+Saint Vincent and the Grenadines,2015,VC,VCT,670,AMR,Model,2015,,3,1.5,4.6,0.8,88,Surveillance,2014,National,0,0,98,0,,0,0,0,0.22,0.1,0.34,,,,,0,0,0,0,0,0
+Saint Vincent and the Grenadines,2016,VC,VCT,670,AMR,Surveillance,2013,National,50,1.3,99,35,0,Surveillance,2014,National,0,0,98,0,,3,0,8,3.2,0,7.6,,,,,3,0,7,3,0,7
+Saint Vincent and the Grenadines,2017,VC,VCT,670,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Surveillance,2014,National,0,0,98,25,88,0,0,0,0.04,0.02,0.06,83,0,0,0,0,0,1,0,0,0
+Saint Vincent and the Grenadines,2018,VC,VCT,670,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Surveillance,2014,National,0,0,98,25,87,0,0,0,0.1,0.06,0.16,73,0,0,0,0,0,0,0,0,0
+Saint Vincent and the Grenadines,2019,VC,VCT,670,AMR,Surveillance,2019,National,0,0,60,15,85,Surveillance,2014,National,0,0,98,25,88,0,0,0,0,0,0,,,,,0,0,2,0,0,2
+Venezuela (Bolivarian Republic of),2015,VE,VEN,862,AMR,Model,2015,,3,1.5,4.6,0.8,88,Model,2015,,12,6.9,17,2.5,89,340,190,490,1.1,0.63,1.6,,,,,230,130,320,110,57,180
+Venezuela (Bolivarian Republic of),2016,VE,VEN,862,AMR,Model,2016,,2.9,1.4,4.5,0.8,90,Model,2016,,13,6.7,20,3.4,90,410,230,580,1.4,0.77,2,,,,,290,170,400,170,97,250
+Venezuela (Bolivarian Republic of),2017,VE,VEN,862,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,420,160,790,1.4,0.55,2.7,84,350,140,660,300,130,470,240,110,370
+Venezuela (Bolivarian Republic of),2018,VE,VEN,862,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Model,2018,,14,9.3,19,2.4,87,400,150,770,1.4,0.52,2.7,75,300,110,580,300,130,470,220,93,350
+Venezuela (Bolivarian Republic of),2019,VE,VEN,862,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Model,2019,,12,7.4,17,2.5,88,370,150,700,1.3,0.52,2.4,85,320,130,590,280,130,430,230,110,350
+British Virgin Islands,2015,VG,VGB,92,AMR,Model,2015,,2.3,1.4,3.2,0.4,79,Model,2015,,15,13,18,1.2,84,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+British Virgin Islands,2016,VG,VGB,92,AMR,Model,2016,,2.4,1.6,3.2,0.4,82,Model,2016,,11,9.1,14,1.2,95,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+British Virgin Islands,2017,VG,VGB,92,AMR,Model,2017,,2.3,0.79,4.5,0.96,83,Model,2017,,13,8.4,18,2.5,88,0,0,0,0,0,0,,,,,,,,,,
+British Virgin Islands,2018,VG,VGB,92,AMR,Model,2018,,2.1,0.69,4.3,0.93,73,Model,2018,,14,9.3,19,2.4,87,0,0,0,0.42,0.1,0.99,86,0,0,0,0,0,0,,,
+British Virgin Islands,2019,VG,VGB,92,AMR,Model,2019,,2.1,0.78,4.1,0.87,85,Model,2019,,12,7.4,17,2.5,88,0,0,0,0.34,0.05,0.9,87,0,0,0,,,,,,
+Viet Nam,2015,VN,VNM,704,WPR,Survey,2012,National,4.1,2.6,5.5,0.74,98,Surveillance,2015,National,25,24,26,0.5,4.9,7300,5200,9500,7.9,5.6,10,,,,,5200,4100,6300,2000,1300,2800
+Viet Nam,2016,VN,VNM,704,WPR,Survey,2012,National,4.1,2.6,5.5,0.74,98,Surveillance,2016,National,26,25,27,0.49,89,8200,6100,10000,8.8,6.5,11,,,,,5500,4400,6600,4200,3500,4900
+Viet Nam,2017,VN,VNM,704,WPR,Survey,2012,National,4.1,2.7,5.7,0.75,98,Surveillance,2017,National,17,17,18,0.44,100,6600,4300,9500,7,4.6,10,98,6500,4200,9300,4900,3800,6000,3500,2700,4200
+Viet Nam,2018,VN,VNM,704,WPR,Surveillance,2018,National,3.6,3.4,3.8,0.09,78,Surveillance,2018,National,17,17,18,0.45,100,8600,5400,13000,9.1,5.7,13,83,7200,4500,10000,4300,4100,4400,3000,2900,3200
+Viet Nam,2019,VN,VNM,704,WPR,Surveillance,2018,National,3.6,3.4,3.8,0.09,76,Surveillance,2018,National,17,17,18,0.45,100,8400,5300,12000,8.8,5.5,13,78,6600,4200,9600,4200,4000,4300,3000,2900,3200
+Vanuatu,2015,VU,VUT,548,WPR,Surveillance,2006,National,0,0,12,0,,Model,2015,,28,25,30,1.3,70,0,0,0,0,0,0,,,,,0,0,0,0,0,4
+Vanuatu,2016,VU,VUT,548,WPR,Surveillance,2006,National,0,0,12,0,,Model,2016,,26,23,30,1.2,75,0,0,0,0,0,0,,,,,1,0,1,1,0,1
+Vanuatu,2017,VU,VUT,548,WPR,Surveillance,2017,National,2.2,0.06,12,2.2,78,Surveillance,2017,National,12,7.2,19,2.9,88,3,0,12,1.1,0.03,4.2,78,3,0,9,1,0,4,1,0,5
+Vanuatu,2018,VU,VUT,548,WPR,Surveillance,2018,National,4.9,0.6,17,3.4,0,Surveillance,2017,National,11,6.1,17,2.8,59,7,1,19,2.3,0.28,6.3,0.28,0,0,0,3,0,9,2,0,7
+Vanuatu,2019,VU,VUT,548,WPR,Surveillance,2019,National,3.8,0.47,13,2.7,76,Surveillance,2017,National,12,7.2,19,3,69,5,1,14,1.6,0.2,4.6,76,4,0,10,3,0,9,2,0,7
+Wallis and Futuna Islands,2015,WF,WLF,876,WPR,Model,2015,,5.2,3.1,7.3,1.1,83,Model,2015,,28,25,30,1.3,70,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Wallis and Futuna Islands,2016,WF,WLF,876,WPR,Model,2016,,5.5,3,8,1.3,76,Model,2016,,26,23,30,1.2,75,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Wallis and Futuna Islands,2017,WF,WLF,876,WPR,Model,2017,,2.3,0.86,4.4,0.91,78,Model,2017,,12,7.2,19,2.9,88,0,0,0,0.01,0,0.02,87,0,0,0,,,,,,
+Wallis and Futuna Islands,2018,WF,WLF,876,WPR,Model,2018,,2.3,0.92,4.3,0.87,78,Model,2018,,11,6.1,17,2.8,59,0,0,0,0,0,0,,,,,0,0,0,0,0,0
+Wallis and Futuna Islands,2019,WF,WLF,876,WPR,Surveillance,2019,National,0,0,98,25,76,Model,2019,,12,7.2,19,3,69,0,0,0,0.93,0.53,1.4,69,0,0,0,0,0,1,0,0,1
+Samoa,2015,WS,WSM,882,WPR,Surveillance,2013,National,0,0,28,0,,Surveillance,2013,National,0,0,0,0,,0,0,0,0,0,0,,,,,0,0,4,0,0,4
+Samoa,2016,WS,WSM,882,WPR,Surveillance,2016,National,13,0.32,53,12,0,Surveillance,2016,National,0,0,0,0,,2,0,5,0.97,0,2.7,,,,,1,0,5,1,0,4
+Samoa,2017,WS,WSM,882,WPR,Surveillance,2017,National,0,0,25,6.3,78,Surveillance,2016,National,12,7.2,19,2.9,88,0,0,0,0.05,0.03,0.08,88,0,0,0,0,0,5,0,0,3
+Samoa,2018,WS,WSM,882,WPR,Surveillance,2017,National,0,0,25,6.3,78,Surveillance,2016,National,11,6.1,17,2.8,59,0,0,0,0.02,0.01,0.02,59,0,0,0,0,0,2,0,0,2
+Samoa,2019,WS,WSM,882,WPR,Surveillance,2019,National,0,0,23,5.9,76,Surveillance,2016,National,12,7.2,19,3,69,0,0,0,0.03,0.02,0.05,69,0,0,0,0,0,3,0,0,3
+Yemen,2015,YE,YEM,887,EMR,Survey,2011,National,2.3,0.92,3.7,0.7,74,Survey,2011,National,18,11,25,3.7,82,340,160,520,1.3,0.6,2,,,,,150,81,220,61,25,98
+Yemen,2016,YE,YEM,887,EMR,Survey,2011,National,2.3,0.92,3.7,0.7,74,Survey,2011,National,18,8.7,28,4.8,82,360,180,550,1.3,0.66,2,,,,,190,100,280,130,76,180
+Yemen,2017,YE,YEM,887,EMR,Survey,2011,National,2.3,1.1,3.9,0.72,74,Survey,2011,National,18,11,26,3.8,82,360,180,600,1.3,0.63,2.2,74,270,130,450,180,97,270,120,71,170
+Yemen,2018,YE,YEM,887,EMR,Survey,2011,National,2.3,1.1,3.9,0.72,74,Survey,2011,National,18,11,26,3.8,82,360,180,610,1.3,0.62,2.1,74,270,130,450,190,100,280,120,70,160
+Yemen,2019,YE,YEM,887,EMR,Survey,2011,National,2.3,1.1,3.9,0.72,74,Survey,2011,National,18,11,26,3.8,82,370,180,630,1.3,0.62,2.2,74,280,130,470,200,110,280,100,60,140
+South Africa,2015,ZA,ZAF,710,AFR,Survey,2014,National,3.5,2.8,4.2,0.38,60,Survey,2014,National,7.1,5.3,8.9,0.94,65,20000,13000,27000,36,23,49,,,,,10000,8200,12000,5100,4000,6100
+South Africa,2016,ZA,ZAF,710,AFR,Survey,2014,National,3.4,2.5,4.3,0.45,62,Survey,2014,National,7.1,4.8,9.5,1.2,65,19000,12000,25000,33,22,45,,,,,8200,6400,10000,5500,4300,6800
+South Africa,2017,ZA,ZAF,710,AFR,Survey,2014,National,3.4,2.5,4.3,0.46,62,Survey,2014,National,7.1,4.8,9.5,1.2,65,12000,7700,17000,21,14,30,62,7400,4800,11000,8500,6600,10000,5700,4400,6900
+South Africa,2018,ZA,ZAF,710,AFR,Survey,2014,National,3.4,2.5,4.3,0.46,62,Survey,2014,National,7.1,4.8,9.5,1.2,65,11000,7200,16000,19,12,28,62,7000,4500,10000,8100,6300,9900,5800,4500,7000
+South Africa,2019,ZA,ZAF,710,AFR,Survey,2014,National,3.4,2.5,4.3,0.46,62,Survey,2014,National,7.1,4.8,9.5,1.2,65,14000,8500,20000,23,15,34,62,8500,5300,12000,7800,6200,9500,5300,4100,6400
+Zambia,2015,ZM,ZMB,894,AFR,Survey,2008,National,1.1,0.13,2.1,0.49,27,Survey,2008,National,18,11,26,3.7,44,2300,1400,3200,14,8.8,20,,,,,1500,990,2100,140,17,250
+Zambia,2016,ZM,ZMB,894,AFR,Survey,2008,National,1.1,0.13,2.1,0.49,27,Survey,2008,National,18,12,25,3.5,44,2100,1400,2900,13,8.5,18,,,,,1400,910,1900,150,18,280
+Zambia,2017,ZM,ZMB,894,AFR,Survey,2008,National,1.1,0.34,2.3,0.5,27,Survey,2008,National,18,12,26,3.8,44,1900,670,3800,11,4,23,37,700,250,1400,1300,850,1800,600,370,830
+Zambia,2018,ZM,ZMB,894,AFR,Surveillance,2018,National,2.8,2.5,3.1,0.13,87,Survey,2008,National,18,12,26,3.8,44,3100,1600,5000,18,9.4,29,66,2000,1100,3300,1600,1300,2000,750,620,890
+Zambia,2019,ZM,ZMB,894,AFR,Surveillance,2019,National,2.4,2.2,2.7,0.12,100,Survey,2008,National,18,12,26,3.8,44,2700,1400,4300,15,7.9,24,75,2000,1100,3200,1600,1200,2000,730,580,870
+Zimbabwe,2015,ZW,ZWE,716,AFR,Model,2015,,3.2,1.4,5,0.9,67,Model,2015,,14,6.9,21,3.6,65,1800,1000,2500,13,7.2,18,,,,,1100,690,1600,370,160,570
+Zimbabwe,2016,ZW,ZWE,716,AFR,Survey,2016,National,4.6,3,6.2,0.8,39,Survey,2016,National,14,8.9,20,2.6,45,1900,1300,2600,14,9.2,19,,,,,1400,1000,1700,730,530,930
+Zimbabwe,2017,ZW,ZWE,716,AFR,Survey,2016,National,4.6,3,6.2,0.82,39,Survey,2016,National,14,8.9,20,2.7,45,2100,1300,3100,15,9,22,40,830,510,1200,1300,920,1600,720,510,920
+Zimbabwe,2018,ZW,ZWE,716,AFR,Surveillance,2018,National,3.9,3.5,4.3,0.19,81,Survey,2016,National,14,8.9,20,2.7,45,1500,1100,2000,10,7.4,14,71,1100,750,1400,1100,950,1200,550,500,610
+Zimbabwe,2019,ZW,ZWE,716,AFR,Surveillance,2019,National,3.1,2.7,3.4,0.18,100,Survey,2016,National,14,8.9,20,2.7,45,1200,850,1600,8.2,5.8,11,82,980,690,1300,760,660,870,400,350,450

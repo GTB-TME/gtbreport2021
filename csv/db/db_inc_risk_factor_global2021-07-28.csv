@@ -1,0 +1,12 @@
+group_type,group_name,year,risk.factor,measure,unit,sex,age,best,lo,hi
+global,global,2020,hiv,inc,num,a,a,741639,633483,858193
+global,global,2020,diabetes,inc,num,a,18+,369148,262125,494205
+global,global,2020,diabetes,inc,num,f,18+,136680,97708,182089
+global,global,2020,diabetes,inc,num,m,18+,232797,164740,312436
+global,global,2020,alcohol,inc,num,a,15+,735179,496079,1020563
+global,global,2020,alcohol,inc,num,f,15+,62654,48808,78202
+global,global,2020,alcohol,inc,num,m,15+,759818,534928,1023552
+global,global,2020,smoking,inc,num,a,15+,731378,490241,1019981
+global,global,2020,smoking,inc,num,f,15+,46471,33126,62038
+global,global,2020,smoking,inc,num,m,15+,766031,544655,1024569
+global,global,2020,undernutrition,inc,num,a,a,1900455,1672041,2143279

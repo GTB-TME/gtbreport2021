@@ -1,0 +1,151 @@
+---
+title: "Section 3.4 Drug-resistant TB treatment (text)"
+author: "Hazim Timimi"
+date: "`r Sys.Date()`"
+output: 
+  html_fragment:
+    # Don’t include a table of contents
+    toc: no
+    # Set standard figure width to 12 inches
+    fig_width: 12
+    # Don’t write figure captions
+    fig_caption: FALSE
+
+---
+
+
+```{r setup, include=FALSE}
+# Set chunk options.
+# Results "asis" is useful to output markdown from a function
+# Suppress messages, warnings and also the ## at the beginning of printed text
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      results = "asis",
+                      message = FALSE,
+                      warning = FALSE)
+
+# Kill any attempt at using factors, unless we explicitly want them!
+options(stringsAsFactors=FALSE)
+
+# Load output packages ----
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(RColorBrewer)
+library(whomap)
+library(gtbreport)
+library(here)
+
+# load section data
+source(here('report/ch3-4-dataprep.r'))
+
+# Function to override int_spacer() in the gtbreport package
+# replace space with a non-breaking space so that numbers aren't spread over
+# two lines 
+int_spacer <- function(x){
+  gsub(" ", "&nbsp;", gtbreport::int_spacer(x))
+}
+
+
+# Quick functions for callouts in the text to the figures/tables:
+
+# 1. lnk() Creates a link from text to a named anchor)
+lnk <- function(display_name){
+  return(paste0('<span class="red">[', 
+                display_name, 
+                '](#', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                ')</span>'))
+}
+
+# 2. anch() creates the named anchor to go above the figure or table
+anch <- function(display_name){
+  return(paste0('<a name="', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                '"></a>'))
+}
+
+# 3. ref_lnk() creates a link from text to the references in the WHO style (black, italic)
+ref_lnk <- function(display_name){
+  return(paste0('<span class="refs">[', 
+                display_name, 
+                '](#refs)</span>'))
+}
+
+# rmarkdown::render(here::here("report/ch3-4-txt.rmd"), output_file = "ch3-4-txt.html", output_dir = here::here("report/html/"))
+
+```
+
+```{css, echo=FALSE}
+
+/* Styles to make it easier to see in the html_fragment; this CSS can be included in the CSS widget of Sitefinity */
+  
+.section.level3 {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #BCBCBC;
+  margin-bottom: 2em;
+}
+
+
+.subhead, .footnote {
+  font-size: 80%;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.red, .red a {
+  color: #F21905; /* red text to show figure number */
+  font-weight: bold;
+}
+
+.refs, .refs a {
+  color: #3c4245;  /* match SF normal text colour */
+  font-style: italic;
+}
+
+/* justify paragraphs to both left and right margins in the text under heading 2 */
+.level2 p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+```
+
+
+# 3.4 Drug-resistant TB treatment   
+
+_Draft! Prepared `r Sys.Date()` using country-reported data CSV files dated `r csv_datestamp` and estimates files dated  `r csv_estimate_datestamp`._
+
+Treatment for people diagnosed with rifampicin-resistant TB (RR-TB), isoniazid-resistant TB and multidrug-resistant TB (MDR-TB, defined as resistance to isoniazid and rifampicin) requires regimens that include second-line drugs, such as bedaquiline and fluoroquinolones; these regimens are more expensive (≥US\$ 1000 per person) and cause more side-effects than first-line treatments for drug-susceptible TB (`r ref_lnk("1")`). Pre-extensively drug-resistant TB (pre-XDR-TB, defined as TB that is resistant to rifampicin and any fluoroquinolone) and XDR-TB (resistance to rifampicin, any fluoroquinolone and at least one of bedaquiline or linezolid) are even harder to treat.
+
+Globally in `r report_year-1`, `r int_spacer(f3.4.1_old_txt$rr_treated_2020)` people were enrolled on treatment for MDR/RR-TB, down `r ftb(f3.4.1_old_txt$rr_treat_change_pct)`%  from `r int_spacer(f3.4.1_old_txt$rr_treated_2019)` in `r report_year-2`. Most of those enrolled on treatment were adults (`r lnk("Fig. 3.4.1")`). There was considerable country variation in treatment enrolment between 2009 and `r report_year-1` (`r lnk("Fig. 3.4.2")`). 
+
+The cumulative total number of people reported as enrolled on treatment for MDR/RR-TB from 2018 to 2020 was `r int_spacer(f3.4.3_txt$rr_treated)`, only `r int_spacer(f3.4.3_txt$rr_treated_pct)`% of the 5-year target (2018-2022) of 1.5 million that was set at the UN high-level meeting on TB in 2018 (`r lnk("Fig. 3.4.3")`). For children specifically, the cumulative number was `r int_spacer(f3.4.3_txt$rrmdr_014_tx)`, only `r int_spacer(f3.4.3_txt$rrmdr_014_tx_pct)`% of the 5-year target of 115 000.
+
+Substantial improvements in treatment coverage at the global level require an intensification of efforts to diagnose and treat MDR/RR-TB. This requires one or more of the following to be increased: 
+
+* the proportion of people with TB who are detected and, of these, the proportion for whom TB is bacteriologically confirmed; 
+* the proportion of people with bacteriologically confirmed TB who are tested for drug resistance; and
+* the proportion of people diagnosed with MDR/RR-TB who are enrolled in treatment. 
+
+Globally in `r report_year-3` (the latest patient cohort for which data are available), the treatment success rate for people treated for MDR/RR-TB with second-line regimens was `r ftb(f3.4.4_txt$c_tsr_2018)`%; this has improved steadily in recent years, from `r ftb(f3.4.4_txt$c_tsr_2012)`% in 2012 (`r lnk("Fig. 3.4.4")`). Among WHO regions, the treatment success rate in `r report_year-3` ranged from `r ftb(f3.4.5_txt$c_tsr_EUR)`% in the European Region to `r ftb(f3.4.5_txt$c_tsr_AFR)`% in the African Region (`r lnk("Fig. 3.4.5")`).
+
+By the end of `r report_year-1`, `r ftb(f3.4.6_8_txt$bdq)` countries were using bedaquiline as part of treatment for drug-resistant TB (DR-TB), `r ftb(f3.4.6_8_txt$alloral_long)` were using all-oral longer regimens for the treatment of MDR/RR-TB and `r ftb(f3.4.6_8_txt$alloral_short)` were using shorter regimens for the treatment of MDR/RR-TB (`r lnk("Fig. 3.4.6")`, `r lnk("Fig. 3.4.7")`, `r lnk("Fig. 3.4.8")`). At least some people diagnosed with DR-TB were being monitored for adverse events in most countries (`r lnk("Fig. 3.4.9")`). 
+
+Country-specific details about treatment for drug-resistant TB are available in the [Global tuberculosis report app](https://www.who.int/teams/global-tuberculosis-programme/data/) and [country profiles](https://worldhealthorg.shinyapps.io/tb_profiles/).
+
+
+`r anch("refs")`
+
+**References**
+
+<div class="footnote">
+
+1.	WHO consolidated guidelines on tuberculosis, Module 4: Treatment - drug-resistant tuberculosis treatment. Geneva: World Health Organization; 2020 (https://www.who.int/publications/i/item/9789240007048).
+ 
+</div>
+
+
+

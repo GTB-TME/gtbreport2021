@@ -1,0 +1,161 @@
+---
+title: "Section 3.1 Case notifications (text)"
+author: "Hazim Timimi"
+date: "`r Sys.Date()`"
+output: 
+  html_fragment:
+    # Don’t include a table of contents
+    toc: no
+    # Set standard figure width to 12 inches
+    fig_width: 12
+    # Don’t write figure captions
+    fig_caption: FALSE
+
+---
+
+
+```{r setup, include=FALSE}
+# Set chunk options.
+# Results "asis" is useful to output markdown from a function
+# Suppress messages, warnings and also the ## at the beginning of printed text
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      results = "asis",
+                      message = FALSE,
+                      warning = FALSE)
+
+# Kill any attempt at using factors, unless we explicitly want them!
+options(stringsAsFactors=FALSE)
+
+# Load output packages ----
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(RColorBrewer)
+library(whomap)
+library(gtbreport)
+library(here)
+
+# load section data
+source(here('report/ch3-1-dataprep.r'))
+
+# Function to override int_spacer() in the gtbreport package
+# replace space with a non-breaking space so that numbers aren't spread over
+# two lines 
+int_spacer <- function(x){
+  gsub(" ", "&nbsp;", gtbreport::int_spacer(x))
+}
+
+
+# Quick functions for callouts in the text to the figures/tables:
+
+# 1. lnk() Creates a link from text to a named anchor)
+lnk <- function(display_name){
+  return(paste0('<span class="red">[', 
+                display_name, 
+                '](#', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                ')</span>'))
+}
+
+# 2. anch() creates the named anchor to go above the figure or table
+anch <- function(display_name){
+  return(paste0('<a name="', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                '"></a>'))
+}
+
+# 3. ref_lnk() creates a link from text to the references in the WHO style (black, italic)
+ref_lnk <- function(display_name){
+  return(paste0('<span class="refs">[', 
+                display_name, 
+                '](#refs)</span>'))
+}
+
+# rmarkdown::render(here::here("report/ch3-1-txt.rmd"), output_file = "ch3-1-txt.html", output_dir = here::here("report/html/"))
+
+```
+
+
+```{css, echo=FALSE}
+
+/* Styles to make it easier to see in the html_fragment; this CSS can be included in the CSS widget of Sitefinity */
+  
+.section.level3 {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #BCBCBC;
+  margin-bottom: 2em;
+}
+
+
+.subhead, .footnote {
+  font-size: 80%;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.red, .red a {
+  color: #F21905; /* red text to show figure number */
+  font-weight: bold;
+}
+
+.refs, .refs a {
+  color: #3c4245;  /* match SF normal text colour */
+  font-style: italic;
+}
+
+/* justify paragraphs to both left and right margins in the text under heading 2 */
+.level2 p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+```
+
+# 3.1 Case notifications  
+
+_Draft! Prepared `r Sys.Date()` using country-reported data CSV files dated `r csv_datestamp` and estimates files dated  `r csv_estimate_datestamp`._
+
+
+Prompt and accurate diagnosis followed by provision of treatment according to international standards prevents deaths and limits ill health among people who develop tuberculosis (TB). It also prevents further transmission of infection to others. The 2020 and 2025 milestones for reductions in TB incidence and TB deaths set in the World Health Organization (WHO) End TB Strategy require the case fatality ratio (i.e. the proportion of people with TB who die from the disease) to fall to 10% by 2020 and 6.5% by 2025. The latter is only feasible if all people with TB are diagnosed promptly and treated effectively. Patient-centred care and prevention – backed by bold policies and supportive systems such as universal health coverage (UHC) and social protection – are Pillars 1 and 2 of the End TB Strategy.
+
+The political declaration at the first United Nations (UN) high-level meeting on TB in 2018 included targets to diagnose and treat 40 million people with TB (including 3.5 million children) in the 5-year period 2018–2022, and 1.5 million people with drug-resistant TB (DR-TB, including 115 000 children). 
+
+Data on the number of people diagnosed with TB, based on standard case definitions and associated guidance on the recording and reporting of data provided by WHO, have been systematically collected at national level and then reported to WHO on an annual basis since the mid-1990s (`r ref_lnk("1-3")`). These case notification data can be used to monitor the number of people diagnosed with TB and officially reported through national disease surveillance systems and to track progress towards global targets for TB detection and treatment. Comparisons with estimates of TB incidence (<span class="red">Section 2.1</span>) can be used to assess gaps in detection and treatment of people with TB.
+
+Disruptions to the provision of and access to TB diagnostic and treatment caused by the COVID-19 pandemic have had a major negative impact on the number of people diagnosed and reported with TB. Globally in `r report_year-1`, `r ftb(f3.1.1_txt$c_newinc/1e6)` million people with a new episode of TB (new and relapse cases) were diagnosed and notified (`r lnk("Table 3.1")`), a substantial fall of `r ftb(abs(f3.1.1_txt$pct_dif))`% from `r ftb(f3.1.1_txt$c_newinc_p/1e6)` million in `r report_year-2` (`r lnk("Fig. 3.1.1")`). Downturns between `r report_year-2` and `r report_year-1` were evident in all six WHO regions (`r lnk("Fig. 3.1.1")`), although the reduction in the African Region was relatively modest (`r ftb(abs(f3.1.1_txt$pct_diff_AFR))`%). The largest reductions in absolute terms were in the WHO regions of South-East Asia and the Western Pacific, reflecting particularly large falls in notifications in high TB burden countries such as the Philippines (`r ftb(abs(f3.1.2_txt$PHL))`%),  Indonesia (`r ftb(abs(f3.1.2_txt$IDN))`%) and India (`r ftb(abs(f3.1.2_txt$IND))`%) (`r lnk("Fig. 3.1.2")`). Two of these countries – India and Indonesia – had previously been the main contributors to large increases in global TB notifications between 2013 and 2019 (their combined annual total number of notifications increased by `r ftb(f3.1.2_txt$IND_IDN_2013/1e6)` million in that period).
+
+The cumulative total number of people diagnosed with TB and officially reported from 2018 to `r report_year-1` is `r round(f3.1.3_txt$c_newinc/1e6, 1)` million, only `r ftb(f3.1.3_txt$c_newinc*100/40e6)`% of the 5-year target of 40 million. With disruptions caused by the COVID-19 pandemic continuing in 2021 (<span class="red">Section 1</span>), the target of 40 million is off track (`r lnk("Fig. 3.1.3")`). The target for detection and treatment of people with DR-TB appears even further out of reach (`r lnk("Fig. 3.1.3")`). A total of `r int_spacer(t3.1.1_txt$detected)` people with DR-TB were diagnosed and notified in `r report_year-1`, including `r int_spacer(t3.1.1_txt$conf_rr_nfqr)` with multidrug-resistant or rifampicin-resistant (MDR/RR-TB) and `r int_spacer(t3.1.1_txt$conf_rr_fqr)` with pre-extensively drug-resistant TB (pre-XDR-TB) or XDR-TB (`r lnk("Table 3.1")`). This was a `r ftb(abs(t3.1.1_txt$pct_diff))`% reduction from `r int_spacer(t3.1.1_txt$conf_rrmdr_p)` in `r report_year-2`. A total of `r int_spacer(t3.1.1_txt$enrolled)` people were reported to have been enrolled on treatment in `r report_year-1` (further details in <span class="red">Section 3.4</span>).  
+
+Most notified cases are among adults (`r lnk("Fig. 3.1.4")`), with more of those cases among men than women (`r lnk("Fig. 3.1.5")`). Of the global total of new and relapse TB cases notified in `r report_year-1`, `r filter(f3.1.5_txt,entity=='global') %>% select(pct_men)`% were men, `r filter(f3.1.5_txt,entity=='global') %>% select(pct_women)`% were women and `r filter(f3.1.5_txt,entity=='global') %>% select(pct_kids)`% were children (aged <15 years). A total of `r ftb(f3.1.3_txt$c_new_014/1e6)` million children were diagnosed and notified from 2018 to `r report_year-1`, only `r ftb(f3.1.3_txt$c_new_014*100/3.5e6)`% of the 5-year global target (for 2018–2022) of 3.5 million (`r lnk("Fig. 3.1.3")`). Between `r report_year-2` and `r report_year-1`, there was a `r ftb(f3.1.3_kids_txt$kids_change_pct)`% decrease in notifications of TB cases among children, from `r int_spacer(f3.1.3_kids_txt$kids_2019)`  to `r int_spacer(f3.1.3_kids_txt$kids_2020)`. The global male:female (M:F) ratio for notifications in `r report_year-1` was `r filter(f3.1.5_txt,entity=='global') %>% select(mf_ratio) %>% ftb()`, but ranged across WHO regions from `r filter(f3.1.5_txt,entity=='EMR') %>% select(mf_ratio) %>% ftb()` (WHO Eastern Mediterranean Region) to `r filter(f3.1.5_txt,entity=='WPR') %>% select(mf_ratio) %>% ftb()` (Western Pacific Region). 
+
+In the WHO regions of the Eastern Mediterranean, South-East Asia and Western Pacific, the TB epidemic is a markedly ageing one, with a progressive increase in the notification rate with age, and a peak among those aged 65 years or over (`r lnk("Fig. 3.1.5")`). Elsewhere, notification rates were highest among adults aged 45–54 years in the WHO African Region, 25–34 years in the WHO Region of the Americas and 35–44 years in the WHO European Region. 
+
+Variation among regions and countries in the proportion of notified cases among children (`r lnk("Fig. 3.1.5")`, `r lnk("Fig. 3.1.6")`), in the M:F ratios of cases (`r lnk("Fig. 3.1.5")`) and in the proportions diagnosed with pulmonary or extrapulmonary TB (`r lnk("Table 3.1")`, `r lnk("Fig. 3.1.7")`) may reflect real differences in epidemiology, differential access to or use of health care services, or differential diagnostic and reporting practices. In general, notification data appear to understate the share of the TB disease burden accounted for by men, since higher M:F ratios among adults have been found in national TB prevalence surveys (see <span class="red">Section 2.3</span> for further details). There are recognized issues with the diagnosis and reporting of TB in children, including the use of variable case definitions and underreporting of cases diagnosed by paediatricians in the public and private sectors. Greater attention to the quality of TB notification data for children is warranted in many countries. 
+
+Globally in `r report_year-1`, there was a large global gap of more than `r round(f3.1.1_txt$global_gap/1e6)` million between the number of people newly diagnosed with TB in `r report_year-1` and the estimated number of incident cases, which was also wider compared with `r report_year-2` (`r lnk("Fig. 3.1.1")`). This gap is due to underreporting of detected cases and underdiagnosis (if people with TB cannot access health care or are not diagnosed when they do access it). 
+
+Engagement of all care providers in the public and private sectors through public–private mix (PPM) initiatives can help to minimize the underreporting of people diagnosed with TB. Seven countries have been defined as top global priorities for PPM (`r ref_lnk("4")`), and the contribution of PPM to total notifications of TB cases has grown in most of those countries since 2015 (`r lnk("Fig. 3.1.8")`). Community engagement can help with referrals of people with TB symptoms to health facilities as well as treatment support; in `r filter(f3.1.9_data, dc_engage_community_display==1) %>% nrow()` countries from which WHO requested data in `r report_year-1`, such engagement was reported in a high proportion of basic management units (`r lnk("Fig. 3.1.9")`).  
+
+Gaps between notifications and estimates of TB incidence, especially in the 10 countries that account for most of the global gap, are discussed further in <span class="red">Section 3.3</span>. 
+
+Ideally, data for people diagnosed with TB should be captured in digital case-based surveillance systems and reported in close to real time. As of August `r report_year-1`, `r filter(f3.1.10_data, caseb_err_nat == 42) %>% nrow()` countries had a digital case-based surveillance system that covered all TB cases (both drug-susceptible TB and DR-TB) (`r lnk("Fig. 3.1.10")`). These countries accounted for `r ftb(f3.1.10_txt$pct_notif_caseb)`% of global TB notifications in `r report_year-1`. The global status of progress towards digital case-based surveillance is covered in more detail in the featured topics section of this report.
+
+Further country-specific details about TB notifications are available in the [Global tuberculosis report app](https://www.who.int/teams/global-tuberculosis-programme/data/) and [country profiles](https://worldhealthorg.shinyapps.io/tb_profiles/).
+
+
+`r anch("refs")`
+
+**References**
+
+<div class="footnote">
+
+1. WHO Tuberculosis Programme: framework for effective TB control (WHO/TB/1994.179). Geneva: World Health Organization; 1994 (https://apps.who.int/iris/handle/10665/58717).
+2. Revised TB recording and reporting forms and registers – version 2006 (WHO/HTM/TB/2006.373). Geneva: World Health Organization; 2006).
+3. Definitions and reporting framework for tuberculosis – 2013 revision (updated December 2014 and January 2020) (WHO/HTM/TB/2013.2). Geneva: World Health Organization; 2013.
+(https://apps.who.int/iris/bitstream/handle/10665/79199/9789241505345_eng.pdf).
+4. Public–private mix for TB prevention and care: a roadmap (WHO/CDS/TB/2018.32). Geneva: World Health Organization; 2018 (https://www.who.int/publications/i/item/WHO-CDS-TB-2018.32).
+
+</div>

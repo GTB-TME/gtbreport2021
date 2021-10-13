@@ -1,0 +1,358 @@
+---
+title: "Section 3.4 Drug-resistant TB: treatment and treatment coverage (figures)"
+author: "Hazim Timimi"
+date: "`r Sys.Date()`"
+output: 
+  html_fragment:
+    # Don’t include a table of contents
+    toc: no
+    # Set standard figure width to 12 inches
+    fig_width: 12
+    # Don’t write figure captions
+    fig_caption: FALSE
+
+---
+
+
+```{r setup, include=FALSE}
+# Set chunk options.
+# Results "asis" is useful to output markdown from a function
+# Suppress messages, warnings and also the ## at the beginning of printed text
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      results = "asis",
+                      message = FALSE,
+                      warning = FALSE)
+
+# Kill any attempt at using factors, unless we explicitly want them!
+options(stringsAsFactors=FALSE)
+
+# Load output packages ----
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(RColorBrewer)
+library(whomap)
+library(gtbreport)
+library(here)
+
+# load section data
+source(here('report/ch3-4-dataprep.r'))
+
+# Quick functions for callouts in the text to the figures/tables:
+
+# 1. lnk() Creates a link from text to a named anchor)
+lnk <- function(display_name){
+  return(paste0('<span class="red">[', 
+                display_name, 
+                '](#', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                ')</span>'))
+}
+
+# 2. anch() creates the named anchor to go above the figure or table
+anch <- function(display_name){
+  return(paste0('<a name="', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                '"></a>'))
+}
+
+
+# rmarkdown::render(here::here("report/ch3-4-figs.rmd"), output_file = "ch3-4-figs.html", output_dir = here::here("report/html/"))
+
+```
+
+
+```{css, echo=FALSE}
+
+/* Styles to make it easier to see in the html_fragment; this CSS can be included in the CSS widget of Sitefinity */
+  
+.section.level3 {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #BCBCBC;
+  margin-bottom: 2em;
+}
+
+
+.subhead, .footnote {
+  font-size: 80%;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.red, .red a {
+  color: #F21905; /* red text to show figure number */
+}
+
+```
+
+
+_Draft! Prepared `r Sys.Date()` using country-reported data CSV files dated `r csv_datestamp` and estimates files dated  `r csv_estimate_datestamp`._
+
+
+
+`r anch("Fig. 3.4.1")`
+
+
+### <span class="red">Fig. 3.4.1</span> The global number of people reported to have been enrolled on treatment for MDR/RR-TB, 2015–`r report_year-1`
+<span class="subhead">Global data disaggregated by age are not available for the years before 2018</span>
+
+
+```{r fig_3.4.1, fig.alt="Bar chart of numbers treated for MDR-TB each year since 2015"}
+
+f3.4.1_plot <- f3.4.1_data %>% 
+
+  ggplot(aes(x=year, y=how_many, fill = age_group)) +
+
+  geom_bar(stat = "identity") +
+
+  scale_x_continuous(name="", breaks =2015:report_year-1) +
+
+  # display y-axis scale in thousands
+  scale_y_continuous(name = "Thousands", labels = function(i){round(i/1e3)},
+                     limits = c(0,2e5)) +
+
+  scale_fill_manual("",
+                    breaks = c("all", "15plus", "014" ),
+                    labels = c("All ages", "Adults aged 15 years and above or age not reported", "Children aged under 15 years"),
+                    values = c("all"="#A5D727", "15plus"=palette_gtb("succ"), "014"="red")) +
+  
+  theme_gtb() +
+  
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+
+print(f3.4.1_plot)
+
+```
+
+
+`r anch("Fig. 3.4.2")`
+
+### <span class="red">Fig. 3.4.2</span> Number of MDR/RR-TB cases detected<span style="color:#277abe;"> (blue)</span> and enrolled on MDR-TB treatment<span style="color:red;"> (red)</span>, 2010−`r report_year-1`, 30 high MDR-TB burden countries
+
+```{r fig_3.4.2, fig.alt="Panel of line charts of MDR/RR-TB cases detected, MDR/RR-TB put on treatment since 2010 for 30 countries", fig.height=12}
+
+f3.4.2_plot <- f3.4.2_data %>%
+  
+  ggplot(aes(x=year, y=rr_detected, ymin=0)) +
+  
+  geom_line(size=1, colour = "#277abe") +
+  
+  geom_line(aes(year, rr_treated),
+                      size=1,
+                      colour="Red") +
+  
+  facet_wrap( ~ country, 
+              ncol = 5, 
+              scales="free_y",
+              # Use the labeller function to make sure long country names are wrapped in panel headers
+              labeller = label_wrap_gen(width = 20)) +
+
+  scale_x_continuous(name = "Year", breaks = c(2010, 2015, report_year-1)) +
+  
+  scale_y_continuous(name = "Number of cases",
+                     labels = int_spacer) + 
+  
+  theme_gtb()  +
+  
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+
+
+print(f3.4.2_plot)
+
+```
+
+
+
+
+`r anch("Fig. 3.4.3")`
+
+### <span class="red">Fig. 3.4.3</span> Global progress in the number of people treated for MDR/RR-TB between 2018 and `r report_year-1`, compared with cumulative targets set for 2018–2022 at the UN high-level meeting on TB
+
+![Doughnut chart showing how much of the UN high level meeting targets for MDR/RR-TB for 2018-2022 have been completed](images/Fig345.PNG "Doughnut chart showing how much of the UN high level meeting targets for MDR/RR-TB for 2018-2022 have been completed")
+
+
+
+
+`r anch("Fig. 3.4.4")`
+
+### <span class="red">Fig. 3.4.4</span> Treatment outcomes for MDR/RR-TB cases globally 2012−`r report_year-3` 
+
+
+```{r fig_3.4.4, fig.alt="Horizontal bar charts showing TB treatment outcomes globally by year since 2012 for MDR/RR-TB"}
+
+f3.4.4_plot <- f3.4.4_data %>%
+  
+  ggplot(aes(year,
+             value,
+             fill = factor(outcome,
+                           levels = c("Treatment success",
+                                      "Failure",
+                                      "Died",
+                                      "Lost to follow-up",
+                                      "Not evaluated")))) +
+ 
+  geom_col(position = position_stack(reverse = TRUE)) +
+
+  coord_flip() +
+
+  theme_gtb() +
+
+  scale_fill_manual("", 
+                    values = c("Treatment success" = palette_gtb("succ"),
+                               "Failure" = palette_gtb("fail"),
+                               "Died" = palette_gtb("died"),
+                               "Lost to follow-up" = palette_gtb("ltfu"),
+                               "Not evaluated" = palette_gtb("neval"))) +
+
+  labs(x="Year started on treatment", y="Percentage of cohort") +
+
+  scale_x_continuous(breaks = seq(2012, report_year-3)) +
+
+  geom_text(data=subset(f3.4.4_data,
+                        outcome=="Treatment success"),
+            aes(label = round(value, digits = 0)),
+			            position = position_stack(reverse = TRUE),
+            size=3,
+            hjust=1.5,
+            color="white")
+
+
+
+print(f3.4.4_plot)
+
+```
+
+
+
+`r anch("Fig. 3.4.5")`
+
+### <span class="red">Fig. 3.4.5</span> Treatment outcomes for MDR/RR-TB cases started on treatment in `r report_year-3`, WHO regions and globally  
+
+
+```{r fig_3.4.5, fig.alt="Horizontal bar chart showing TB treatment outcomes in MDR/RR-TB cases for WHO regions and globally"}
+
+f3.4.5_plot <- f3.4.5_data %>%
+
+  ggplot(aes(x=entity, 
+             y=value, 
+             fill = factor(outcome,
+                           levels = c("Treatment success",
+                                      "Failure",
+                                      "Died",
+                                      "Lost to follow-up",
+                                      "Not evaluated")))) +
+ 
+  geom_col(position = position_stack(reverse = TRUE)) +
+  coord_flip() +
+
+  theme_gtb() +
+  
+  scale_fill_manual("", 
+                    values = c("Treatment success" = palette_gtb("succ"),
+                               "Failure" = palette_gtb("fail"),
+                               "Died" = palette_gtb("died"),
+                               "Lost to follow-up" = palette_gtb("ltfu"),
+                               "Not evaluated" = palette_gtb("neval"))) +
+  
+  labs(x="", y="Percentage of cohort") +
+
+  geom_text(data=subset(f3.4.5_data, 
+                        outcome=="Treatment success"),
+            aes(label = round(value, digits = 0)),
+            position = position_stack(reverse = TRUE), 
+            size=3,
+            hjust=1.5,
+            color="white")
+
+
+print(f3.4.5_plot)
+
+```
+
+
+
+`r anch("Fig. 3.4.6")`
+
+
+### <span class="red">Fig. 3.4.6</span> Countries that used bedaquiline for the treatment of MDR/XDR-TB as part of expanded access, compassionate use or under normal programmatic conditions by the end of `r report_year-1`
+
+```{r fig_3.4.6, fig.alt="World map showing which countries used bedaquiline in drug-resistant TB treatment regimens"}
+
+f3.4.6_plot <- f3.4.6_data %>% 
+
+  whomap(colours=c("darkgreen", "lightgreen"),
+         legend.title = "Country response",
+         na.col = "white")
+
+
+print(f3.4.6_plot)
+
+```
+
+`r anch("Fig. 3.4.7")`
+
+
+### <span class="red">Fig. 3.4.7</span> Countries that used all-oral longer MDR-TB treatment regimens by the end of `r report_year-1`
+
+
+```{r fig_3.4.7, fig.alt="World map showing which countries used all-oral longer MDR-TB treatment regimens"}
+
+f3.4.7_plot <- f3.4.7_data %>% 
+
+  whomap(colours=c("#880e0e", "#f3eb8c"),
+         legend.title = "Country response",
+         na.col = "white")
+
+
+print(f3.4.7_plot)
+
+```
+
+
+
+`r anch("Fig. 3.4.8")`
+
+
+### <span class="red">Fig. 3.4.8</span> Countries that used all-oral shorter MDR-TB treatment regimens by the end of `r report_year-1`
+
+
+```{r fig_3.4.8, fig.alt="World map showing which countries used all-oral shorter MDR-TB treatment regimens"}
+
+f3.4.8_plot <- f3.4.8_data %>% 
+
+  whomap(colours=c("#4975a8", "#d6f5f5"),
+         legend.title = "Country response",
+         na.col = "white")
+
+
+print(f3.4.8_plot)
+
+```
+
+
+
+`r anch("Fig. 3.4.9")`
+
+
+### <span class="red">Fig. 3.4.9</span> Number of patients with active follow up of adverse events as a proportion of patients enrolled on treatment for drug-resistant TB, `r report_year-1`
+
+
+```{r fig_3.4.9, fig.alt="World map showing proportion of drug-resistant TB patients followed up for adverse events"}
+
+f3.4.9_plot <- f3.4.9_data %>% 
+
+  whomap(colours=brewer.pal(4, "Reds"),
+         legend.title = "Country response",
+         na.col = "white")
+
+print(f3.4.9_plot)
+
+```
+

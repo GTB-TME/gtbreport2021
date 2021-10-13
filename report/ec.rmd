@@ -1,0 +1,262 @@
+--- 
+title: "Chapter_Executive commentary" 
+author: "Philippe Glaziou, Pete Dodd" 
+date: "`r Sys.Date()`" 
+output:  
+  html_fragment: 
+    # Don’t include a table of contents 
+    toc: no 
+    # Set standard figure width to 12 inches 
+    fig_width: 12 
+    # Don’t write figure captions 
+    fig_caption: FALSE 
+--- 
+
+## Figures
+
+# FIG. E.1 Global trends in the estimated number of incident TB cases (left) and 
+# the incidence rate (right), 2000–2020. 
+
+
+
+
+# FIG. E.2 Global trends in the estimated number of TB deaths (left)
+# and the mortality rate (right), 2000-2020.
+
+
+
+# FIG. E.3 Top causes of death worldwide in 2019
+
+
+
+# FIG. E.4 Global estimates of TB incidence (black outline)
+# and case notifications disaggregated by age and
+# sex (female in purple; male in green), 2020 PD
+
+
+
+# FIG. E.6 Estimated TB incidence rates, 2020
+# Use categories and names from Table EA6.1
+
+
+
+# FIG. E.8 Trends in estimated TB incidence rates by WHO region, 2000–2020. 
+
+
+
+# FIG. E.9 High TB burden countries estimated to have achieved the
+# End TB Strategy 2020 milestone of a 20% reduction in the
+# TB incidence rate between 2015 and 2020. PG Extract selected countries from Fig. 2.1.3
+
+
+
+# FIG. E.10 Trends in the estimated absolute number of TB deaths
+# (HIV-positive and HIV-negative) by WHO region, 2000-
+# 2020
+
+
+
+# FIG. E.11 High TB burden countries estimated to have achieved the
+# End TB Strategy 2020 milestone of a 35% reduction in the
+# absolute number of TB deaths between 2015 and 2020.
+
+
+
+# FIG. E.17 Trends in annual and monthly/quarterly TB notifications, 
+# selected countries NB this is to show the impact of the COVID-19 pandemic 
+# on TB detection, and explains the impact shown in the preceding figure. PG
+
+
+
+# FIG E.18 Estimated Impact of the COVID-19 pandemic on TB
+# incidence, globally and for selected countries, up to 2025
+# Selected countries will be those for which modelling has
+# been done (approx. 15)
+
+
+
+# FIG E.19 Estimated impact of the COVID-19 pandemic on TB
+# mortality, globally and for selected countries, up to 2025
+# Selected countries will be those for which modelling has
+# been done (approx. 15)
+
+
+
+# FIG E.20 The relationship between GDP per capita and the
+# prevalence of undernutrition, and TB incidence per
+# 100 000 population
+
+
+
+## Tables
+
+# TABLE E.1 Global TB targets set in the SDGs, the End TB Strategy 
+# and the political declaration of the UN high-level meeting on TB, 
+# for the period up to the SDG deadline of 2030 Reproduce 2020 version 
+# of Table 2.1 SENT TO SUE
+
+
+
+# TABLE E.2
+# Cumulative number of deaths averted by TB and TB/HIV interventions
+# 2000–2020 (in millions), globally and by WHO region PG
+
+
+
+# TABLE E.3
+# Global estimates of the number of TB cases attributable to selected
+# risk factors. To be done after first round of TB incidence estimates is available
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+```{r setup, include=FALSE} 
+# Set chunk options. 
+# Results "asis" is useful to output markdown from a function 
+# Suppress messages, warnings and also the ## at the beginning of printed text 
+
+knitr::opts_chunk$set(echo = FALSE,  
+                      results = "asis", 
+                      message = FALSE, 
+                      warning = FALSE) 
+
+# Set output folder -- can only do this if not using the  
+# RStudio knit button and instead doing the following from the  
+# command line: 
+# rmarkdown::render("create_chapter_example.Rmd", output_dir = "c:/scratch/") 
+
+# load libraries, functions and data to output using another script 
+source("load_libraries_functions_data_chapter_x.r") 
+
+ 
+# Set a variable todecide whether or not to include accordian blocks  
+# in the output 
+
+include_accordian_blocks <- FALSE 
+
+# Functions to produce boilerplate HTML for Sitefinity accordian block 
+accordian_start <- function(){ 
+  ifelse(include_accordian_blocks,  
+         return('<div><div data-class="more-content"><div data-class="more-content-inner">'), 
+         return('')) 
+} 
+
+
+accordian_end <- function(){ 
+  ifelse(include_accordian_blocks,  
+         return('</div></div><div data-class="more-button"><div data-class="more-button-label" data-close="" data-open=""><text>Show less</text> <text>Show more</text></div></div></div>'), 
+         return('')) 
+} 
+ 
+
+``` 
+
+# Chapter 5 
+
+## TB diagnosis and treatment 
+
+### Figure 5.1: Notifications of TB cases (new and relapse cases, all forms) (black) compared with estimated TB incident cases (<span class="green_text">green</span>), 2000–`r report_year - 1`, globally and for WHO regions. <span class="subhead">Shaded areas represent uncertainty intervals.</span> 
+ 
+
+`r accordian_start()` 
+
+ 
+
+```{r fig_5.1, fig.alt="Panel plot of TB notifications by WHO region and globally"} 
+
+# Plot data is already prepared in dataframe called f5.1_data 
+# I put summary statistics from the commentary below the figure in 
+# variables f5.1_global_inc, f5.1_global_inc_lohi, f5.1_global_newinc 
+
+f5.1_data %>% 
+  ggplot(aes(x=year, y=c_newinc_millions, ymin=0)) + 
+  geom_line(size=1) + 
+  geom_ribbon(aes(x=year,  
+                  ymin=e_inc_num_lo_millions,  
+                  ymax=e_inc_num_hi_millions), 
+              fill=palette_standard("incidence"), 
+              alpha=0.4) + 
+  geom_line(aes(year, e_inc_num_millions), 
+            size=1, 
+            colour=palette_standard("incidence")) + 
+ 
+
+  facet_wrap( ~ entity, ncol = 4, scales="free_y") + 
+  scale_x_continuous(name="Year", 
+                     breaks = c(2000, 2009, report_year-1)) + 
+  scale_y_continuous(name = "Millions per year") + 
+  theme_gtbr_2021() + 
+  # Add a gray line over the x-axis so that all graphs have a line at the bottom 
+  annotate("segment", x=-Inf,  
+           xend=Inf,  
+           y=-Inf,  
+           yend=-Inf,  
+           colour = "#BCBCBC") 
+
+``` 
+
+
+There is still a large global gap between the estimated number of incident cases (`r f5.1_global_inc` million, range `r f5.1_global_inc_lohi` million, in `r report_year - 1`) and the number of people newly diagnosed (`r f5.1_global_newinc` million in `r report_year - 1`), due to underreporting of detected cases and underdiagnosis (if people with TB cannot access health care or are not diagnosed when they do). 
+
+
+`r accordian_end()` 
+
+### Table 5.1: Notifications of TB, HIV-positive TB, MDR/RR-TB and XDR-TB cases, globally and for WHO regions, `r report_year - 1` 
+ 
+
+`r accordian_start()` 
+ 
+
+```{r tab_5.1} 
+
+# Create a table from data is already prepared in dataframe called t5.1_data 
+# format the numrical data  
+t5.1_data <- t5.1_data %>% 
+  mutate_at(vars(-entity), 
+            rounder) 
+
+# Add % symbol to pct fields 
+t5.1_data <- t5.1_data %>% 
+  mutate(newrel_pulm_conf_pct = paste0(newrel_pulm_conf_pct, "%"), 
+         newrel_ep_pct = paste0(newrel_ep_pct, "%")) 
+
+# Create a table object using kable 
+table_header <- c('WHO region', 
+                  'Total notified', 
+                  'New and relapse^a^', 
+                  'Pulmonary new and relapse number', 
+                  'Pulmonary new and relapse bactariologically confirmed (%)', 
+                  'Extrapulmonary new and relapse (%)', 
+                  'HIV-positive new and relapse', 
+                  'MDR/RR-TB', 
+                  'XDR-TB^b^') 
+
+
+knitr::kable(t5.1_data, 
+             format = "html", 
+             col.names = table_header, 
+             align = 'lrrrccrrr', 
+             # Add a table ID so that it can be styled using extra CSS in Sitefinity 
+             table.attr = "id='notifs_table'") 
+
+``` 
+
+<div class="footnote">^a^ *New and relapse* includes cases for which the treatment history is unknown. It excludes cases that have been re-registered as *treatment after failure*, as *treatment after lost to follow up* or as *other previously treated* (whose outcome after the most recent course of treatment is unknown or undocumented).    
+
+^b^ XDR-TB is MDR-TB plus resistance to a fluoroquinolone and an injectable agent.</div> 
+
+`r accordian_end()` 
+

@@ -1,0 +1,526 @@
+---
+title: "Section 3.1 Case notifications (figures)"
+author: "Hazim Timimi"
+date: "`r Sys.Date()`"
+output: 
+  html_fragment:
+    # Don’t include a table of contents
+    toc: no
+    # Set standard figure width to 12 inches
+    fig_width: 12
+    # Don’t write figure captions
+    fig_caption: FALSE
+
+---
+
+
+```{r setup, include=FALSE}
+# Set chunk options.
+# Results "asis" is useful to output markdown from a function
+# Suppress messages, warnings and also the ## at the beginning of printed text
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      results = "asis",
+                      message = FALSE,
+                      warning = FALSE)
+
+# Kill any attempt at using factors, unless we explicitly want them!
+options(stringsAsFactors=FALSE)
+
+# Load output packages ----
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(RColorBrewer)
+library(whomap)
+library(gtbreport)
+library(here)
+
+# load section data
+source(here('report/ch3-1-dataprep.r'))
+
+# Quick functions for callouts in the text to the figures/tables:
+
+# 1. lnk() Creates a link from text to a named anchor)
+lnk <- function(display_name){
+  return(paste0('<span class="red">[', 
+                display_name, 
+                '](#', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                ')</span>'))
+}
+
+# 2. anch() creates the named anchor to go above the figure or table
+anch <- function(display_name){
+  return(paste0('<a name="', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                '"></a>'))
+}
+
+
+# rmarkdown::render(here::here("report/ch3-1-figs.rmd"), output_file = "ch3-1-figs.html", output_dir = here::here("report/html/"))
+
+```
+
+
+```{css, echo=FALSE}
+
+/* Styles to make it easier to see in the html_fragment; this CSS can be included in the CSS widget of Sitefinity */
+  
+.section.level3 {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #BCBCBC;
+  margin-bottom: 2em;
+}
+
+
+.subhead, .footnote {
+  font-size: 80%;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.red, .red a {
+  color: #F21905; /* red text to show figure number */
+}
+
+/* notifications table */
+
+/* Recreating simple striped bootstrap table */
+#notifs_table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /* Next two lines to allow horizontal scrolling on narrow screens */
+  display: block;
+  overflow-x: auto;
+}
+
+#notifs_table th {
+  border-bottom: 2px solid #DDDDDD;
+  padding: 8px;
+}
+
+#notifs_table td {
+  border-top: 1px solid #DDDDDD;
+  padding: 8px;
+}
+
+/* light gray for odd rows */
+#notifs_table tr:nth-child(odd) td {
+  background-color: #F5F5F5;	
+}
+
+/* Bold for the final row with thick line above */
+#notifs_table tr:last-child td {
+  border-top: 2px solid #DDDDDD;
+  font-weight:bold;	
+}
+
+/* light gray when hovering over a row */
+#notifs_table tr:hover td {
+  background-color: #DDDDDD;
+}
+
+/* Centre-align all column headings except for the first */
+#notifs_table th:not(:first-child) {
+  text-align: center !important;
+}
+
+/* prevent numbers from wrapping in any of the columns */
+#notifs_table td {
+  white-space: nowrap;
+}
+
+```
+
+
+  
+
+_Draft! Prepared `r Sys.Date()` using country-reported data CSV files dated `r csv_datestamp` and estimates files dated  `r csv_estimate_datestamp`._
+
+
+`r anch("Table 3.1")`
+
+
+### <span class="red">Table 3.1</span> Notifications of TB, HIV-positive TB, MDR/RR-TB and XDR-TB cases, globally and for WHO regions, `r report_year - 1`
+
+
+```{r table_3.1}
+
+# Use t3.1.1_data  dataframe created by io/ch_notifications.r
+
+# format the numerical data 
+t3.1.1_data <- t3.1.1_data %>%
+  mutate(across(where(is.numeric), int_spacer))
+
+# Add % symbol to pct fields
+t3.1.1_data <- t3.1.1_data %>%
+  mutate(newrel_pulm_conf_pct = paste0(newrel_pulm_conf_pct, "%"),
+         newrel_ep_pct = paste0(newrel_ep_pct, "%"))
+
+# Create a table object using kable
+table_header <- c('WHO region',
+                  'Total notified',
+                  'New and relapse^a^',
+                  'Pulmonary new and relapse number',
+                  'Pulmonary new and relapse bacteriologically confirmed (%)',
+                  'Extrapulmonary new and relapse (%)',
+                  'HIV-positive new and relapse',
+                  'MDR/RR-TB only^b^',
+                  'pre-XDR-TB or XDR-TB^c^')
+
+knitr::kable(t3.1.1_data,
+             format = "html",
+             col.names = table_header,
+             align = 'lrrrccrrr',
+             # Add a table ID so that it can be styled using extra CSS in Sitefinity
+             table.attr = "id='notifs_table'")
+
+
+```
+
+<div class="footnote">^a^ *New and relapse* includes cases for which the treatment history is unknown. It excludes cases that have been re-registered as *treatment after failure*, as *treatment after lost to follow up* or as *other previously treated* (whose outcome after the most recent course of treatment is unknown or undocumented).  
+^b^ TB that is resistant to rifampicin, excluding any cases with known resistance to any fluroquinolone.  
+^c^ Pre-XDR-TB is TB that is resistant to rifampicin and to any fluoroquinolone. XDR-TB is TB that is resistant to rifampicin and to any fluoroquinolone and to at least one of bedaquiline or linezolid.</div>
+
+
+`r anch("Fig. 3.1.1")`
+
+### <span class="red">Fig. 3.1.1</span> Notifications of TB cases (new and relapse cases, all forms) (black) compared with estimated TB incident cases <span style="color:`r gtbreport::palette_gtb("inc")`">(green)</span>, 2000–`r report_year - 1`, globally and for WHO regions  
+<span class="subhead">Shaded areas represent uncertainty intervals</span>  
+
+
+```{r fig_3.1.1, fig.alt="Panel plot of incidence estimates compared to notifications by WHO region and globally since 2000"}
+
+f3.1.1_plot <- f3.1.1_data %>% 
+  
+  ggplot(aes(x=year, y=c_newinc, ymin=0)) +
+  
+  geom_line(size=1) +
+  
+  geom_ribbon(aes(x=year, 
+                  ymin=e_inc_num_lo, 
+                  ymax=e_inc_num_hi),
+              fill=gtbreport::palette_gtb("inc"),
+              alpha=0.4) +
+  
+  geom_line(aes(year, e_inc_num),
+            size=1,
+            colour=gtbreport::palette_gtb("inc")) +
+
+  facet_wrap( ~ entity, ncol = 4, scales="free_y") +
+  
+  scale_x_continuous(name="Year",
+                     breaks = c(2000, 2010, report_year-1)) +
+
+  # display y-axis scale in millions
+  scale_y_continuous(name = "Millions per year", 
+                     # Use the remainder operator in the labeller function to make sure we don't get weird effects
+                     # when plotting small numbers
+                     labels = function(i){ifelse((i/1e6) %% 1 == 0, round(i/1e6), round(i/1e6, 1))}) +
+
+  theme_gtb()  +
+  
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+  
+print(f3.1.1_plot)
+
+```
+
+
+`r anch("Fig. 3.1.2")`
+
+### <span class="red">Fig. 3.1.2</span> Notifications of TB cases (new and relapse cases, all forms) (black) compared with estimated TB incident cases <span style="color:`r gtbreport::palette_gtb("inc")`">(green)</span>, 2000–2020, 30 high TB burden countries   
+
+
+```{r fig_3.1.2, fig.alt="Panel plot of incidence estimates compared to notifications for 30 countries since 2000", fig.height=12}
+
+f3.1.2_plot <- f3.1.2_data %>% 
+  
+  ggplot(aes(x=year, y=c_newinc, ymin=0)) +
+  
+  geom_line(size=1) +
+  
+  geom_ribbon(aes(x=year, 
+                  ymin=e_inc_num_lo, 
+                  ymax=e_inc_num_hi),
+              fill=gtbreport::palette_gtb("inc"),
+              alpha=0.4) +
+  
+  geom_line(aes(year, e_inc_num),
+            size=1,
+            colour=gtbreport::palette_gtb("inc")) +
+
+  facet_wrap( ~ country, 
+              ncol = 5, 
+              scales="free_y",
+              # Use the labeller function to make sure long country names are wrapped in panel headers
+              labeller = label_wrap_gen(width = 20)) +
+  
+  scale_x_continuous(name="Year",
+                     breaks = c(2000, 2010, report_year-1)) +
+
+  # display y-axis scale in millions
+  scale_y_continuous(name = "Thousands per year", 
+                     # Use the remainder operator in the labeller function to make sure we don't get weird effects
+                     # when plotting small numbers
+                     labels = function(i){ifelse((i/1e3) %% 1 == 0, int_spacer(i/1e3), round(i/1e3, 1))}) +
+
+  theme_gtb()  +
+  
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+  
+print(f3.1.2_plot)
+
+
+
+```
+
+
+
+
+`r anch("Fig. 3.1.3")`
+
+### <span class="red">Fig. 3.1.3</span> Global progress in the number of people treated for TB between 2018 and `r report_year-1`, compared with cumulative targets set for 2018–2022 at the UN high-level meeting on TB 
+
+![Doughnut chart showing how much of the UN high level meeting targets for 2018-2022 have been completed](images/Fig313.PNG "Doughnut chart showing how much of the UN high level meeting targets for 2018-2022 have been completed")
+
+
+```{r fig_3.1.3, fig.alt="Doughnut chart showing how much of the UN high level meeting targets for 2018-2022 have been completed"}
+
+
+## The code below produces a bar chart as an alternative to the doughnuts produced by Irwin
+# f3.1.3_plot <- f3.1.3_data %>% 
+#   
+#   ggplot(aes(x=target_completion, y=value)) +
+#   geom_bar(stat="identity", fill="darkblue",width = 0.5) +
+#   
+#   expand_limits(y=c(0,100)) +
+#   scale_y_continuous(breaks = c(20, 40, 60 , 80, 100)) +
+#   ylab("Percent achieved") +
+#   scale_x_discrete(limits = c("rrmdr_014_tx_pct",
+#                               "rr_treated_pct",
+#                               "c_new_014_pct",
+#                               "c_newinc_pct"),
+#                    labels = c("115 thousand children treated\nfor drug-resistant TB",
+#                               "1.5 million treated\nfor drug-resistant TB",
+#                               "3.5 million children notified",
+#                               "40 million notified")) +
+#   xlab("2018-2022 cumulative target") +
+#   coord_flip() +
+#   
+#   theme_gtb()
+# 
+# 
+# 
+# print(f3.1.3_plot)
+
+```
+
+  
+`r anch("Fig. 3.1.4")`
+
+
+### <span class="red">Fig. 3.1.4</span> The global number of people reported to have been treated for TB disease, 2015–`r report_year - 1`
+
+
+```{r fig_3.1.4, fig.alt="Bar chart showing numbers of adults and children notified with TB each year since 2015"}
+
+f3.1.4_plot <- f3.1.4_data %>% 
+  
+  ggplot(aes(x=year, y=how_many, fill=age_group)) +
+
+  geom_bar(stat = "identity")  +
+  
+  scale_x_continuous(name="",
+                     breaks = 2015:(report_year-1)) +
+  
+  # display y-axis scale in millions
+  scale_y_continuous(name = "Millions", 
+                     labels = function(i){round(i/1e6)},
+                     limits = c(0, 8e6)) +
+
+  scale_fill_manual("",
+                    breaks = c("c_new_15plus", "c_new_014" ),
+                    labels = c("Adults aged 15 and above", "Children aged under 15"),
+                    values = c("c_new_15plus"="#08acac", "c_new_014"="red")) +
+
+
+  theme_gtb() +
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+
+print(f3.1.4_plot)
+
+```
+
+
+`r anch("Fig. 3.1.5")`
+
+### <span class="red">Fig. 3.1.5</span> Estimated TB incidence (black outline) and new and relapse TB case notification rates by age group and sex^a^ (female in <span style="color:`r gtbreport::palette_gtb("female")`;"> purple</span>; male in <span style="color:`r gtbreport::palette_gtb("male")`;">green</span>) in `r report_year-1`, globally and for WHO regions 
+
+```{r fig_3.1.5, fig.alt="Panel plot of incidence rate estimates and notification rates by age group and sex as population pyramid-style bar charts"}
+
+f3.1.5_plot <- f3.1.5_data  %>%
+
+  # Multiply all the female numbers by -1
+  mutate(cnr = ifelse(sex == "Female", cnr * -1, cnr ),
+         inc_100k = ifelse(sex == "Female", inc_100k * -1, inc_100k )) %>%
+
+  ggplot() +
+
+  geom_bar(aes(x=age_group, y=inc_100k, fill="inc"),
+           stat="identity",
+           size=.3,
+           colour="black",
+           position="identity") +
+
+    geom_bar(aes(x=age_group, y=cnr, fill=sex),
+           stat="identity",
+           width = 0.7,
+           size=.3,
+           position="identity") +
+
+  scale_fill_manual(breaks=c("Female", "Male", "inc"),
+                    values=c(gtbreport::palette_gtb("female"), 
+                             gtbreport::palette_gtb("male"),
+                             "#EEEEEE")) +
+
+  scale_y_continuous(name = "Rate per 100 000 population per year",
+                     labels = abs) +
+
+  scale_x_discrete(name = "Age group (years)") +
+
+  coord_flip() +
+
+  facet_wrap( ~ entity, ncol = 4, scales = "free_x") +
+
+  theme_gtb()  +
+  
+  # suppress the legend
+  theme(legend.position="none")
+
+
+print(f3.1.5_plot)
+
+```
+
+<div class="footnote">^a^ Data from `r f3.1.5_excluded$countries` countries and areas that did not report cases in these age categories are excluded. Cases included accounted for 
+`r ftb(f3.1.5_excluded$agesex_pct)`% of reported cases.</div>
+
+
+`r anch("Fig. 3.1.6")`
+
+### <span class="red">Fig. 3.1.6</span> Percentage of new and relapse TB cases that were children (aged <15 years), `r report_year-1`
+
+
+```{r fig_3.1.6, fig.alt="Map showing percentage of new and relapse TB cases that were children"}
+
+f3.1.6_plot <- f3.1.6_data %>% 
+  
+  whomap(colours = brewer.pal(4, "BuGn"),
+         legend.title = "Percentage (%)",
+         na.col = "white")
+
+
+print(f3.1.6_plot)
+
+```
+
+
+`r anch("Fig. 3.1.7")`
+
+### <span class="red">Fig. 3.1.7</span> Percentage of extrapulmonary cases among new and relapse TB cases, `r report_year-1`
+
+```{r fig_3.1.7, fig.alt="Map showing percentage of extrapulmonary cases among new and relapse TB cases"}
+
+f3.1.7_plot <- f3.1.7_data %>% 
+  
+  whomap(colours = brewer.pal(4, "YlOrRd"),
+         legend.title = "Percentage (%)",
+         na.col = "white")
+
+
+print(f3.1.7_plot)
+
+```
+
+
+`r anch("Fig. 3.1.8")`
+
+### <span class="red">Fig. 3.1.8</span> Contribution of public-private mix to TB case notifications in priority countries, 2010–`r report_year - 1`
+
+```{r fig_3.1.8, fig.alt="Panel plot of line charts showing percentage contribution of the private sector to TB notifications by year since 2010"}
+
+f3.1.8_plot <- f3.1.8_data %>% 
+  
+  ggplot(aes(x=year, y=private_pcnt, ymin=0)) +
+
+  geom_line(size = 1.5, colour = "slateblue4") +
+  
+  facet_wrap(~ country, ncol = 4) +
+  
+  scale_x_continuous(name="Year",
+                     breaks = c(2010, 2015,report_year-1)) +
+  
+  scale_y_continuous(name = "Contribution of public-private mix to total notifications (%)") +
+  
+  theme_gtb() +
+  
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+
+print(f3.1.8_plot)  
+
+```
+
+
+`r anch("Fig. 3.1.9")`
+
+### <span class="red">Fig. 3.1.9</span> Percentage of basic management units in which there was community contribution to new case finding and/or to treatment adherence support,^a^ `r report_year-1`
+
+```{r fig_3.1.9, fig.alt="Map showing percentage of management units with community contributions to case finding and/or treatment support"}
+
+f3.1.9_plot <- f3.1.9_data %>% 
+  
+  whomap(colours = brewer.pal(4, "OrRd"),
+         legend.title = "Percentage (%)",
+         na.col = "white")
+
+
+print(f3.1.9_plot)
+
+```
+
+<div class="footnote">^a^ Data only requested from `r filter(f3.1.9_data, dc_engage_community_display==1) %>% nrow()` countries.</div>
+
+
+`r anch("Fig. 3.1.10")`
+
+### <span class="red">Fig. 3.1.10</span> Countries with national case-based digital surveillance systems for TB, `r report_year-1`
+
+```{r fig_3.1.10, fig.alt="Map showing which countries have case-based TB surveillance systems"}
+
+f3.1.10_plot <- f3.1.10_data %>% 
+  
+  whomap(colours = brewer.pal(4, "Blues"),
+         legend.title = "Country response",
+         na.col = "white")
+
+
+print(f3.1.10_plot)
+
+```
+
+
+

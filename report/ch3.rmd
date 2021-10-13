@@ -1,0 +1,109 @@
+--- 
+title: "Chapter_3" 
+author: "Philippe Glaziou" 
+date: "`r Sys.Date()`" 
+output:  
+  html_fragment: 
+    # Don’t include a table of contents 
+    toc: no 
+    # Set standard figure width to 12 inches 
+    fig_width: 12 
+    # Don’t write figure captions 
+    fig_caption: FALSE 
+--- 
+
+# Section 3
+
+
+
+```{r setup, include=FALSE} 
+# Set chunk options. 
+# Results "asis" is useful to output markdown from a function 
+# Suppress messages, warnings and also the ## at the beginning of printed text 
+
+knitr::opts_chunk$set(echo = FALSE,  
+                      results = "asis", 
+                      message = FALSE, 
+                      warning = FALSE) 
+
+# Set output folder -- can only do this if not using the  
+# RStudio knit button and instead doing the following from the  
+# command line: 
+# rmarkdown::render("create_chapter_example.Rmd", output_dir = "c:/scratch/") 
+
+load(here('report/data/gtb.rda'))
+ 
+
+
+
+``` 
+
+
+
+### <span style="color:#F21905">Fig. 3.1.2</span> Trends in monthly or quarterly notifications of TB cases from January 2020&#8211;June 2021, selected high TB burden countries. Data are shown for countries that were able to report provisional national numbers for all months or quarters to WHO by August 2021^a^
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig.height=8, fig_3.1.2, fig.alt="Trends in monthly or quarterly notifications of TB cases from January 2020–June 2021, selected high TB burden countries. Data are shown for countries that were able to report provisional national numbers for all months or quarters to WHO by August 2021"} 
+
+qplot(variable, value, data=monthly[year==2020 & nm==12], geom='line', size=I(1)) +
+  geom_hline(aes(yintercept=n2019/12), linetype=I(1), colour=I('blue'), size=I(1)) +
+  scale_x_continuous(breaks=1:12) +
+  facet_wrap(~country, scales='free_y') +
+  xlab('Month, 2020') + ylab('Notifications per month') +
+  theme_gtb()
+
+qplot(variable, value, data=monthly[year==2021 & variable<7 & nm>0], geom='line', size=I(1)) +
+  geom_hline(aes(yintercept=n2019/12), linetype=I(1), colour=I('blue'), size=I(1)) +
+  scale_x_continuous(breaks=1:12) +
+  facet_wrap(~country, scales='free_y') +
+  xlab('Month, 2021') + ylab('Notifications per month') +
+  theme_gtb()
+
+qplot(variable, value, data=qty[year==2020], geom='line', size=I(1)) +
+  geom_hline(aes(yintercept=n2019/4), linetype=I(1), colour=I('blue'), size=I(1)) +
+  scale_x_continuous(breaks=1:4) +
+  facet_wrap(~country, scales='free_y') +
+  xlab('Quarter, 2020') + ylab('Notifications per quarter') +
+  theme_gtb()
+
+```
+
+<div class="footnote">^a^ Data are shown for countries that were able to report provisional national numbers for all months to WHO by July 2021.</div> 
+
+
+
+
+
+
+### <span style="color:#F21905">Fig. 3.2.4</span> Distribution of the proportion of notified pulmonary cases that were bacteriologically confirmed in 2020, by country income group.
+
+<span class="subhead">Boxes indicate the first, second (median) and third quartiles weighted by a country's number of pulmonary cases; vertical lines extend to the minimum and maximum values. Countries with less than 100 cases are excluded.</span> 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig.height = 8, fig_3.2.4, fig.alt="Distribution of the proportion of notified pulmonary cases that were bacteriologically confirmed in 2020, by country income group. Boxes indicate the first, second (median) and third quartiles weighted by a country’s number of pulmonary cases; vertical lines extend to the minimum and # maximum values. Countries with less than 100 cases are excluded."} 
+
+library(RColorBrewer)
+
+ggplot(conf[year == yr & !is.na(income)]) +
+  geom_boxplot(
+    aes(
+      x = income,
+      ymin = conf.min * 100,
+      lower = conf.q1 * 100,
+      middle = conf.med * 100,
+      upper = conf.q3 * 100,
+      ymax = conf.max * 100,
+      group = g.income,
+      fill=income
+    ),
+    stat = 'identity',
+       #fill ="#ff1493"
+  ) +
+    scale_fill_brewer()+
+    xlab('Income group') + ylab('Percent confirmed') +
+    theme_gtb()
+
+```
+
+
+
+
+

@@ -1,0 +1,752 @@
+--- 
+title: "Chapter_2" 
+author: "Philippe Glaziou, Pete Dodd" 
+date: "`r Sys.Date()`" 
+output:  
+  html_fragment: 
+    # Don’t include a table of contents 
+    toc: no 
+    # Set standard figure width to 12 inches 
+    fig_width: 12 
+    # Don’t write figure captions 
+    fig_caption: FALSE 
+--- 
+
+
+
+```{r setup, include=FALSE} 
+# Chapter 1
+# Set options, load data, utility functions 
+
+knitr::opts_chunk$set(echo = FALSE,  
+                      results = "asis", 
+                      message = FALSE, 
+                      warning = FALSE) 
+library(data.table)
+library(gtbreport)
+library(here)
+library(kableExtra)
+library(gridExtra)
+library(whomap)
+library(ggpubr)
+library(productplots)
+library(RColorBrewer)
+
+load(here('report/data/gtb.rda'))
+
+``` 
+
+
+
+
+
+
+
+`r anch("Table 2.2.1")`
+
+### <span style="color:#F21905">Table 2.2.1</span> Global and regional estimates of TB mortality, numbers (in thousands) and rates (per 100 000 population) in 2020
+```{r tab_2.2.1}
+
+tab.header2 <- c('Region or country group','Best estimate','Low', 'High',
+                  'Best estimate', 'Low', 'High',
+                  'Best estimate', 'Low', 'High',
+                  'Best estimate', 'Low', 'High'
+                  )
+
+knitr::kable(cbind(tab1[c(32:37, 31, 38), c(1, 9:14)], tab1b[c(32:37, 31, 38), 8:13]),
+             format = "html",
+             align = 'rcccccccccccc',
+             col.names = tab.header2,
+             # Add a table ID so that it can be styled using extra CSS in Sitefinity
+             table.attr = "id='burden_num_table'") |>
+add_header_above(header = c(" " = 1, "HIV-negative" = 3, "HIV-positive" = 3, "HIV-negative" = 3, "HIV-positive" = 3)) |>
+add_header_above(header = c(" " = 1, "Number of deaths (in thousands)" = 6, "Rate per 100 000 population" = 6)) 
+  # pack_rows("High burden countries", 1, 30) |>
+  # pack_rows('Groupings', 31, 38) 
+
+```
+<div class="footnote">
+Low and high are the 5th and 95th percentiles of the uncertainty interval (UI)
+</div>
+
+
+
+
+
+
+`r anch("Fig. 2.2.1")`
+
+### <span style="color:#F21905">Fig. 2.2.1</span> Global trends in the estimated number of TB deaths (left) and the mortality rate (right), 2000&#8211;2020 
+<span class="subhead">Shaded areas represent uncertainty intervals. The horizontal dashed line shows the 2020 milestone of the End TB Strategy.</span> 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig_2.2.1, fig.alt="Global trends in the estimated number of TB deaths (left) and the mortality rate (right), 2000-2020"} 
+
+p1 <-
+  qplot(
+    year,
+    mort.num / 1e6,
+    data = global,
+    geom = 'line',
+    colour = I('grey20')
+  ) +
+  geom_ribbon(
+    aes(year, ymin = mort.lo.num / 1e6, ymax = mort.hi.num / 1e6),
+    fill = I('grey40'),
+    alpha = 0.4
+  ) +
+  ylab('Millions per year (log scale)') + xlab('') +
+  geom_line(aes(year, mort.h.num / 1e6), colour = I('lightskyblue2')) +
+  geom_ribbon(
+    aes(year, ymin = mort.h.lo.num / 1e6, ymax = mort.h.hi.num / 1e6),
+    fill = I('lightskyblue2'),
+    alpha = 0.4
+  ) +
+  geom_line(aes(year, mort.nh.num / 1e6), colour = I('blue')) +
+  geom_ribbon(
+    aes(year, ymin = mort.nh.lo.num / 1e6, ymax = mort.nh.hi.num / 1e6),
+    fill = I('blue'),
+    alpha = 0.4
+  ) +
+  geom_line(aes(year, mort.num / 1e6), colour = I('grey20')) +
+  geom_ribbon(
+    aes(year, ymin = mort.lo.num / 1e6, ymax = mort.hi.num / 1e6),
+    fill = I('grey40'),
+    alpha = 0.4
+  ) +
+  annotate(
+    'text',
+    y = 1.15,
+    x = 2000,
+    label = '2020 milestone (total)',
+    hjust = 0,
+    size = I(4)
+  ) +
+  expand_limits(y = 0) +
+  geom_hline(aes(yintercept = mort.num[16] * 0.65 / 1e6), linetype = I(2)) +
+  annotate(
+    'text',
+    x = 2013,
+    y = 2,
+    label = 'Total',
+    hjust = 0,
+    size = I(4)
+  ) +
+  annotate(
+    'text',
+    x = 2013,
+    y = 1.2,
+    label = 'HIV-negative',
+    hjust = 0,
+    size = I(4)
+  ) +
+  annotate(
+    'text',
+    x = 2013,
+    y = 0.20,
+    label = 'HIV-positive',
+    hjust = 0,
+    size = I(4)
+  ) +
+  scale_y_log10(breaks=c(0.3,0.5,1,1.5,2)) +
+  theme_gtb() + theme(legend.position = 'none')
+
+p2 <-
+  qplot(
+    year,
+    mort,
+    data = global,
+    geom = 'line',
+    colour = I('grey20')
+  ) +
+  geom_ribbon(aes(year, ymin = mort.lo, ymax = mort.hi),
+              fill = I('grey40'),
+              alpha = 0.4) +
+  ylab('Rate per 100 000 population per year (log scale)') + xlab('') +
+  geom_line(aes(year, mort.h), colour = I('lightskyblue2')) +
+  geom_ribbon(
+    aes(year, ymin = mort.h.lo, ymax = mort.h.hi),
+    fill = I('lightskyblue2'),
+    alpha = 0.4
+  ) +
+  geom_line(aes(year, mort.nh), colour = I('blue')) +
+  geom_ribbon(
+    aes(year, ymin = mort.nh.lo, ymax = mort.nh.hi),
+    fill = I('blue'),
+    alpha = 0.4
+  ) +
+  geom_line(aes(year, mort), colour = I('grey20')) +
+  geom_ribbon(aes(year, ymin = mort.lo, ymax = mort.hi),
+              fill = I('grey40'),
+              alpha = 0.4) +
+  expand_limits(y = 0) +
+  annotate(
+    'text',
+    x = 2013,
+    y = 28,
+    label = 'Total',
+    hjust = 0,
+    size = I(4)
+  ) +
+  annotate(
+    'text',
+    x = 2013,
+    y = 15,
+    label = 'HIV-negative',
+    hjust = 0,
+    size = I(4)
+  ) +
+  annotate(
+    'text',
+    x = 2013,
+    y = 2,
+    label = 'HIV-positive',
+    hjust = 0,
+    size = I(4)
+  ) +
+  scale_y_log10() +
+  theme_gtb() + theme(legend.position = 'none')
+
+
+mp <- grid.arrange(p1, p2, ncol = 2)
+
+```
+ 
+
+
+
+
+
+`r anch("Fig. 2.2.2")`
+
+### <span style="color:#F21905">Fig. 2.2.2</span> Top causes of death worldwide in 2019^a,b^
+<span class="subhead">Deaths from TB among HIV-positive people are shown in grey.</span>
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig.height=6, fig_2.2.2, fig.alt="Top causes of death worldwide in 2019"} 
+
+tbhiv <- global$mort.h.num[global$year == 2019] / 1e3
+top10$tbhiv <- c(rep(0, 12), tbhiv, rep(0, 7))
+top10$n <- top10$deaths / 1000 + top10$tbhiv / 1000
+
+ggplot(data = top10, aes(reorder(cause, deaths), n)) +
+  geom_bar(stat = 'identity',
+           fill = I('grey70'),
+           colour = I('black')) +
+  geom_bar(
+    aes(cause, deaths / 1000),
+    stat = 'identity',
+    fill = I('#00aaad'),
+    colour = I('black')
+  ) +
+  xlab('')  + ylab('Number of deaths (millions)') +
+  scale_y_continuous(breaks = 0:9) +
+  coord_flip() +
+  theme_gtb()
+
+
+
+
+```
+<div class="footnote"> ^a^ This is the latest year for which estimates for all causes are currently available. See WHO estimates, available at https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/ghe-leading-causes-of-death.<br>
+^b^ Deaths from TB among HIV-positive people are officially classified as deaths caused by HIV/AIDS in the International Classification of Diseases. </div> 
+
+
+
+
+
+
+`r anch("Fig. 2.2.3")`
+
+### <span style="color:#F21905">Fig. 2.2.3</span> Estimated number of deaths from HIV/AIDS and TB in 2020^a,b^ 
+<span class="subhead">Deaths from TB among HIV-positive people are shown in grey.</span>
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png',fig.height=6, fig_2.2.3, fig.alt="Estimated number of deaths from HIV/AIDS and TB in 2020"} 
+
+hivd <- unaids[, .(sum(mort.hiv.num, na.rm = T)), by = year]
+cod <- data.table(
+  cause = c('HIV/AIDS', 'TB'),
+  n = c((last(hivd$V1) - last(global$mort.h.num)) / 1e6, last(global$mort.nh.num) /
+          1e6),
+  tbhiv = rep(last(global$mort.h.num) / 1e6, 2)
+)
+cod[, total := n + tbhiv]
+
+ggplot(data = cod, aes(reorder(cause, total), total)) +
+  geom_bar(stat = 'identity',
+           fill = I('grey70'),
+           colour = I('black')) +
+  geom_bar(
+    aes(cause, n),
+    stat = 'identity',
+    fill = I('#00aaad'),
+    colour = I('black')
+  ) +
+  xlab('') + ylab('Millions (2020)') +
+  coord_flip() +
+  theme_gtb()
+
+
+
+```
+<div class="footnote"> ^a^ For HIV/AIDS, the latest estimates of the number of deaths in 2020 that have been published by UNAIDS are available at http://www.unaids.org/en/ (accessed 16 August 2021). For TB, the estimates for 2020 are those published in this report.<br>
+^b^ Deaths from TB among HIV-positive people are officially classified as deaths caused by HIV/AIDS in the International Classification of Diseases.</div> 
+
+
+
+
+
+`r anch("Fig. 2.2.4")` 
+
+### <span style="color:#F21905">Fig. 2.2.4</span> Global trends in the estimated number of deaths caused by TB and HIV (in millions), 2000&#8211;2020^a,b^
+<span class="subhead">Shaded areas represent uncertainty intervals.</span> 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig_2.2.4, fig.alt="Global trends in the estimated number of deaths caused by TB and HIV (in millions), 2000–2020"} 
+
+m <- 1e5
+ghiv.mort <-
+  est[, addXY(mort.hiv / m, r.sd = mort.hiv.sd / m, weights = as.numeric(pop)), by =
+        year]
+dta <- merge(global, ghiv.mort, by = 'year')
+M <- 1e6
+
+ggplot(data = dta, aes(year, mort.h.num / M)) +
+  geom_line(colour = I('lightskyblue2')) +
+  geom_line(aes(year, mort.nh.num / M), colour = I('blue')) +
+  geom_ribbon(
+    aes(year, ymin = mort.h.lo.num / M, ymax = mort.h.hi.num / M),
+    fill = I("lightskyblue2"),
+    alpha = I(.4)
+  ) +
+  geom_ribbon(
+    aes(year, ymin = mort.nh.lo.num / M, ymax = mort.nh.hi.num / M),
+    fill = I("blue"),
+    alpha = I(.4)
+  ) +
+  geom_line(aes(year, r.num / M), colour = I('grey50')) +
+  geom_ribbon(
+    aes(year, ymin = r.lo.num / M, ymax = r.hi.num / M),
+    fill = I("grey50"),
+    alpha = I(.4)
+  ) +
+  xlab('') + ylab('Millions of deaths per year (log scale)') +
+  annotate(
+    'text',
+    x = 2009,
+    y = 1.9,
+    label = 'HIV deaths',
+    size = I(5),
+    colour = I('grey50')
+  ) +
+  annotate(
+    'text',
+    x = 2005,
+    y = 1.3,
+    label = 'TB deaths in\nHIV-negative people',
+    size = I(5),
+    colour = I('blue')
+  ) +
+  annotate(
+    'text',
+    x = 2005,
+    y = 0.30,
+    label = 'TB deaths in\nHIV-positive people',
+    size = I(5),
+    colour = I('lightskyblue4')
+  ) +
+  expand_limits(y = 0) + 
+  scale_y_log10(breaks=c(0.3,0.5,1,1.5,1.8)) +
+  theme_gtb()
+
+
+```
+<div class="footnote"> ^a^ For HIV/AIDS, the latest estimates of the number of deaths in 2020 that have been published by UNAIDS are available at http://www.unaids.org/en/ (accessed 16 August 2021). For TB, the estimates for 2020 are those published in this report.<br>
+^b^ Deaths from TB among HIV-positive people are officially classified as deaths caused by HIV/AIDS in the International Classification of Diseases.</div> 
+
+
+
+`r anch("Fig. 2.2.5")`
+
+### <span style="color:#F21905">Fig. 2.2.5</span> Trends in estimated TB mortality rates by WHO region, 2000&#8211;2020
+<span class="subhead">Estimated TB mortality rates among HIV-negative people are shown in <span style="color:#3232ff">blue</span> and estimated mortality rates among HIV-positive people are shown in <span style="color:#87ceeb">light blue</span>. Shaded areas represent uncertainty intervals.</span> 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig.height = 8, fig_2.2.5, fig.alt="Trends in estimated TB mortality rates by WHO region, 2000−2020"} 
+
+qplot(
+    year,
+    mort.nh,
+    data = regional,
+    geom = 'line',
+    colour = I('blue')
+  ) +
+  geom_ribbon(
+    aes(year, ymin = mort.nh.lo, ymax = mort.nh.hi),
+    fill = I('blue'),
+    alpha = 0.4
+  ) +
+  geom_line(aes(year, mort.h), colour = I('lightskyblue2')) +
+  geom_ribbon(
+    aes(year, ymin = mort.h.lo, ymax = mort.h.hi),
+    fill = I('lightskyblue2'),
+    alpha = 0.4
+  ) +
+  expand_limits(y=0) +
+  facet_wrap(~ region, scale = 'free_y') +
+  xlab('') + ylab('Mortality rate per 100 000 population per year (log scale)') +
+  #  scale_y_continuous(trans='log10', breaks=c(0.1,1,5,10,20,30,50)) +
+  theme_gtb() +
+  scale_y_log10() +
+  theme(legend.position = 'none')
+
+
+```
+
+
+
+
+
+`r anch("Fig. 2.2.6")` 
+
+### <span style="color:#F21905">Fig. 2.2.6</span> Trends in the estimated absolute number of TB deaths (HIV-positive and HIV-negative, in thousands) by WHO region, 2000&#8211;2020 
+<span class="subhead">Shaded areas represent uncertainty intervals. The horizontal dashed line shows the 2020 milestone of the End TB Strategy.</span> 
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig.height = 8, fig_2.2.6, fig.alt="Trends in the estimated absolute number of TB deaths (HIV-positive and HIV-negative, in thousands) by WHO region, 2000-2020"} 
+
+qplot(
+    year,
+    mort.num / 1e3,
+    data = regional,
+    geom = 'line',
+    colour = I('grey20')
+  ) +
+  geom_ribbon(
+    aes(year, ymin = mort.lo.num / 1e3, ymax = mort.hi.num / 1e3),
+    fill = I('blue'),
+    alpha = 0.4
+  ) +
+  geom_hline(aes(yintercept = mort.milestone / 1e3), linetype = I(2)) +
+  expand_limits(y=0) +
+  facet_wrap(~ region, scale = 'free_y') +
+  xlab('') + ylab('Total TB deaths (thousands, log scale)') +
+  scale_y_log10() +
+  theme_gtb() +
+  theme(legend.position = 'none')
+
+
+```
+
+
+
+
+
+
+
+`r anch("Fig. 2.2.7a")` 
+
+### <span style="color:#F21905">Fig. 2.2.7a</span> Trends in the estimated absolute number (in thousands) of TB deaths (HIV-positive and HIV-negative TB) in the 30 high TB burden countries, 2000&#8211;2020
+<span class="subhead">Shaded areas represent uncertainty intervals. The horizontal dashed line shows the 2020 milestone of the End TB Strategy.</span> 
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig.height=12, fig_2.2.7a, fig.alt="Trends in the estimated absolute number of TB deaths (HIV-positive and HIV-negative TB) in the 30 high TB burden countries, 2000−2020"} 
+  qplot(
+    year,
+    mort.num / 1e3,
+    data = hest,
+    geom = 'line',
+    colour = I('grey20')
+  ) +
+  geom_ribbon(
+    aes(year, ymin = mort.lo.num / 1e3, ymax = mort.hi.num / 1e3),
+    fill = I('blue'),
+    alpha = 0.4
+  ) +
+  geom_hline(aes(yintercept = mort.milestone / 1e3), linetype = I(2)) +
+  #facet_wrap(~ country, scales = 'free_y', ncol = 5) +
+    facet_wrap(~country, nrow=6, scales="free",
+                     # Use the labeller function to make sure long country names are wrapped in panel headers
+                     labeller = label_wrap_gen(width = 25)) +
+  xlab('') + ylab('TB deaths (total, in thousands) per year (log scale)') +
+  expand_limits(y = 0) +
+  scale_y_log10() +
+  theme_gtb()
+
+
+```
+
+
+
+
+
+
+`r anch("Fig. 2.2.7b")`
+
+### <span style="color:#F21905">Fig. 2.2.7b</span> Trends in the estimated absolute number (in thousands) of TB deaths (HIV-positive and HIV-negative TB) in the 3 global TB watchlist countries, 2000&#8211;2020
+<span class="subhead">Shaded areas represent uncertainty intervals. The horizontal dashed line shows the 2020 milestone of the End TB Strategy.</span> 
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig.height=2.7, fig.width=8, fig.align='left', fig_2.2.7b, fig.alt="Trends in the estimated absolute number of TB deaths (HIV-positive and HIV-negative TB) in the 3 WHO watch-list countries, 2000−2020"} 
+
+dta <- est[iso3 %in% c('KHM','RUS','ZWE')]
+dta[, mort.milestone := mort.num[16] * 0.65, by = iso3]
+
+  qplot(
+    year,
+    mort.num / 1e3,
+    data = dta,
+    geom = 'line',
+    colour = I('grey20')
+  ) +
+  geom_ribbon(
+    aes(year, ymin = mort.lo.num / 1e3, ymax = mort.hi.num / 1e3),
+    fill = I('blue'),
+    alpha = 0.4
+  ) +
+  geom_hline(aes(yintercept = mort.milestone / 1e3), linetype = I(2)) +
+  #facet_wrap(~ country, scales = 'free_y', ncol = 5) +
+    facet_wrap(~country, nrow=1, scales="free",
+                     # Use the labeller function to make sure long country names are wrapped in panel headers
+                     labeller = label_wrap_gen(width = 25)) +
+  xlab('') + ylab('TB deaths (total, in thousands)\nper year (log scale)') +
+  expand_limits(y = 0) +
+  scale_y_log10() +
+  theme_gtb()
+
+
+```
+
+
+
+
+ 
+
+
+
+`r anch("Fig. 2.2.8")` 
+
+### <span style="color:#F21905">Fig. 2.2.8</span> Estimated TB mortality rates in HIV-negative people, 2020
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig_2.2.8, fig.alt="Estimated TB mortality rates in HIV-negative people, 2020"} 
+
+dta <- est[year == yr]
+dta$var <- cut(
+  dta$mort.nh,
+  c(0, 1, 5, 20, 40, Inf),
+  c('0\u20130.9', '1\u20134.9', '5\u201319', '20\u201339', '\u226540'),
+  right = F,
+  ordered_result = T
+)
+
+whomap(
+  X = dta,
+  legend.title = "Mortality\nper 100 000\npopulation per year",
+  legend.pos = c(0.14, 0.34),
+  colours = brewer.pal(5, "RdPu"),
+)
+
+
+```
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+
+`r anch("Fig. 2.2.9")`
+
+### <span style="color:#F21905">Fig. 2.2.9</span> Estimates of the case fatality ratio (CFR), including HIV-negative and HIV-positive people, 2020
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig_2.2.9, fig.alt="Case fatality ratio (2020)"} 
+
+dta <-
+  est[year == yr & inc > 0, .(iso3,
+                        cfr = 100 * mort / inc)]
+dta$var <- cut(dta$cfr, 
+               breaks=c(0, 5, 10, 15, 20, Inf),
+               labels=c('0\u20134.9','5\u20139.9','10\u201314','15\u201319','\u226520'))
+
+whomap(
+  X = dta,
+  colours = brewer.pal(5, "YlOrRd"),
+  legend.title = 'Case fatality ratio\n(%)',
+)
+
+```
+
+
+
+
+
+
+`r anch("Fig. 2.2.10a")`
+
+### <span style="color:#F21905">Fig. 2.2.10a</span> Global distribution of estimated TB mortality in HIV-negative people by age group and sex (female in <span style="color:#951b81">purple</span>; male in <span style="color:#80a51b">green</span>), 2020 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig.height=6, fig_2.2.10a, fig.alt="Main methods used to estimate TB mortality in HIV-negative people"} 
+
+# source(here('disaggregation/reportoutput/plotfunctions.R'))
+muplot <- function(indat,cnm){
+    agz2 <- c('0_4','5_14','15_24','25_34','35_44',
+              '45_54','55_64','65plus') #for labels
+    agz3 <- gsub('_','-',agz2)
+    agz4 <- c(rev(rev(agz3)[-1]),"\u226565")
+    if(!'age' %in% names(indat)) indat[,age:=gsub("_","-",age_group)]
+    indat[age=='65plus',age:=rev(agz4)[1]]
+    indat$age <- factor(indat$age,levels=agz4,ordered=TRUE)
+    indat$sex <- factor(indat$sex,levels=c('F','M'),ordered=TRUE)
+    ## plot
+    mp <- prodplot(data=indat,
+                   mort ~ sex + age,
+                   divider=mosaic()) +
+        aes(fill=sex)
+    mp <- mp + theme(axis.line=element_blank(),
+                     axis.text.x=element_text(angle=90),
+                     axis.text.y=element_text(),
+                     axis.ticks=element_blank(),
+                     axis.title.x=element_blank(),
+                     axis.title.y=element_blank(),
+                     legend.title=element_blank(),
+                     legend.position="none",
+                     panel.background=element_blank(),
+                     panel.border=element_blank(),
+                     panel.grid.major=element_blank(),
+                     panel.grid.minor=element_blank(),
+                     plot.background=element_blank()) +
+        ggtitle(cnm)
+    mp
+}
+
+disag.plot.mort.global <- function(D,title){
+    ## ages and colors etc
+    agz3 <- c('0\u20134','5\u201314','15\u201324','25\u201334','35\u201344','45\u201354',
+              '55-64','65plus') #for labels
+    agz4 <- c(rev(rev(agz3)[-1]),"\u226565")
+    clz <- c('F'=palette_gtb('female'),
+             'M'=palette_gtb('male'))
+    ## plot construction
+    plt <- muplot(D,title) +
+        coord_flip() +
+        scale_fill_manual(values=clz)+
+        theme_gtb()+
+        theme(axis.title.x=element_blank(), #remove
+              axis.text.x=element_blank(),
+              axis.ticks.x=element_blank(),
+              legend.position = 'none')
+    plt
+}
+
+
+annotate_figure(disag.plot.mort.global(Mglobsplt, 'Global'),
+                left = text_grob('Age group (years)', rot = 90))
+
+
+
+```
+
+
+
+
+
+
+
+
+`r anch("Fig. 2.2.10b")`
+
+### <span style="color:#F21905">Fig. 2.2.10b</span> Regional distribution of estimated TB mortality in HIV-negative people by age group and sex (female in <span style="color:#951b81">purple</span>; male in <span style="color:#80a51b">green</span>), 2020
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig.height=10, fig_2.2.10b, fig.alt="Main methods used to estimate TB mortality in HIV-negative people"} 
+
+disag.plot.mort.regional <- function(D){
+    ## ages and colors etc
+    agz3 <- c('0\u20134','5\u201314','15\u201324','25\u201334','35\u201344','45\u201354',
+              '55-64','65plus') #for labels
+    agz4 <- c(rev(rev(agz3)[-1]),"\u226565")
+    # whozt <- c('Africa','The Americas','Eastern Mediterranean','Europe',
+    #            'South-East Asia',
+    #            'Western Pacific')
+    # regs <- c('AFR','AMR','EMR','EUR','SEA','WPR')
+    clz <- c('F'=palette_gtb('female'),
+             'M'=palette_gtb('male'))
+    wr <- levels(D$name)
+    ## plot construction
+    Pltlst <- list()
+    for(i in 1:6){
+#        plt <- muplot(D[g.whoregion==regs[i]],whozt[i]) +
+        plt <- muplot(D[name==wr[i]],wr[i]) +
+            theme(legend.position="none")
+#        if(!(i%%3==1)) plt <- plt + theme(axis.text.y=element_blank())
+        plt <- plt + coord_flip() +
+            scale_fill_manual(values=clz)+
+            theme_gtb()+
+            theme(axis.title.x=element_blank(),
+                  axis.text.x=element_blank(),
+                  axis.ticks.x=element_blank(),
+                  legend.position = 'none')
+        Pltlst[[i]] <- plt
+    }
+    p <- ggpubr::ggarrange(plotlist = Pltlst, ncol = 3,nrow=2)
+    annotate_figure(p, left = text_grob('Age group (years)', rot=90))
+}
+
+disag.plot.mort.regional(Mregsplt)
+
+```
+
+
+
+
+
+
+
+
+`r anch("Fig. 2.2.11a")`
+  
+### <span style="color:#F21905">Fig. 2.2.11a</span> Main methods used to estimate TB mortality in HIV-negative people up to 2019
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig_2.2.11a, fig.alt="Main methods used to estimate TB mortality in HIV-negative people up to 2019"} 
+
+dta <-
+  est[year == yr - 1, .(iso3,
+                        source.mort)]
+dta$var <- dta$source.mort
+
+whomap(
+  X = dta,
+  legend.title = 'Main method',
+  colours = c('#0a6acd', 'deepskyblue2', '#2BA81D')
+)
+
+
+```
+<div class="footnote"> IHME: Institute of Health Metrics and Evaluation, Seattle, USA. VR: Vital registration of causes of deaths.</div> 
+
+
+
+
+
+
+
+`r anch("Fig. 2.2.11b")`
+
+### <span style="color:#F21905">Fig. 2.2.11b</span> Main methods used to estimate TB mortality in HIV-negative people in 2020
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "asis", dev = 'png', fig_2.2.11b, fig.alt="Main methods used to estimate TB mortality in HIV-negative people in 2020"} 
+
+dta <-
+  est[year == yr, .(iso3,
+                    source.mort)]
+dta$var <- factor(dta$source.mort, labels=c('Pre-2020 trend','Dynamic model','Statistical model','VR'))
+
+whomap(
+  X = dta,
+  legend.title = 'Main method',
+  colours = c('#fdae61', '#abd9e9', '#e5e5ff', '#2BA81D')
+)
+
+```
+
+<div class="footnote"> VR: Vital registration of causes of deaths.</div> 
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,596 @@
+---
+title: "Section 3.3 Treatment and treatment coverage (figures)"
+author: "Hazim Timimi"
+date: "`r Sys.Date()`"
+output: 
+  html_fragment:
+    # Don’t include a table of contents
+    toc: no
+    # Set standard figure width to 12 inches
+    fig_width: 12
+    # Don’t write figure captions
+    fig_caption: FALSE
+
+---
+
+
+```{r setup, include=FALSE}
+# Set chunk options.
+# Results "asis" is useful to output markdown from a function
+# Suppress messages, warnings and also the ## at the beginning of printed text
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      results = "asis",
+                      message = FALSE,
+                      warning = FALSE)
+
+# Kill any attempt at using factors, unless we explicitly want them!
+options(stringsAsFactors=FALSE)
+
+# Load output packages ----
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(RColorBrewer)
+library(whomap)
+library(gtbreport)
+library(kableExtra)
+library(here)
+
+# load section data
+source(here('report/ch3-3-dataprep.r'))
+
+# Quick functions for callouts in the text to the figures/tables:
+
+# 1. lnk() Creates a link from text to a named anchor)
+lnk <- function(display_name){
+  return(paste0('<span class="red">[', 
+                display_name, 
+                '](#', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                ')</span>'))
+}
+
+# 2. anch() creates the named anchor to go above the figure or table
+anch <- function(display_name){
+  return(paste0('<a name="', 
+                gsub("[^a-zA-Z0-9]", "-", tolower(display_name)),
+                '"></a>'))
+}
+
+# rmarkdown::render(here::here("report/ch3-3-figs.rmd"), output_file = "ch3-3-figs.html", output_dir = here::here("report/html/"))
+
+```
+
+
+```{css, echo=FALSE}
+
+/* Styles to make it easier to see in the html_fragment; this CSS can be included in the CSS widget of Sitefinity */
+  
+.section.level3 {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #BCBCBC;
+  margin-bottom: 2em;
+}
+
+
+.subhead, .footnote {
+  font-size: 80%;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.red, .red a {
+  color: #F21905; /* red text to show figure number */
+}
+
+/* Deaths averted table */
+
+/* Recreating simple striped bootstrap table */
+#deaths_averted_table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /* Next two lines to allow horizontal scrolling on narrow screens */
+  display: block;
+  overflow-x: auto;
+}
+
+#deaths_averted_table th {
+  border-bottom: 2px solid #DDDDDD;
+  padding: 8px;
+}
+
+#deaths_averted_table td {
+  border-top: 1px solid #DDDDDD;
+  padding: 8px;
+}
+
+/* light gray for odd rows */
+#deaths_averted_table tr:nth-child(odd) td {
+  background-color: #F5F5F5;	
+}
+
+/* Bold for the final row with thick line above */
+#deaths_averted_table tr:last-child td {
+  border-top: 2px solid #DDDDDD;
+  font-weight:bold;	
+}
+
+/* light gray when hovering over a row */
+#deaths_averted_table tr:hover td {
+  background-color: #DDDDDD;
+}
+
+/* Centre-align all column headings except for the first */
+#deaths_averted_table th:not(:first-child) {
+  text-align: center !important;
+}
+
+/* prevent numbers from wrapping in any of the columns */
+#deaths_averted_table td {
+  white-space: nowrap;
+}
+
+
+```
+
+
+_Draft! Prepared `r Sys.Date()` using country-reported data CSV files dated `r csv_datestamp` and estimates files dated  `r csv_estimate_datestamp`._
+
+`r anch("Fig. 3.3.1")`
+
+
+### <span class="red">Fig. 3.3.1</span> Estimated TB treatment coverage (new and relapse patients as a percentage of estimated TB incidence) in `r report_year-1`, 30 high TB burden countries, WHO regions and globally
+
+
+```{r fig_3.3.1, fig.alt="Forest plot of TB treatment coverage in 30 countries, regionally and globally", fig.asp=1}
+
+f3.3.1_plot <- f3.3.1_data %>% 
+
+  ggplot(aes(x=entity,
+             y=c_cdr)) +
+  geom_point() +
+  
+  labs(x="",
+       y="Treatment coverage (%)") +
+  
+  geom_pointrange(aes(ymin=c_cdr_lo,
+                      ymax=c_cdr_hi),
+                  size=1,
+                  colour="Darkgreen") +
+  
+  expand_limits(y=0) +
+  coord_flip() +
+  theme_gtb() 
+  
+
+print(f3.3.1_plot)
+
+```
+
+`r anch("Fig. 3.3.2")`
+
+
+### <span class="red">Fig. 3.3.2</span> The ten countries with the largest gaps between notifications of new and relapse (incident) TB cases and the best estimates of TB incidence, `r report_year-1`^a^
+
+
+```{r fig_3.3.2, fig.alt="Bubble map of difference between notifications and estimated incidence for 10 countries"}
+
+# To help find centres of bubbles use
+# filter(whomap:::centroid, id %in% f3.3.2_data$iso3) 
+
+f3.3.2_plot <- f3.3.2_data %>%
+  
+  bubblemap(legend.title = "Size of gap",
+            legend.pos = c(0.14, 0.5),
+            bubble.col = "purple",
+            scale.breaks = c(7e4, 5e5, 1e6),
+            scale.limits = c(7e4, 1e6),
+            scale.labels = c("70 000","500 000","1 000 000")) +
+  
+  annotate(geom='text', label='China', x=150, y=38, hjust=0, size=3) +
+  geom_segment(x=104, xend=145, y=37, yend=37) +
+
+  annotate(geom='text', label='Viet Nam', x=150, y=25, hjust=0, size=3) +
+  geom_segment(x=106, xend=145, y=17, yend=25) +
+
+  annotate(geom='text', label='Philippines', x=150, y=17, hjust=0, size=3) +
+  geom_segment(x=121, xend=145, y=17, yend=17) +
+
+  annotate(geom='text', label='Pakistan', x=50, y=0, hjust=0, size=3) +
+  geom_segment(x=70, xend=70, y=30, yend=5) +
+
+  annotate(geom='text', label='India', x=65, y=-5, hjust=0, size=3) +
+  geom_segment(x=80, xend=80, y=23, yend=-5) +
+
+  annotate(geom='text', label='Bangladesh', x=60, y=-10, hjust=0, size=3) +
+  geom_segment(x=90, xend=90, y=24, yend=-8) +
+
+  annotate(geom='text', label='Indonesia', x=80, y=-15, hjust=0, size=3) +
+  geom_segment(x=114, xend=105, y=0, yend=-12) +
+
+  annotate(geom='text', label='Nigeria', x=-30, y=0, hjust=0, size=3) +
+  geom_segment(x=8, xend=-5, y=10, yend=0) +
+
+  annotate(geom='text', label='Democratic\nRepublic\nof the Congo', x=-30, y=-20, hjust=0, size=3) +
+  geom_segment(x=24, xend=0, y=-2, yend=-20) +
+
+  annotate(geom='text', label='South Africa', x=50, y=-30, hjust=0, size=3) +
+  geom_segment(x=25, xend=45, y=-30, yend=-30)
+  
+
+print(f3.3.2_plot)
+
+```
+<div class="footnote">^a^ The ten countries ranked in order of the size of the gap between notified cases and the best estimates of TB incidence in `r report_year-1` are: `r gsub("(Philip)|(Democrat)", "the \\1\\2", knitr::combine_words(f3.3.2_data$country, oxford_comma=FALSE))`.</div>
+
+
+`r anch("Fig. 3.3.3")`
+
+
+### <span class="red">Fig. 3.3.3</span> Estimated global number of incident HIV positive TB cases<span style="color:`r gtbreport::palette_gtb("inch")`;"> (red)</span> compared with the global number of notified new and relapse TB cases known to be HIV-positive (black) and the global number of TB patients started on antiretroviral therapy<span style="color:#277abe;"> (blue)</span>, 2004-`r report_year-1`  
+<span class="subhead">Shaded area represents uncertainty intervals</span>
+
+
+
+```{r fig_3.3.3, fig.alt="Line and ribbon chart of estimated TB/HIV incidence, number notified and number on antiretroviral therapy"}
+
+f3.3.3_plot <- f3.3.3_data %>% 
+
+  ggplot(aes(x=year, y=hivpos, ymin=0)) +
+  geom_line(size=1) +
+  
+  geom_ribbon(aes(x=year, ymin=e_inc_tbhiv_num_lo, ymax=e_inc_tbhiv_num_hi),
+              fill=gtbreport::palette_gtb("inch"),
+              alpha=0.4) +
+  geom_line(aes(year, e_inc_tbhiv_num),
+            size=1,
+            colour=gtbreport::palette_gtb("inch")) +
+
+  geom_line(aes(year, art),
+            size=1,
+            colour="#277abe") +
+
+  scale_x_continuous(name="Year",
+                     breaks = seq(2004, report_year-1, by = 3)) +
+
+  scale_y_continuous(name = "New and relapse cases per year (millions)",
+                     labels = function(i){i/1e6}) +
+  xlab("Year") +
+  
+  theme_gtb() +
+  
+  # Get rid of annoying x-axis line and ticks
+  theme(axis.line.x = ggplot2::element_blank(),
+        axis.ticks.x = element_blank())
+
+print(f3.3.3_plot)
+
+```
+
+
+`r anch("Fig. 3.3.4")`
+
+
+### <span class="red">Fig. 3.3.4</span> Estimated coverage of antiretroviral therapy for HIV-positive TB cases (HIV-positive TB patients on antiretroviral therapy as a percentage of the estimated incidence of HIV-positive TB) in 2020, 30 high TB/HIV burden countries, WHO regions and globally
+
+
+```{r fig_3.3.4, fig.alt="Forest plot of ART treatment coverage for TB/HIV patients in 30 countries, regionally and globally", fig.asp=1}
+
+f3.3.4_plot <- f3.3.4_data %>% 
+
+  ggplot(aes(x=entity,
+             y=c_art)) +
+  geom_point() +
+  
+  labs(x="",
+       y="Treatment coverage (%)") +
+  
+  geom_pointrange(aes(ymin=c_art_lo,
+                      ymax=c_art_hi),
+                  size=1,
+                  colour="#ed6476") +
+  
+  expand_limits(y=0) +
+  coord_flip() +
+  theme_gtb() 
+  
+print(f3.3.4_plot)
+
+```
+
+
+`r anch("Fig. 3.3.5")`
+
+### <span class="red">Fig. 3.3.5</span> Treatment outcomes for new and relapse TB cases in `r report_year-2`, WHO regions and globally  
+
+
+```{r fig_3.3.5, fig.alt="Horizontal bar chart showing TB treatment outcomes for WHO regions and globally"}
+
+f3.3.5_plot <- f3.3.5_data %>% 
+  
+  ggplot(aes(x=entity, 
+             y=value, 
+             fill = factor(outcome,
+                           levels = c("Treatment success",
+                                      "Failure",
+                                      "Died",
+                                      "Lost to follow-up",
+                                      "Not evaluated")))) +
+ 
+  geom_col(position = position_stack(reverse = TRUE)) +
+  coord_flip() +
+
+  theme_gtb() +
+  
+  scale_fill_manual("", 
+                    values = c("Treatment success" = palette_gtb("succ"),
+                               "Failure" = palette_gtb("fail"),
+                               "Died" = palette_gtb("died"),
+                               "Lost to follow-up" = palette_gtb("ltfu"),
+                               "Not evaluated" = palette_gtb("neval"))) +
+  
+  labs(x="", y="Percentage of cohort") +
+
+  geom_text(data=subset(f3.3.5_data, 
+                        outcome=="Treatment success"),
+            aes(label = round(value, digits = 0)),
+            position = position_stack(reverse = TRUE), 
+            size=3,
+            hjust=1.5,
+            color="white")
+
+  
+
+print(f3.3.5_plot)
+
+```
+
+
+`r anch("Fig. 3.3.6")`
+
+### <span class="red">Fig. 3.3.6</span> Treatment outcomes for new and relapse TB cases globally 2012-`r report_year-2` 
+
+
+```{r fig_3.3.6, fig.alt="Panel of 2 horizontal bar charts showing TB treatment outcomes globally by year since 2012 for TB and TB/HIV", fig.asp=0.6}
+
+f3.3.6_plot <- f3.3.6_data %>%
+  
+  ggplot(aes(year,
+             value,
+             fill = factor(outcome,
+                           levels = c("Treatment success",
+                                      "Failure",
+                                      "Died",
+                                      "Lost to follow-up",
+                                      "Not evaluated")))) +
+ 
+  geom_col(position = position_stack(reverse = TRUE)) +
+
+  facet_wrap( ~ subgroup, nrow = 2) +
+  
+  coord_flip() +
+
+  theme_gtb() +
+
+  scale_fill_manual("", 
+                    values = c("Treatment success" = palette_gtb("succ"),
+                               "Failure" = palette_gtb("fail"),
+                               "Died" = palette_gtb("died"),
+                               "Lost to follow-up" = palette_gtb("ltfu"),
+                               "Not evaluated" = palette_gtb("neval"))) +
+
+  labs(x="Year started on treatment", y="Percentage of cohort") +
+
+  scale_x_continuous(breaks = seq(2012, report_year-2)) +
+
+  geom_text(data=subset(f3.3.6_data,
+                        outcome=="Treatment success"),
+            aes(label = round(value, digits = 0)),
+			            position = position_stack(reverse = TRUE),
+            size=3,
+            hjust=1.5,
+            color="white")
+
+
+
+print(f3.3.6_plot)
+
+```
+
+
+`r anch("Fig. 3.3.7")`
+
+### <span class="red">Fig. 3.3.7</span> Treatment outcomes for new and relapse HIV positive TB cases in `r report_year-1`, WHO regions and globally  
+
+
+```{r fig_3.3.7, fig.alt="Horizontal bar chart showing TB treatment outcomes in HIV-positive cases for WHO regions and globally"}
+
+f3.3.7_plot <- f3.3.7_data %>%
+
+  # Note: plotting code same as 3.4.1 -- build a re-usable function?
+  ggplot(aes(x=entity, 
+             y=value, 
+             fill = factor(outcome,
+                           levels = c("Treatment success",
+                                      "Failure",
+                                      "Died",
+                                      "Lost to follow-up",
+                                      "Not evaluated")))) +
+ 
+  geom_col(position = position_stack(reverse = TRUE)) +
+  coord_flip() +
+
+  theme_gtb() +
+  
+  scale_fill_manual("", 
+                    values = c("Treatment success" = palette_gtb("succ"),
+                               "Failure" = palette_gtb("fail"),
+                               "Died" = palette_gtb("died"),
+                               "Lost to follow-up" = palette_gtb("ltfu"),
+                               "Not evaluated" = palette_gtb("neval"))) +
+  
+  labs(x="", y="Percentage of cohort") +
+
+  geom_text(data=subset(f3.3.7_data, 
+                        outcome=="Treatment success"),
+            aes(label = round(value, digits = 0)),
+            position = position_stack(reverse = TRUE), 
+            size=3,
+            hjust=1.5,
+            color="white")
+
+
+print(f3.3.7_plot)
+
+```
+
+
+`r anch("Fig. 3.3.8")`
+
+### <span class="red">Fig. 3.3.8</span> Treatment success rate for new and relapse TB cases in children aged 0-14 years in `r report_year-2`, WHO regions and globally^a^ 
+
+
+```{r fig_3.3.8, fig.alt="Horizontal bar chart showing TB treatment success rates in children for WHO regions and globally"}
+
+f3.3.8_plot <- f3.3.8_data %>%
+  
+  ggplot(aes(x = entity, y = c_tsr_014)) +
+
+  geom_bar(stat = "identity", fill = palette_gtb("succ")) +
+
+  coord_flip() +
+
+  theme_gtb() +
+
+  scale_y_continuous(name = "Percentage of cohort",
+                     limits = c(0,100)) +
+
+  labs(x="") +
+
+  geom_text(aes(label = round(c_tsr_014, digits = 0)),
+            position = position_stack(reverse = TRUE), 
+            size=3,
+            hjust=1.5,
+            color="white")
+
+
+print(f3.3.8_plot)
+
+```
+<div class="footnote">^a^ Data reported by `r f3.3.8_txt$countries` countries on outcomes for `r int_spacer(f3.3.8_txt$kids_coh)` children aged 0-14 years, equivalent to `r ftb(f3.3.8_txt$kids_outcome_pct)`% of the `r int_spacer(f3.3.8_txt$kids_notified)` cases among children aged 0-14 years that were notified in `r report_year-2`.</div> 
+
+
+
+`r anch("Fig. 3.3.9")`
+
+### <span class="red">Fig. 3.3.9</span> Treatment outcomes for new and relapse TB cases (absolute numbers), 2000-`r report_year-2`, globally and for WHO regions  
+
+
+```{r fig_3.3.9_glob, fig.alt="Bar chart showing treatment outcomes in absolute numbers by year since 2000 globally"}
+
+f3.3.9_plot_glob <- f3.3.9_data %>%
+
+  filter(entity=="Global") %>%
+  ggplot(aes(year, 
+             value,
+             fill = factor(outcome,
+                           levels = c("Treatment success",
+                                      "Failure/Died/Lost to follow-up",
+                                      "Not evaluated")))) +
+ 
+  geom_col(position = position_stack(reverse = TRUE)) +
+
+  facet_wrap( ~ entity) +
+
+  theme_gtb() +
+  
+  scale_fill_manual("",
+                    values = c("Treatment success" = palette_gtb("succ"),
+                               "Failure/Died/Lost to follow-up" = palette_gtb("fail"),
+                               "Not evaluated" = palette_gtb("neval"))) +
+  
+  labs(x="", y="Number of cases (millions)") +
+
+  scale_x_continuous(breaks = seq(2000, report_year-2,by=6)) +
+  
+  # remove the legend
+  theme(legend.position="none")
+
+print(f3.3.9_plot_glob)
+
+```
+
+
+```{r fig_3.3.9_reg, fig.alt="Panel of bar charts showing treatment outcomes in absolute numbers by year since 2000 for WHO regions"}
+
+f3.3.9_plot_reg <- f3.3.9_data %>%
+
+  filter(entity!="Global") %>%
+  ggplot(aes(year, 
+             value,
+             fill = factor(outcome,
+                           levels = c("Treatment success",
+                                      "Failure/Died/Lost to follow-up",
+                                      "Not evaluated")))) +
+ 
+  geom_col(position = position_stack(reverse = TRUE)) +
+
+  facet_wrap( ~ entity,
+              scales = "free_y") +
+
+  theme_gtb() +
+  
+  scale_fill_manual("",
+                    values = c("Treatment success" = palette_gtb("succ"),
+                               "Failure/Died/Lost to follow-up" = palette_gtb("fail"),
+                               "Not evaluated" = palette_gtb("neval"))) +
+  
+  labs(x="", y="Number of cases (millions)") +
+
+  scale_x_continuous(breaks = seq(2000, report_year-2,by=6))
+
+
+print(f3.3.9_plot_reg)
+
+```
+<div class="footnote">^a^ Cohorts before 2012 included new cases only.</div> 
+
+
+`r anch("Table 3.3.1")`
+
+### <span class="red">Table 3.3.1</span> Cumulative number of deaths averted by TB and TB/HIV interventions 2000-`r report_year - 1` (in millions), globally and by WHO region
+
+```{r table_3.1}
+
+# Format numbers for the table
+t3.3.1_data <- t3.3.1_data %>%
+  mutate(across(where(is.numeric), ftb))
+
+# Create a table object using kable
+table_header <- c('WHO region',
+                  'Best estimate',
+                  'Uncertainty interval',
+                  'Best estimate',
+                  'Uncertainty interval',
+                  'Best estimate',
+                  'Uncertainty interval')
+
+knitr::kable(t3.3.1_data,
+             format = "html",
+             col.names = table_header,
+             align = 'lccccc',
+             # Add a table ID so that it can be styled using extra CSS in Sitefinity
+             table.attr = "id='deaths_averted_table'") %>% 
+  add_header_above(header = c(" " = 1,
+                              "HIV-negative people" = 2,
+                              "HIV-positive people" = 2,
+                              "Total" = 2))
+
+
+```
+
