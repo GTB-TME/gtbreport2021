@@ -16,7 +16,7 @@ output:
 
 
 
-<center>11 October 2021</center>
+<center>20 October 2021</center>
 
 
 
@@ -27,7 +27,7 @@ output:
 
 <sup>1</sup> Global TB Programme, World Health Organization, Geneva, Switzerland
 
-<sup>2</sup> Imperial College London, UK
+<sup>2</sup> MRC Centre for Global Infectious Disease Analysis, Imperial College London, UK
 
 <sup>3</sup> School of Health and Related Research, University of Sheffield, UK
 
@@ -334,7 +334,7 @@ $$\begin{equation}
 \frac{dL_f}{dt} = \lambda U + c\lambda(L_s + R_{lo} + R_{hi} + R_{LT}) – (u + w + \mu)L_f,
 \end{equation}$$
 
-where $u$ is the rate of breakdown to active disease; c$ is protection from reinfection; and $w$ is the rate of stabilisation to latent ‘slow’ progression. 
+where $u$ is the rate of breakdown to active disease; $c$ is protection from reinfection; and $w$ is the rate of stabilisation to latent ‘slow’ progression. 
 
 Latent ‘slow’ progression, $L_s$ 
 
@@ -614,14 +614,14 @@ where _tr_ denotes the trace, _H(h)_ the Hessian matrix of partial second-order 
 
 ## 8. Conclusion
 
-The measurement methods described here can be combined to assess tuberculosis incidence and mortality, to evaluate progress towards targets for tuberculosis control and the SDGs for TB. Alternative TB burden estimation methods have been developed by the Institute of Health Metrics and Evaluation<sup><a href="https://paperpile.com/c/uyCckg/16mDd">36</a></sup>, with generally consistent results at the global level compared with WHO, but with marked differences in specific countries. Discrepancies in estimates from different agencies reflect the questionable quality and completeness of the underlying data. Further convergence in estimates will result from improvements in measurements at country level. National control programmes should be able to measure the level and time trends in incidence through well-performing TB surveillance with universal access to health. In countries with incomplete routine surveillance, prevalence surveys of TB disease provide estimates of TB burden that do not heavily rely on expert opinion. The performance of TB surveillance should be assessed periodically<sup><a href="https://paperpile.com/c/uyCckg/XExTU">10</a></sup> and the level of under-reporting should be measured<sup><a href="https://paperpile.com/c/uyCckg/1MqlV">9</a></sup> and minimized. Tuberculosis mortality will ideally be measured by counting deaths in a comprehensive vital registration system<sup>36/sup>. 
+The measurement methods described here can be combined to assess tuberculosis incidence and mortality, to evaluate progress towards targets for tuberculosis control and the SDGs for TB. Alternative TB burden estimation methods have been developed by the Institute of Health Metrics and Evaluation<sup><a href="https://paperpile.com/c/uyCckg/16mDd">36</a></sup>, with generally consistent results at the global level compared with WHO, but with marked differences in specific countries. Discrepancies in estimates from different agencies reflect the questionable quality and completeness of the underlying data. Further convergence in estimates will result from improvements in measurements at country level. National control programmes should be able to measure the level and time trends in incidence through well-performing TB surveillance with universal access to health. In countries with incomplete routine surveillance, prevalence surveys of TB disease provide estimates of TB burden that do not heavily rely on expert opinion. The performance of TB surveillance should be assessed periodically<sup><a href="https://paperpile.com/c/uyCckg/XExTU">10</a></sup> and the level of under-reporting should be measured<sup><a href="https://paperpile.com/c/uyCckg/1MqlV">9</a></sup> and minimized. Tuberculosis mortality will ideally be measured by counting deaths in a comprehensive vital registration system<sup>36<sup>. 
 
 WHO’s post-2015 global TB strategy, known as the End TB Strategy<sup>37</sup>, has the goal of ending the global TB epidemic, with corresponding targets of a 90% reduction in TB deaths and an 80% reduction in the TB incidence rate by 2030, compared with 2015. Improved measurements through substantial investments in health information systems, TB surveillance and the broader SDG agenda will provide a firmer basis for monitoring progress towards the End TB Strategy targets and ultimate TB elimination.
 
 
 ## Acknowledgements
 
-Ibrahim Abubakar, Sandra Alba, Elisabeth Allen, Martien Borgdorff, Jaap Broekmans, Ken Castro, Frank Cobelens, Ted Cohen, Charlotte Colvin, Sarah Cook-Scalise, Liz Corbett, Simon Cousens, Katherine Fielding, Peter Godfrey-Faussett, Yohhei Hamada, Rein Houben, Helen Jenkins, Aviansh Kanshar, Li Liu, Mary Mahy, Valérie Schwoebel, Cherise Scott, James Seddon, Babis Sismanidis, Andrew Thomson, Edine Tiemersma, Hazim Timimi, Theo Vos, Emilia Vynnycky and Richard White reviewed the described methods to derive TB incidence, prevalence and mortality with disaggregation by age and sex and provided specific recommendations to improve them. 
+Ibrahim Abubakar, Sandra Alba, Elisabeth Allen, Martien Borgdorff, Jaap Broekmans, Ken Castro, Frank Cobelens, Ted Cohen, Charlotte Colvin, Sarah Cook-Scalise, Liz Corbett, Simon Cousens, Katherine Fielding, Peter Godfrey-Faussett, Yohhei Hamada, Rein Houben, Helen Jenkins, Avinash Kanchar, Li Liu, Mary Mahy, Valérie Schwoebel, Cherise Scott, James Seddon, Babis Sismanidis, Andrew Thomson, Edine Tiemersma, Hazim Timimi, Theo Vos, Emilia Vynnycky and Richard White reviewed the described methods to derive TB incidence, prevalence and mortality with disaggregation by age and sex and provided specific recommendations to improve them. Nicholas A. Menzies, Hsien-Ho Lin and Finn McQuaid provided critical review of the transmission dynamic modelling to estimate the impact of COVID-19-related disruptions on TB burden.  
 
 
 
